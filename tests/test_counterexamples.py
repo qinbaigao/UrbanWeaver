@@ -1,6 +1,6 @@
 import unittest
 
-from cityg.evaluation import ERROR_CASES, error_regression_suite, inject_error
+from repair_fixtures import ERROR_CASES, error_regression_suite, inject_error
 from cityg.planning import BaselineCityPlanner
 from cityg.schemas import CitySpec
 from cityg.validation import CityValidator

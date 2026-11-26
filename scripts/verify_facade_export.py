@@ -16,7 +16,7 @@ from cityg.services import OpenUSDBackend
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('package',type=Path);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--prototype-config',type=Path,default=Path('configs/reliability_prototypes.json'))
+    p.add_argument('--prototype-config',type=Path,default=Path('configs/generation_prototypes.json'))
     args=p.parse_args()
     if args.output.exists(): p.error('Use a fresh output directory')
     project=Path(__file__).resolve().parents[1]

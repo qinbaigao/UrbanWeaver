@@ -7,10 +7,13 @@ from cityg.planning.generation_prototypes import GenerationPrototypes, load_opti
 
 class FloorReferenceDisclosureTests(unittest.TestCase):
     def test_reception_fit_does_not_imply_upper_living_room_fit(self):
-        # Frozen dimensions of the second-seed failure; no outputs dependency.
+        # Compare the two requested room designs on the same floor plate.
         runtime=GenerationPrototypes(load_options(Path(__file__).resolve().parents[1]/
-                                                  'configs/reliability_prototypes.json'))
-        references=runtime.floor_context({'prototype_id':'none'})['room_dimensions']
+                                                  'configs/generation_prototypes.json'))
+        requested = {'reception_waiting_v1', 'living_media_v1'}
+        references = [row for row in runtime.floor_context({'prototype_id': 'none'})['room_dimensions']
+                      if row['id'] in requested]
+        self.assertEqual({row['id'] for row in references}, requested)
         geometry={'bands':[{'width_m':58.28,'depth_m':6.4}]*2,
             'usable_area_m2':2*58.28*6.4,
             'feasible_topology_examples':[{'children_per_anchor':0,'groups_per_side':[8,9],

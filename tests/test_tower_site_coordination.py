@@ -1,7 +1,7 @@
 import json
 import unittest
 
-from scripts.verify_tower_site_coordination import fixture, run
+from tower_edit_fixtures import fixture, run
 from cityg.editing import _apply_replans
 from cityg.geometry import GeometryCompiler
 from cityg.planning.site_coordination import FloorCapacityConflict
@@ -18,7 +18,7 @@ class TowerCoordinationTests(unittest.TestCase):
     def test_furnished_partition_and_fixed_area_shape_edits(self):
         for case in ('meeting_area', 'conference_depth'):
             with self.subTest(case=case):
-                self.assertEqual(run(case, LocalDecisions(), 'fixture')['transaction'], 'accepted')
+                self.assertEqual(run(case, LocalDecisions(), 'fixture'), 'accepted')
 
     def test_parcel_screening_recovers_conference_depth_without_losing_furniture(self):
         from pathlib import Path

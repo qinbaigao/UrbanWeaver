@@ -20,7 +20,7 @@ From the repository root in a Python 3.10 or 3.11 environment, run:
 
 ```bash
 python -m pip install -e .
-python -m cityg generate --spec examples/research_specs/01_residential_neighborhood.json \
+python -m cityg generate --spec examples/residential_neighborhood.json \
   --output outputs/first_city --backend openusd
 python -m cityg validate outputs/first_city/city.json
 python -m cityg view outputs/first_city
@@ -47,9 +47,15 @@ Set `LLM_BASE_URL`, `VLM_BASE_URL`, `LLM_MODEL` and `VLM_MODEL` for your service
 
 The repository includes procedural geometry, asset metadata and preparation scripts. To reproduce textured scenes, obtain the corresponding meshes, textures and model weights from their upstream sources. The asset registries describe both procedural and downloadable items. For available sources see [the source catalog](assets/external_sources.json) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-To install the optional PBR ground textures used by the material integration tests, run `python scripts/download_polyhaven_ground_materials.py`.
+To install the optional PBR textures for grass, paving and other ground surfaces, run `python scripts/download_polyhaven_ground_materials.py`.
 
 To enable missing-asset generation, configure an existing Hunyuan worker with `ASSET_GENERATION_ENABLED=true` and `ASSET_URL`. To start a worker locally, prepare its model environment and CUDA extensions, set `ASSET_WORKER_AUTO_START=true`, and export `CITYG_ASSET_PYTHON`, `CITYG_HUNYUAN_REPO`, `CITYG_HUNYUAN_MODEL_ROOT` and `CITYG_HUNYUAN_T2I_MODEL`. The worker GPU is selected by `ASSET_WORKER_GPU` in the pipeline configuration.
+
+## Extend UrbanWeaver
+
+- To change what an agent can propose, start with [the agent implementations](src/cityg/agents). [The closed loop](src/cityg/closed_loop.py) coordinates planning, validation and repair.
+- To add a layout, follow an existing [city, floor or room prototype](configs/layout_prototypes/v1). [The generation configuration](configs/generation_prototypes.json) controls how these prototypes are selected and adapted.
+- For a new spatial constraint, trace it from [the world program](src/cityg/ccwp.py) to [the validators](src/cityg/validation). The [urban spatial coordination guide](docs/urban_spatial_coordination.md) follows one such path from the brief to the realized footprint.
 
 ## Working with the result
 

@@ -2,7 +2,7 @@ import json
 import unittest
 
 from cityg.agents import AgentGenerationError, RepairAgent
-from cityg.evaluation import inject_error
+from repair_fixtures import inject_error
 from cityg.planning import BaselineCityPlanner
 from cityg.schemas import CitySpec
 from cityg.serialization import to_primitive

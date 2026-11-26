@@ -10,7 +10,7 @@ from cityg.closed_loop import (
     ClosedLoopCoordinator,
     IssueRouter,
 )
-from cityg.evaluation import inject_error
+from repair_fixtures import inject_error
 from cityg.schemas import CitySpec
 from cityg.serialization import to_primitive
 from cityg.services import ManifestBackend, OpenUSDBackend

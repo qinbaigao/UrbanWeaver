@@ -13,7 +13,6 @@ from cityg.asset_providers import (
     HunyuanAssetProvider,
 )
 from cityg.assets import AssetRegistry, AssetResolver, MaterialLibrary
-from cityg.baselines import freeze_baseline, verify_baseline
 from cityg.agent_pipeline import (
     AgenticGenerationPipeline,
     HierarchicalAgenticGenerationPipeline,
@@ -550,20 +549,6 @@ def _parser() -> argparse.ArgumentParser:
         help="Request geometry-only room assets from the Hunyuan worker",
     )
 
-    baseline_freeze = subparsers.add_parser(
-        "baseline-freeze", help="Freeze a compact hash manifest for a compiled scene"
-    )
-    baseline_freeze.add_argument("scene", type=Path)
-    baseline_freeze.add_argument("--output", required=True, type=Path)
-    baseline_freeze.add_argument("--name", required=True)
-    baseline_freeze.add_argument("--spec", type=Path)
-    baseline_freeze.add_argument("--reproduction-command")
-
-    baseline_verify = subparsers.add_parser(
-        "baseline-verify", help="Verify a frozen CityG baseline manifest"
-    )
-    baseline_verify.add_argument("manifest", type=Path)
-    baseline_verify.add_argument("--report", type=Path)
     return parser
 
 
@@ -1405,25 +1390,6 @@ def main(argv: list[str] | None = None) -> int:
             return _rollback(args)
         if args.command == "agent-build":
             return _agent_build(args)
-        if args.command == "baseline-freeze":
-            manifest = freeze_baseline(
-                args.scene,
-                args.output,
-                name=args.name,
-                spec_path=args.spec,
-                reproduction_command=args.reproduction_command,
-            )
-            print(f"Frozen baseline: {manifest}")
-            return 0
-        if args.command == "baseline-verify":
-            report = verify_baseline(args.manifest)
-            if args.report:
-                save_json(report, args.report)
-            print(
-                f"Baseline verification: {'passed' if report['ok'] else 'failed'}; "
-                f"checked {report['checked_file_count']} file(s)."
-            )
-            return 0 if report["ok"] else 2
         if args.command == "view":
             serve_viewer(
                 args.scene,

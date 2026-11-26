@@ -1,8 +1,0 @@
-{
-  "split":"prospective_development_natural_sample",
-  "sampling_stop":"exactly_two_attempted_cold_runs_no_success_based_resampling",
-  "cases":[
-    {"id":"shared_courtyard","instruction":"生成一个包含4栋建筑的小型住宅与公共服务社区。保留道路、人行入口和公共庭院。建筑均为2层、规则矩形，优先保证实际可用的室内。只精细构建2栋建筑的少量楼层，总计4个房间；其余保留外壳。住宅的起居空间便于交流，但卧室不应成为其它房间的通道。公共服务区包含接待和等候用途。请使用已有资产，不要求生成新资产。building_count=4 width_m=240 depth_m=200 min_floors=2 max_floors=2 seed=443"},
-    {"id":"team_services","instruction":"生成一个包含4栋建筑的小型办公与公共服务街区，包含道路、步行入口和绿化。建筑均为2层、规则矩形。只精细构建2栋建筑的少量楼层，总计4个房间，其余保留外壳。办公区应包含工作、会议和休息用途，会议室不应成为其它房间的必经通路；公共服务区设置明确的接待和等候用途。使用已有资产。building_count=4 width_m=260 depth_m=210 min_floors=2 max_floors=2 seed=449"}
-  ]
-}

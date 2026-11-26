@@ -1,9 +1,0 @@
-Construct exactly 12 buildings in a 420 m by 360 m simulation-ready urban district.
-Use an organic hierarchical road network with connected branches, sidewalks, about
-17 percent landscaped open space, and roughly two buildings per block. Include a
-commercial core, residential ring, and civic edge. Buildings may range from 3 to
-22 floors with three non-corridor rooms per floor. Use a zoned skyline with about
-35 percent designated high-rises, one landmark, street-aligned key facades, and
-seed 31. Include complete indoor hierarchies, furnishings, high-rise circulation,
-navigation, interactions, deterministic validation, layered OpenUSD, and a portable
-Web Viewer.

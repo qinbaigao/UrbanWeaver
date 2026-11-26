@@ -18,7 +18,6 @@ assets/viewer_lods/
 assets/robots/
 assets/facades/cache/
 outputs/
-analysis_results/**/*.tar.gz
 .cleanup_trash/
 *.sqlite
 *.sqlite-journal
@@ -31,6 +30,7 @@ analysis_results/**/*.tar.gz
 
 # Local research data, paper builds, model weights and service overrides.
 /analysis_results/
+/benchmarks/
 /ppt/
 /models/
 /docs/paper_en/

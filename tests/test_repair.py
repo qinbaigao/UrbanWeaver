@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from cityg.cli import main
-from cityg.evaluation import inject_error
+from repair_fixtures import inject_error
 from cityg.planning import BaselineCityPlanner
 from cityg.repair import (
     PatchEngine,

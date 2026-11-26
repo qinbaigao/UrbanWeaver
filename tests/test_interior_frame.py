@@ -54,7 +54,7 @@ class InteriorFrameTests(unittest.TestCase):
 
     def test_north_south_reservation_capacity_and_compiled_connectors(self):
         spec,program,_=capability_fixtures.InteriorCapabilityTests().fixture()
-        runtime=GenerationPrototypes(load_options(Path(__file__).resolve().parents[1]/'configs/reliability_prototypes.json'))
+        runtime=GenerationPrototypes(load_options(Path(__file__).resolve().parents[1]/'configs/generation_prototypes.json'))
         for side in ('north','south'):
             with self.subTest(side=side):
                 revised=replace(program,building=replace(program.building,profiles=tuple(
