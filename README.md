@@ -6,6 +6,16 @@
 
 UrbanWeaver turns a text brief into a city with connected streets, buildings, floors, rooms and furniture. Its agents exchange spatial constraints across scales, check candidate layouts against the compiled geometry, and can revise a bounded part of a scene. You can export the result to OpenUSD, explore it in the bundled Web Viewer, or edit an existing city. The Python package and CLI are named `cityg`.
 
+![Figure 1. A city overview, two furnished rooms with mobile robots, an office floor plan and street-level interaction.](docs/media/figure1.png)
+
+## Robot delivery across two buildings
+
+A Fetch robot collects a cup in room A403, descends by elevator, crosses the street and takes a second elevator to room B716, where it places the cup on a table. The 72-second scripted demonstration follows the route through corridors, entrances and a marked crossing.
+
+https://github.com/user-attachments/assets/828aa053-e425-4e9c-9de8-03fb6ca75c56
+
+[Media credits](docs/media/credits.md)
+
 ## Generate a first city offline
 
 From the repository root in a Python 3.10 or 3.11 environment, run:
