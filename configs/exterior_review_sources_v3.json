@@ -1,0 +1,276 @@
+{
+  "schema_version": "cityg.review_source_config.v1",
+  "max_total_mib": 2000,
+  "max_file_mib": 128,
+  "providers": [
+    {
+      "repo": "microsoft/Microsoft-Rocketbox",
+      "revision": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+      "groups": [
+        {
+          "id": "Female_Adult_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Adults/Female_Adult_01/Export/Female_Adult_01.fbx",
+            "Assets/Avatars/Adults/Female_Adult_01/Female_Adult_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Adults/Female_Adult_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Female_Adult_05",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Adults/Female_Adult_05/Export/Female_Adult_05.fbx",
+            "Assets/Avatars/Adults/Female_Adult_05/Female_Adult_05.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Adults/Female_Adult_05/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Male_Adult_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Adults/Male_Adult_01/Export/Male_Adult_01.fbx",
+            "Assets/Avatars/Adults/Male_Adult_01/Male_Adult_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Adults/Male_Adult_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Male_Adult_08",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Adults/Male_Adult_08/Export/Male_Adult_08.fbx",
+            "Assets/Avatars/Adults/Male_Adult_08/Male_Adult_08.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Adults/Male_Adult_08/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Female_Child_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Children/Female_Child_01/Export/Female_Child_01.fbx",
+            "Assets/Avatars/Children/Female_Child_01/Female_Child_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Children/Female_Child_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Male_Child_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Children/Male_Child_01/Export/Male_Child_01.fbx",
+            "Assets/Avatars/Children/Male_Child_01/Male_Child_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Children/Male_Child_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Business_Female_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Business_Female_01/Export/Business_Female_01.fbx",
+            "Assets/Avatars/Professions/Business_Female_01/Business_Female_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Business_Female_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Business_Male_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Business_Male_01/Export/Business_Male_01.fbx",
+            "Assets/Avatars/Professions/Business_Male_01/Business_Male_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Business_Male_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Construction_Male_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Construction_Male_01/Export/Construction_Male_01.fbx",
+            "Assets/Avatars/Professions/Construction_Male_01/Construction_Male_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Construction_Male_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Delivery_Male_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Delivery_Male_01/Export/Delivery_Male_01.fbx",
+            "Assets/Avatars/Professions/Delivery_Male_01/Delivery_Male_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Delivery_Male_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Gardener_Male_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Gardener_Male_01/Export/Gardener_Male_01.fbx",
+            "Assets/Avatars/Professions/Gardener_Male_01/Gardener_Male_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Gardener_Male_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "Sports_Female_01",
+          "category": "person_rigged_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "review_notes": "Source-name labels only; clothing, orientation, scale, LOD and natural poses require conversion/review.",
+          "files": [
+            "LICENSE.md",
+            "Assets/Avatars/Professions/Sports_Female_01/Export/Sports_Female_01.fbx",
+            "Assets/Avatars/Professions/Sports_Female_01/Sports_Female_01.png"
+          ],
+          "patterns": [
+            "Assets/Avatars/Professions/Sports_Female_01/Textures/*.tga"
+          ]
+        },
+        {
+          "id": "street_actions",
+          "category": "animation_source",
+          "license_id": "MIT",
+          "source_url": "https://github.com/microsoft/Microsoft-Rocketbox",
+          "files": [
+            "LICENSE.md",
+            "Assets/Animations/all_animations_max_motextr_xy/f_walk_neutral.max.fbx",
+            "Assets/Animations/all_animations_max_motextr_xy/m_walk_neutral.max.fbx",
+            "Assets/Animations/all_animations_max_motextr_static/f_sit_chair_idle_neutral_01.max.fbx",
+            "Assets/Animations/all_animations_max_motextr_static/f_idle_breathe_01.max.fbx",
+            "Assets/Animations/all_animations_max_motextr_static/f_cell_phone_textmessage.max.fbx"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "nesdesignco/FormDrive",
+      "revision": "fbeae1ad2460dc5beafb787657b83fb78b14c7b2",
+      "groups": [
+        {
+          "id": "ford_mustang_2005",
+          "category": "vehicle",
+          "license_id": "CC-BY-4.0",
+          "creator": "Ricy",
+          "source_url": "https://sketchfab.com/3d-models/2005-ford-mustang-gt-26b6b60cf2804370ac3c64424242dc1f",
+          "distribution_source": "Attributed public redistributor, not the original creator",
+          "files": [
+            "public/models/mustang-2005.glb",
+            "public/models/MUSTANG-LICENSE.md"
+          ]
+        },
+        {
+          "id": "tesla_model3_2018",
+          "source_forward_axis": "-Z",
+          "source_meters_per_unit": 0.01,
+          "category": "vehicle",
+          "license_id": "CC-BY-4.0",
+          "creator": "Ameer Studio",
+          "source_url": "https://sketchfab.com/3d-models/tesla-2018-model-3-5ef9b845aaf44203b6d04e2c677e444f",
+          "distribution_source": "Attributed public redistributor, not the original creator",
+          "files": [
+            "public/models/tesla-model-3-2018.glb",
+            "public/models/TESLA-LICENSE.md"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "KhronosGroup/glTF-Sample-Assets",
+      "revision": "f36bfdabd1031c3cf6689a50570b8cdf3678b49c",
+      "groups": [
+        {
+          "id": "CarConcept",
+          "category": "vehicle",
+          "license_id": "CC-BY-4.0-with-logo-notices",
+          "source_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarConcept",
+          "files": [
+            "Models/CarConcept/glTF-Binary/CarConcept.glb",
+            "Models/CarConcept/README.md"
+          ]
+        },
+        {
+          "id": "CesiumMilkTruck",
+          "category": "vehicle",
+          "license_id": "CC-BY-4.0-with-logo-notices",
+          "source_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CesiumMilkTruck",
+          "files": [
+            "Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+            "Models/CesiumMilkTruck/README.md"
+          ]
+        },
+        {
+          "id": "TrafficCone",
+          "category": "traffic_reference_scene",
+          "review_notes": "Two cones, ground and light icon in a reference scene; extract a single cone before placement.",
+          "license_id": "CC-BY-4.0-and-CC0",
+          "source_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/TrafficCone",
+          "files": [
+            "Models/TrafficCone/glTF-Binary/TrafficCone.glb",
+            "Models/TrafficCone/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

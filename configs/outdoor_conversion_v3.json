@@ -1,0 +1,37 @@
+{
+  "schema_version": "cityg.outdoor_conversion.v1",
+  "texture_limit": 1024,
+  "triangle_budget": 40000,
+  "gltf": [
+    {"id":"ford_mustang_2005","category":"vehicle","tags":["sedan","coupe","mustang"],"height_m":1.40,"yaw_deg":90,"triangle_budget":60000},
+    {"id":"tesla_model3_2018","category":"vehicle","tags":["sedan","electric","tesla"],"height_m":1.44,"yaw_deg":-90,"triangle_budget":60000}
+  ],
+  "gazebo": [
+    {"id":"bus","category":"vehicle","tags":["bus"],"yaw_deg":90},
+    {"id":"suv","category":"vehicle","tags":["suv"],"yaw_deg":0},
+    {"id":"hatchback","category":"vehicle","tags":["sedan","hatchback"],"yaw_deg":0},
+    {"id":"pickup","category":"vehicle","tags":["pickup"],"yaw_deg":0},
+    {"id":"ambulance","category":"vehicle","tags":["ambulance"],"yaw_deg":90},
+    {"id":"fire_truck","category":"vehicle","tags":["fire_truck"],"yaw_deg":-90},
+    {"id":"prius_hybrid","category":"vehicle","tags":["sedan","hybrid"],"yaw_deg":90},
+    {"id":"fountain","category":"fountain","tags":["fountain","park","plaza"]},
+    {"id":"playground","category":"playground","tags":["playground","park"]},
+    {"id":"bus_stop","category":"bus_shelter","tags":["bus","shelter","transit"],"yaw_deg":-90,"placement_yaw_offset_deg":90},
+    {"id":"lamp_post","category":"street_light","tags":["modern","light"],"manual_only":true},
+    {"id":"mailbox","category":"small_sign","tags":["mailbox"],"manual_only":true},
+    {"id":"dumpster","category":"street_bin","tags":["dumpster","service"],"manual_only":true},
+    {"id":"gazebo","category":"pavilion","tags":["pavilion","park"],"manual_only":true}
+  ],
+  "people": [
+    {"id":"Female_Adult_01","state":"standing","frame":12,"height_m":1.68,"yaw_deg":90},
+    {"id":"Female_Adult_05","state":"walking","frame":12,"height_m":1.70,"yaw_deg":90},
+    {"id":"Male_Adult_01","state":"walking","frame":12,"height_m":1.78,"yaw_deg":90},
+    {"id":"Male_Adult_08","state":"standing","frame":12,"height_m":1.80,"yaw_deg":90},
+    {"id":"Business_Female_01","state":"standing","frame":12,"height_m":1.70,"yaw_deg":90},
+    {"id":"Business_Male_01","state":"walking","frame":12,"height_m":1.80,"yaw_deg":90},
+    {"id":"Construction_Male_01","state":"standing","frame":12,"height_m":1.80,"yaw_deg":90},
+    {"id":"Delivery_Male_01","state":"walking","frame":12,"height_m":1.78,"yaw_deg":90},
+    {"id":"Gardener_Male_01","state":"standing","frame":12,"height_m":1.75,"yaw_deg":90},
+    {"id":"Sports_Female_01","state":"walking","frame":12,"height_m":1.68,"yaw_deg":90}
+  ]
+}

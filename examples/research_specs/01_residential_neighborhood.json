@@ -1,0 +1,18 @@
+{
+  "name": "residential_neighborhood",
+  "width_m": 620.0,
+  "depth_m": 520.0,
+  "building_count": 20,
+  "min_floors": 2,
+  "max_floors": 4,
+  "rooms_per_floor": 6,
+  "road_width_m": 10.0,
+  "sidewalk_width_m": 2.5,
+  "parcel_setback_m": 5.0,
+  "seed": 101,
+  "zones": [
+    {"name": "housing", "function": "residential", "weight": 0.8},
+    {"name": "neighborhood_shops", "function": "commercial", "weight": 0.2}
+  ]
+}
+

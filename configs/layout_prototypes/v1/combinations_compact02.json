@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "compact_meeting_4",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "4人长边对坐会议组",
+      "intent": "4人长边对坐会议组，保持真实尺寸与通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "meeting_table"
+      },
+      "members": [
+        {
+          "id": "chair_0_0",
+          "category": "meeting_chair",
+          "side": "front",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_0_1",
+          "category": "meeting_chair",
+          "side": "front",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_1_0",
+          "category": "meeting_chair",
+          "side": "back",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_1_1",
+          "category": "meeting_chair",
+          "side": "back",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "meeting_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+        "meeting_chair": "hunyuan_meeting_chair_c6b462e16bab1380"
+      },
+      "asset_roles": {
+        "meeting_table": {
+          "source_category": "dining_table",
+          "rationale": "使用无附带椅子的 2.21m 长矩形餐桌作为六人会议桌，保持原尺寸和材质；仅限此原型实验，不修改正式资产标签。"
+        }
+      },
+      "surface_items": [
+        {
+          "id": "notes",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "notebook",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "cups",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "cup",
+          "count": 2,
+          "placement": "spread"
+        }
+      ]
+    },
+    {
+      "id": "compact_meeting_6",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "6人长边对坐会议组",
+      "intent": "6人长边对坐会议组，保持真实尺寸与通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "meeting_table"
+      },
+      "members": [
+        {
+          "id": "chair_0_0",
+          "category": "meeting_chair",
+          "side": "front",
+          "slot": -1.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_0_1",
+          "category": "meeting_chair",
+          "side": "front",
+          "slot": 0.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_0_2",
+          "category": "meeting_chair",
+          "side": "front",
+          "slot": 1.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_1_0",
+          "category": "meeting_chair",
+          "side": "back",
+          "slot": -1.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_1_1",
+          "category": "meeting_chair",
+          "side": "back",
+          "slot": 0.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "chair_1_2",
+          "category": "meeting_chair",
+          "side": "back",
+          "slot": 1.0,
+          "gap_m": 0.18,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "meeting_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+        "meeting_chair": "hunyuan_meeting_chair_c6b462e16bab1380"
+      },
+      "asset_roles": {
+        "meeting_table": {
+          "source_category": "dining_table",
+          "rationale": "使用无附带椅子的 2.21m 长矩形餐桌作为六人会议桌，保持原尺寸和材质；仅限此原型实验，不修改正式资产标签。"
+        }
+      },
+      "surface_items": [
+        {
+          "id": "notes",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "notebook",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "cups",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "cup",
+          "count": 2,
+          "placement": "spread"
+        }
+      ]
+    },
+    {
+      "id": "compact_dining_four",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "四人紧凑对坐餐桌",
+      "intent": "四人紧凑对坐餐桌，保持真实尺寸与通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "dining_table"
+      },
+      "members": [
+        {
+          "id": "a",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "b",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "c",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "d",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "dining_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+        "dining_chair": "interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3"
+      },
+      "surface_items": [
+        {
+          "id": "cups",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "cup",
+          "count": 4,
+          "placement": "spread"
+        },
+        {
+          "id": "vase",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "vase",
+          "count": 1,
+          "placement": "back"
+        },
+        {
+          "id": "tray",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "tray",
+          "count": 1,
+          "placement": "front"
+        }
+      ],
+      "asset_roles": {
+        "dining_table": {
+          "source_category": "dining_table",
+          "rationale": "家庭客餐厅及员工简餐区的四人餐桌椅，保留原尺寸。"
+        },
+        "dining_chair": {
+          "source_category": "dining_chair",
+          "rationale": "家庭客餐厅及员工简餐区的四人餐桌椅，保留原尺寸。"
+        }
+      }
+    },
+    {
+      "id": "compact_stock_shelf",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "compact_stock_shelf",
+      "intent": "独立功能家具，正面使用空间和入口保持可达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "storage_rack"
+      },
+      "members": [],
+      "asset_bindings": {
+        "storage_rack": "hunyuan_storage_rack_abec0efef93df09e"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "compact_waiting_bench",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "compact_waiting_bench",
+      "intent": "独立功能家具，正面使用空间和入口保持可达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "waiting_bench"
+      },
+      "members": [],
+      "asset_bindings": {
+        "waiting_bench": "hunyuan_waiting_bench_0737097df7deff76"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "compact_storage_cabinet",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "compact_storage_cabinet",
+      "intent": "独立功能家具，正面使用空间和入口保持可达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "cabinet"
+      },
+      "members": [],
+      "asset_bindings": {
+        "cabinet": "hunyuan_cabinet_1d6f2edc53743606"
+      },
+      "surface_items": [],
+      "asset_roles": {
+        "cabinet": {
+          "source_category": "cabinet",
+          "rationale": "室内备品和资料收纳，不改变柜体几何与使用方向。"
+        }
+      }
+    },
+    {
+      "id": "compact_shop_shelf",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "compact_shop_shelf",
+      "intent": "独立功能家具，正面使用空间和入口保持可达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "display_shelf"
+      },
+      "members": [],
+      "asset_bindings": {
+        "display_shelf": "hunyuan_display_shelf_9ec4dc46fb9f0491"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "shallow_dining_four",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "小户型四人餐桌组",
+      "intent": "使用独立的小型真实餐桌，不缩放原长会议桌；长边各两席。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "dining_table"
+      },
+      "members": [
+        {
+          "id": "a",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "b",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "c",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": -0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        },
+        {
+          "id": "d",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": 0.5,
+          "gap_m": 0.18,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "dining_table": "interior_hssd_48d01c71f4d435dcd69def309b239164334a2f6c",
+        "dining_chair": "interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3"
+      },
+      "surface_items": [
+        {
+          "id": "cups",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "cup",
+          "count": 2,
+          "placement": "spread"
+        }
+      ],
+      "asset_roles": {
+        "dining_table": {
+          "source_category": "dining_table",
+          "rationale": "家庭客餐厅及员工简餐区的四人餐桌椅，保留原尺寸。"
+        },
+        "dining_chair": {
+          "source_category": "dining_chair",
+          "rationale": "家庭客餐厅及员工简餐区的四人餐桌椅，保留原尺寸。"
+        }
+      }
+    },
+    {
+      "id": "prototype_restroom_toilet_group",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "prototype_restroom_toilet",
+      "intent": "独立卫生间设施，保留原尺寸与正面使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "toilet"
+      },
+      "members": [],
+      "asset_bindings": {
+        "toilet": "prototype_restroom_toilet"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "prototype_restroom_basin_group",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "prototype_restroom_basin",
+      "intent": "独立卫生间设施，保留原尺寸与正面使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "sink"
+      },
+      "members": [],
+      "asset_bindings": {
+        "sink": "prototype_restroom_basin"
+      },
+      "surface_items": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "river_city_morphology",
+  "width_m": 750,
+  "depth_m": 650,
+  "building_count": 12,
+  "min_floors": 3,
+  "max_floors": 12,
+  "rooms_per_floor": 2,
+  "room_count_strategy": "fixed",
+  "seed": 29,
+  "road_pattern": "landscape_adaptive",
+  "branch_road_ratio": 0,
+  "buildings_per_block": 1,
+  "parcel_layout": "polygonal",
+  "river_mode": "meandering",
+  "river_width_m": 24,
+  "river_bank_width_m": 5,
+  "river_setback_m": 8,
+  "morphology": {
+    "river_amplitude_ratio": 0.11,
+    "river_cycles": 1,
+    "road_warp_ratio": 0.04
+  },
+  "zones": [
+    {"name": "Residential terraces", "function": "residential", "weight": 1,
+     "architecture": {"design_languages": ["paired_windows", "solid_punched"],
+                      "material_palette": ["brick", "plaster"]}},
+    {"name": "Waterfront business", "function": "commercial", "weight": 1,
+     "architecture": {"material_palette": ["glass", "metal"],
+       "envelope_palette": [
+         {"shape": "rectangle", "profile": "straight", "facade_system": "curtain_wall"},
+         {"shape": "ellipse", "profile": "straight", "facade_system": "curtain_wall"},
+         {"shape": "rectangle", "profile": "taper", "top_scale": 0.7, "facade_system": "curtain_wall"},
+         {"shape": "ellipse", "profile": "lean", "lean_x": 0.06, "facade_system": "curtain_wall"}
+       ]}},
+    {"name": "Civic gateway", "function": "public_service", "weight": 1,
+     "architecture": {"material_palette": ["stone", "plaster"],
+       "envelope_palette": [
+         {"shape": "chamfered", "profile": "straight", "facade_system": "punched"},
+         {"shape": "hexagon", "profile": "taper", "top_scale": 0.75, "facade_system": "punched"}
+       ]}}
+  ]
+}

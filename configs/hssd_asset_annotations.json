@@ -1,0 +1,3396 @@
+{
+  "schema_version": "cityg.hssd_annotations.v1",
+  "candidate_registry_sha256": "7b484dc2b310ee8366f248efdb04e93d907cfffe5d35fe48c2029491dec9058a",
+  "max_trial_triangles": 120000,
+  "smoke_asset_indices": [3, 22, 27, 36, 42, 59, 63, 71, 132],
+  "review_method": "assistant_visual_inspection_all_132_four_view_previews_plus_17_top_oblique_previews",
+  "materials_are_visual_estimates": true,
+  "production_registry_changed": false,
+  "assets": [
+    {
+      "review_index": 1,
+      "asset_id": "interior_hssd_3c2d7e1f16920bc1ba22f34ef1409f392c66bbbb",
+      "output_sha256": "a4bb8c4ce99c27c63be4bb38664e943a0419249f5511fc58328345908d79738e",
+      "preview_sha256": "98f63f8f30b4018f918588c755508e17d44af96164af8a210f0874bdf1abf99c",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "white"
+      ],
+      "material_appearance": [
+        "metal",
+        "fabric"
+      ],
+      "note": "装饰金属床架，含枕头与被褥；床尾为正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 2,
+      "asset_id": "interior_hssd_e91f9db75c0e3679b4bdd1d012ceb0819bb287f5",
+      "output_sha256": "a3c3ffc954e0c1dfcce63a29218dafa0073d59e15449fd9a321304ee3f509b62",
+      "preview_sha256": "dd5f6fe1543854db13618af3a0fa307597e8ec5d9059a2f21e31cd8efaf650a2",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "低平台木床，含床品；床尾为正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 3,
+      "asset_id": "interior_hssd_02e22ed56270338bef5f8436e82023c36cd29104",
+      "output_sha256": "88978fe57c7a92b1d4b19527892f72d37d1483ae9415f1efc0cf178620a53adc",
+      "preview_sha256": "8c3e743f109e07e84c4975fc967275ee8e6efb2e3139170cac01327de986f200",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "material_appearance": [
+        "painted_wood",
+        "fabric",
+        "metal"
+      ],
+      "note": "白色低平台床，含枕头、搭毯。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 4,
+      "asset_id": "interior_hssd_083090369fb48b0329122df572d2676e7c4bd77d",
+      "output_sha256": "5d318e37de08b341d8ce27b84088b4e935a45f315ec446518580bd4ab7e53948",
+      "preview_sha256": "f5f3bb1f5324962d0df93af97168a10eba6841d8368e1c96dcb893b4502a9b92",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "minimalist",
+      "colors": [
+        "brown",
+        "blue",
+        "white"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "低平台双人床，床尾朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 5,
+      "asset_id": "interior_hssd_3f9e16dc68b30223b1a417a40395f1823318fb3c",
+      "output_sha256": "1329c5da94f64540b1ba830bab0e74ebdb113e77482ca0be81293bbfb7e3ba97",
+      "preview_sha256": "c96dfec5201249dec9817cac5c945f668b9f026027cd9eba482e1009d2f087c5",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "储物床，床头床尾板完整；不支持抽屉开合。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 6,
+      "asset_id": "interior_hssd_051239c63082d6b0cda8ef2db8be17d840be44bc",
+      "output_sha256": "12b9fd55da5c8f407f1cbf38081e4fb2e795ec685e6fa163f3f78fd604fb5fbf",
+      "preview_sha256": "12700f48d4bfed377b66e91767cb876f059ab26e66a315ba95a47fcae332367d",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "dark_brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "深色弯曲床架，床品完整，床尾朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 7,
+      "asset_id": "interior_hssd_1a0bcf92df71bfd833ebe43fa86d39ab2f16df78",
+      "output_sha256": "dc8351750b383ba6e4574b254663add9e7bbef8fca53c3fc0dd04230961a73c4",
+      "preview_sha256": "65dd7f5353e3fc44614625d0b3f5e72b32fc8399d28cec3bb2e3818a8fb346c4",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "无高床头的软包床，枕头端相反方向为正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 8,
+      "asset_id": "interior_hssd_58b7f3eee922fe43fe9f6156c0942be5f8e72e96",
+      "output_sha256": "e75ad6eab382933a557c1096279a2f11b6cfb69c0fb0a8d839e64152edd5f5dc",
+      "preview_sha256": "9015c77984943c68366afa1830adbfd6a3f7d45758e793f72e8efb5537a71d54",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "material_appearance": [
+        "painted_wood",
+        "fabric"
+      ],
+      "note": "白色弯曲床架，含床品。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 9,
+      "asset_id": "interior_hssd_5e72623c1e3999e0fab6656621f8f6b23879a5a1",
+      "output_sha256": "55bb3e2447b352a5716667c8d9a9930eb3c71d152219f31aaa755c6c2881dc0d",
+      "preview_sha256": "5596e806b5049cb53861c2d0098a9cbbd7a6a803e8124aa63d54593e671f9082",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "dark_brown",
+        "white"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "高床头双人床，含床品。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 10,
+      "asset_id": "interior_hssd_7c3c32c496d7eb37286ff8ad3ddf5384ba30b2ae",
+      "output_sha256": "ecaceb373455db6d441326b7c390a901788fd504150c51f3241c7c4e448624cd",
+      "preview_sha256": "38d71e89d67bdc20966a220f1378c68b8055bc80c186f07ba8154ffd5c4ac03c",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gold",
+        "gray"
+      ],
+      "material_appearance": [
+        "metal",
+        "fabric"
+      ],
+      "note": "金色栏杆床架，含床品。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 11,
+      "asset_id": "interior_hssd_e2e72c270d6dae987e03d7f2ce4c3e185e51a1fc",
+      "output_sha256": "8a5630330bb125955b6e7b14921748a2a32dcd5bcc283c5fff0d47bf4076ebe1",
+      "preview_sha256": "734a629eba82c7747a70f9d9d55a44a5265f645a089cd13d97f7861e1f6c0b9f",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood",
+        "fabric"
+      ],
+      "note": "高床头床与床品完整；超面数预算待简化。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 12,
+      "asset_id": "interior_hssd_01abb73c808645c18c8ce12e5eef4de115705576",
+      "output_sha256": "7e6682997af28ba0a9d28a28e208aa3d29973c4e89ae148eb5115192ac24e67e",
+      "preview_sha256": "dfc849e8e5254a61118e105df7ba3bd0d6d228abddd82ade93c07dc251f00cf8",
+      "category": "bed",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "minimalist",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "unresolved"
+      ],
+      "note": "仅72三角面的盒状床代理，无细致床品，暂缓高质量用途。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 13,
+      "asset_id": "interior_hssd_df46b2a0ab60e373d6cd05ebc0821b4eb23cf43f",
+      "output_sha256": "4cb8f2dfe4e477dab23757f251a4fa3b3f383d588c88aef4d7d448ff3b4f45a3",
+      "preview_sha256": "0369f3bc864b7f664515a472e8072e4aec7a9676e33b5bd1d1c512ce5ef45bd8",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "black",
+        "tan"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "wood",
+        "metal"
+      ],
+      "note": "软包无扶手旋转办公椅，座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 14,
+      "asset_id": "interior_hssd_87db238f87116521121b0487189975598ab42ae1",
+      "output_sha256": "2bf5574d23c567847fac1410645d92698760b661bb629e8767123d63c1b3cc6f",
+      "preview_sha256": "b9d58d4908ae8434ec0291e8008ed8db8842b3d331c15e26936c5cb73c313819",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "pink",
+        "black"
+      ],
+      "material_appearance": [
+        "fabric",
+        "metal"
+      ],
+      "note": "粉色软包环背旋转椅，座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 15,
+      "asset_id": "interior_hssd_7a23bc370cda8fb322e5f7530618b571c4377947",
+      "output_sha256": "861623062722534dc45a01a5c654a4e708a8984129d90cfd40666aab99703797",
+      "preview_sha256": "8388c00dbd8bc55c96879e3303d76f49abb510a74f5ec63950c8fe3e8886af2e",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "dark_brown",
+        "black"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "条纹软包办公椅，扶手与脚轮完整。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 16,
+      "asset_id": "interior_hssd_0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+      "output_sha256": "0d2f6d26d9215b394cb15c9d110349d3871982fe810cfdbb8ed73da3f0cdcf8e",
+      "preview_sha256": "77a473839e9c849015c4bddef6b97f63f134681f145c88cd65a25b6d1f76f4d8",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black",
+        "silver"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "黑色软包办公椅，功能正面为座位开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 17,
+      "asset_id": "interior_hssd_7617ed327c9075b8716f270fa42de98e6d95dd8b",
+      "output_sha256": "69fc4dfc003e2c0809799296f4f8a4faa6384486732c64116fb877d3fe716289",
+      "preview_sha256": "8ac6731122424d0fc211b8622818d26fcad43616a84bb2c24ba6f4008e1e744f",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "高背扶手办公椅，静态脚轮，不模拟旋转。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 18,
+      "asset_id": "interior_hssd_52c16ad537bb150c79e4a42b24cd17b26c65e922",
+      "output_sha256": "c262ac8a68f4987af3fc45508c6e8b0f2935eb0a475042f1fbb6f4359503b0a9",
+      "preview_sha256": "a880032ff71e1d345a4d71526b3bafc818c676920e7df9cbad549ecfc64019dd",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "white",
+        "silver"
+      ],
+      "material_appearance": [
+        "upholstery",
+        "metal"
+      ],
+      "note": "白色桶形软包办公椅，功能正面为座位开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 19,
+      "asset_id": "interior_hssd_80fe723ff79b7e350b348fe6edfab5ced8a54e89",
+      "output_sha256": "7d5363b366ac5a3e63ab3d3b73b1fa412ae7334b87c521c6fc49793dc7a1780c",
+      "preview_sha256": "49e913f55f8f49ab12369a006601face7705e10c94cad8c07467fe962f8aba6e",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "无扶手四脚木质书桌椅，不是带轮人体工学椅；座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 20,
+      "asset_id": "interior_hssd_3c831f893449a1379205dc5ba28237fe3baaef19",
+      "output_sha256": "2fec0805e46fdea7bf063964877a9bb22125561f244e92a63e1b641f79751159",
+      "preview_sha256": "41c8ece40e8ec95863e887d17344dd18523995779ad013024cbdd2d0c9d1cf98",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "white",
+        "silver"
+      ],
+      "material_appearance": [
+        "upholstery",
+        "metal"
+      ],
+      "note": "白色横纹高背旋转椅；超面数预算。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 21,
+      "asset_id": "interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410",
+      "output_sha256": "08792c3ad44d1fd7a09d972a769dab3ee0a3206e25ebc6b3fefce9c831608105",
+      "preview_sha256": "3c9ac777523849ebe4834bcb6df9fccb06b0aee5c647e07d30f5a520d7b45756",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "wood",
+        "metal"
+      ],
+      "note": "装饰高背办公椅，扶手与脚轮完整。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 22,
+      "asset_id": "interior_hssd_73b1c08116757336da9e7384dcb3d770a9803d8a",
+      "output_sha256": "b7d2666d4412c0b311e553b7a6419f04ca5802c27d1ffe69810c67f64f809adb",
+      "preview_sha256": "31fb75147fb67ad9a5583808ecad9d6d04adc17328cd41efc4a0e35e29c669c2",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black",
+        "silver"
+      ],
+      "material_appearance": [
+        "mesh_fabric",
+        "metal"
+      ],
+      "note": "人体工学椅，头枕/腰靠/扶手齐全。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 23,
+      "asset_id": "interior_hssd_f45a995da28588d8cc7fa62ccbb32e4c81ba7cf8",
+      "output_sha256": "98ee6fb1980f740b33ee0d2fb6615a9e718da4d06438734608ac2a146653a00d",
+      "preview_sha256": "06dadb9325262dac134e01d5e3220e7f65a3eb5b31305145ccb7ae0c52291a91",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "弯曲木壳办公椅，开孔靠背。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 24,
+      "asset_id": "interior_hssd_3c31b64d183be797a5e08e6ddb47535eacde2ba1",
+      "output_sha256": "63e5e0c74dd7df5237720cda20d3958d6e3224905ccf64b5bbfc36b395db9199",
+      "preview_sha256": "3d6e295476af68a2078560356ece8a9bd5de2b5ec1f6486d927e4e3ca5d4cf64",
+      "category": "office_chair",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "纽扣软包高背办公椅，功能正面为座位开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 25,
+      "asset_id": "interior_hssd_ef70ae8ed5ecc9acc9cc786e36b95b366cf95d50",
+      "output_sha256": "ff9ccb5bd0635ae7af50b299efd4d42f51c9fd49d6edf2485cd212b60419879d",
+      "preview_sha256": "86230143661ae60ddb3c7b4e254bf9d6a1dc3f2e4fdaae16ebd560d0ba07fea7",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "minimalist",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "wood_appearance"
+      ],
+      "note": "简单矩形桌，几何较简，桌面纹理可见；前后近似对称，+X 为操作侧约定。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 26,
+      "asset_id": "interior_hssd_4ff19b4fc5d6bca0b021d813bbda70a094b7e982",
+      "output_sha256": "49ad7b0e5c16493b9645a4a40a23021728f9a77f84f5a2d1f59a78f9cfce9633",
+      "preview_sha256": "94c33c2951bc3f1fd7843a0296db6474b0f44c77fa20d889a24f240557f5a7b7",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "scandinavian",
+      "colors": [
+        "tan"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "原木细腿桌，抽屉/开口朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 27,
+      "asset_id": "interior_hssd_b2a15fbf1be55416b27bc7ef9a10d2b22af24376",
+      "output_sha256": "8b54feb5365e1236d8ec02d784d9532484c86f6d33b7c1d2b011af3304c57a98",
+      "preview_sha256": "c48f54b661ff9f7bac744b9d82020f3f4b5e4e5a06e49cee9be03f21ccc418ba",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "painted_wood"
+      ],
+      "note": "两抽屉写字桌，操作侧朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 28,
+      "asset_id": "interior_hssd_b251df69148e02cb9ad8a9118e19b36eca89a06d",
+      "output_sha256": "60fd639b32f70e57528f8007e7592db37eb0c6ca976f8fee43a402a7d2c45e89",
+      "preview_sha256": "36490add4f17b4d862f0a2386cff7066ca9d363d7c7e9242443ebb34c660440c",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "minimalist",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "material_appearance": [
+        "painted_wood",
+        "metal"
+      ],
+      "note": "白色矩形书桌，腿部空间在前侧。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 29,
+      "asset_id": "interior_hssd_7e54244342d7a8716e723311313adf7d5ba1620e",
+      "output_sha256": "4048185f0f5ba32c671ece7ecc33770bd6562d944ff6b8478b4c75757c5669a3",
+      "preview_sha256": "8144f8f1717361b3db14496aa7b625d2785fba67851e5793e2cbaa06da3600e3",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "金属框架写字桌带侧架；正面为腿部开口。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 30,
+      "asset_id": "interior_hssd_d4e0d78439767eedfbf0a3ab83301d472c8c13cf",
+      "output_sha256": "0b2edc9e83b24ab12d79294355cd051eef898f7ab74c45dc6da5ee5a73794d23",
+      "preview_sha256": "faa0b68698f9f069da421b69edf71bdb0c433bc2e7e2eddaed251e33b709d61b",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "black",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "三抽屉细腿写字桌，抽屉面朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 31,
+      "asset_id": "interior_hssd_319c007ee7d07ca84c797a512ad4a98c9abc42da",
+      "output_sha256": "8f00e75b0f0da2f69f5ab5047861e704100a56ec5708fc154ee57e68638ce726",
+      "preview_sha256": "2fe1b1c8bfe81f13ee1edf2a200e7f4e6dc4df64e5996467564f22ab4f31a7d3",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "双侧柜书桌，中央膝部空间朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 32,
+      "asset_id": "interior_hssd_3ebd2c39e2c3215693d253988bb81affbae21f68",
+      "output_sha256": "ddaa490125d1c1db2465993cbd4a9efb5c97f79e8d9707ab753b23a1efff76b3",
+      "preview_sha256": "ffc64a19695fdd7b0b45b62affe210d0811fd525df0fbc06da946197ebf80db0",
+      "category": "desk",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "L形转角桌，支撑区域不能覆盖内凹缺口；只批准独立矩形桌面区域。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 33,
+      "asset_id": "interior_hssd_d160e323f1d5a92394de74865aef8938f986d344",
+      "output_sha256": "6f1861533147bbc03bcd450b7a8f2a13e0ca1d85abf292d0c51c64ec549fa729",
+      "preview_sha256": "f21c6b110bbbd354be5ffa7b8c63624d50358e3b139ce63b018fd6fefee04544",
+      "category": "monitor",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "plastic",
+        "glass_appearance"
+      ],
+      "note": "带底座一体机，屏幕贴图是静态内容。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 34,
+      "asset_id": "interior_hssd_ad9fc592f9942a7e3feaa19a697329bd65bb7ed3",
+      "output_sha256": "85aa2b72cc07c3a45714c846f9c9095c50192b5435f0529e180e9a4004f5e286",
+      "preview_sha256": "ceb642607c69429a2cae3f94d640b034699223305ac7f559144a05963ae75856",
+      "category": "monitor",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "metal",
+        "glass_appearance"
+      ],
+      "note": "带底座显示器，屏幕朝前，贴图静态。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 35,
+      "asset_id": "interior_hssd_878fded4b4bc0dcec55d68a662a89ab81c8f0cd5",
+      "output_sha256": "13bcb5ff528bc2fe24f39c997e6effc08bece9c24294ae550f9908afb92d20ec",
+      "preview_sha256": "e23fd6be5ddedfce911119ebc80f677a11cc88a3b355e986283a2d38d804d700",
+      "category": "monitor",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "edge_clamp",
+      "disposition": "adapter",
+      "front_axis": "+Y",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black",
+        "silver"
+      ],
+      "material_appearance": [
+        "metal",
+        "plastic"
+      ],
+      "note": "悬臂显示器，屏幕在右视图(+Y)；桌边夹具不能按底部落在普通桌面处理。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 36,
+      "asset_id": "interior_hssd_2029bfb9eca4ab612eb6724916cbff472de47d7b",
+      "output_sha256": "7beca598354eadeefd859835d177057d67e27c0cb3486ef5d7444a872782c1cc",
+      "preview_sha256": "5ae6e2383f6d6e1bc655ce8f4d3a3a632906d3e0e59a51b697ecb567afb27b72",
+      "category": "monitor",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "silver",
+        "black"
+      ],
+      "material_appearance": [
+        "metal",
+        "glass_appearance"
+      ],
+      "note": "完整显示器与底座，屏幕朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 37,
+      "asset_id": "interior_hssd_159d8241274cdf8c553cf43e636490086a80ca71",
+      "output_sha256": "87ffa59d6f81782acc557199428770ea8f87a7993922c9811495360b0083a5f8",
+      "preview_sha256": "33ec952e586232a2fc4661abd64d07de1b87653313c64c57f854cf9eae9363e0",
+      "category": "monitor",
+      "room_types": [
+        "office",
+        "study",
+        "open_office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "plastic"
+      ],
+      "note": "52三角面显示器代理，尺寸宽0.96m与名称25.5英寸不一致，需核实尺度及细节质量。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 38,
+      "asset_id": "interior_hssd_c0fa43b54bd550bd1cdb93ef4d97b57ce585fc19",
+      "output_sha256": "9ec3ab40a920131ae6f1f8b04285e1ba8d06013ab0a17233502d9b51e078cc70",
+      "preview_sha256": "3028e7eee835ccb1cecb2caf11601ce59aef06732364d4aaace16d389115d1b1",
+      "category": "laptop",
+      "room_types": [
+        "office",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "white",
+        "silver"
+      ],
+      "material_appearance": [
+        "metal",
+        "plastic"
+      ],
+      "note": "展开笔记本电脑，屏幕/键盘操作侧为正面，屏幕静态。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 39,
+      "asset_id": "interior_hssd_5d337cc247d287cf180c19043cf65d2986c43a26",
+      "output_sha256": "6157da43bef63dc113d743d6a40add97786d1845f8c5a152777e5677a3b5796e",
+      "preview_sha256": "09f7f789cb469f497d155a3ffb903052ec24c3103ca246288fabf3026cea33c0",
+      "category": "laptop",
+      "room_types": [
+        "office",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "plastic"
+      ],
+      "note": "展开笔记本电脑，屏幕和键盘操作侧朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 40,
+      "asset_id": "interior_hssd_57d2b6c1b3bb6903c7683cff9ba9016a8c50ff70",
+      "output_sha256": "5ea525d41018100edd4df71e0daea12e04a2da1c8bdc9ec0e5d9d862d6d7f982",
+      "preview_sha256": "af1e37243eb5c9356794a11f8e5d26c402a7803e4f7ec5a5b12f64553bd12e06",
+      "category": "laptop",
+      "room_types": [
+        "office",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "plastic"
+      ],
+      "note": "展开笔记本电脑，键盘细节较简，操作侧朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 41,
+      "asset_id": "interior_hssd_08a658d2eca1d1dae199eeb03e185e46edf75141",
+      "output_sha256": "f47aa82c86f162b522a882f3dee9f572793058eb552bedd1b3a0a59278028ec1",
+      "preview_sha256": "a65b9e1bca57c3d5e160936957c49035e80724a12b59be2024132c0343914563",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "修正为单人扶手椅，不计作多人沙发。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 42,
+      "asset_id": "interior_hssd_283eae1c113de1b9b3afbd91132de63f7142d1b3",
+      "output_sha256": "3f4bec14339381e5a2571cde246ac0a131cb525f8ee592a2883cf4874a10ec70",
+      "preview_sha256": "a5604a3275ed92606462b6b3411351d104b0753336848c33daa7d5812f7c6431",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric",
+        "metal"
+      ],
+      "note": "三座沙发，坐垫与扶手完整，座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 43,
+      "asset_id": "interior_hssd_7bfcb9b58a388658ecca100cfa81505b50804b17",
+      "output_sha256": "8142f464570e7e40954fb91fde51250c89f403d044c3948c102fa60ce0a22a1b",
+      "preview_sha256": "36e940fe1ed85990daf3ebc2e4b63a3fd148dc2c1090f288f328bfd3c3b2a8e1",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "cream"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "卷扶手双人沙发，座位朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 44,
+      "asset_id": "interior_hssd_baaca368cdf107067f95900df9b48eac00a163f7",
+      "output_sha256": "745a0745fe1e725a17a0746cae2058121855fd5e995e864982003f920b6e0b55",
+      "preview_sha256": "05b57ae982e77dfa864a954afe89b10ef461844a4f1895b80a9030967dc5f1f8",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "green"
+      ],
+      "material_appearance": [
+        "fabric",
+        "metal"
+      ],
+      "note": "右侧贵妃榻L形沙发，包围盒保守占地，未批准座面附加物。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 45,
+      "asset_id": "interior_hssd_d266da3005a4309968c9ea9405b9eca788571408",
+      "output_sha256": "d4f07b661b3a211824b1e7fe1669f5cd5a993936c1e054edb91a4934bc3ae1ca",
+      "preview_sha256": "f9941d583e6f7d4609173bd2a11d8dbbb21846c8ff9baf237109f5a0f6c89f20",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "navy"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "深蓝沙发，圆柱抱枕已包含在模型中。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 46,
+      "asset_id": "interior_hssd_1e2d034bba5bd59a9700af82f907340a83eb4cc3",
+      "output_sha256": "d0cb675f7a69aef4e9c697af52c3479bfb27412486f035eff17a7ca0f0d6cefd",
+      "preview_sha256": "de3712ebe731827813dc3a708b13d30d3135750a707c5e96fad4fcbc0d2c4258",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "棕色三座皮质外观沙发，座位朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 47,
+      "asset_id": "interior_hssd_c2ac5a249ca5897894ae36b08376d35fde7914a3",
+      "output_sha256": "4763f2ba79af496928766eb91adc51c864ab4aee74873e5a502982512d01c8ac",
+      "preview_sha256": "597bcd9740726368ffd5e80869605fa7de82a39d3e740b3341eedf275f592be5",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "大型组合沙发，U形围合，不可按普通两座沙发配额；超面数预算。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 48,
+      "asset_id": "interior_hssd_5386924523286fa156d9397a93cd3f2a7140325d",
+      "output_sha256": "92467871108659582977e956dca53eac8274d45148f835a962054341fd743d90",
+      "preview_sha256": "2d6e6489fda68e2fc23eeb0628e03a45383ead8380c31176e907702b5b505c42",
+      "category": "sofa",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "black",
+        "brown"
+      ],
+      "material_appearance": [
+        "wood",
+        "leather_appearance"
+      ],
+      "note": "木架黑色双座沙发，正面为座位开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 49,
+      "asset_id": "interior_hssd_3aaccfa2eb2d93162748ffc157aa69bae0d4199c",
+      "output_sha256": "49bdb9abf04da52ce7efb7ad0ba6ce8c72f0940796cac726b441963fa1d2deee",
+      "preview_sha256": "acead4478ee083f4fd4a43f1bd6a5692ba0ad8b3b9e4f7c83e6065dac72b5885",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "gray",
+        "brown"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "木架休闲扶手椅，坐垫靠垫完整。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 50,
+      "asset_id": "interior_hssd_816ee2379a92d8dd49a7926a139ebee773fca222",
+      "output_sha256": "eddfb65d10324d58886da47d67f14598c231492cc352a712a186f7cf778f2d21",
+      "preview_sha256": "ddcce50aad6bc7c3424148ba36a04b05a05b120f78f10d2501df14648a5495a0",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "navy"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "圆柱靠枕单人沙发椅，座位朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 51,
+      "asset_id": "interior_hssd_af6886ba991dd80f63054ba20f06de107fa59784",
+      "output_sha256": "d8aa60a3ba832711c0105b2e91dd9325ea808d20e6cdcd5293e1e6159b0a799d",
+      "preview_sha256": "09b59bc5a45a3e11838d51eac5410a457953bb26ff0952aba7bb2f3d4bab8969",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "metal",
+        "upholstery"
+      ],
+      "note": "金属细框扶手椅，小尺寸适于书房接待。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 52,
+      "asset_id": "interior_hssd_4963236bdf446c7fbce6c2290400030dce8c61af",
+      "output_sha256": "797d1435664f8f5778c22dd26422b44daaf83f83fb4f5c8bf4bfbafb6e710f41",
+      "preview_sha256": "f7b2a847c1b2ae3ae86ed0649fde810a01d40dd4db513bb96e7b5af4c551c024",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "cream"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "格纹软垫休闲扶手椅。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 53,
+      "asset_id": "interior_hssd_d48d3a58153e25d8f0fc1b5c65453f3475851a24",
+      "output_sha256": "b8e6fc0691c442068673ec782922a38bdf4dd757c8233219f07177964430f012",
+      "preview_sha256": "828f223818509d87fd04de699ddb7884262df3000d9732f37b733fe6c922c89c",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "纽扣靠背单人沙发，附带侧靠枕。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 54,
+      "asset_id": "interior_hssd_e8e0945e9f720d7b472986924483c661d172794c",
+      "output_sha256": "d721791766d9017043a06e4195a461012b4eb5db011f6b6c79799910250d5db7",
+      "preview_sha256": "0337ae346dea779f28a317f65851c5ee3304906d476c11ef236eecaa9fd5f7ea",
+      "category": "armchair",
+      "room_types": [
+        "living_room",
+        "study"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "高背软包扶手椅，座位开口为正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 55,
+      "asset_id": "interior_hssd_dc0437ee8be91708f3a9311812565d9690a7a352",
+      "output_sha256": "26b263cb3a0a0735c486f1c5173f24aa4dfd2fc842dc3ec81c5563fa92f195e9",
+      "preview_sha256": "62531fa5c928bef1a7eaa9483692f7e091a8ab7b0e436b9ffd1a7afffabf9cf8",
+      "category": "side_table",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "clear",
+        "orange"
+      ],
+      "material_appearance": [
+        "glass_appearance",
+        "painted_metal"
+      ],
+      "note": "C形侧桌，透明竖板与顶面；只从可见水平顶面采样。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 56,
+      "asset_id": "interior_hssd_511f8b2c98de02e7c19f3c0244bd0857888cdf75",
+      "output_sha256": "7755aa2d66482660fcb5a65e8906fb19cd8f2a9c1ca104239331c8bbc237cbc8",
+      "preview_sha256": "3d8d23d29ce8e960a2e7b9cc90e6bb1486d7ed488398975e9e69f1873da42290",
+      "category": "coffee_table",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "mid_century",
+      "colors": [
+        "brown",
+        "clear"
+      ],
+      "material_appearance": [
+        "wood",
+        "glass_appearance"
+      ],
+      "note": "圆形玻璃茶几，径向近似对称，无唯一功能正面。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 57,
+      "asset_id": "interior_hssd_726793309f6eb1fbd6b34ea52de023d78b596903",
+      "output_sha256": "b5872ccc699df90bf67aacd6fed76e5e173585534ad937b366655ac45ba821d1",
+      "preview_sha256": "da2df672747294ae03f26eaecfe3f5cb75b30eb71f6ccf1aa1ee75c5227f53c4",
+      "category": "tabletop_panel",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "component",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "只有桌面板没有支架，修正为部件，不能落地作为完整茶几。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 58,
+      "asset_id": "interior_hssd_1a410a0dd43016b5b8ef47c09fc11d38b8d85917",
+      "output_sha256": "2eb4e945f94e01f412b2dcbe0b6d99fb346c1394863104517a1cd227f8a8f98b",
+      "preview_sha256": "0991f0a81a6213984bc0a65c0f8f4b8170315871e7bff1ac2bcecb00f7ad537f",
+      "category": "coffee_table",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "dark_brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "箱形木茶几，前后接近对称，长边作为接近侧。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 59,
+      "asset_id": "interior_hssd_97084f49c2d3c95c2beae295e3cfeb6913512d3d",
+      "output_sha256": "12d98733bf5755b964ef17c4676c192d0aa530a016c82887677a4de7be0cfd27",
+      "preview_sha256": "975275aa5a40a7518c157d9ddabe7447656d8f1a2c25a10488ca6122a4abadce",
+      "category": "coffee_table",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "斜腿木茶几，长边作为接近侧，顶部矩形。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 60,
+      "asset_id": "interior_hssd_7f98d7f8b92972a8f65e3584626ac02b2c731931",
+      "output_sha256": "964bb0a0f69b0fdbf9b7821443bbd049fd7947dd77320b661966770f70328bff",
+      "preview_sha256": "dcde12754e6e74884a08703833a92f5c2688cacbbf8ab22e87da99801eea93d4",
+      "category": "coffee_table",
+      "room_types": [
+        "living_room",
+        "reception"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "brown",
+        "black",
+        "gold"
+      ],
+      "material_appearance": [
+        "wood",
+        "wicker_appearance",
+        "metal"
+      ],
+      "note": "带开口与储物区的茶几，长边操作面朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 61,
+      "asset_id": "interior_hssd_d2d6e99d58f28f41b8c1208013009ae3c02f8a3f",
+      "output_sha256": "fde6729c7a1ba3acaddf16307b13a3cdb0b80518a21c234c66009fd98da5cc6f",
+      "preview_sha256": "723b6dfd36eae1b0cae334d8431fd44e57ed42eea6d2b2948dc7d4b5ecbac903",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "black",
+        "silver"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "矮床头柜，抽屉把手朝前，不模拟开合。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 62,
+      "asset_id": "interior_hssd_037f34132f162235d80ce46f67c4fa2238d94da0",
+      "output_sha256": "7c9979d6fc78d15143fba35c9e2f59f6fccb19020a94b51b23780fd714040f37",
+      "preview_sha256": "74513b7b55d6758b3d2ddba89a44ca82d2a7f11ad44919b3a202876fde840565",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "金属框木床头柜，抽屉面朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 63,
+      "asset_id": "interior_hssd_84815c44d0b7569cd2c023b75d6f11d21bdb7505",
+      "output_sha256": "b62d51640fae905027cf95a35d3b347aac7658b32f27a5d854a78f9d9aeebf8b",
+      "preview_sha256": "87f6d676723646d8d3cd6ecbbb7db1f21195f6dd3b0d2cd6c509b057dea4e9a1",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "material_appearance": [
+        "painted_wood"
+      ],
+      "note": "带下层搁板的白色床头柜，抽屉朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 64,
+      "asset_id": "interior_hssd_997fbea849da8787d3831c83d614ca2570479c04",
+      "output_sha256": "4fafbeefcf50c0a08c11b346d011db42a27128dfb039f35b533141e59c6ca9d6",
+      "preview_sha256": "7d072b678ade13c5a69aac37cf19695fd1caeaa68dc2559688e12c7fbf9d7b12",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "tan"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "三抽屉床头柜，木纹可见，把手朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 65,
+      "asset_id": "interior_hssd_45c662af829bb97af7d5a4068ff83702f072cff6",
+      "output_sha256": "b3a1d0ff2f2d53f44318c04ccaac9f84af6cfb099b2870adc5a5cdf74dab0e68",
+      "preview_sha256": "0ac4aeb197e43f24cba36b91b8aa727121cb9e0fd5079e0e9d04472867e02102",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray",
+        "gold"
+      ],
+      "material_appearance": [
+        "painted_wood",
+        "metal"
+      ],
+      "note": "双抽屉床头柜，把手朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 66,
+      "asset_id": "interior_hssd_35356739cd0ed57bce029e485ee137fb3061b600",
+      "output_sha256": "45346c2278fed3727eee8d1b17169e595c7bba24fc72c5d74a5ac9ca208f7460",
+      "preview_sha256": "677b6457045abff29f8b7afa701cf20717169364e3894e35e5b9f92c6dba0b20",
+      "category": "bedside_table",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "木床头柜带斜金属腿，开槽抽屉朝前。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 67,
+      "asset_id": "interior_hssd_3a48ae6d5886879be81acaec677cbd8cdbd3f2db",
+      "output_sha256": "b9d8bbe1ee1cb166b4d415d8625b49528e748f964f7ccd2ba7748fd33d654430",
+      "preview_sha256": "9784bf48a441d4083171b33ad030e934247f3f2d625a7f4aa8009739fdb2ee08",
+      "category": "wardrobe",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood",
+        "mirror_appearance"
+      ],
+      "note": "大型多门衣柜，镜面/把手朝前；超面数预算。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 68,
+      "asset_id": "interior_hssd_19bc84c6aca89995b69259a0ec179eaa5532ba2b",
+      "output_sha256": "82fa78ffd03ee91aaf19b2129497338f03d4e4ff74878731436724a6da152e48",
+      "preview_sha256": "711dbfa7e197c7341cb6c4b37b39c15ca50aa18541cadb612a2350edcdcdec7e",
+      "category": "wardrobe",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "三门木衣柜含抽屉，门面朝前，静态关闭。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 69,
+      "asset_id": "interior_hssd_12279170351af560f40ced884359cc539984e111",
+      "output_sha256": "94126e248cdbb26eb4f9760560e4763f8faf84ddb26b652b1b6c2365023c86b3",
+      "preview_sha256": "c603da72411ed9200bbd86c327b02cf928f18a54eb52e0d4cdfae67dfaa77f66",
+      "category": "wardrobe",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "minimalist",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "material_appearance": [
+        "painted_wood",
+        "mirror_appearance"
+      ],
+      "note": "双门衣柜，窄把手一侧朝前，镜面需室内反射验证。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 70,
+      "asset_id": "interior_hssd_b7cbd0dfb550c5c53d1fd17401018d8b0aa4a216",
+      "output_sha256": "3122fba408259bcbc2f5e097d8800a41fe464cdbc821d6a5fc947c5e57044f29",
+      "preview_sha256": "06d50b27e022f22eb5fbab7e5ed974a0059df2b85539f5e1a49bc110b70a5495",
+      "category": "wardrobe",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "宽高约3m的大型衣柜，需要足够层高与占地，不应压缩至普通小柜。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 71,
+      "asset_id": "interior_hssd_3a2f0856e56373e215107682721c8c03e90a095f",
+      "output_sha256": "6fe7db62f64b287480b907dd4c8c6a5e0a5ba5d0b9f74f1e47b0d8e24a128979",
+      "preview_sha256": "3bb0649ba64daf45d9bf6bcff49a7b09df87c496f8917a2df254de34646ec978",
+      "category": "bookcase",
+      "room_types": [
+        "study",
+        "office",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "industrial",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "metal"
+      ],
+      "note": "开放低书架，前后可接近，无唯一正面；逐层校验净空。",
+      "support_policy": "shelves"
+    },
+    {
+      "review_index": 72,
+      "asset_id": "interior_hssd_0de5288928717b30ef111c44a6af982247c279b6",
+      "output_sha256": "821c7ed1bf14e3a1777468ab8b148b89573001cb5ed230d5174c3587cdd5bcfa",
+      "preview_sha256": "07e73cbc66699e265e9af197d6e478b720ba6edc23e1cd4347254e4e1fa377aa",
+      "category": "bookcase",
+      "room_types": [
+        "study",
+        "office",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "上部开放层板，下部关闭柜门，开放面朝前；柜内空间不批准放置。",
+      "support_policy": "shelves"
+    },
+    {
+      "review_index": 73,
+      "asset_id": "interior_hssd_35ff2628904bd14e45e19a53729843507f3d8829",
+      "output_sha256": "98e180d91cce8ab5649ea02335924d4cf347e6a9c8bd08cd3e7eda6686ad9317",
+      "preview_sha256": "8d6cb57959b16f5097d0f3aae36128dff758be203e7fa3753c5fe32f3a7e5ddd",
+      "category": "bookcase",
+      "room_types": [
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "playful",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "material_appearance": [
+        "painted_wood"
+      ],
+      "note": "房屋形儿童书架，多分隔槽；适合儿童卧室，不能跨隔板批准整块支撑面。",
+      "support_policy": "shelves"
+    },
+    {
+      "review_index": 74,
+      "asset_id": "interior_hssd_44641367282a6a9616c91439944d4160a0e6f66a",
+      "output_sha256": "a57c2344819b70f8b935b0ddfcbe353cbb3d2c95c18978941330059ca0626161",
+      "preview_sha256": "a001e3ddcbca731bd52a2f527004fd782f42cb1e5cf368fbcb02ce00c60434f9",
+      "category": "bookcase",
+      "room_types": [
+        "study",
+        "office",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "层板式书架，开放方向朝前；层内净空需几何核验，不能把正面板当容纳空间。",
+      "support_policy": "shelves"
+    },
+    {
+      "review_index": 75,
+      "asset_id": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+      "output_sha256": "7d030ff1429cdc3df4e725c5be874db67a9a51cf62eed84d7d03ba0bc69cf443",
+      "preview_sha256": "d7e3ad39c8a25471e0af88669d7af3e4e4361edc6767ac32ad9730cceabd2444",
+      "category": "dining_table",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "stone_appearance",
+        "metal"
+      ],
+      "note": "大理石外观矩形餐桌，长边为接近侧约定。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 76,
+      "asset_id": "interior_hssd_48d01c71f4d435dcd69def309b239164334a2f6c",
+      "output_sha256": "2aa691d2123aa65e2bd67af89d7d635d567709e68bbba5c14859bc21566a32f6",
+      "preview_sha256": "7f22910911d5d40d4bb37fa1fa7308aad6103e41adbfa709a85255d1f2c93867",
+      "category": "dining_table",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "rustic",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "四脚木餐桌，长边为接近侧约定。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 77,
+      "asset_id": "interior_hssd_624582512f10cf3295b68b658ba624352107f9c6",
+      "output_sha256": "19a993aca4b38b720cf1da6b698d290d7e5cb160d76f9aed26cc5153044e2152",
+      "preview_sha256": "7cf79967a621d7f07abac990ac0e9f09cc960dd0d146a4738b21b88cc7bc7390",
+      "category": "dining_table",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "细腿矩形餐桌，长边为接近侧约定。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 78,
+      "asset_id": "interior_hssd_9c4a2899547a09f196bf87e368cc7835e035462d",
+      "output_sha256": "907872f0b3152f767f3b2ee9372f8835cf5490ba56c20003f826e313610c89a3",
+      "preview_sha256": "a9cd5d613299ea9b8d2bbf19e3a64b7bb901d2aaecd86750920f13dd22071942",
+      "category": "dining_table",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "stone_appearance"
+      ],
+      "note": "圆形单柱餐桌，无唯一功能正面。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 79,
+      "asset_id": "interior_hssd_8e8f64aba99752d5f817d7878141c1cb5e03f041",
+      "output_sha256": "ff23441ad56be578800dd0111429af6d607a0fd330ab1e21a723c66c5df58193",
+      "preview_sha256": "44250d89f902b1e36966030afca06126eb50e87feb8adea05dded28d0570ef0f",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "brown",
+        "silver"
+      ],
+      "material_appearance": [
+        "leather_appearance",
+        "metal"
+      ],
+      "note": "金属悬臂餐椅，座位开口为正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 80,
+      "asset_id": "interior_hssd_0f7a276a53918f4a7fc11df71ac9c3d214000e52",
+      "output_sha256": "08bb9c5c37d8cd474b4e25b5224edf930ed0a7ed811bd2b1f87f6acdd7948d2d",
+      "preview_sha256": "dcc44172675886d1bfc92b723258d280e5a5b17d674b857b7aac21355b4ba968",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "brown",
+        "cream"
+      ],
+      "material_appearance": [
+        "wicker_appearance",
+        "fabric"
+      ],
+      "note": "藤编餐椅带软垫，背面系带，不作为前向。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 81,
+      "asset_id": "interior_hssd_f0cb0140f0cfbebc78cd1b95c66bedc70d12f48f",
+      "output_sha256": "cff3247561aa157cef5b42b9d41abec71ec1f4cd01aa2b02238ee1ce5a00ceb1",
+      "preview_sha256": "d1d7a885580e2d18537104e0026cb3052c342337afc82183254b8053c1a4d0d8",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "navy",
+        "brown"
+      ],
+      "material_appearance": [
+        "fabric",
+        "wood"
+      ],
+      "note": "格纹软包餐椅，功能正面为座位开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 82,
+      "asset_id": "interior_hssd_835d1f051b145e7a7c0eed5163ec9939d7ef2244",
+      "output_sha256": "33a70ef82219a0c73ce1cd9ef25bb05a9be44aa0705205ece33b3874ce91ee00",
+      "preview_sha256": "dbea2a0ecc3769b6b925f5bd549fb6583cb8d084b44fedae724c790e8a395112",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "material_appearance": [
+        "plastic",
+        "metal"
+      ],
+      "note": "白色曲面壳餐椅，座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 83,
+      "asset_id": "interior_hssd_d582c45ed97d66f52ed7acbe62b7ab5f953ccdbe",
+      "output_sha256": "dd25b8498ae44ea742ac25e4f4759f613e38da26af6bd981c6a8f3195ae490ac",
+      "preview_sha256": "719720c7924c8e308bbd72cdda96390693df7d759cc04c188e6e01f1119c92ae",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "modern",
+      "colors": [
+        "white",
+        "silver"
+      ],
+      "material_appearance": [
+        "plastic",
+        "metal"
+      ],
+      "note": "白色壳体与金属网架餐椅。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 84,
+      "asset_id": "interior_hssd_2f8b1869ffc23806afac2e98ecc61cffb6c94ffc",
+      "output_sha256": "851f05b3e51dd90e6f008aeeef70a5e3969783bae879cce99936a518d53c7cde",
+      "preview_sha256": "7fd0a0b266ae52b555a06d93c9288ae6b4d67723de9e8b1728cb86a20ca80617",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "upholstery",
+        "wood"
+      ],
+      "note": "高背软包餐椅，座位朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 85,
+      "asset_id": "interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3",
+      "output_sha256": "10526a988d6d69cfd41945ecc138a1f416a1080267cefb8690cfe43b56bc0559",
+      "preview_sha256": "4997abf399365f7f93ae5ef47d6e50583240914e07404f134082455099fafe98",
+      "category": "dining_chair",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "scandinavian",
+      "colors": [
+        "brown",
+        "silver"
+      ],
+      "material_appearance": [
+        "wood",
+        "metal"
+      ],
+      "note": "弯曲木壳餐椅，座位开口朝前。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 86,
+      "asset_id": "interior_hssd_bf3c644c0686ef3f380f199a533d65d5d71e8bf0",
+      "output_sha256": "059558ecb70fb75646710434721aa63e09e60cc88951e88205e388d53b4d4fec",
+      "preview_sha256": "6af14c258e995946cda1148f40a6f1658af4319b91fb223d9460a25b8ed6f937",
+      "category": "dining_table",
+      "room_types": [
+        "kitchen",
+        "break_room",
+        "living_room"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "mid_century",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "来源误标餐椅，实为完整矩形餐桌；长边为接近侧。",
+      "support_policy": "top"
+    },
+    {
+      "review_index": 87,
+      "asset_id": "interior_hssd_99dd187aec261a2904876ab4905999006561d91b",
+      "output_sha256": "4cf38ff094018b71e91d0b3c67f3e35dc0b94d994cd5df2664f501bff5a666c3",
+      "preview_sha256": "15bfafb52ce5b48b9fd309fc3acbeaf5f3db09f986af79860d49961dd3ccb952",
+      "category": "table_lamp",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "classic",
+      "colors": [
+        "cream",
+        "gold"
+      ],
+      "material_appearance": [
+        "glass_appearance",
+        "metal"
+      ],
+      "note": "装饰彩玻璃桌灯，不是定向办公任务灯；不自动发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 88,
+      "asset_id": "interior_hssd_50ef9408c11977196f547747b29399c83634454d",
+      "output_sha256": "eb2836d3aad35faa1c07b475f97b3d34e5f0240d0b4b4e0e110fedd585b0680e",
+      "preview_sha256": "92f75d2d30adcdecb5367c5417ae111e9bbd4f214b9b22441949fbe26c7464ea",
+      "category": "table_lamp",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "fabric"
+      ],
+      "note": "葫芦形陶瓷台灯，非定向任务灯，不自动发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 89,
+      "asset_id": "interior_hssd_b728919209b8c5814a281fa82aba7bdaa9a9f298",
+      "output_sha256": "b5647e689947ba76be40e80aafc42612e33c035cb8099f1aa32e772e579bab9e",
+      "preview_sha256": "ee6a07bdeb92f078f6c6c90e35107233ff91df1f333dbc51a82e454272623420",
+      "category": "table_lamp",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "brown",
+        "gray"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "fabric"
+      ],
+      "note": "陶瓷座装饰台灯，径向近似对称，不自动发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 90,
+      "asset_id": "interior_hssd_560443a642c173e4d2c753085d108981e1f2e9a8",
+      "output_sha256": "6507cffbcf40f44ded14a51b5117ad1f3e900b2c7434cba6262fa888629d7fe2",
+      "preview_sha256": "6fe1176e14ab4e7f9d8aee8a989dfe450666ec718f171b6a3a905b1686fe1aa3",
+      "category": "table_lamp",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "cream",
+        "brown"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "fabric"
+      ],
+      "note": "高装饰台灯，需约0.88m上方净空，不自动发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 91,
+      "asset_id": "interior_hssd_a9f241205d5f66e51cc7e86b70a0f803c5478593",
+      "output_sha256": "87c436a34fa0da66a8f489e9a588e9fa174dfcf3457580939b7b7446f76e39ac",
+      "preview_sha256": "5b21419d248f3dce8ffaabd52165a82b8871bd47ab86268937a84fbdb63237be",
+      "category": "floor_lamp",
+      "room_types": [
+        "living_room",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "gray",
+        "silver"
+      ],
+      "material_appearance": [
+        "fabric",
+        "metal"
+      ],
+      "note": "细三脚落地灯，灯罩无唯一正面；静态不发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 92,
+      "asset_id": "interior_hssd_53770753734340d05993ba2467793b29f0b74d8b",
+      "output_sha256": "79733f3b411d66c5b6e59a098479d0c9b090d912b767f3bdc9c3902471add0e9",
+      "preview_sha256": "90e2382756b24c54246558a688e9d05e813efb0960168c4d66f463fa462ca7d5",
+      "category": "floor_lamp",
+      "room_types": [
+        "living_room",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "metal"
+      ],
+      "note": "三脚摄影灯样式落地灯，灯头开口朝 +X；不自动创建光源。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 93,
+      "asset_id": "interior_hssd_2b868ad66501c720e2fd22c9a109f02e4e063f7b",
+      "output_sha256": "4168e2af3e524c283199c74aa6da4a08db611fbf1c8c5e65165de84547c1ad9a",
+      "preview_sha256": "54868452d0ca8b160411dd45c239108f1926f393ba192989c9c600346fd4aab4",
+      "category": "floor_lamp",
+      "room_types": [
+        "living_room",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "industrial",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "metal"
+      ],
+      "note": "弯臂落地灯，灯罩向 +X 延伸，底座居后；占地含悬臂。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 94,
+      "asset_id": "interior_hssd_93d275dc13cbd29a8f7a9b4d8089e512edb2f45b",
+      "output_sha256": "376a32920e9f67393f17f4bc22d9c91555d67a600f812064eb0b696880b35d3a",
+      "preview_sha256": "7bf6cf61932322638a74a43f07c861d16e302a122c0adf9585661a1875527cfe",
+      "category": "floor_lamp",
+      "room_types": [
+        "living_room",
+        "study",
+        "bedroom"
+      ],
+      "placement_kind": "floor",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "minimalist",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric",
+        "metal"
+      ],
+      "note": "直杆圆底落地灯，无唯一正面，不自动发光。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 95,
+      "asset_id": "interior_hssd_cc5e73d30c7094c1106bc01dd75198ea6d42add0",
+      "output_sha256": "1887180049756ead99febb3f70b60f9d555b152b888349ce03abf49025b5df6d",
+      "preview_sha256": "ac575afa55bebc719825b84d1b0783a92ff799fb9b77a6f1417146bcae6104e5",
+      "top_preview_sha256": "0dfaa04269b3189c37f86989d3cfd38cc347d0bee2fbac7cb57efae40399ba5c",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "white"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "平铺地毯，不能作为阻挡家具；补俯视核对花纹。俯视为浅色菱形线条纹。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 96,
+      "asset_id": "interior_hssd_5dd8390c22a92ae3613788ab5ab7f71ea0d39f91",
+      "output_sha256": "07deade2b5b112c4912e4499ffaf2d49969f76875c8ce94fd808933674401e58",
+      "preview_sha256": "697824f62237b75d23f3d607335f776c22e576b3817e79e572742ccf054b3590",
+      "top_preview_sha256": "4ee84d4bc092537dacb9b264a3d4d10e7e91e9931adf6a61242544f7b6c357bc",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "minimalist",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "平铺黑色地毯，需地面覆盖层逻辑而非家具碰撞盒。俯视为深色纯色织物。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 97,
+      "asset_id": "interior_hssd_d661377af7c813d50d180dd2b5696b64eee5949c",
+      "output_sha256": "d981faeaf80bfe551ce60554f4ce8c3d609b5a638d011f9eb380f86713819ec1",
+      "preview_sha256": "1fdd2c4a4ca2fb354cd695ac626e68f181cbbf61c0878c7e1ba8a28864019807",
+      "top_preview_sha256": "d96c6d245b4e44afd633b547fb9436d76f233c9e12397ddb478f64770c4687f1",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "平铺灰色地毯，需覆盖层逻辑与俯视复核。俯视可见深色斑驳纹理。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 98,
+      "asset_id": "interior_hssd_f200bfd1a62d3d18ae73e0006eaf1c09da084d0d",
+      "output_sha256": "09100dd8354f6bc27da1659746cfbeca1dd8fcce8b662b59396f7c8fa5129e73",
+      "preview_sha256": "4c8aaeba8bdfdd9b2570313df7773820cc77a89c71a8882b53d071b46131c37a",
+      "top_preview_sha256": "2c715051460487933dd065d3108035092ed4b5ccced2344ca1fb5bde32b6d322",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "red"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "红色绒毛地毯，超面数预算且需地面覆盖层。俯视红色绒毛轮廓完整。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 99,
+      "asset_id": "interior_hssd_cedadc462593d61a36ca5d0f9856b44b73866e48",
+      "output_sha256": "3b61afc12291f2cf57782237d2d85fbbb38f738aa0021aac135aac8240ee9709",
+      "preview_sha256": "5b89fcd9492643c590a51b7594953f0ee4fe3590b9fc45aae1ac56c6fd0e9dcf",
+      "top_preview_sha256": "19dc8a04baf017ec9b3f4b4c35ce4f7222e90b4870a921ee16f081921ed5748a",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "平铺灰色大地毯，3.2m长，需地面覆盖层。俯视为灰色几何菱形图案。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 100,
+      "asset_id": "interior_hssd_fd44c64cf80ccae4d9cd39b111d56cadb41a3ac5",
+      "output_sha256": "85227b8f0ce03a7e2d0ff35a75aa02a6ff85aead61b401bdb1b555939d885384",
+      "preview_sha256": "9aba72e161dc9b3bd05afb44f3f2e42308f0ba51f405e033adf2b488d6af658f",
+      "top_preview_sha256": "b73519d86871169ee486e88f5b7573b0fd2a36fbf191564b01a647bf556f897b",
+      "category": "rug",
+      "room_types": [
+        "living_room",
+        "bedroom",
+        "study"
+      ],
+      "placement_kind": "floor_overlay",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "blue",
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "平铺蓝灰地毯，需地面覆盖层。俯视为蓝灰重复折线图案。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 101,
+      "asset_id": "interior_hssd_993ff1199d078cae6b4da93bd2247b3a3fa72b89",
+      "output_sha256": "afdc1292d3f576651a435d13e340c002151b1d29292db93fb312dec2759e80d4",
+      "preview_sha256": "8b5428a36eb21dd0ed75573eb54dbe8d8f65ae94cf561c49e11b3c14a95825a2",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "tan"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "矩形抱枕，源模型倾斜竖立，需要座面+靠背双重约束。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 102,
+      "asset_id": "interior_hssd_f7da57b5fb990420ede600ef329670fda0731955",
+      "output_sha256": "eb70fcf59dc4a5b4466dd8b4080de7e98e133c76eb64d3683e8002946846a6d8",
+      "preview_sha256": "3b7650837daa102445a3e6591e3c6583f4556a0627d9bd1ba59365ca5eee39d2",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "倾斜竖立方形抱枕，不可当作自由站立小物。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 103,
+      "asset_id": "interior_hssd_f1d6e648da6a766b84a7a0c5b3f9df93a09a1579",
+      "output_sha256": "3858da8bff2c6df87c0ae2b55ef69f7bb035ae2fc0ab407b5d95469459a4e844",
+      "preview_sha256": "78f51c420ef470b7b6e941dee0cdda10a8ebe51b4eccfad6f31f5e82043bf0f5",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "floral",
+      "colors": [
+        "blue",
+        "cream"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "花卉图案倾斜抱枕，图案正面朝 +X，需软装靠放逻辑。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 104,
+      "asset_id": "interior_hssd_6f7a7d7fb97265c42e9153c06fcb9802555c624d",
+      "output_sha256": "0edcc14987dcdc1d65dbac27d7286ef6363ca8a77f21192543810135df9afe3e",
+      "preview_sha256": "e7a990cb63721bc9d650c8551f3876a5d84888d3518a95f2c8cd86c2c5f917e0",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "floral",
+      "colors": [
+        "cream",
+        "pink",
+        "green"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "花鸟图案矩形倾斜抱枕，需要座面/靠背约束。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 105,
+      "asset_id": "interior_hssd_3f0dd5f850d5f769c9f6c409b97a6cb20ceb0ec8",
+      "output_sha256": "d21c444bc342d9e97fa5f867ba3a9d456f9c02abbdafda2d5c141aabb1d104cc",
+      "preview_sha256": "7533c23c0a2871d95a91f07a5d6a1cf2fc1c0b4d75688d3c6785b8e10ca3c2b3",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "rustic",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "编织纹理倾斜方形抱枕，需软装放置适配。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 106,
+      "asset_id": "interior_hssd_fcd46aaa808e6c543dbb7a8992934f721f3f4dc2",
+      "output_sha256": "1e1894f3156307398f1fbdff55262e7beee3a3d44b20a6afb9f01e41f1c31956",
+      "preview_sha256": "065cf73cedf436790d990d2287c09900d1a1bf0c260889b9926bc59c1945e18d",
+      "category": "pillow",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "soft_support",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "blue"
+      ],
+      "material_appearance": [
+        "fabric"
+      ],
+      "note": "结绳状软垫，低矮团簇，需座面/床面而不是桌面软装逻辑。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 107,
+      "asset_id": "interior_hssd_991bae3b8af2a9a110e32138d6a63ae1f038c0bc",
+      "output_sha256": "a1ce588e690165947bc5d8b4bcd52ed6243aa2d5219a9c02bcb8becf661e8433",
+      "preview_sha256": "c65735887cbe1e57c5aa361015df8f2b85fedd13328c21c352b6e5f077251d4f",
+      "category": "toiletry",
+      "room_types": [
+        "bathroom",
+        "restroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "contemporary",
+      "colors": [
+        "cream",
+        "brown"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "修正为浴室牙刷架，不作为厨房饮水杯。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 108,
+      "asset_id": "interior_hssd_5d1f718ed51e63cdf4d69617f849e10ad36f9b97",
+      "output_sha256": "2d763ca104852c97aa5bd39c117081e2ae0de97559a7656e8f9b1bb8feeb31aa",
+      "preview_sha256": "a6bb4839bc02b99697d427bd74d0cc57e9ccf6c9e4227b692491a34a03b85464",
+      "category": "cup",
+      "room_types": [
+        "kitchen",
+        "living_room",
+        "office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "floral",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "蒲公英图案马克杯，展示图案朝 +X；把手朝 +Y，非唯一使用正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 109,
+      "asset_id": "interior_hssd_036edf04844210dae3f5afc59165ad4955b3510b",
+      "output_sha256": "8652995bd4553b3c2a7ce733881bcd006067081afd753f186da2acfb405d28bb",
+      "preview_sha256": "cfc60f22f3992a22450d72b66c0dce9ccd2b7363637d37e01f7b5820a280e939",
+      "category": "cup",
+      "room_types": [
+        "kitchen",
+        "living_room",
+        "office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "playful",
+      "colors": [
+        "white",
+        "pink",
+        "yellow"
+      ],
+      "material_appearance": [
+        "glass_appearance"
+      ],
+      "note": "彩绘高脚酒杯，有底座，不等同办公马克杯；装饰图案，无唯一功能正面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 110,
+      "asset_id": "interior_hssd_9c02c6496d1e3c5cc62b01afc47de32ac9818ed0",
+      "output_sha256": "7c46191329d2c266622d81ac8fad1c0c1820ed1335b9f69bbe4a239904fb1165",
+      "preview_sha256": "d07b3ecebab17eca66b0dac54382b2d426f5b194a18d512142f8ee7263355a1f",
+      "category": "cup",
+      "room_types": [
+        "kitchen",
+        "living_room",
+        "office"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "floral",
+      "colors": [
+        "white",
+        "purple"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "鸢尾花马克杯，展示图案朝前；把手朝 +Y。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 111,
+      "asset_id": "interior_hssd_9bb636b990db93bd65e3b05842bbf256653d3970",
+      "output_sha256": "c1551beb47dce49de72c50039076eb94d3521703d96b2e3b3aebfb3be3c1cb27",
+      "preview_sha256": "70b7b56d3acc444fa834991d690c51b4b943ff49f755d660c2251baed65ec5b2",
+      "top_preview_sha256": "0a6490919bca191042b6610de824d779bc9a177a203da53c1b745451c88cac57",
+      "category": "cutting_board",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "rustic",
+      "colors": [
+        "tan"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "圆形奶酪板，不是餐盘；需要案板类别及平放逻辑。俯视确认圆形木质奶酪板。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 112,
+      "asset_id": "interior_hssd_93107d702eede74e64d4778192f1fce0a8ee2f43",
+      "output_sha256": "7bc8c7bb473e357df935ccb116ce2117f382cbee2baf6c7c18dadff8a51dfab0",
+      "preview_sha256": "0eeadda63815bb34d44131cea7389357cedcd4dfec1c9efc4f4180f8412bc2b6",
+      "top_preview_sha256": "413bbd603344642d9974a01fddc2157ff4e6625932677def240fbbe69ebdcb6c",
+      "category": "bowl",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "green"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "深口沙拉碗，修正为 bowl；不把碗沿当作内部平面。俯视确认绿色有纹饰的碗状开口。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 113,
+      "asset_id": "interior_hssd_bdd5e488098e1e64921b53aacfc8df260e2f898c",
+      "output_sha256": "3cbe183739193f2b84b3997cbb3e376c3b50f00d9ee6c927e61199c651b71e45",
+      "preview_sha256": "be71b26e89aadf7059a5760e6ae622d680b416ead1ea98496d0180078fe0fb98",
+      "top_preview_sha256": "dd80f9fe7176d9164d5307192578526ac8afbc7058ff5ab10ec884ff9abc2f8b",
+      "category": "plate",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "minimalist",
+      "colors": [
+        "white"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "白色浅盘，开口朝上，需餐具类别放置适配。俯视确认白色浅盘。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 114,
+      "asset_id": "interior_hssd_4087db7d03a368aeb48956f358eeee58e0edd7b3",
+      "output_sha256": "30fd4e51fba089cba09e195bbfe44d4085935a948da2297340181e0ec449150c",
+      "preview_sha256": "e8436aeeae2cd3c97e1a4cdf0f91e526e27fd47bdc6cf0e403784aeaafeccf8f",
+      "top_preview_sha256": "61ca5014d30bffcbdc7b79096e0d9bc14d3007ccb7da5b04c2cfc1660befa6e2",
+      "category": "plate",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "green"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "绿色浅果盘，开口朝上，需餐具放置适配。俯视确认绿色浅浮雕花边盘。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 115,
+      "asset_id": "interior_hssd_e4eae29cc79080c718b2050da593ae8a648c0411",
+      "output_sha256": "761434df999f62ddfefd1255fa5438a57a4e58c42c4ef6cdce556f072d98ef74",
+      "preview_sha256": "564796ade3cedd188d67d6f81c24aac4d82a1ca34683ee668ab6face19fc52ea",
+      "top_preview_sha256": "9f788582b3277e5e15f37d8c83424854a82887d9fbf1bb4187bdec7fd6a2a3ee",
+      "category": "decorative_bowl",
+      "room_types": [
+        "living_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "blue",
+        "white",
+        "black"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "wood"
+      ],
+      "note": "带装饰底座的大型蓝白碗，直径约0.41m；作为展示碗而非单人餐具。俯视为蓝白花纹碗口，底部附带展示座。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 116,
+      "asset_id": "interior_hssd_e823268a535d8d7aaaf7db9e7cf769c689e7b4f0",
+      "output_sha256": "caf91469e6e9ffdc6d8f30f2ed8c7f2d5781c411ee803203e7885eed7d1c0068",
+      "preview_sha256": "a278678747705bb7c2ddd7ead87c3e7e6989e2915f9e49354002ec0e887e1787",
+      "top_preview_sha256": "9b8684bc742f39f9c0cb87b16292995057f338d63a97d976a598787eff788bca",
+      "category": "bowl",
+      "room_types": [
+        "living_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "black"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "大型黑色深碗，直径约0.41m；不作为单人小碗，内部不可直接叠物。俯视为深色龙纹装饰碗，应作为大号展示器物。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 117,
+      "asset_id": "interior_hssd_e61f5c2f356c354af2dccff80eb7609b39d19397",
+      "output_sha256": "ecb13eb76a50021712d7bd754587c3cb2e219ca5a47253ef0f0e48d806d0a10c",
+      "preview_sha256": "b75d561543ba64a27301852f5a3611af63f8d104c17a137e553c94d06b286149",
+      "top_preview_sha256": "91dcb05d4751cfb6d3d9d1eaef82ee7aa06d35706166cfb835d1fdb1fd169e93",
+      "category": "bowl",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "green"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "绿色浅碗，口朝上，需餐具类别适配。俯视为无额外物体的绿色浅碗。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 118,
+      "asset_id": "interior_hssd_968e253549f156221a1d7487d8fade0ee8f3c913",
+      "output_sha256": "d384e678894573ec0afdd9759cfb3fac4edd8681768c229af35b08dc17d104c2",
+      "preview_sha256": "7168f2a6969d2cae0097e01dc121001a444b169fb05b1796aa034e9edd004a2c",
+      "top_preview_sha256": "d3f13f9cc146b780e6feafa161d4ea4bb375957543994d055934fa2390f5670b",
+      "category": "bowl",
+      "room_types": [
+        "kitchen",
+        "break_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "minimalist",
+      "colors": [
+        "cream"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "小型奶油色浅碗，开口朝上。俯视为小熊图案儿童浅碗。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 119,
+      "asset_id": "interior_hssd_bc852f5714f9721918177bfa794bb1aabcc9c699",
+      "output_sha256": "04a3795eca73d0d24f7812a8ef8891f436282d9eb869cdfdf8ffe6e4a6e7c42e",
+      "preview_sha256": "c6de39adb03869b99bfc75e258d93f27bf013372ac4716e30905fe13d10eba7f",
+      "top_preview_sha256": "22ae5f5522f261e67107bd2162ae2c9d43026cb4f552332996d594b4ea5c8905",
+      "category": "tray",
+      "room_types": [
+        "kitchen",
+        "living_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "playful",
+      "colors": [
+        "yellow",
+        "red"
+      ],
+      "material_appearance": [
+        "painted_surface"
+      ],
+      "note": "圆形彩绘托盘，口朝上，不自动批准内部支撑。俯视为彩绘圆形托盘。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 120,
+      "asset_id": "interior_hssd_c139234bf8464898e67b064e1726440a3e84b0b6",
+      "output_sha256": "dff68cdfb7971a34bbf010d3969cd152ca6afb78f4050d825322fe0c0ac0cc52",
+      "preview_sha256": "f0cd74a96db58e26a6a31fa2b4fe4bf826f9b0f9e3dc0ce1a4f93ba685832313",
+      "top_preview_sha256": "87032e84cb61f1f521fa89414458eedc74b243c7ee6fb6af6faf527e99c95b37",
+      "category": "cutting_board",
+      "room_types": [
+        "kitchen",
+        "living_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "rustic",
+      "colors": [
+        "brown"
+      ],
+      "material_appearance": [
+        "wood"
+      ],
+      "note": "带刻槽圆形切板，修正为 cutting_board，不把槽纹当平整支撑面。俯视确认刻槽木质切板。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 121,
+      "asset_id": "interior_hssd_2e0db28b9c46cb6952229edcb996bccef7503931",
+      "output_sha256": "eaf08a520441d3c8a9c3d9c02a79627df9332136b70a31c2712bc4e1c43eccaa",
+      "preview_sha256": "bea3d989e5523ede2688c533c49d3a5d16f65982fa64ba98a55ba7e718b5d22f",
+      "top_preview_sha256": "daa3e7bad04de76eddf7b544d1432b6ad0cf814b4f50d6f4b4fc734525c89d8b",
+      "category": "tray",
+      "room_types": [
+        "kitchen",
+        "living_room"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "gold",
+        "black"
+      ],
+      "material_appearance": [
+        "metal"
+      ],
+      "note": "带脚圆形装饰托盘，底部落在桌上，不批准嵌套摆放。俯视为黑色内部、金色边缘的带脚托盘。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 122,
+      "asset_id": "interior_hssd_960ffff978a6c096d2cb191770eca2c8f8597cfb",
+      "output_sha256": "b87b2f689c04e23c028ed5dc59785d873455d69a3c429dd3bf3a3871aaecb145",
+      "preview_sha256": "2823f5cc8ec63363dcfafbe0074ce016c976e1dfb8377a8fd145b1f28229516a",
+      "category": "toiletry",
+      "room_types": [
+        "bathroom",
+        "restroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "-Y",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "copper"
+      ],
+      "material_appearance": [
+        "metal_appearance"
+      ],
+      "note": "蜂窝纹皂液器，泵嘴伸向 -Y；放在浴室台面。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 123,
+      "asset_id": "interior_hssd_8cdf233e568d5b73db3255010cb6b350c9ef1215",
+      "output_sha256": "b00857440f28e1685716f3135dcff0a10f43c7f918893a8f37948e1123b526c1",
+      "preview_sha256": "84773dbb126c0a5504d7fa8874993019f8d1a6685d137df2a9d7f1a0de6addaa",
+      "category": "toiletry",
+      "room_types": [
+        "bathroom",
+        "restroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "-Y",
+      "front_kind": "functional_or_display",
+      "style": "traditional",
+      "colors": [
+        "white",
+        "blue",
+        "gold"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "metal"
+      ],
+      "note": "蓝白乳液瓶，泵嘴伸向 -Y；浴室台面用途。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 124,
+      "asset_id": "interior_hssd_d9eaaf3aafe844aa8494db180d22a53ad2a01f8a",
+      "output_sha256": "d38c390f30a3d41fe4b80f3e523c25ac6fd851508ccee30b44efc6748132a890",
+      "preview_sha256": "ca04720ef166c5bf39e9eaf1d32a755eefc150cb060ea2782c516061143bb4b3",
+      "category": "toiletry",
+      "room_types": [
+        "bathroom",
+        "restroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "-Y",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "material_appearance": [
+        "ceramic",
+        "plastic"
+      ],
+      "note": "白色乳液瓶，泵嘴伸向 -Y，不模拟按压。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 125,
+      "asset_id": "interior_hssd_49f57301139858663f505e18b384bb234935f8c5",
+      "output_sha256": "f54725c056ae0c2c31432daf7cd953089da9780292f470f1000b4fd31d18e44b",
+      "preview_sha256": "ebeb8d85c6ebcb7f43d428c5d898b11812dcac8c8704c6032a96c4cb4d2b5cdc",
+      "category": "toiletry",
+      "room_types": [
+        "bathroom",
+        "restroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "adapter",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "contemporary",
+      "colors": [
+        "gray",
+        "black"
+      ],
+      "material_appearance": [
+        "glass_appearance"
+      ],
+      "note": "浴盐瓶，标签面朝 +X，直立台面摆放，不模拟开盖。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 126,
+      "asset_id": "interior_hssd_612bad3062fe5746cd37ab56be5cd9e855d6f523",
+      "output_sha256": "4957e28bfa6e5034c3c8e74c3e6f4d13c5ebae9b998718296d1c02d8d0868e06",
+      "preview_sha256": "21f8f9c42d3a639473428045bb2348ac47600ef0dcf2e3455b5b7a13321d6790",
+      "category": "small_plant",
+      "room_types": [
+        "living_room",
+        "office",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "botanical",
+      "colors": [
+        "green",
+        "black"
+      ],
+      "material_appearance": [
+        "foliage",
+        "pot"
+      ],
+      "note": "宽幅低盆草丛，几何超预算，先简化。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 127,
+      "asset_id": "interior_hssd_2d25d56f923ece2bdfb3034f620708ace9e0d579",
+      "output_sha256": "029e91b25c09426b39313b80f745749a5a7e92e77e26a2d4cf536a839952be52",
+      "preview_sha256": "63e99401d054d13b5d52670fbef0e628c99071e9e8d831f7db258600d82fdd62",
+      "category": "small_plant",
+      "room_types": [
+        "living_room",
+        "office",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "botanical",
+      "colors": [
+        "white",
+        "green",
+        "brown"
+      ],
+      "material_appearance": [
+        "foliage",
+        "pot"
+      ],
+      "note": "白花与蕨叶组合盆栽，几何超预算，材质较简。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 128,
+      "asset_id": "interior_hssd_bf7a2fdc9c345ac33db72429f5bad9b30852611f",
+      "output_sha256": "6220b5390f5462500e3bf4368500ed6ab1433334db4f7d565a1d73c79d31ff2a",
+      "preview_sha256": "461acca8a74c7a821ec6f9453c5411ae2e0062542de8bf8390daf7529a912e34",
+      "category": "small_plant",
+      "room_types": [
+        "living_room",
+        "office",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "botanical",
+      "colors": [
+        "green"
+      ],
+      "material_appearance": [
+        "foliage",
+        "pot"
+      ],
+      "note": "单盆多蕨叶组合，几何超预算且反射偏暗。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 129,
+      "asset_id": "interior_hssd_f0aefc7dcac192761cf696918086d2a21f9a5ee4",
+      "output_sha256": "634f947e4afa5e00c6750df5e922adc8976975503ae86b8d9999e073f5d6a276",
+      "preview_sha256": "9a1d044036ac3fb0f7b8ec93f8fcdfcf26ace1e73d99e5f83963cb8270c2383c",
+      "category": "small_plant",
+      "room_types": [
+        "living_room",
+        "office",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "hold",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "botanical",
+      "colors": [
+        "brown",
+        "pink",
+        "green"
+      ],
+      "material_appearance": [
+        "foliage",
+        "pot"
+      ],
+      "note": "兰花模型花瓣呈深色稀疏，先核对叶片/花瓣材质再用于高质量展示。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 130,
+      "asset_id": "interior_hssd_1182b246f9dc763f898cf5a47feb003f8905d289",
+      "output_sha256": "624c23951092f71fddda5c2fb3f0b2553663bee04c252c26e077dd55627319a8",
+      "preview_sha256": "d84f917ef559ec43941bdf1ba6cbc0c0ba523855ee42a48adc21a402eacc7648",
+      "category": "vase",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "functional_or_display",
+      "style": "classic",
+      "colors": [
+        "white"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "白色浮雕花瓶，浮雕装饰面朝 +X；不批准瓶口嵌套插花。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 131,
+      "asset_id": "interior_hssd_6dd9e51b58072dbd08fbbdf95ce568aacc47ec59",
+      "output_sha256": "95deca376f0243471260a9c0afce98ce236e4db954367fa9383fd2a92fc1cddb",
+      "preview_sha256": "7897b8576de8acde2de194205da6fb0d116a61a8f07a4ae188c7b769e54ded6a",
+      "category": "vase",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "modern",
+      "colors": [
+        "gray"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "细长水滴形花瓶，径向近似对称，不批准瓶口嵌套。",
+      "support_policy": "none"
+    },
+    {
+      "review_index": 132,
+      "asset_id": "interior_hssd_2d686cdf1b2da2c4b61c629bdefdb4a5c6678168",
+      "output_sha256": "fa1c50481df070a3ffb221f9a2e48926e75f7e449ad98000ea9b11150a28a82b",
+      "preview_sha256": "b095980043041362bdae64896f6b57d50325b3634c6d878b346e791e849c80b9",
+      "category": "vase",
+      "room_types": [
+        "living_room",
+        "bedroom"
+      ],
+      "placement_kind": "surface",
+      "disposition": "trial",
+      "front_axis": "+X",
+      "front_kind": "convention_no_unique_front",
+      "style": "traditional",
+      "colors": [
+        "cream",
+        "blue"
+      ],
+      "material_appearance": [
+        "ceramic"
+      ],
+      "note": "蓝色条纹罐形花瓶，近似径向对称。",
+      "support_policy": "none"
+    }
+  ]
+}

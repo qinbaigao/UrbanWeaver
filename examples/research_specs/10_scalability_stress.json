@@ -1,0 +1,21 @@
+{
+  "name": "scalability_stress",
+  "width_m": 1100.0,
+  "depth_m": 900.0,
+  "building_count": 50,
+  "min_floors": 3,
+  "max_floors": 8,
+  "rooms_per_floor": 12,
+  "road_width_m": 16.0,
+  "sidewalk_width_m": 4.0,
+  "parcel_setback_m": 4.0,
+  "seed": 110,
+  "zones": [
+    {"name": "mixed_use", "function": "mixed_use", "weight": 0.35},
+    {"name": "residential", "function": "residential", "weight": 0.3},
+    {"name": "commercial", "function": "commercial", "weight": 0.2},
+    {"name": "public_services", "function": "public_service", "weight": 0.1},
+    {"name": "light_industry", "function": "industrial", "weight": 0.05}
+  ]
+}
+

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "scope": "Hash-pinned reviewed facility trials; no production registry changes",
+  "assets": [
+    {
+      "id": "prototype_oven",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_00b0d5e167ae6b42666de010025efad4506563f1",
+      "sha256": "eb05d22d975766e15a89e5b64f32d7bfa993dc5d7a80b6a7ef4f62139d6f2151",
+      "category": "oven",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "kitchen"
+      ],
+      "evidence": "Front/oblique/top views confirm freestanding oven with four-ring cooktop; controls and oven door face +X."
+    },
+    {
+      "id": "prototype_pedestal_sink",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_09495c87c9c7c4ad6ab360f67366274aff274f72",
+      "sha256": "4978914a344678a0953b8657d675c77ebba9c50ad6ef3f11ff859749154b3a2f",
+      "category": "sink",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "bathroom"
+      ],
+      "evidence": "Four views show a floor-supported ceramic pedestal basin and taps at rear. User faces back toward -X, access side +X."
+    },
+    {
+      "id": "prototype_fridge",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_1c33bd447d70d4d22116c434d912f1fae78e02b7",
+      "sha256": "c1c73008f421c883cada0b5027a21c65c701c3f09fbef7dbafc5c8454d77c745",
+      "category": "refrigerator",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "kitchen"
+      ],
+      "evidence": "Four views show complete cream refrigerator, doors and handles face +X; original dimensions. No door articulation."
+    },
+    {
+      "id": "prototype_toilet",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_316d7bc87db3c6ee1fdc26601bcda7d18c5110fb",
+      "sha256": "83f2809b7b5b7cbb2321df8e3e34f6ccdea50f952cf263cb79c524a49b0e792a",
+      "category": "toilet",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "bathroom"
+      ],
+      "evidence": "Four views show floor-supported pan, closed lid and rear cistern; front +X. Static appearance only."
+    },
+    {
+      "id": "prototype_shower_complete",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_d0d1e39f55d3c03661b9716a6db1532568711f52",
+      "sha256": "3ca20a1d713b6d24ca0ac599bb1897942ddbfa3df3ce6a61ce1df366bff74d66",
+      "category": "shower",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "bathroom"
+      ],
+      "evidence": "Oblique/top inspected: enclosure, base and overhead shower present; access front +X. Static mesh, door operation and plumbing not simulated."
+    },
+    {
+      "id": "prototype_kitchen_sink",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_edd29c09710bf64c66065b6d884f573bc48682f5",
+      "sha256": "3e777a32fd1a16682875546055e52df71d1137cb02236d3e0f4befb14eae8f0d",
+      "category": "sink",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "kitchen"
+      ],
+      "evidence": "Oblique/top views show a freestanding full-height double-basin cabinet, faucet at back; front +X."
+    },
+    {
+      "id": "prototype_prep_counter",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_f8b8235c6e241b3ef1922a7560736535d9c9219c",
+      "sha256": "c31cfe7161a70f2cb865d923160ae6cca7721fd189f03717bbb5e4bd0ccb14de",
+      "category": "kitchen_counter",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "kitchen"
+      ],
+      "evidence": "Four views show intact black base cabinet with worktop; functional doors face +X. Countertop independently triangle-probed."
+    },
+    {
+      "id": "prototype_checkout_counter",
+      "registry": "assets/asset_registry.json",
+      "source_id": "hunyuan_checkout_counter_29c6eddfed92de8c",
+      "sha256": "470fea18e0fd81d281758c486ed8aab0a7e6eb0c705a71518ae58eb8bd3abb3a",
+      "category": "checkout_counter",
+      "placement_kind": "floor",
+      "front_axis": "-Y",
+      "room_types": [
+        "shop"
+      ],
+      "evidence": "Four views inspected: light customer panel faces -Y; cashier space retained on back +Y. Original monitor and plant part of mesh."
+    },
+    {
+      "id": "prototype_reception_counter",
+      "registry": "assets/asset_registry.json",
+      "source_id": "hunyuan_reception_desk_a6faa4e6f3af8e2c",
+      "sha256": "a76029fea1402defd145d156d8f05631c774c60fba3f27c3f5e7ac1fed815238",
+      "category": "reception_desk",
+      "placement_kind": "floor",
+      "front_axis": "-Y",
+      "room_types": [
+        "reception"
+      ],
+      "evidence": "Four views inspected: light front panel faces -Y toward visitors; staff/monitor side behind it at +Y. Authored accessories retained."
+    }
+  ]
+}

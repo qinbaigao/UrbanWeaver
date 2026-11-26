@@ -1,0 +1,31 @@
+{
+  "name": "city100_balanced_exterior",
+  "width_m": 1400, "depth_m": 1400, "building_count": 100,
+  "min_floors": 3, "max_floors": 20, "rooms_per_floor": 2, "room_count_strategy": "fixed",
+  "road_width_m": 12, "sidewalk_width_m": 2, "parcel_setback_m": 3,
+  "seed": 20260930, "layout_style": "organic_grid", "layout_irregularity": 0.4,
+  "open_space_ratio": 0.22, "road_pattern": "landscape_adaptive",
+  "buildings_per_block": 1, "branch_road_ratio": 0, "parcel_layout": "polygonal",
+  "river_mode": "meandering", "river_width_m": 24, "river_bank_width_m": 5, "river_setback_m": 8,
+  "morphology": {"river_amplitude_ratio": 0.08, "river_cycles": 1, "road_warp_ratio": 0.035},
+  "height_strategy": "zoned_skyline", "highrise_ratio": 0.22,
+  "landmark_count": 4, "skyline_strength": 0.75,
+  "architecture": {"region": "fictional temperate river city", "climate": "temperate", "expressive_ratio": 0.2},
+  "zones": [
+    {"name": "Brick residential neighborhood", "function": "residential", "weight": 0.3,
+      "architecture": {"era": "renovated older neighborhood", "district_character": "ordinary brick housing and courtyards",
+        "design_languages": ["paired_windows", "solid_punched"], "material_palette": ["brick", "stone"]}},
+    {"name": "Modern green residential", "function": "residential", "weight": 0.25,
+      "architecture": {"era": "contemporary", "district_character": "rectangular residential groups and green setbacks",
+        "design_languages": ["shaded_bays", "framed_grid"], "material_palette": ["plaster", "stone"]}},
+    {"name": "Business center", "function": "commercial", "weight": 0.2,
+      "architecture": {"district_character": "mostly rectilinear office towers with selected sculptural accents",
+        "design_languages": ["vertical_piers", "horizontal_ribbon"], "material_palette": ["glass", "metal"]}},
+    {"name": "Civic gardens", "function": "public_service", "weight": 0.15,
+      "architecture": {"district_character": "public buildings with plazas and gardens",
+        "design_languages": ["solid_punched", "paired_windows"], "material_palette": ["stone", "plaster"]}},
+    {"name": "Waterfront mixed neighborhood", "function": "mixed_use", "weight": 0.1,
+      "architecture": {"district_character": "active mixed neighborhood with restrained silhouettes",
+        "design_languages": ["framed_grid", "shaded_bays"], "material_palette": ["brick", "glass"]}}
+  ]
+}

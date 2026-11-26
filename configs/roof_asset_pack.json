@@ -1,0 +1,12 @@
+{
+  "schema_version": "cityg.exterior_asset_preparation.v1",
+  "description": "Poly Haven rooftop service units; explicit component review before promotion.",
+  "provider": "polyhaven",
+  "resolution": "1k",
+  "max_download_mib": 100,
+  "max_runtime_triangles": 100000,
+  "assets": [
+    {"id":"exterior_aircon_unit","category":"roof_hvac","tags":["hvac","aircon","roof","service_equipment"],"contexts":["roof_service_zone"],"height_m":1.2,
+     "variants":[{"key":"clean","nodes":["exterior_aircon_unit"]},{"key":"aged","nodes":["exterior_aircon_unit_rusted"]}]}
+  ]
+}

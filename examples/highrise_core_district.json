@@ -1,0 +1,28 @@
+{
+  "name": "highrise_core_district",
+  "width_m": 420.0,
+  "depth_m": 360.0,
+  "building_count": 12,
+  "min_floors": 3,
+  "max_floors": 22,
+  "rooms_per_floor": 3,
+  "road_width_m": 12.0,
+  "sidewalk_width_m": 2.5,
+  "parcel_setback_m": 4.0,
+  "layout_style": "organic_grid",
+  "open_space_ratio": 0.17,
+  "layout_irregularity": 0.56,
+  "road_pattern": "organic_hierarchy",
+  "buildings_per_block": 2,
+  "branch_road_ratio": 0.8,
+  "height_strategy": "zoned_skyline",
+  "highrise_ratio": 0.35,
+  "landmark_count": 1,
+  "skyline_strength": 0.9,
+  "seed": 31,
+  "zones": [
+    {"name": "commercial_core", "function": "commercial", "weight": 0.45},
+    {"name": "residential_ring", "function": "residential", "weight": 0.35},
+    {"name": "civic_edge", "function": "public_service", "weight": 0.2}
+  ]
+}

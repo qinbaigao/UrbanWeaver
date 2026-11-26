@@ -1,0 +1,1150 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_two_perimeter_desks_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "紧凑双工位",
+      "intent": "两组独立桌椅沿侧墙布置，中间留出共享通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "两组独立桌椅沿侧墙布置，中间留出共享通道。",
+      "reference": {
+        "width_m": 5.15,
+        "depth_m": 4.2,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.25,
+          "depth_m": 3.8,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.05,
+          "depth_m": 4.6,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.25,
+          6.05
+        ],
+        "depth_m": [
+          3.8,
+          4.6
+        ],
+        "area_m2": [
+          16.15,
+          27.83
+        ],
+        "aspect_ratio": [
+          0.923913043478261,
+          1.5921052631578947
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "一侧工位"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "另一侧工位"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_writing",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_writing",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "office_two_back_wall_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "并排双工位",
+      "intent": "两桌沿后墙并排，入口到两张办公椅共用前方通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "两桌沿后墙并排，入口到两张办公椅共用前方通道。",
+      "reference": {
+        "width_m": 4.02,
+        "depth_m": 4.2,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 3.8,
+          "depth_m": 4.0,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.24,
+          "depth_m": 4.4,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.8,
+          4.24
+        ],
+        "depth_m": [
+          4.0,
+          4.4
+        ],
+        "area_m2": [
+          15.2,
+          18.656000000000002
+        ],
+        "aspect_ratio": [
+          0.8636363636363635,
+          1.06
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "左工位"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "右工位"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_writing",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_writing",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "break_two_dining_service_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "双人简餐与靠墙备餐",
+      "intent": "两人就餐、备餐台和封闭储物分别沿两侧安排。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "break_room",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "两人就餐、备餐台和封闭储物分别沿两侧安排。",
+      "reference": {
+        "width_m": 6.47,
+        "depth_m": 5.1,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.15,
+          "depth_m": 4.9,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.8,
+          "depth_m": 5.3,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.15,
+          6.8
+        ],
+        "depth_m": [
+          4.9,
+          5.3
+        ],
+        "area_m2": [
+          30.135000000000005,
+          36.04
+        ],
+        "aspect_ratio": [
+          1.1603773584905661,
+          1.387755102040816
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "双人餐位"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "备餐及存储"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "cafe_table_two",
+          "zone": "west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "pantry_counter",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "storage_mixed_wall_bank_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "开架与封闭储物",
+      "intent": "一组货架和一组柜体沿两侧设置，保留门到柜前的取用通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "storage",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "一组货架和一组柜体沿两侧设置，保留门到柜前的取用通路。",
+      "reference": {
+        "width_m": 6.6,
+        "depth_m": 5.3,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.2,
+          "depth_m": 5.0,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.0,
+          "depth_m": 5.6,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.2,
+          7.0
+        ],
+        "depth_m": [
+          5.0,
+          5.6
+        ],
+        "area_m2": [
+          31.0,
+          39.199999999999996
+        ],
+        "aspect_ratio": [
+          1.1071428571428572,
+          1.4
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "开架"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "封闭储物"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_stock_shelf",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bedroom_single_side_bay_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "侧墙单床与衣柜",
+      "intent": "床头靠侧墙，衣柜布置到对侧。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bedroom",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "床头靠侧墙，衣柜布置到对侧。",
+      "reference": {
+        "width_m": 6.0,
+        "depth_m": 3.83,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.8,
+          "depth_m": 3.65,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.2,
+          "depth_m": 4.0,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.8,
+          6.2
+        ],
+        "depth_m": [
+          3.65,
+          4.0
+        ],
+        "area_m2": [
+          21.169999999999998,
+          24.8
+        ],
+        "aspect_ratio": [
+          1.45,
+          1.6986301369863015
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "睡眠"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "衣物"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "sleep_single",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_wardrobe",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bathroom_wash_wc_bay_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "分侧盥洗与如厕",
+      "intent": "分侧布置洗手盆与坐便器，预留门口通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bathroom",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "分侧布置洗手盆与坐便器，预留门口通道。",
+      "reference": {
+        "width_m": 5.97,
+        "depth_m": 3.35,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.75,
+          "depth_m": 3.15,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.2,
+          "depth_m": 3.55,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.75,
+          6.2
+        ],
+        "depth_m": [
+          3.15,
+          3.55
+        ],
+        "area_m2": [
+          18.1125,
+          22.009999999999998
+        ],
+        "aspect_ratio": [
+          1.619718309859155,
+          1.9682539682539684
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "如厕"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "盥洗"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "bath_wc",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "bath_basin",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen_compact_wash_prep_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "紧凑洗备与储物",
+      "intent": "沿墙安排水槽、操作台和收纳柜。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "kitchen",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "沿墙安排水槽、操作台和收纳柜。",
+      "reference": {
+        "width_m": 5.32,
+        "depth_m": 3.65,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.55,
+          "depth_m": 3.25,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.1,
+          "depth_m": 4.05,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.55,
+          6.1
+        ],
+        "depth_m": [
+          3.25,
+          4.05
+        ],
+        "area_m2": [
+          14.7875,
+          24.705
+        ],
+        "aspect_ratio": [
+          1.123456790123457,
+          1.876923076923077
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "备餐"
+        },
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "清洗"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "收纳"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "kitchen_prep",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "kitchen_wash",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "shop_side_checkout_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "侧边收银的街区商店",
+      "intent": "背墙和一侧墙陈列商品，对侧设置带工位的收银台，留出顾客通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "背墙和一侧墙陈列商品，对侧设置带工位的收银台，留出顾客通道。",
+      "reference": {
+        "width_m": 6.33,
+        "depth_m": 5.12,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.0,
+          "depth_m": 4.9,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.65,
+          "depth_m": 5.35,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.0,
+          6.65
+        ],
+        "depth_m": [
+          4.9,
+          5.35
+        ],
+        "area_m2": [
+          29.400000000000002,
+          35.5775
+        ],
+        "aspect_ratio": [
+          1.1214953271028039,
+          1.3571428571428572
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "商品陈列"
+        },
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "侧墙陈列"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "收银"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_shop_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_shop_shelf",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "retail_checkout",
+          "zone": "east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "meeting_six_single_table_bay_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "小会议间的六席长桌",
+      "intent": "一张会议桌配置六把朝向桌面的椅子，中央留给会议，墙边保留椅后通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "meeting_room",
+      "palette": "minimal",
+      "occupants": 6,
+      "capacity_reason": "一张会议桌配置六把朝向桌面的椅子，中央留给会议，墙边保留椅后通路。",
+      "reference": {
+        "width_m": 4.8,
+        "depth_m": 4.28,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.28,
+          "depth_m": 4.16,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.4,
+          "depth_m": 4.7,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.8,
+          "depth_m": 3.9,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.2,
+          5.4
+        ],
+        "depth_m": [
+          3.85,
+          4.7
+        ],
+        "area_m2": [
+          17.7,
+          25.380000000000003
+        ],
+        "aspect_ratio": [
+          0.8936170212765957,
+          1.4025974025974026
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "center",
+          "position": "center",
+          "purpose": "六席会议"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_meeting_6",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "reception_waiting_book_bay_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "紧凑候客与资料角",
+      "intent": "等候长椅与资料柜分置两侧，入口可直接抵达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "等候长椅与资料柜分置两侧，入口可直接抵达。",
+      "reference": {
+        "width_m": 4.5,
+        "depth_m": 4.22,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 3.8,
+          "depth_m": 3.8,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.1,
+          "depth_m": 4.65,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.8,
+          5.1
+        ],
+        "depth_m": [
+          3.8,
+          4.65
+        ],
+        "area_m2": [
+          14.44,
+          23.715
+        ],
+        "aspect_ratio": [
+          0.8172043010752688,
+          1.3421052631578947
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "候客"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "资料展示"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_waiting_bench",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "service_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "meeting_six_document_wall_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "带资料柜的宽面六席会议室",
+      "intent": "在开间中部保留六席会议桌，在侧墙留资料柜与取用通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "meeting_room",
+      "palette": "minimal",
+      "occupants": 6,
+      "capacity_reason": "六席同桌，资料柜独立使用。",
+      "reference": {
+        "width_m": 7.8,
+        "depth_m": 5.35,
+        "height_m": 3,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.35,
+          "depth_m": 5.1,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 8.2,
+          "depth_m": 5.65,
+          "height_m": 3,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          7.35,
+          8.2
+        ],
+        "depth_m": [
+          5.1,
+          5.65
+        ],
+        "area_m2": [
+          37,
+          47
+        ],
+        "aspect_ratio": [
+          1.29,
+          1.61
+        ],
+        "min_height_m": 2.65,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "实际尺寸下入口及每组家具的使用位置可达"
+      ],
+      "editable_fields": [
+        "按门位旋转，沿墙调整功能组位置"
+      ],
+      "zones": [
+        {
+          "id": "center",
+          "position": "center",
+          "purpose": "六席会议"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "沿墙资料收纳"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_meeting_6",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

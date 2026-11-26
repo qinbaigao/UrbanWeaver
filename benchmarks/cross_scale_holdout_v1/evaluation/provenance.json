@@ -1,0 +1,113 @@
+{
+  "dataset": "cross_scale_holdout_v1",
+  "frozen_date_utc": "2026-11-21",
+  "authorship": "AI assistant working with the project; author-side prospective holdout",
+  "state": "No planning arm, LLM or VLM tested during authoring. Canonical validators and compiler used only to certify test inputs and geometric witnesses.",
+  "reference_git_head": "cc6b398c86eb57ead31b450859393c886e2080a5",
+  "working_source_python_sha256": "4ce1c4dc52759e16112884ab4c0fbe583f899a83641158c8d1d2650db41687f5",
+  "source_hash_rule": "UTF-8 lines sorted by Path, containing lowercase SHA256, two spaces, relative src/cityg/**/*.py path and LF; includes untracked Python sources. Git HEAD alone does not identify this worktree.",
+  "history_checked": {
+    "../baseline_preparation/comparison_20261112/protocol/tasks_frozen.json": {
+      "sha256": "c1edeea5c830db190402f3ad29065131f9560199f5d185c95afd9b8b9402430a",
+      "count": 36
+    },
+    "analysis_results/paper42_external_20261119/transfer_tasks.json": {
+      "sha256": "6b0d795fe8bd04a2a4a36f6ba5a84c64950d477cb58e2deb756e17a047528827",
+      "count": 12
+    },
+    "analysis_results/analysis44_dense_20261023/protocol.json": {
+      "sha256": "5f8875d428ffac87cdfb9771a539a6b1131608e637616b375c59fb9623bf9ada",
+      "count": 324
+    },
+    "configs/semantic_transfer_cases.json": {
+      "sha256": "1133ce3d36d9782060bb9c2aac1a26a90743ceebb17276d16bf90276c2567321",
+      "count": 8
+    },
+    "configs/algorithm_smoke_cases.json": {
+      "sha256": "631bea89cf3a7ad4642cff15363a87bbfff4e52edaea8e0bb82973e6ec5ff2b5",
+      "count": 2
+    },
+    "configs/reliability_cases.json": {
+      "sha256": "4cdd4ff915eeaf5b622f25103803512f4ee65a7cac576fc840b5a1436c55dee7",
+      "count": 4
+    },
+    "configs/natural_issue_cases.json": {
+      "sha256": "f353aff1868032260e9fb9f88879b1916691a80e8635b5221ab94b3dc5d10971",
+      "count": 2
+    },
+    "examples/requirements/city100_balanced_exterior.txt": {
+      "sha256": "1798031c4fe5c12eff47211c0adf50784fff99fac2a6c5140d59e5f9865b3e88",
+      "count": 1
+    },
+    "examples/requirements/city200_exterior_showcase.txt": {
+      "sha256": "002ad53f12f1ee8fa41f0c378935a692f7fd20af8d33fb1ea8fc01e14454ada9",
+      "count": 1
+    },
+    "examples/requirements/city60_complete_showcase.txt": {
+      "sha256": "ac1e7f6111dd7e5aff551daf2508f14547c55a5e88733a08c50e033f32a612bc",
+      "count": 1
+    },
+    "examples/requirements/figure1_city80.txt": {
+      "sha256": "b633ad9d6b5a2f061a8ea000ff3121d5a67b2f28f013b81fa9c7e19f19f3dac1",
+      "count": 1
+    },
+    "examples/requirements/paper_r1.txt": {
+      "sha256": "33a94c317a020eff2f8058ab1e86fce4a10888fb1261f43ca6a2017a3bf5c3b1",
+      "count": 1
+    },
+    "examples/requirements/scale12.txt": {
+      "sha256": "99bf07d21fadd8825db4869eb90480f2869efef4db0d803eedf2a5b27e65cc86",
+      "count": 1
+    },
+    "examples/requirements/scale30.txt": {
+      "sha256": "414970354c165febb9536140ed55d63914d6cc3ea2813e2f96d35366b7b9be6d",
+      "count": 1
+    },
+    "examples/requirements/scale60.txt": {
+      "sha256": "e1d942890cfdfd26eea08eb898330fd877ef78ae3483c81bd65a35ed2ceca561",
+      "count": 1
+    },
+    "examples/requirements/ten_building_interior_showcase.txt": {
+      "sha256": "65483710b18de5b6fde14ed7f56115cf313955102f8ea335559af4ce595d7779",
+      "count": 1
+    },
+    "examples/requirements/unified_acceptance.txt": {
+      "sha256": "e1a8fdacc4116f25c55639ae2ed03daaebb9b38db1390d4f0a70036715c6bd58",
+      "count": 1
+    },
+    "analysis_results/urban_coordination_20261117/protocol_v3/live_0/instruction.txt": {
+      "sha256": "7c495f20192972f0aec04c27b3793f924fd5464f9c2a826e5547d0ddcfa194dc",
+      "count": 1
+    },
+    "analysis_results/urban_coordination_20261117/protocol_v3/live_1/instruction.txt": {
+      "sha256": "18da97411a03b6cd8c82df9e48e7361700be6257fba9d8dcb06a9b1e644068a6",
+      "count": 1
+    },
+    "analysis_results/urban_coordination_20261117/protocol_v3/live_2/instruction.txt": {
+      "sha256": "9dd6751842a955589c7bd0c6921fda6f4992a810f8d1cdb680a383bad9bf7902",
+      "count": 1
+    }
+  },
+  "history_unique_normalized_prompts": 311,
+  "normalization": "Unicode NFKC, casefold, keep alphanumeric characters. Check exact text and descriptive maximum character-5-gram Jaccard; no semantic independence claim.",
+  "splits": {
+    "development": {
+      "distinct_normalized_prompts": 2,
+      "exact_history_matches": 0,
+      "maximum_history_5gram_jaccard": 0.0
+    },
+    "test": {
+      "distinct_normalized_prompts": 12,
+      "exact_history_matches": 0,
+      "maximum_history_5gram_jaccard": 0.0
+    },
+    "transfer": {
+      "distinct_normalized_prompts": 8,
+      "exact_history_matches": 0,
+      "maximum_history_5gram_jaccard": 0.00709
+    }
+  },
+  "independence_unit": "12 controlled test briefs each with three counterfactual scenes; 8 other transfer briefs with no start checkpoint; no claim of 36 independent natural language requests.",
+  "protocol": "README.md",
+  "labels_source": "continuous geometry certificates + compiled constructive witnesses. Not derived from arm outcomes."
+}

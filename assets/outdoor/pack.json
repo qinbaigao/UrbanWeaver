@@ -1,0 +1,919 @@
+{
+  "schema_version": "cityg.outdoor_assets.v1",
+  "summary": {
+    "slot_count": 26,
+    "ready_count": 23,
+    "candidate_count": 0,
+    "missing_count": 2,
+    "rejected_count": 1,
+    "coverage": 0.884615
+  },
+  "slots": [
+    {
+      "slot_id": "street_tree_deciduous",
+      "category": "street_tree",
+      "query": "mature deciduous urban street tree with realistic trunk and leafy crown",
+      "dimensions_m": [
+        4.6,
+        4.6,
+        7.2
+      ],
+      "tags": [
+        "tree",
+        "deciduous",
+        "street",
+        "summer"
+      ],
+      "use": "street vegetation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "street_tree_columnar",
+      "category": "street_tree",
+      "query": "columnar urban street tree with narrow crown",
+      "dimensions_m": [
+        3.2,
+        3.2,
+        7.8
+      ],
+      "tags": [
+        "tree",
+        "columnar",
+        "street"
+      ],
+      "use": "street vegetation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "park_tree_broadleaf",
+      "category": "park_tree",
+      "query": "large broadleaf park tree with natural branching",
+      "dimensions_m": [
+        7.0,
+        7.0,
+        10.0
+      ],
+      "tags": [
+        "tree",
+        "broadleaf",
+        "park"
+      ],
+      "use": "park vegetation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "ornamental_shrub",
+      "category": "shrub",
+      "query": "dense ornamental landscape shrub",
+      "dimensions_m": [
+        1.25,
+        1.25,
+        0.9
+      ],
+      "tags": [
+        "shrub",
+        "ornamental",
+        "landscape"
+      ],
+      "use": "landscape understorey",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "street_light_modern",
+      "category": "street_light",
+      "query": "modern urban LED street light, slim dark metal pole, single luminaire, isolated object",
+      "dimensions_m": [
+        0.8,
+        0.8,
+        5.2
+      ],
+      "tags": [
+        "light",
+        "lamp",
+        "modern",
+        "street"
+      ],
+      "use": "roadside lighting",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "street_bench_wood_metal",
+      "category": "street_bench",
+      "query": "contemporary outdoor public bench, timber slats and dark metal frame, isolated object",
+      "dimensions_m": [
+        1.9,
+        0.62,
+        0.86
+      ],
+      "tags": [
+        "bench",
+        "wood",
+        "metal",
+        "public"
+      ],
+      "use": "street seating",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "street_bench_retro",
+      "category": "street_bench",
+      "query": "retro urban park bench, isolated object",
+      "dimensions_m": [
+        1.9,
+        0.62,
+        0.86
+      ],
+      "tags": [
+        "bench",
+        "retro",
+        "street"
+      ],
+      "use": "street seating variation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "street_bin_modern",
+      "category": "street_bin",
+      "query": "small modern covered public waste receptacle, dark powder coated metal, no roof, no kiosk, no stall, isolated object",
+      "dimensions_m": [
+        0.48,
+        0.48,
+        0.95
+      ],
+      "tags": [
+        "bin",
+        "waste",
+        "street",
+        "metal"
+      ],
+      "use": "street sanitation",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "street_bin_dumpster",
+      "category": "street_bin",
+      "query": "closed urban dumpster for service area, isolated object",
+      "dimensions_m": [
+        1.4,
+        0.9,
+        1.2
+      ],
+      "tags": [
+        "dumpster",
+        "waste",
+        "service"
+      ],
+      "use": "service-area sanitation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "planter_large",
+      "category": "street_planter",
+      "query": "large rectangular urban planter with green ornamental plants, stone and metal materials, isolated object",
+      "dimensions_m": [
+        1.45,
+        0.62,
+        0.85
+      ],
+      "tags": [
+        "planter",
+        "greenery",
+        "street"
+      ],
+      "use": "public-space greenery",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "planter_suburban",
+      "category": "street_planter",
+      "query": "suburban flower planter with low greenery, isolated object",
+      "dimensions_m": [
+        1.2,
+        0.65,
+        0.7
+      ],
+      "tags": [
+        "planter",
+        "suburban",
+        "flower"
+      ],
+      "use": "residential greenery",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "small_sign_wayfinding",
+      "category": "small_sign",
+      "query": "small pedestrian wayfinding sign, isolated object",
+      "dimensions_m": [
+        0.55,
+        0.12,
+        1.65
+      ],
+      "tags": [
+        "sign",
+        "wayfinding",
+        "pedestrian"
+      ],
+      "use": "park and plaza navigation",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "low_hedge",
+      "category": "shrub",
+      "query": "low clipped hedge segment for sidewalk or plaza edge",
+      "dimensions_m": [
+        1.5,
+        0.55,
+        0.75
+      ],
+      "tags": [
+        "shrub",
+        "hedge",
+        "low"
+      ],
+      "use": "landscape edge planting",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "flower_cluster",
+      "category": "plant",
+      "query": "cluster of flowering plants for a public flower bed",
+      "dimensions_m": [
+        0.8,
+        0.8,
+        0.55
+      ],
+      "tags": [
+        "flower",
+        "cluster",
+        "group"
+      ],
+      "use": "flower beds",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "bollard_simple",
+      "category": "bollard",
+      "query": "short modern street bollard, dark metal with reflective strip, isolated object",
+      "dimensions_m": [
+        0.2,
+        0.2,
+        0.9
+      ],
+      "tags": [
+        "bollard",
+        "street",
+        "safety"
+      ],
+      "use": "pedestrian protection",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "bicycle_rack",
+      "category": "bicycle_rack",
+      "query": "stainless steel inverted U bicycle rack for four bicycles, isolated object",
+      "dimensions_m": [
+        2.2,
+        0.7,
+        0.85
+      ],
+      "tags": [
+        "bicycle",
+        "rack",
+        "street"
+      ],
+      "use": "cycle parking",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "fire_hydrant",
+      "category": "fire_hydrant",
+      "query": "realistic municipal fire hydrant, red painted metal, isolated object",
+      "dimensions_m": [
+        0.45,
+        0.45,
+        0.9
+      ],
+      "tags": [
+        "hydrant",
+        "emergency",
+        "street"
+      ],
+      "use": "emergency infrastructure",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "bus_shelter",
+      "category": "bus_shelter",
+      "query": "modern glass and dark metal bus shelter with bench and roof, isolated structure",
+      "dimensions_m": [
+        4.5,
+        1.65,
+        2.65
+      ],
+      "tags": [
+        "bus",
+        "shelter",
+        "transit",
+        "glass"
+      ],
+      "use": "public transport",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "traffic_signal",
+      "category": "traffic_signal",
+      "query": "urban three-light traffic signal on slim pole, isolated object",
+      "dimensions_m": [
+        0.75,
+        0.75,
+        4.2
+      ],
+      "tags": [
+        "traffic",
+        "signal",
+        "junction"
+      ],
+      "use": "junction control",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    },
+    {
+      "slot_id": "sedan_modern",
+      "category": "vehicle",
+      "query": "modern compact sedan passenger car, realistic painted body and windows, isolated vehicle",
+      "dimensions_m": [
+        4.55,
+        1.82,
+        1.48
+      ],
+      "tags": [
+        "vehicle",
+        "sedan",
+        "car",
+        "modern"
+      ],
+      "use": "traffic snapshot",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "suv_modern",
+      "category": "vehicle",
+      "query": "modern mid-size SUV passenger car, realistic painted body and windows, isolated vehicle",
+      "dimensions_m": [
+        4.75,
+        1.95,
+        1.72
+      ],
+      "tags": [
+        "vehicle",
+        "suv",
+        "car",
+        "modern"
+      ],
+      "use": "traffic snapshot",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "delivery_van",
+      "category": "vehicle",
+      "query": "modern urban delivery van, realistic painted body and windows, isolated vehicle",
+      "dimensions_m": [
+        5.25,
+        2.05,
+        2.35
+      ],
+      "tags": [
+        "vehicle",
+        "van",
+        "delivery"
+      ],
+      "use": "traffic snapshot",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "city_bus",
+      "category": "vehicle",
+      "query": "modern low-floor city transit bus, realistic livery and windows, isolated vehicle",
+      "dimensions_m": [
+        11.8,
+        2.55,
+        3.25
+      ],
+      "tags": [
+        "vehicle",
+        "bus",
+        "transit"
+      ],
+      "use": "traffic snapshot",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "pedestrian_walking",
+      "category": "person",
+      "query": "casually dressed adult pedestrian walking, neutral pose, isolated full body",
+      "dimensions_m": [
+        0.62,
+        0.48,
+        1.75
+      ],
+      "tags": [
+        "person",
+        "pedestrian",
+        "walking"
+      ],
+      "use": "sidewalk population",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "pedestrian_standing",
+      "category": "person",
+      "query": "casually dressed adult pedestrian standing, neutral pose, isolated full body",
+      "dimensions_m": [
+        0.58,
+        0.46,
+        1.72
+      ],
+      "tags": [
+        "person",
+        "pedestrian",
+        "standing"
+      ],
+      "use": "sidewalk population",
+      "min_quality": 0.55,
+      "generation_allowed": false,
+      "preferred_source": "curated"
+    },
+    {
+      "slot_id": "playground_climber",
+      "category": "playground",
+      "query": "compact colorful public playground climbing frame with slide, isolated structure",
+      "dimensions_m": [
+        5.2,
+        4.2,
+        3.1
+      ],
+      "tags": [
+        "playground",
+        "slide",
+        "park",
+        "children"
+      ],
+      "use": "park activity",
+      "min_quality": 0.55,
+      "generation_allowed": true,
+      "preferred_source": "generated_or_curated"
+    }
+  ],
+  "audit": [
+    {
+      "slot_id": "street_tree_deciduous",
+      "status": "ready",
+      "asset_id": "hunyuan_street_tree_a6a5e80dbd3ae29b",
+      "reasons": []
+    },
+    {
+      "slot_id": "street_tree_columnar",
+      "status": "missing",
+      "asset_id": null,
+      "reasons": [
+        "no matching geometry"
+      ]
+    },
+    {
+      "slot_id": "park_tree_broadleaf",
+      "status": "missing",
+      "asset_id": null,
+      "reasons": [
+        "no matching geometry"
+      ]
+    },
+    {
+      "slot_id": "ornamental_shrub",
+      "status": "ready",
+      "asset_id": "external_polyhaven_outdoor_models_searsia_lucida_1k_ebdc8d776c",
+      "reasons": []
+    },
+    {
+      "slot_id": "street_light_modern",
+      "status": "ready",
+      "asset_id": "hunyuan_street_light_d02e105c5977ba9e",
+      "reasons": []
+    },
+    {
+      "slot_id": "street_bench_wood_metal",
+      "status": "ready",
+      "asset_id": "hunyuan_street_bench_b67b521dcdb02fa0",
+      "reasons": []
+    },
+    {
+      "slot_id": "street_bench_retro",
+      "status": "ready",
+      "asset_id": "external_kenney_retro_urban_1_0_detail_bench_ccf6f0a95b",
+      "reasons": []
+    },
+    {
+      "slot_id": "street_bin_modern",
+      "status": "rejected",
+      "asset_id": "hunyuan_street_bin_fb01da2eb0c51b36",
+      "reasons": [
+        "manual review rejected: semantic mismatch: generated object is a kiosk"
+      ]
+    },
+    {
+      "slot_id": "street_bin_dumpster",
+      "status": "ready",
+      "asset_id": "external_kenney_retro_urban_1_0_detail_dumpster_closed_c2b54e446c",
+      "reasons": []
+    },
+    {
+      "slot_id": "planter_large",
+      "status": "ready",
+      "asset_id": "hunyuan_street_planter_c9b3145f33f03f3a",
+      "reasons": []
+    },
+    {
+      "slot_id": "planter_suburban",
+      "status": "ready",
+      "asset_id": "external_kenney_city_suburban_2_0_planter_a876e87d90",
+      "reasons": []
+    },
+    {
+      "slot_id": "small_sign_wayfinding",
+      "status": "ready",
+      "asset_id": "external_kenney_nature_2_1_sign_c658c21672",
+      "reasons": []
+    },
+    {
+      "slot_id": "low_hedge",
+      "status": "ready",
+      "asset_id": "external_kenney_retro_urban_1_0_tree_shrub_b75bd1b2cd",
+      "reasons": []
+    },
+    {
+      "slot_id": "flower_cluster",
+      "status": "ready",
+      "asset_id": "prepared_polyhaven_flower_gazania_a",
+      "reasons": []
+    },
+    {
+      "slot_id": "bollard_simple",
+      "status": "ready",
+      "asset_id": "hunyuan_bollard_7cc1e06c69db45b5",
+      "reasons": []
+    },
+    {
+      "slot_id": "bicycle_rack",
+      "status": "ready",
+      "asset_id": "hunyuan_bicycle_rack_85ebce380e42f83c",
+      "reasons": []
+    },
+    {
+      "slot_id": "fire_hydrant",
+      "status": "ready",
+      "asset_id": "hunyuan_fire_hydrant_f73d74c271bb9cf0",
+      "reasons": []
+    },
+    {
+      "slot_id": "bus_shelter",
+      "status": "ready",
+      "asset_id": "hunyuan_bus_shelter_8cc26d6319a7a2d8",
+      "reasons": []
+    },
+    {
+      "slot_id": "traffic_signal",
+      "status": "ready",
+      "asset_id": "hunyuan_traffic_signal_7ed3ca33ab9812e9",
+      "reasons": []
+    },
+    {
+      "slot_id": "sedan_modern",
+      "status": "ready",
+      "asset_id": "external_kenney_car_kit_3_1_sedan_b532ea7d2c",
+      "reasons": []
+    },
+    {
+      "slot_id": "suv_modern",
+      "status": "ready",
+      "asset_id": "external_kenney_car_kit_3_1_suv_9df31f6e89",
+      "reasons": []
+    },
+    {
+      "slot_id": "delivery_van",
+      "status": "ready",
+      "asset_id": "external_kenney_car_kit_3_1_delivery_426a3e3a2c",
+      "reasons": []
+    },
+    {
+      "slot_id": "city_bus",
+      "status": "ready",
+      "asset_id": "converted_v3_bus",
+      "reasons": []
+    },
+    {
+      "slot_id": "pedestrian_walking",
+      "status": "ready",
+      "asset_id": "hunyuan_person_a5d734e779fe23a6",
+      "reasons": []
+    },
+    {
+      "slot_id": "pedestrian_standing",
+      "status": "ready",
+      "asset_id": "converted_v3_female_adult_01_standing",
+      "reasons": []
+    },
+    {
+      "slot_id": "playground_climber",
+      "status": "ready",
+      "asset_id": "hunyuan_playground_ed84c5a8ce601b55",
+      "reasons": []
+    }
+  ],
+  "external_discovery": {
+    "policy": "search_on_demand_explicit_download",
+    "requests": [
+      {
+        "schema_version": "cityg.external_asset_search.v1",
+        "query": "columnar urban street tree with narrow crown",
+        "category": "street_tree",
+        "policy": "discovery_only_explicit_download",
+        "sources": [
+          {
+            "source_id": "polyhaven",
+            "name": "Poly Haven",
+            "homepage": "https://polyhaven.com/",
+            "search_url_template": "https://polyhaven.com/models?q={query}",
+            "api_url": "https://api.polyhaven.com/assets",
+            "formats": [
+              "gltf",
+              "blend",
+              "fbx"
+            ],
+            "license_policy": "CC0-1.0 assets; retain source metadata",
+            "download_mode": "manual_or_public_api",
+            "strengths": [
+              "photorealistic",
+              "pbr",
+              "vegetation",
+              "street_props",
+              "architecture"
+            ],
+            "notes": "Preferred first source for close-view photorealistic static assets.",
+            "search_url": "https://polyhaven.com/models?q=columnar+urban+street+tree+with+narrow+crown"
+          },
+          {
+            "source_id": "khronos_gltf_assets",
+            "name": "Khronos glTF Sample Assets",
+            "homepage": "https://github.khronos.org/glTF-Assets/",
+            "search_url_template": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q={query}&type=code",
+            "api_url": "https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models",
+            "formats": [
+              "gltf",
+              "glb"
+            ],
+            "license_policy": "Per-model license recorded in the sample catalog",
+            "download_mode": "manual_or_github_api",
+            "strengths": [
+              "format_validation",
+              "pbr_features",
+              "animation",
+              "viewer_regression"
+            ],
+            "notes": "Compatibility/reference source, not the primary city-content library.",
+            "search_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q=columnar+urban+street+tree+with+narrow+crown&type=code"
+          },
+          {
+            "source_id": "sketchfab",
+            "name": "Sketchfab downloadable glTF",
+            "homepage": "https://sketchfab.com/features/gltf",
+            "search_url_template": "https://sketchfab.com/search?type=models&features=downloadable&q={query}",
+            "api_url": "https://api.sketchfab.com/v3/search",
+            "formats": [
+              "gltf",
+              "glb",
+              "usdz"
+            ],
+            "license_policy": "Per-model license; prefer CC0/CC-BY and retain attribution. Do not auto-accept NC, ND, Editorial, or Standard assets.",
+            "download_mode": "authenticated_manual_or_api",
+            "strengths": [
+              "vehicles",
+              "people",
+              "rare_objects",
+              "animated",
+              "photogrammetry"
+            ],
+            "notes": "Use when curated packs and Poly Haven do not cover a requested concept.",
+            "search_url": "https://sketchfab.com/search?type=models&features=downloadable&q=columnar+urban+street+tree+with+narrow+crown"
+          }
+        ]
+      },
+      {
+        "schema_version": "cityg.external_asset_search.v1",
+        "query": "large broadleaf park tree with natural branching",
+        "category": "park_tree",
+        "policy": "discovery_only_explicit_download",
+        "sources": [
+          {
+            "source_id": "polyhaven",
+            "name": "Poly Haven",
+            "homepage": "https://polyhaven.com/",
+            "search_url_template": "https://polyhaven.com/models?q={query}",
+            "api_url": "https://api.polyhaven.com/assets",
+            "formats": [
+              "gltf",
+              "blend",
+              "fbx"
+            ],
+            "license_policy": "CC0-1.0 assets; retain source metadata",
+            "download_mode": "manual_or_public_api",
+            "strengths": [
+              "photorealistic",
+              "pbr",
+              "vegetation",
+              "street_props",
+              "architecture"
+            ],
+            "notes": "Preferred first source for close-view photorealistic static assets.",
+            "search_url": "https://polyhaven.com/models?q=large+broadleaf+park+tree+with+natural+branching"
+          },
+          {
+            "source_id": "khronos_gltf_assets",
+            "name": "Khronos glTF Sample Assets",
+            "homepage": "https://github.khronos.org/glTF-Assets/",
+            "search_url_template": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q={query}&type=code",
+            "api_url": "https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models",
+            "formats": [
+              "gltf",
+              "glb"
+            ],
+            "license_policy": "Per-model license recorded in the sample catalog",
+            "download_mode": "manual_or_github_api",
+            "strengths": [
+              "format_validation",
+              "pbr_features",
+              "animation",
+              "viewer_regression"
+            ],
+            "notes": "Compatibility/reference source, not the primary city-content library.",
+            "search_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q=large+broadleaf+park+tree+with+natural+branching&type=code"
+          },
+          {
+            "source_id": "sketchfab",
+            "name": "Sketchfab downloadable glTF",
+            "homepage": "https://sketchfab.com/features/gltf",
+            "search_url_template": "https://sketchfab.com/search?type=models&features=downloadable&q={query}",
+            "api_url": "https://api.sketchfab.com/v3/search",
+            "formats": [
+              "gltf",
+              "glb",
+              "usdz"
+            ],
+            "license_policy": "Per-model license; prefer CC0/CC-BY and retain attribution. Do not auto-accept NC, ND, Editorial, or Standard assets.",
+            "download_mode": "authenticated_manual_or_api",
+            "strengths": [
+              "vehicles",
+              "people",
+              "rare_objects",
+              "animated",
+              "photogrammetry"
+            ],
+            "notes": "Use when curated packs and Poly Haven do not cover a requested concept.",
+            "search_url": "https://sketchfab.com/search?type=models&features=downloadable&q=large+broadleaf+park+tree+with+natural+branching"
+          }
+        ]
+      },
+      {
+        "schema_version": "cityg.external_asset_search.v1",
+        "query": "small modern covered public waste receptacle, dark powder coated metal, no roof, no kiosk, no stall, isolated object",
+        "category": "street_bin",
+        "policy": "discovery_only_explicit_download",
+        "sources": [
+          {
+            "source_id": "khronos_gltf_assets",
+            "name": "Khronos glTF Sample Assets",
+            "homepage": "https://github.khronos.org/glTF-Assets/",
+            "search_url_template": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q={query}&type=code",
+            "api_url": "https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models",
+            "formats": [
+              "gltf",
+              "glb"
+            ],
+            "license_policy": "Per-model license recorded in the sample catalog",
+            "download_mode": "manual_or_github_api",
+            "strengths": [
+              "format_validation",
+              "pbr_features",
+              "animation",
+              "viewer_regression"
+            ],
+            "notes": "Compatibility/reference source, not the primary city-content library.",
+            "search_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q=small+modern+covered+public+waste+receptacle%2C+dark+powder+coated+metal%2C+no+roof%2C+no+kiosk%2C+no+stall%2C+isolated+object&type=code"
+          },
+          {
+            "source_id": "polyhaven",
+            "name": "Poly Haven",
+            "homepage": "https://polyhaven.com/",
+            "search_url_template": "https://polyhaven.com/models?q={query}",
+            "api_url": "https://api.polyhaven.com/assets",
+            "formats": [
+              "gltf",
+              "blend",
+              "fbx"
+            ],
+            "license_policy": "CC0-1.0 assets; retain source metadata",
+            "download_mode": "manual_or_public_api",
+            "strengths": [
+              "photorealistic",
+              "pbr",
+              "vegetation",
+              "street_props",
+              "architecture"
+            ],
+            "notes": "Preferred first source for close-view photorealistic static assets.",
+            "search_url": "https://polyhaven.com/models?q=small+modern+covered+public+waste+receptacle%2C+dark+powder+coated+metal%2C+no+roof%2C+no+kiosk%2C+no+stall%2C+isolated+object"
+          },
+          {
+            "source_id": "sketchfab",
+            "name": "Sketchfab downloadable glTF",
+            "homepage": "https://sketchfab.com/features/gltf",
+            "search_url_template": "https://sketchfab.com/search?type=models&features=downloadable&q={query}",
+            "api_url": "https://api.sketchfab.com/v3/search",
+            "formats": [
+              "gltf",
+              "glb",
+              "usdz"
+            ],
+            "license_policy": "Per-model license; prefer CC0/CC-BY and retain attribution. Do not auto-accept NC, ND, Editorial, or Standard assets.",
+            "download_mode": "authenticated_manual_or_api",
+            "strengths": [
+              "vehicles",
+              "people",
+              "rare_objects",
+              "animated",
+              "photogrammetry"
+            ],
+            "notes": "Use when curated packs and Poly Haven do not cover a requested concept.",
+            "search_url": "https://sketchfab.com/search?type=models&features=downloadable&q=small+modern+covered+public+waste+receptacle%2C+dark+powder+coated+metal%2C+no+roof%2C+no+kiosk%2C+no+stall%2C+isolated+object"
+          }
+        ]
+      }
+    ]
+  },
+  "resolver": {
+    "provider_names": [],
+    "max_provider_calls": 0,
+    "provider_calls": 0,
+    "generated_assets": 0,
+    "local_hits": 0,
+    "budget_skips": 0,
+    "negative_cache_entries": 0,
+    "failures": []
+  }
+}

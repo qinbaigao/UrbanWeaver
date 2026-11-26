@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "prototype_restroom_toilet",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_316d7bc87db3c6ee1fdc26601bcda7d18c5110fb",
+      "sha256": "83f2809b7b5b7cbb2321df8e3e34f6ccdea50f952cf263cb79c524a49b0e792a",
+      "category": "toilet",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "restroom"
+      ],
+      "evidence": "Four views show floor-supported pan, closed lid and rear cistern; front +X. Static appearance only. Same unchanged floor-supported fixture is suitable for a separate restroom; no shower or plumbing functionality implied."
+    },
+    {
+      "id": "prototype_restroom_basin",
+      "registry": "assets/prepared/prototype_facilities_v1/candidate_registry.json",
+      "source_id": "interior_hssd_09495c87c9c7c4ad6ab360f67366274aff274f72",
+      "sha256": "4978914a344678a0953b8657d675c77ebba9c50ad6ef3f11ff859749154b3a2f",
+      "category": "sink",
+      "placement_kind": "floor",
+      "front_axis": "+X",
+      "room_types": [
+        "restroom"
+      ],
+      "evidence": "Four views show a floor-supported ceramic pedestal basin and taps at rear. User faces back toward -X, access side +X. Same unchanged floor-supported fixture is suitable for a separate restroom; no shower or plumbing functionality implied."
+    }
+  ]
+}

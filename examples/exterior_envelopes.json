@@ -1,0 +1,23 @@
+{
+  "name": "exterior_envelope_gallery",
+  "width_m": 300, "depth_m": 270, "building_count": 6,
+  "min_floors": 6, "max_floors": 10, "rooms_per_floor": 2,
+  "room_count_strategy": "fixed", "buildings_per_block": 1,
+  "road_pattern": "connected_grid", "height_strategy": "uniform_random",
+  "highrise_ratio": 0, "landmark_count": 0, "seed": 29,
+  "architecture": {"era": "contemporary", "design_languages": ["framed_grid"]},
+  "zones": [
+    {"name": "Rectangular curtain wall", "function": "commercial", "weight": 1,
+     "architecture": {"envelope": {"shape": "rectangle", "profile": "straight", "facade_system": "curtain_wall"}}},
+    {"name": "Chamfered stone", "function": "commercial", "weight": 1,
+     "architecture": {"material_palette": ["stone"], "envelope": {"shape": "chamfered", "profile": "straight", "facade_system": "punched"}}},
+    {"name": "Trapezoidal brick", "function": "commercial", "weight": 1,
+     "architecture": {"material_palette": ["brick"], "envelope": {"shape": "trapezoid", "profile": "straight", "facade_system": "punched"}}},
+    {"name": "Elliptical curtain wall", "function": "commercial", "weight": 1,
+     "architecture": {"envelope": {"shape": "ellipse", "segments": 32, "profile": "straight", "facade_system": "curtain_wall"}}},
+    {"name": "Tapered hexagonal tower", "function": "commercial", "weight": 1,
+     "architecture": {"envelope": {"shape": "hexagon", "profile": "taper", "top_scale": 0.62, "facade_system": "curtain_wall"}}},
+    {"name": "Leaning glass tower", "function": "commercial", "weight": 1,
+     "architecture": {"envelope": {"shape": "rectangle", "profile": "lean", "lean_x": 0.16, "lean_y": 0.06, "facade_system": "curtain_wall"}}}
+  ]
+}

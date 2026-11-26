@@ -1,0 +1,20 @@
+{
+  "max_buildings": 1,
+  "max_floors_per_building": 2,
+  "max_rooms": 4,
+  "max_attempts": 8,
+  "variation_limit": 0.2,
+  "floor_repartition": {
+    "enabled": true,
+    "joint_room_planning": true,
+    "allow_secondary_corridor": true,
+    "secondary_corridor_width_m": 1.8,
+    "max_floors": 2,
+    "max_splits_per_floor": 2,
+    "max_children_per_room": 6,
+    "min_room_width_m": 2.4,
+    "max_room_aspect": 2.8,
+    "target_building_ids": [],
+    "levels": [0, 1]
+  }
+}

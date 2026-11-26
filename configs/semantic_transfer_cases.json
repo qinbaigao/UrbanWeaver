@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "split": "development_transfer_not_independent_holdout",
+  "seed": 431,
+  "fixtures": [
+    {"id":"home_west", "function":"residential", "width":34, "depth":22, "entrance":"west", "functions":["living_room","bedroom","bathroom"]},
+    {"id":"office_east", "function":"commercial", "width":42, "depth":24, "entrance":"east", "functions":["office","meeting_room","break_room"]},
+    {"id":"home_north", "function":"residential", "width":24, "depth":38, "entrance":"north", "functions":["living_room","bedroom","kitchen","bathroom"]},
+    {"id":"office_south", "function":"commercial", "width":28, "depth":44, "entrance":"south", "functions":["reception","office","meeting_room","break_room"]}
+  ],
+  "tasks": [
+    {"id":"home_west_a", "fixture":"home_west", "instruction":"这栋住宅楼的各层采用合住式组织：各个房间都单独开门到公共走廊，不要让住户穿过其它房间。", "organization":"independent"},
+    {"id":"home_west_b", "fixture":"home_west", "instruction":"这栋住宅楼的各层采用套间式组织：起居空间作为入口，至少部分卧室或卫生间从各自起居空间进入，不直接开向公共走廊。", "organization":"private_groups"},
+    {"id":"office_east_a", "fixture":"office_east", "instruction":"希望各层的办公室、会议室和休息室都能由公共走廊独立进入，避免把办公或会议空间当作其它房间的通道。", "organization":"independent", "no_transit_functions":["meeting_room"]},
+    {"id":"office_east_b", "fixture":"office_east", "instruction":"希望各层形成若干团队单元，有些辅助房间经团队办公空间进入，而非全部朝公共走廊开门；会议室必须处于访问末端，不要成为其它房间的必经通路。", "organization":"private_groups", "no_transit_functions":["meeting_room"]},
+    {"id":"home_north_a", "fixture":"home_north", "instruction":"Give every room on every floor its own doorway from the shared corridor. Nobody should need to pass through another room to get home.", "organization":"independent"},
+    {"id":"home_north_b", "fixture":"home_north", "instruction":"Organize each floor into domestic suites. Use living spaces as entry rooms, with some sleeping or service rooms reached through them instead of directly from the shared corridor.", "organization":"private_groups"},
+    {"id":"office_south_a", "fixture":"office_south", "instruction":"各层所有功能房间都直接连到公共走廊；会议室只能作为目的地，不要穿过会议室去其它房间。", "organization":"independent", "no_transit_functions":["meeting_room"]},
+    {"id":"office_south_b", "fixture":"office_south", "instruction":"各层以办公或接待空间连接一组内部房间，不要让所有房间都直接连到公共走廊；会议室只能作为目的地，不要穿过会议室去其它房间。", "organization":"private_groups", "no_transit_functions":["meeting_room"]}
+  ]
+}

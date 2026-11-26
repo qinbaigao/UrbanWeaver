@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id":"sleep_single","level":"combination","revision":1,"display_name":"单人床与一侧床头柜",
+      "intent":"保留原尺寸的约 1.3 m 宽床供一人使用，床头贴墙，一侧床头柜及床边通路。",
+      "review":{"status":"pending_review"},"anchor":{"id":"bed","category":"bed"},
+      "members":[{"id":"side","category":"bedside_table","side":"left","slot":0,"gap_m":0.18,"face_anchor":false}],
+      "asset_bindings":{"bed":"interior_hssd_58b7f3eee922fe43fe9f6156c0942be5f8e72e96","bedside_table":"interior_hssd_84815c44d0b7569cd2c023b75d6f11d21bdb7505"},
+      "surface_items":[{"id":"lamp","support_member_id":"side","surface":"top","category":"desk_lamp","count":1,"placement":"back"},{"id":"book","support_member_id":"side","surface":"top","category":"book","count":1,"placement":"front"}]
+    },
+    {
+      "id":"reading_four","level":"combination","revision":1,"display_name":"四人共享阅览桌",
+      "intent":"四座长桌用于阅读，桌面放书、笔记和笔，不照搬办公显示器。",
+      "review":{"status":"pending_review"},"anchor":{"id":"table","category":"dining_table"},
+      "members":[
+        {"id":"a","category":"dining_chair","side":"front","slot":-1,"gap_m":0.3,"face_anchor":true},
+        {"id":"b","category":"dining_chair","side":"front","slot":1,"gap_m":0.3,"face_anchor":true},
+        {"id":"c","category":"dining_chair","side":"back","slot":-1,"gap_m":0.3,"face_anchor":true},
+        {"id":"d","category":"dining_chair","side":"back","slot":1,"gap_m":0.3,"face_anchor":true}
+      ],
+      "asset_bindings":{"dining_table":"interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431","dining_chair":"interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3"},
+      "asset_roles":{"dining_table":{"source_category":"dining_table","rationale":"原尺寸长桌用于共享阅览，不改正式库标签。"},"dining_chair":{"source_category":"dining_chair","rationale":"无扶手座椅用于阅读桌，保持原尺寸。"}},
+      "surface_items":[
+        {"id":"notes","support_member_id":"table","surface":"top","category":"notebook","count":3,"placement":"spread"},
+        {"id":"books","support_member_id":"table","surface":"top","category":"book_stack","count":2,"placement":"spread"},
+        {"id":"pens","support_member_id":"table","surface":"top","category":"pen","count":3,"placement":"spread"},
+        {"id":"lamp","support_member_id":"table","surface":"top","category":"desk_lamp","count":1,"placement":"back"}
+      ]
+    },
+    {
+      "id":"staff_reception","level":"combination","revision":1,"display_name":"前台与内侧工作椅",
+      "intent":"前台正面朝访客，工作椅置于背面并朝柜台，整个组合远离后墙以保留员工通道。",
+      "review":{"status":"pending_review"},"anchor":{"id":"counter","category":"reception_desk"},
+      "members":[{"id":"chair","category":"office_chair","side":"back","slot":0,"gap_m":0.35,"face_anchor":true}],
+      "asset_bindings":{"reception_desk":"prototype_reception_counter","office_chair":"interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"},
+      "asset_roles":{"office_chair":{"source_category":"office_chair","rationale":"接待人员工作椅，仅在原型中扩展适用房间。"}},
+      "surface_items":[{"id":"pen","support_member_id":"counter","surface":"top","category":"pen","count":1,"placement":"left"},{"id":"pens","support_member_id":"counter","surface":"top","category":"pencil_cup","count":1,"placement":"right"}]
+    },
+    {
+      "id":"compact_writing","level":"combination","revision":1,"display_name":"浅进深书写角",
+      "intent":"选用原尺寸 1.27 m 宽、0.48 m 深的书桌，而非缩放大桌。",
+      "review":{"status":"pending_review"},"anchor":{"id":"desk","category":"desk"},
+      "members":[{"id":"chair","category":"office_chair","side":"front","slot":0,"gap_m":0.3,"face_anchor":true}],
+      "asset_bindings":{"desk":"interior_hssd_b2a15fbf1be55416b27bc7ef9a10d2b22af24376","office_chair":"interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"},
+      "asset_roles":{"desk":{"source_category":"desk","rationale":"单人卧室的小型书桌，原比例原尺寸。"},"office_chair":{"source_category":"office_chair","rationale":"书写角工作椅，保留椅后空间。"}},
+      "surface_items":[{"id":"lamp","support_member_id":"desk","surface":"top","category":"desk_lamp","count":1,"placement":"back"},{"id":"notes","support_member_id":"desk","surface":"top","category":"notebook","count":1,"placement":"front"},{"id":"pen","support_member_id":"desk","surface":"top","category":"pen","count":1,"placement":"right"},{"id":"plant","support_member_id":"desk","surface":"top","category":"small_plant","count":1,"placement":"left"}]
+    },
+    {
+      "id":"compact_wardrobe","level":"combination","revision":1,"display_name":"单人窄衣柜",
+      "intent":"原尺寸 0.91 m 宽衣柜，保留柜门使用面。","review":{"status":"pending_review"},
+      "anchor":{"id":"wardrobe","category":"wardrobe"},"members":[],
+      "asset_bindings":{"wardrobe":"interior_hssd_12279170351af560f40ced884359cc539984e111"},"surface_items":[]
+    }
+  ]
+}

@@ -1,0 +1,823 @@
+{
+  "source": "unified_capacity_search_20261009; immutable planning-only contracts",
+  "cases": [
+    {
+      "building": {
+        "id": "building_004",
+        "name": "Residential 5",
+        "function": "residential",
+        "footprint": {
+          "min_x": 89.81333333333333,
+          "min_y": 46.72,
+          "max_x": 130.18666666666667,
+          "max_y": 60.72
+        },
+        "entrance": {
+          "x": 89.81333333333333,
+          "y": 53.72
+        },
+        "floors": [
+          {
+            "id": "building_004_floor_00",
+            "level": 0,
+            "elevation_m": 0.0,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          },
+          {
+            "id": "building_004_floor_01",
+            "level": 1,
+            "elevation_m": 3.2,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          }
+        ],
+        "vertical_connectors": [
+          {
+            "id": "building_004_stairs",
+            "connector_type": "stairs",
+            "bounds": {
+              "min_x": 108.8,
+              "min_y": 52.76,
+              "max_x": 111.2,
+              "max_y": 54.68
+            },
+            "from_level": 0,
+            "to_level": 1,
+            "interactive": false,
+            "metadata": {
+              "egress_role": "primary"
+            }
+          }
+        ],
+        "metadata": {
+          "massing_style": "bar",
+          "orientation_deg": 0.0,
+          "highrise": {
+            "enabled": false,
+            "threshold_floors": 10,
+            "podium_floors": 0,
+            "tower_floors": 2,
+            "required_stair_count": 1,
+            "required_elevator_count": 0,
+            "typical_floor_reuse": [
+              {
+                "template_id": "building_004_top_template",
+                "prototype_floor_level": 1,
+                "levels": [
+                  1
+                ],
+                "instance_count": 1
+              },
+              {
+                "template_id": "building_004_typical_template_00",
+                "prototype_floor_level": 0,
+                "levels": [
+                  0
+                ],
+                "instance_count": 1
+              }
+            ],
+            "reuse_mode": "semantic_template_contract",
+            "massing_variant": null,
+            "massing_palette": [],
+            "massing_constraint": "single_continuous_core"
+          },
+          "interior_layout_contract": {
+            "archetype_id": "residential_bar_compact_compact_00",
+            "entrance_side": "west",
+            "source_archetype_id": "residential_courtyard_perimeter_asymmetric_09",
+            "source_entrance_side": "north",
+            "source": "new_scene_rectangular_interior_v1",
+            "footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 46.72,
+              "max_x": 130.18666666666667,
+              "max_y": 60.72
+            },
+            "source_footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 21.439999999999998,
+              "max_x": 130.18666666666667,
+              "max_y": 86.0
+            },
+            "dimension_reference_ids": [
+              "bathroom_shower_v1",
+              "bedroom_double_v1",
+              "bedroom_single_v1",
+              "kitchen_galley_v1",
+              "living_media_v1",
+              "reception_waiting_v1"
+            ],
+            "depth_reference_id": "reception_waiting_v1",
+            "reference_band_depth_m": 6.4,
+            "draft_corridor_ratio": 0.15,
+            "dimension_policy": "two_reference_depth_bands_with_bounded_circulation",
+            "capacity_selected_band_depth_m": 5.8
+          }
+        }
+      },
+      "base_profile": {
+        "function": "residential",
+        "layout": "residential_units",
+        "corridor_ratio": 0.15,
+        "room_function_cycle": [
+          "reception",
+          "living_room",
+          "kitchen",
+          "bathroom",
+          "bedroom"
+        ],
+        "space_archetypes": [
+          {
+            "role": "ground",
+            "preferred_room_count": 3,
+            "min_room_count": 2,
+            "max_room_count": 5,
+            "target_room_area_m2": 60.0,
+            "min_room_width_m": 4.0,
+            "room_function_cycle": [
+              "reception",
+              "living_room",
+              "kitchen",
+              "bathroom"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 7.5,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "residential_units",
+            "spatial_program": null
+          },
+          {
+            "role": "typical",
+            "preferred_room_count": 4,
+            "min_room_count": 3,
+            "max_room_count": 6,
+            "target_room_area_m2": 30.0,
+            "min_room_width_m": 4.0,
+            "room_function_cycle": [
+              "bedroom",
+              "living_room",
+              "kitchen",
+              "bathroom"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 6.0,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "residential_units",
+            "spatial_program": null
+          }
+        ],
+        "vertical_zones": []
+      },
+      "spec": {
+        "name": "compact_mixed_use_community_v1",
+        "width_m": 220,
+        "depth_m": 200,
+        "building_count": 10,
+        "min_floors": 2,
+        "max_floors": 4,
+        "rooms_per_floor": 4,
+        "room_count_strategy": "adaptive",
+        "road_width_m": 12,
+        "sidewalk_width_m": 2,
+        "parcel_setback_m": 4,
+        "layout_style": "regular_grid",
+        "open_space_ratio": 0.15,
+        "layout_irregularity": 0.35,
+        "road_pattern": "connected_grid",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0,
+        "parcel_layout": "rectangular",
+        "river_mode": "none",
+        "river_width_m": 24.0,
+        "river_bank_width_m": 5.0,
+        "river_setback_m": 8.0,
+        "morphology": {},
+        "arterial_ratio": 0.08,
+        "one_way_ratio": 0.08,
+        "height_strategy": "uniform_random",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.5,
+        "architecture": {},
+        "seed": 1710,
+        "zones": [
+          {
+            "name": "Residential Blocks",
+            "function": "residential",
+            "weight": 0.5,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "compact_neighborhood",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "brick",
+                "plaster"
+              ]
+            }
+          },
+          {
+            "name": "Office Commercial Strip",
+            "function": "commercial",
+            "weight": 0.3,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "urban_mixed",
+              "design_languages": [
+                "horizontal_ribbon",
+                "framed_grid"
+              ],
+              "material_palette": [
+                "glass",
+                "metal"
+              ]
+            }
+          },
+          {
+            "name": "Public Service Hub",
+            "function": "public_service",
+            "weight": 0.2,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "civic",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "stone",
+                "plaster"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "building": {
+        "id": "building_005",
+        "name": "Commercial 6",
+        "function": "commercial",
+        "footprint": {
+          "min_x": 89.81333333333333,
+          "min_y": 120.27294964550245,
+          "max_x": 130.18666666666667,
+          "max_y": 137.27294964550245
+        },
+        "entrance": {
+          "x": 130.18666666666667,
+          "y": 128.77294964550245
+        },
+        "floors": [
+          {
+            "id": "building_005_floor_00",
+            "level": 0,
+            "elevation_m": 0.0,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          },
+          {
+            "id": "building_005_floor_01",
+            "level": 1,
+            "elevation_m": 3.2,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          },
+          {
+            "id": "building_005_floor_02",
+            "level": 2,
+            "elevation_m": 6.4,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          }
+        ],
+        "vertical_connectors": [
+          {
+            "id": "building_005_stairs",
+            "connector_type": "stairs",
+            "bounds": {
+              "min_x": 108.8,
+              "min_y": 127.41294964550245,
+              "max_x": 111.2,
+              "max_y": 130.13294964550246
+            },
+            "from_level": 0,
+            "to_level": 2,
+            "interactive": false,
+            "metadata": {
+              "egress_role": "primary"
+            }
+          }
+        ],
+        "metadata": {
+          "massing_style": "bar",
+          "orientation_deg": 0.0,
+          "highrise": {
+            "enabled": false,
+            "threshold_floors": 10,
+            "podium_floors": 0,
+            "tower_floors": 3,
+            "required_stair_count": 1,
+            "required_elevator_count": 0,
+            "typical_floor_reuse": [
+              {
+                "template_id": "building_005_top_template",
+                "prototype_floor_level": 2,
+                "levels": [
+                  2
+                ],
+                "instance_count": 1
+              },
+              {
+                "template_id": "building_005_typical_template_00",
+                "prototype_floor_level": 0,
+                "levels": [
+                  0
+                ],
+                "instance_count": 1
+              },
+              {
+                "template_id": "building_005_typical_template_01",
+                "prototype_floor_level": 1,
+                "levels": [
+                  1
+                ],
+                "instance_count": 1
+              }
+            ],
+            "reuse_mode": "semantic_template_contract",
+            "massing_variant": null,
+            "massing_palette": [],
+            "massing_constraint": "single_continuous_core"
+          },
+          "interior_layout_contract": {
+            "archetype_id": "commercial_bar_deep_window_offset_left_01",
+            "entrance_side": "east",
+            "source_archetype_id": "commercial_t_civic_axis_asymmetric_07",
+            "source_entrance_side": "east",
+            "source": "new_scene_rectangular_interior_v1",
+            "footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 120.27294964550245,
+              "max_x": 130.18666666666667,
+              "max_y": 137.27294964550245
+            },
+            "source_footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 114.0,
+              "max_x": 130.18666666666667,
+              "max_y": 143.5458992910049
+            },
+            "dimension_reference_ids": [
+              "break_pantry_v1",
+              "meeting_six_v1",
+              "office_four_v1",
+              "office_private_v1",
+              "reception_waiting_v1",
+              "retail_books_v1"
+            ],
+            "depth_reference_id": "office_four_v1",
+            "reference_band_depth_m": 6.4,
+            "draft_corridor_ratio": 0.2,
+            "dimension_policy": "two_reference_depth_bands_with_bounded_circulation",
+            "capacity_selected_band_depth_m": 6.8
+          }
+        }
+      },
+      "base_profile": {
+        "function": "commercial",
+        "layout": "office_core",
+        "corridor_ratio": 0.2,
+        "room_function_cycle": [
+          "shop",
+          "reception",
+          "break_room",
+          "office",
+          "meeting_room"
+        ],
+        "space_archetypes": [
+          {
+            "role": "ground",
+            "preferred_room_count": 2,
+            "min_room_count": 1,
+            "max_room_count": 3,
+            "target_room_area_m2": 80.0,
+            "min_room_width_m": 6.0,
+            "room_function_cycle": [
+              "shop",
+              "reception",
+              "break_room"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 10.0,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "commercial_retail",
+            "spatial_program": null
+          },
+          {
+            "role": "typical",
+            "preferred_room_count": 3,
+            "min_room_count": 2,
+            "max_room_count": 5,
+            "target_room_area_m2": 40.0,
+            "min_room_width_m": 4.0,
+            "room_function_cycle": [
+              "office",
+              "meeting_room",
+              "break_room"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 7.0,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "office_core",
+            "spatial_program": null
+          }
+        ],
+        "vertical_zones": []
+      },
+      "spec": {
+        "name": "compact_mixed_use_community_v1",
+        "width_m": 220,
+        "depth_m": 200,
+        "building_count": 10,
+        "min_floors": 2,
+        "max_floors": 4,
+        "rooms_per_floor": 4,
+        "room_count_strategy": "adaptive",
+        "road_width_m": 12,
+        "sidewalk_width_m": 2,
+        "parcel_setback_m": 4,
+        "layout_style": "regular_grid",
+        "open_space_ratio": 0.15,
+        "layout_irregularity": 0.35,
+        "road_pattern": "connected_grid",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0,
+        "parcel_layout": "rectangular",
+        "river_mode": "none",
+        "river_width_m": 24.0,
+        "river_bank_width_m": 5.0,
+        "river_setback_m": 8.0,
+        "morphology": {},
+        "arterial_ratio": 0.08,
+        "one_way_ratio": 0.08,
+        "height_strategy": "uniform_random",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.5,
+        "architecture": {},
+        "seed": 1710,
+        "zones": [
+          {
+            "name": "Residential Blocks",
+            "function": "residential",
+            "weight": 0.5,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "compact_neighborhood",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "brick",
+                "plaster"
+              ]
+            }
+          },
+          {
+            "name": "Office Commercial Strip",
+            "function": "commercial",
+            "weight": 0.3,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "urban_mixed",
+              "design_languages": [
+                "horizontal_ribbon",
+                "framed_grid"
+              ],
+              "material_palette": [
+                "glass",
+                "metal"
+              ]
+            }
+          },
+          {
+            "name": "Public Service Hub",
+            "function": "public_service",
+            "weight": 0.2,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "civic",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "stone",
+                "plaster"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "building": {
+        "id": "building_006",
+        "name": "Commercial 7",
+        "function": "commercial",
+        "footprint": {
+          "min_x": 89.81333333333333,
+          "min_y": 156.55294964550245,
+          "max_x": 130.18666666666667,
+          "max_y": 173.55294964550245
+        },
+        "entrance": {
+          "x": 130.18666666666667,
+          "y": 165.05294964550245
+        },
+        "floors": [
+          {
+            "id": "building_006_floor_00",
+            "level": 0,
+            "elevation_m": 0.0,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          },
+          {
+            "id": "building_006_floor_01",
+            "level": 1,
+            "elevation_m": 3.2,
+            "height_m": 3.2,
+            "rooms": [],
+            "doors": [],
+            "objects": [],
+            "metadata": {}
+          }
+        ],
+        "vertical_connectors": [
+          {
+            "id": "building_006_stairs",
+            "connector_type": "stairs",
+            "bounds": {
+              "min_x": 108.8,
+              "min_y": 163.69294964550244,
+              "max_x": 111.2,
+              "max_y": 166.41294964550247
+            },
+            "from_level": 0,
+            "to_level": 1,
+            "interactive": false,
+            "metadata": {
+              "egress_role": "primary"
+            }
+          }
+        ],
+        "metadata": {
+          "massing_style": "bar",
+          "orientation_deg": 0.0,
+          "highrise": {
+            "enabled": false,
+            "threshold_floors": 10,
+            "podium_floors": 0,
+            "tower_floors": 2,
+            "required_stair_count": 1,
+            "required_elevator_count": 0,
+            "typical_floor_reuse": [
+              {
+                "template_id": "building_006_top_template",
+                "prototype_floor_level": 1,
+                "levels": [
+                  1
+                ],
+                "instance_count": 1
+              },
+              {
+                "template_id": "building_006_typical_template_00",
+                "prototype_floor_level": 0,
+                "levels": [
+                  0
+                ],
+                "instance_count": 1
+              }
+            ],
+            "reuse_mode": "semantic_template_contract",
+            "massing_variant": null,
+            "massing_palette": [],
+            "massing_constraint": "single_continuous_core"
+          },
+          "interior_layout_contract": {
+            "archetype_id": "commercial_bar_deep_window_asymmetric_01",
+            "entrance_side": "east",
+            "source_archetype_id": "commercial_cross_landmark_lowrise_offset_left_10",
+            "source_entrance_side": "east",
+            "source": "new_scene_rectangular_interior_v1",
+            "footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 156.55294964550245,
+              "max_x": 130.18666666666667,
+              "max_y": 173.55294964550245
+            },
+            "source_footprint": {
+              "min_x": 89.81333333333333,
+              "min_y": 151.5458992910049,
+              "max_x": 130.18666666666667,
+              "max_y": 178.56
+            },
+            "dimension_reference_ids": [
+              "break_pantry_v1",
+              "meeting_six_v1",
+              "office_four_v1",
+              "office_private_v1",
+              "reception_waiting_v1",
+              "retail_books_v1"
+            ],
+            "depth_reference_id": "office_four_v1",
+            "reference_band_depth_m": 6.4,
+            "draft_corridor_ratio": 0.2,
+            "dimension_policy": "two_reference_depth_bands_with_bounded_circulation",
+            "capacity_selected_band_depth_m": 6.8
+          }
+        }
+      },
+      "base_profile": {
+        "function": "commercial",
+        "layout": "office_core",
+        "corridor_ratio": 0.2,
+        "room_function_cycle": [
+          "shop",
+          "reception",
+          "break_room",
+          "office",
+          "meeting_room"
+        ],
+        "space_archetypes": [
+          {
+            "role": "ground",
+            "preferred_room_count": 2,
+            "min_room_count": 1,
+            "max_room_count": 3,
+            "target_room_area_m2": 80.0,
+            "min_room_width_m": 6.0,
+            "room_function_cycle": [
+              "shop",
+              "reception",
+              "break_room"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 10.0,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "commercial_retail",
+            "spatial_program": null
+          },
+          {
+            "role": "typical",
+            "preferred_room_count": 3,
+            "min_room_count": 2,
+            "max_room_count": 5,
+            "target_room_area_m2": 40.0,
+            "min_room_width_m": 4.0,
+            "room_function_cycle": [
+              "office",
+              "meeting_room",
+              "break_room"
+            ],
+            "unit_group_size": 1,
+            "max_room_depth_m": 7.0,
+            "max_room_aspect_ratio": 1.4,
+            "layout_template": "office_core",
+            "spatial_program": null
+          }
+        ],
+        "vertical_zones": []
+      },
+      "spec": {
+        "name": "compact_mixed_use_community_v1",
+        "width_m": 220,
+        "depth_m": 200,
+        "building_count": 10,
+        "min_floors": 2,
+        "max_floors": 4,
+        "rooms_per_floor": 4,
+        "room_count_strategy": "adaptive",
+        "road_width_m": 12,
+        "sidewalk_width_m": 2,
+        "parcel_setback_m": 4,
+        "layout_style": "regular_grid",
+        "open_space_ratio": 0.15,
+        "layout_irregularity": 0.35,
+        "road_pattern": "connected_grid",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0,
+        "parcel_layout": "rectangular",
+        "river_mode": "none",
+        "river_width_m": 24.0,
+        "river_bank_width_m": 5.0,
+        "river_setback_m": 8.0,
+        "morphology": {},
+        "arterial_ratio": 0.08,
+        "one_way_ratio": 0.08,
+        "height_strategy": "uniform_random",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.5,
+        "architecture": {},
+        "seed": 1710,
+        "zones": [
+          {
+            "name": "Residential Blocks",
+            "function": "residential",
+            "weight": 0.5,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "compact_neighborhood",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "brick",
+                "plaster"
+              ]
+            }
+          },
+          {
+            "name": "Office Commercial Strip",
+            "function": "commercial",
+            "weight": 0.3,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "urban_mixed",
+              "design_languages": [
+                "horizontal_ribbon",
+                "framed_grid"
+              ],
+              "material_palette": [
+                "glass",
+                "metal"
+              ]
+            }
+          },
+          {
+            "name": "Public Service Hub",
+            "function": "public_service",
+            "weight": 0.2,
+            "architecture": {
+              "region": "",
+              "era": "",
+              "climate": "temperate",
+              "district_character": "civic",
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ],
+              "material_palette": [
+                "stone",
+                "plaster"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

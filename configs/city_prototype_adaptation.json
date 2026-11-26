@@ -1,0 +1,7 @@
+{
+  "max_buildings": 3,
+  "max_floors_per_building": 2,
+  "max_rooms": 10,
+  "max_attempts": 20,
+  "variation_limit": 0.2
+}

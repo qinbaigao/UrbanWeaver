@@ -1,0 +1,41 @@
+{
+  "schema_version": "cityg.exterior_asset_preparation.v1",
+  "description": "First realistic outdoor supplement. Source meshes are staged for review, never auto-approved.",
+  "provider": "polyhaven",
+  "resolution": "1k",
+  "max_download_mib": 1800,
+  "max_runtime_triangles": 200000,
+  "assets": [
+    {"id": "street_lamp_02", "category": "wall_light", "tags": ["lamp", "lighting", "heritage", "wall_mounted"], "contexts": ["exterior_wall"], "height_m": 1.25, "manual_only": true, "review_note": "Four views reveal a wall bracket, not a freestanding street pole; needs wall attachment adapter."},
+    {"id": "painted_wooden_bench", "category": "street_bench", "tags": ["bench", "seating", "wood", "heritage"], "contexts": ["heritage_courtyard"], "height_m": 0.9, "manual_only": true, "review_note": "Pew-like heritage bench; not a generic modern public bench."},
+    {"id": "planter_box_01", "category": "street_planter", "tags": ["planter", "container", "wood", "rectangular", "street"], "contexts": ["building_setback", "park", "plaza"], "height_m": 0.65, "placement_yaw_offset_deg": 90},
+    {"id": "planter_box_02", "category": "street_planter", "tags": ["planter", "container", "wood", "rectangular", "street"], "contexts": ["building_setback", "park", "plaza"], "height_m": 0.65, "placement_yaw_offset_deg": 90},
+    {"id": "planter_box_03", "category": "street_planter", "tags": ["planter", "container", "wood", "raised", "street"], "contexts": ["building_setback", "park", "plaza"], "height_m": 0.65, "placement_yaw_offset_deg": 90},
+    {"id": "fire_hydrant", "category": "fire_hydrant", "tags": ["hydrant", "emergency", "street", "urban", "red"], "contexts": ["sidewalk", "service_area"], "height_m": 0.85, "variants": [
+      {"key": "clean", "nodes": ["fire_hydrant", "fire_hydrant_cap_01", "fire_hydrant_cap_02", "fire_hydrant_cap_03", "fire_hydrant_chain"]},
+      {"key": "aged", "nodes": ["fire_hydrant_aged", "fire_hydrant_cap_01_aged", "fire_hydrant_cap_02_aged", "fire_hydrant_cap_03_aged", "fire_hydrant_chain_aged"]}
+    ]},
+    {"id": "shrub_02", "category": "shrub", "tags": ["shrub", "bush", "ornamental", "landscape"], "contexts": ["park", "building_setback", "median"], "height_m": 1.1, "variants": [
+      {"key": "a", "nodes": ["shrub_02_a"]}, {"key": "c", "nodes": ["shrub_02_c"]}
+    ]},
+    {"id": "shrub_04", "category": "landscape_bundle", "tags": ["shrub", "bush", "landscape", "bundle"], "contexts": ["manual_landscape"], "height_m": 1.1, "manual_only": true, "review_note": "Four separated shrubs are baked into one mesh; needs connected-component extraction before automatic placement."},
+    {"id": "flower_gazania", "category": "plant", "tags": ["flower", "flowering", "cluster", "gazania", "landscape", "garden", "groundcover"], "contexts": ["flower_bed", "park", "garden"], "height_m": 0.35, "variants": [
+      {"key": "a", "nodes": ["flower_gazania_a_LOD0"]}, {"key": "h", "nodes": ["flower_gazania_h_LOD0"]}
+    ]},
+    {"id": "flower_ursinia", "category": "plant", "tags": ["flower", "flowering", "cluster", "ursinia", "landscape", "garden", "groundcover"], "contexts": ["flower_bed", "park", "garden"], "height_m": 0.45, "variants": [
+      {"key": "a", "nodes": ["flower_ursinia_a_LOD0"]}, {"key": "d", "nodes": ["flower_ursinia_d_LOD0"]}
+    ]},
+    {"id": "flower_heliophila", "category": "plant", "tags": ["flower", "flowering", "cluster", "heliophila", "landscape", "garden", "groundcover"], "contexts": ["flower_bed", "park", "garden"], "height_m": 0.45, "variants": [
+      {"key": "large", "nodes": ["flower_heliophila_large"]}, {"key": "small", "nodes": ["flower_heliophila_small"]}
+    ]},
+    {"id": "grass_medium_02", "category": "plant", "tags": ["grass", "groundcover", "landscape"], "contexts": ["park", "garden", "waterfront"], "height_m": 0.45, "variants": [
+      {"key": "a", "nodes": ["grass_medium_02_a"]}, {"key": "e", "nodes": ["grass_medium_02_e"]}
+    ]},
+    {"id": "island_tree_03", "category": "street_tree", "tags": ["tree", "island", "broadleaf", "deciduous", "landscape"], "contexts": ["sidewalk_tree_pit", "park", "plaza"], "height_m": 6.5},
+    {"id": "coast_land_rocks_03", "category": "rock", "tags": ["rock", "stone", "landscape", "waterfront"], "contexts": ["waterfront", "park"], "height_m": 1.2},
+    {"id": "wooden_picnic_table", "category": "outdoor_furniture", "tags": ["picnic", "table", "seating", "park"], "contexts": ["park", "courtyard"], "height_m": 0.8, "manual_only": true},
+    {"id": "outdoor_table_chair_set_01", "category": "streetscape_bundle", "tags": ["cafe", "table", "chairs", "bundle"], "contexts": ["cafe_terrace"], "height_m": 0.9, "manual_only": true},
+    {"id": "modular_street_seating", "category": "streetscape_bundle", "tags": ["modular", "seating", "bench", "bundle"], "contexts": ["plaza", "park"], "height_m": 0.9, "manual_only": true},
+    {"id": "modular_chainlink_fence", "category": "fence_module", "tags": ["fence", "chainlink", "modular"], "contexts": ["sports_field", "service_area"], "height_m": 2.0, "manual_only": true}
+  ]
+}

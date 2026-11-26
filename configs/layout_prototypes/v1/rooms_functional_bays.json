@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "living_crossbay_dining_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "并置客厅与家庭餐桌",
+      "intent": "四人餐桌和会客组分占两侧，从中部门进入。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "living_room",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "四人餐桌和会客组分占两侧，从中部门进入。",
+      "reference": {
+        "width_m": 5.7,
+        "depth_m": 4.28,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.45,
+          "depth_m": 4.1,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.1,
+          "depth_m": 4.65,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.45,
+          6.1
+        ],
+        "depth_m": [
+          4.1,
+          4.65
+        ],
+        "area_m2": [
+          22.33,
+          28.38
+        ],
+        "aspect_ratio": [
+          1.16,
+          1.5
+        ],
+        "min_height_m": 2.75,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保留入口通路和家具使用净空",
+        "保留完整功能组合"
+      ],
+      "editable_fields": [
+        "适配墙面和家具组位置"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "四人就餐"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "沙发与茶几"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "shallow_dining_four",
+          "zone": "west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_lounge_pair",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        }
+      ]
+    },
+    {
+      "id": "bedroom_crossbay_wardrobe_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "宽面卧室与侧墙衣柜",
+      "intent": "床头与衣柜沿不同墙面设置，空出床边和门口。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bedroom",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "床头与衣柜沿不同墙面设置，空出床边和门口。",
+      "reference": {
+        "width_m": 6.57,
+        "depth_m": 4.28,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.25,
+          "depth_m": 4.1,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7,
+          "depth_m": 4.6,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.25,
+          7
+        ],
+        "depth_m": [
+          4.1,
+          4.6
+        ],
+        "area_m2": [
+          25.61,
+          32.21
+        ],
+        "aspect_ratio": [
+          1.35,
+          1.72
+        ],
+        "min_height_m": 2.75,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保留入口通路和家具使用净空",
+        "保留完整功能组合"
+      ],
+      "editable_fields": [
+        "适配墙面和家具组位置"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "睡眠区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "储衣区"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "写字区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "sleep_single",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_wardrobe",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_writing",
+          "zone": "north",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        }
+      ]
+    },
+    {
+      "id": "cafe_service_pantry_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "咖啡备餐与后场存储",
+      "intent": "备餐台与储物柜分设，服务人员可从入口通往两个工作面。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "break_room",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "备餐台与储物柜分设，服务人员可从入口通往两个工作面。",
+      "reference": {
+        "width_m": 6.58,
+        "depth_m": 5.06,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6,
+          "depth_m": 4.75,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.1,
+          "depth_m": 5.6,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6,
+          7.1
+        ],
+        "depth_m": [
+          4.75,
+          5.6
+        ],
+        "area_m2": [
+          28.49,
+          39.77
+        ],
+        "aspect_ratio": [
+          1.06,
+          1.5
+        ],
+        "min_height_m": 2.75,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保留入口通路和家具使用净空",
+        "保留完整功能组合"
+      ],
+      "editable_fields": [
+        "适配墙面和家具组位置"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "备餐工作面"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "后场储物"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "pantry_counter",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        }
+      ]
+    },
+    {
+      "id": "reception_cafe_waiting_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "候客与餐桌等候区",
+      "intent": "候客长椅与带座餐桌分区，保留入口到各座位的通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "minimal",
+      "occupants": 5,
+      "capacity_reason": "候客长椅与带座餐桌分区，保留入口到各座位的通道。",
+      "reference": {
+        "width_m": 6.07,
+        "depth_m": 5.06,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.8,
+          "depth_m": 4.8,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.6,
+          "depth_m": 5.5,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.6,
+          "depth_m": 4.8,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.74,
+          "depth_m": 5.12,
+          "height_m": 3.0,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.6,
+          "depth_m": 5.4,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.6,
+          6.6
+        ],
+        "depth_m": [
+          4.8,
+          5.5
+        ],
+        "area_m2": [
+          26.87,
+          36.31
+        ],
+        "aspect_ratio": [
+          1.0,
+          1.39
+        ],
+        "min_height_m": 2.75,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保留入口通路和家具使用净空",
+        "保留完整功能组合"
+      ],
+      "editable_fields": [
+        "适配墙面和家具组位置"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "顾客用桌"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "等候长椅"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_dining_four",
+          "zone": "west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_waiting_bench",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        }
+      ]
+    },
+    {
+      "id": "shop_shallow_counter_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "浅进深社区店铺",
+      "intent": "一侧陈列、另一侧结账，入口留出通往两个区域的通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "一侧陈列、另一侧结账，入口留出通往两个区域的通道。",
+      "reference": {
+        "width_m": 6.51,
+        "depth_m": 4.25,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.85,
+          "depth_m": 4.05,
+          "height_m": 3.0,
+          "door_fraction": 0.32,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.25,
+          "depth_m": 4.85,
+          "height_m": 3.0,
+          "door_fraction": 0.68,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.85,
+          7.25
+        ],
+        "depth_m": [
+          4.05,
+          4.85
+        ],
+        "area_m2": [
+          23.68,
+          35.17
+        ],
+        "aspect_ratio": [
+          1.2,
+          1.8
+        ],
+        "min_height_m": 2.75,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保留入口通路和家具使用净空",
+        "保留完整功能组合"
+      ],
+      "editable_fields": [
+        "适配墙面和家具组位置"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "商品陈列"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "顾客结账与店员座位"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_shop_shelf",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "retail_checkout",
+          "zone": "east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.22
+          }
+        }
+      ]
+    }
+  ]
+}

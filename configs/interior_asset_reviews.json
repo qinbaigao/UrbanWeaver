@@ -1,0 +1,30 @@
+{
+  "schema_version": "cityg.interior_visual_review.v1",
+  "candidate_registry_sha256": "494c6eadf0a79910d25ded414554b4dede1f68aabc7f202470c5d83cd3d9f03b",
+  "previews_sha256": "de3471b07ef621c2d0399d65dea671f361a70a71ca3b1b418c3109dcc27a858a",
+  "decisions": [
+    {"sources":["Sofa_01","sofa_02","sofa_03","ArmChair_01","WoodenChair_01","gallinera_chair"],"status":"visual_checked","front_semantics":"seating_forward_+X","note":"四视图结构/贴图可辨；偏古典或复古，需风格条件选用。座高/靠背及墙面距离仍待房间级验证。"},
+    {"sources":["modern_arm_chair_01","mid_century_lounge_chair","dining_chair_02"],"status":"visual_checked","front_semantics":"seating_forward_+X","note":"座椅四视图可辨；扶手椅/休闲椅不是人体工学办公椅。座面支撑尚未标注。"},
+    {"sources":["metal_office_desk","SchoolDesk_01"],"status":"visual_checked","front_semantics":"working_side_+X","note":"桌体与前后方向可辨；学校课桌限定 classroom/study。需测量桌面可用区域及抽屉/膝部净空。"},
+    {"sources":["dining_table","WoodenTable_01","modern_coffee_table_01","modern_coffee_table_02","coffee_table_round_01","side_table_01","small_wooden_table_01"],"status":"visual_checked","front_semantics":"multi_side_access","note":"桌体/材料可辨，保留源比例；部分带桌布或装饰构件，不可用包围盒顶面直接推定支撑面。宽边桌不冒充窄床头柜。"},
+    {"sources":["drawer_cabinet","Shelf_01","wooden_bookshelf_worn"],"status":"visual_checked","front_semantics":"access_side_+X","note":"柜架结构可辨；含明显旧化款。每层搁板净空、可用支撑面与靠墙面仍需标注。"},
+    {"sources":["vintage_day_bed"],"status":"visual_checked","front_semantics":"open_side_+X","note":"带布艺和靠垫的复古日间床，长度估计 1.95 m；不是完整现代双人床，不能在已有靠垫位置重复放置。"},
+    {"sources":["classic_laptop"],"status":"visual_checked","front_semantics":"screen_user_side_+X","note":"复古笔记本电脑，屏幕为关闭/黑屏状态；限定复古风格，不能替代现代独立显示器。"},
+    {"sources":["desk_lamp_arm_01"],"status":"hold_mount_adapter","note":"夹式台灯结构/纹理可见，但底部需要固定在桌边；禁止按平底台灯随意放在桌面。"},
+    {"sources":["alarm_clock_01"],"status":"hold_material","note":"当前 Web 渲染中表盘呈黑色，需检查玻璃透明材质与表盘贴图，暂不用于正式房间。"},
+    {"sources":["binder_notebook"],"status":"visual_checked","front_semantics":"top_reading_surface","note":"打开的笔记本，四侧低角度可辨但展示不充分；需在房间俯视/桌面角度复查，长边估计 0.42 m。"},
+    {"sources":["decorative_book_set_01"],"status":"visual_checked","front_semantics":"spine_+X_cover_+Y","note":"已烘焙原始节点材质并拆成单册；书脊为 +X，封面为 +Y。封面款式不计作独立家具形状，横放/叠放需放置适配。"},
+    {"sources":["book_encyclopedia_set_01"],"status":"visual_checked","front_semantics":"spine_+X_cover_+Y","note":"从百科全书组合中拆出 3 册；保留书脊编号与厚度差异，不按整套组合重复摆放。"},
+    {"sources":["stationery_supplies"],"status":"visual_checked","front_semantics":"category_dependent_long_axis_+Y_for_pens","note":"已拆成 9 件：笔、铅笔、笔筒、橡皮。笔为横放姿态，不能直接竖直插入笔筒；长度/比例已估计。"},
+    {"sources":["ceramic_vase_01","ceramic_vase_02","ceramic_vase_03","ceramic_vase_04"],"status":"visual_checked","front_semantics":"mostly_rotationally_symmetric","note":"陶瓷瓶四视图可辨；细长款底面积较小，放置仍需检查支撑和边缘安全距离。"},
+    {"sources":["potted_plant_02","potted_plant_04"],"status":"visual_checked","front_semantics":"orientation_agnostic","note":"盆栽叶片/花盆正常；04 为小型多肉，不作为 1.1 m 落地绿植。叶片边界与盆底支撑仍需独立校验。"},
+    {"sources":["potted_plant_01"],"status":"hold_lod","note":"外观可辨但含 176226 个三角面，超过本批 120000 面预算；需 LOD/减面后再集成。"},
+    {"sources":["throw_pillows_01"],"status":"visual_checked","front_semantics":"fabric_face_+X","note":"已拆出两个带纹理的独立抱枕；保留倾斜姿态，需要 seat_or_bed 支撑锚点，不能当普通桌面物品悬空放置。"},
+    {"sources":["wicker_basket_01"],"status":"visual_checked","front_semantics":"orientation_agnostic","note":"浅口编织篮，已缩小高度估计至 0.16 m；内腔支撑面不能由整体包围盒推断。"},
+    {"sources":["wicker_basket_02"],"status":"hold_component_split","note":"源模型含靠在旁边的分离盖子；后续需拆成容器/盖子或明确组合净空，暂不自动放置。"}
+  ],
+  "asset_overrides": {
+    "interior_polyhaven_decorative_book_set_01_softcover01":{"status":"hold_uv","note":"烘焙后封面仍呈纸页条纹，存在 UV/节点映射问题；不能作为已通过外观验收的书籍。"},
+    "interior_polyhaven_decorative_book_set_01_softcover04":{"status":"hold_uv","note":"烘焙后封面仍呈纸页条纹，存在 UV/节点映射问题；暂不集成，其他硬壳书和杂志不受影响。"}
+  }
+}

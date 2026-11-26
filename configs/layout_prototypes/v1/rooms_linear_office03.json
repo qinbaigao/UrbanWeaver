@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_open_pair_linear_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "浅进深双工位办公区",
+      "intent": "浅进深双工位办公区；沿长边组织真实尺寸家具，保留入口与横向通行。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.58,
+        "depth_m": 2.97,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.58,
+          "depth_m": 2.97,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.58,
+          "depth_m": 2.97,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.14,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.14,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.14,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.73,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.73,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.73,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.680000000000001,
+          7.68
+        ],
+        "depth_m": [
+          2.9,
+          3.6
+        ],
+        "area_m2": [
+          15,
+          43
+        ],
+        "aspect_ratio": [
+          1.4,
+          4.1
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "reception_wait_linear_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "浅进深等候区",
+      "intent": "浅进深等候区；沿长边组织真实尺寸家具，保留入口与横向通行。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 11.37,
+        "depth_m": 2.97,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 11.37,
+          "depth_m": 2.97,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 11.37,
+          "depth_m": 2.97,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.95,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.95,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.95,
+          "depth_m": 3.44,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.0,
+          "depth_m": 3.1,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.0,
+          "depth_m": 3.1,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.0,
+          "depth_m": 3.1,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.9,
+          11.469999999999999
+        ],
+        "depth_m": [
+          2.9,
+          3.6
+        ],
+        "area_m2": [
+          15,
+          43
+        ],
+        "aspect_ratio": [
+          1.4,
+          4.1
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "沿长边等候与侧向通行"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_waiting_bench",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_waiting_bench",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

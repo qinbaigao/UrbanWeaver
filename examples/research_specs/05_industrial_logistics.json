@@ -1,0 +1,19 @@
+{
+  "name": "industrial_logistics",
+  "width_m": 900.0,
+  "depth_m": 680.0,
+  "building_count": 20,
+  "min_floors": 1,
+  "max_floors": 3,
+  "rooms_per_floor": 5,
+  "road_width_m": 18.0,
+  "sidewalk_width_m": 2.0,
+  "parcel_setback_m": 9.0,
+  "seed": 105,
+  "zones": [
+    {"name": "warehouses", "function": "industrial", "weight": 0.65},
+    {"name": "logistics_offices", "function": "commercial", "weight": 0.2},
+    {"name": "worker_services", "function": "public_service", "weight": 0.15}
+  ]
+}
+

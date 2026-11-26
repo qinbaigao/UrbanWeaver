@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "split": "development",
+  "seeds": [101, 202, 303],
+  "city_spec": {"building_count": 2, "min_floors": 2, "max_floors": 2, "width_m": 180, "depth_m": 140},
+  "error_variants": 2,
+  "max_attempts": 3,
+  "scenarios": ["single_floor", "two_floors", "locked_parent", "unsupported_count", "one_attempt", "stale_conflict"],
+  "methods": ["room_only", "fixed_floor", "bounded_hierarchy"],
+  "claims": {"paper_benchmark": false, "model_efficacy": false, "M2_evaluated": false, "natural_errors": false}
+}

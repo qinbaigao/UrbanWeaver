@@ -1,0 +1,5 @@
+# Keep this environment separate from CityG core. ovphysx/ovstage are pre-release
+# NVIDIA packages and are not redistributed by this repository.
+numpy==2.2.6
+ovstage==0.1.0.346039
+ovphysx==0.5.9

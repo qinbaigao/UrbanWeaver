@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "prototype_open_plant",
+      "registry": "assets/prepared/interior_v1/candidate_registry.json",
+      "source_id": "interior_polyhaven_potted_plant_02",
+      "sha256": "148a76d31b5f26917a85a3798f27e555f161486dc93108906e9c272f89bfa52e",
+      "category": "floor_plant",
+      "placement_kind": "floor",
+      "scale": 2.125,
+      "front_axis": "+X",
+      "room_types": [
+        "open_office",
+        "coworking",
+        "shop",
+        "reception"
+      ],
+      "evidence": "Reuse the reviewed upright floor plant at 0.85 m, preserving proportions; dry public and kitchen corners only."
+    },
+    {
+      "id": "prototype_open_art",
+      "registry": "assets/prepared/room_decor_v1/candidate_registry.json",
+      "source_id": "interior_polyhaven_hanging_picture_frame_02",
+      "sha256": "9a68456648da8418da0ad692fa8fd4365d0d45a29c254c0f5209a7f1463a3277",
+      "category": "wall_art",
+      "placement_kind": "wall",
+      "front_axis": "+X",
+      "room_types": [
+        "open_office",
+        "coworking",
+        "shop",
+        "reception"
+      ],
+      "evidence": "Previously inspected white architectural photo frame; display front +X, mounted on solid wall only."
+    }
+  ]
+}

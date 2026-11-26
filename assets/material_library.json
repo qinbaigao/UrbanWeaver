@@ -1,0 +1,528 @@
+{
+  "schema_version": "cityg.materials.v1",
+  "environment_path": "incoming/hdri/urban_street_02_2k.hdr",
+  "materials": [
+    {
+      "material_id": "brick_paving",
+      "display_color": [
+        0.55,
+        0.28,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/brick_pavement/brick_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/brick_pavement/brick_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/brick_pavement/brick_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/brick_pavement/brick_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:brick_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.2
+    },
+    {
+      "material_id": "civic_brick",
+      "display_color": [
+        0.78,
+        0.57,
+        0.43
+      ],
+      "roughness": 0.84,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/brick_wall_003/brick_wall_003_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/brick_wall_003/brick_wall_003_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/brick_wall_003/brick_wall_003_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/brick_wall_003/brick_wall_003_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:brick_wall_003",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 4.0
+    },
+    {
+      "material_id": "civic_forecourt",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 6.0
+    },
+    {
+      "material_id": "civic_limestone",
+      "display_color": [
+        0.88,
+        0.82,
+        0.7
+      ],
+      "roughness": 0.76,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/rectangular_facade_tiles/rectangular_facade_tiles_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/rectangular_facade_tiles/rectangular_facade_tiles_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/rectangular_facade_tiles/rectangular_facade_tiles_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/rectangular_facade_tiles/rectangular_facade_tiles_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:rectangular_facade_tiles",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.0
+    },
+    {
+      "material_id": "civic_stone",
+      "display_color": [
+        0.78,
+        0.75,
+        0.68
+      ],
+      "roughness": 0.78,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/granite_wall/granite_wall_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/granite_wall/granite_wall_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/granite_wall/granite_wall_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/granite_wall/granite_wall_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:granite_wall",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 1.9
+    },
+    {
+      "material_id": "courtyard_paving",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 4.0
+    },
+    {
+      "material_id": "facade_frame_limestone",
+      "display_color": [
+        0.79,
+        0.73,
+        0.63
+      ],
+      "roughness": 0.72,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/concrete_wall_007/concrete_wall_007_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/concrete_wall_007/concrete_wall_007_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/concrete_wall_007/concrete_wall_007_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/concrete_wall_007/concrete_wall_007_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_wall_007",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.16
+    },
+    {
+      "material_id": "facade_frame_stone",
+      "display_color": [
+        0.67,
+        0.63,
+        0.56
+      ],
+      "roughness": 0.72,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/concrete_wall_008/concrete_wall_008_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/concrete_wall_008/concrete_wall_008_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/concrete_wall_008/concrete_wall_008_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/concrete_wall_008/concrete_wall_008_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_wall_008",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.71
+    },
+    {
+      "material_id": "grass",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 5.0
+    },
+    {
+      "material_id": "grass_deep",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 3.5
+    },
+    {
+      "material_id": "grass_dry",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 3.5
+    },
+    {
+      "material_id": "gravel_warm",
+      "display_color": [
+        0.48,
+        0.41,
+        0.31
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/gravel_ground_01/gravel_ground_01_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/gravel_ground_01/gravel_ground_01_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/gravel_ground_01/gravel_ground_01_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/gravel_ground_01/gravel_ground_01_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:gravel_ground_01",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.6
+    },
+    {
+      "material_id": "industrial_light",
+      "display_color": [
+        0.68,
+        0.7,
+        0.69
+      ],
+      "roughness": 0.52,
+      "metallic": 0.28,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/metal_plate_02/metal_plate_02_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/metal_plate_02/metal_plate_02_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/metal_plate_02/metal_plate_02_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/metal_plate_02/metal_plate_02_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:metal_plate_02",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.0
+    },
+    {
+      "material_id": "industrial_metal",
+      "display_color": [
+        0.56,
+        0.6,
+        0.61
+      ],
+      "roughness": 0.48,
+      "metallic": 0.34,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/box_profile_metal_sheet/box_profile_metal_sheet_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/box_profile_metal_sheet/box_profile_metal_sheet_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/box_profile_metal_sheet/box_profile_metal_sheet_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/box_profile_metal_sheet/box_profile_metal_sheet_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:box_profile_metal_sheet",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.0
+    },
+    {
+      "material_id": "landscape_path",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 4.0
+    },
+    {
+      "material_id": "parcel_lawn",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 5.0
+    },
+    {
+      "material_id": "parcel_lawn_deep",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 3.5
+    },
+    {
+      "material_id": "parcel_lawn_dry",
+      "display_color": [
+        0.25,
+        0.45,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/grass_path_2/grass_path_2_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/grass_path_2/grass_path_2_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/grass_path_2/grass_path_2_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/grass_path_2/grass_path_2_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grass_path_2",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 3.5
+    },
+    {
+      "material_id": "paving_dark",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.8
+    },
+    {
+      "material_id": "paving_light",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.8
+    },
+    {
+      "material_id": "permeable_paver",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.8
+    },
+    {
+      "material_id": "plaza_paving",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 6.0
+    },
+    {
+      "material_id": "residential_brick",
+      "display_color": [
+        0.82,
+        0.68,
+        0.56
+      ],
+      "roughness": 0.86,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/brick_wall_09/brick_wall_09_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/brick_wall_09/brick_wall_09_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/brick_wall_09/brick_wall_09_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/brick_wall_09/brick_wall_09_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:brick_wall_09",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.01
+    },
+    {
+      "material_id": "residential_facade",
+      "display_color": [
+        0.88,
+        0.82,
+        0.72
+      ],
+      "roughness": 0.82,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/plastered_wall_03/plastered_wall_03_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/plastered_wall_03/plastered_wall_03_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/plastered_wall_03/plastered_wall_03_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/plastered_wall_03/plastered_wall_03_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:plastered_wall_03",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 4.0
+    },
+    {
+      "material_id": "residential_sage",
+      "display_color": [
+        0.67,
+        0.76,
+        0.66
+      ],
+      "roughness": 0.84,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/grey_plaster_02/grey_plaster_02_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/grey_plaster_02/grey_plaster_02_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/grey_plaster_02/grey_plaster_02_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/grey_plaster_02/grey_plaster_02_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:grey_plaster_02",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 1.0
+    },
+    {
+      "material_id": "roof",
+      "display_color": [
+        0.31,
+        0.32,
+        0.32
+      ],
+      "roughness": 0.82,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/facade_materials/roof_tiles/roof_tiles_base_color_2k.jpg",
+      "normal_path": "incoming/facade_materials/roof_tiles/roof_tiles_normal_gl_2k.jpg",
+      "roughness_path": "incoming/facade_materials/roof_tiles/roof_tiles_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/facade_materials/roof_tiles/roof_tiles_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:roof_tiles",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.0
+    },
+    {
+      "material_id": "service_concrete_dark",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.8
+    },
+    {
+      "material_id": "service_concrete_light",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 2.8
+    },
+    {
+      "material_id": "service_yard",
+      "display_color": [
+        0.58,
+        0.57,
+        0.53
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "opacity": 1.0,
+      "base_color_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_base_color_2k.jpg",
+      "normal_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_normal_2k.jpg",
+      "roughness_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_roughness_2k.jpg",
+      "ambient_occlusion_path": "incoming/ground_materials/concrete_pavement/concrete_pavement_ambient_occlusion_2k.jpg",
+      "source": "Poly Haven:concrete_pavement",
+      "license_id": "CC0-1.0",
+      "texture_scale_m": 8.0
+    }
+  ]
+}

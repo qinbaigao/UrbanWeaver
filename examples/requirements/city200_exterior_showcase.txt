@@ -1,0 +1,21 @@
+构建一个仅用于城市整体外观观察的大规模、多样化、连贯可信的温带滨水城市。总计恰好200栋建筑，场地2000米×2000米，建筑2至30层。不要生成室内细节，rooms_per_floor=2、room_count_strategy=fixed只作为数据占位。不要缩小为示范社区。
+
+必须保留的全局参数：building_count=200，width_m=2000，depth_m=2000，min_floors=2，max_floors=30，seed=20260929；layout_style=organic_grid，layout_irregularity=0.55，road_pattern=curved_hierarchy，buildings_per_block=2，branch_road_ratio=0，parcel_layout=polygonal，open_space_ratio=0.22；river_mode=meandering，river_width_m=28，river_bank_width_m=5，river_setback_m=8；road_width_m=14，sidewalk_width_m=3，parcel_setback_m=5，arterial_ratio=0.18，one_way_ratio=0.15；height_strategy=zoned_skyline，highrise_ratio=0.25，landmark_count=5，skyline_strength=0.9。道路分主干、次干、生活街道和慢行空间，自动在合理位置跨河连桥，形成连通道路网。本轮不新增街区内部支路，避免当前河流实现中跨河支路靠近路口的限制。
+
+恰好六个功能区，必须逐字段保留下列architecture，包括显式envelope，不能只在名称里写玻璃/切角而丢掉可执行参数：
+1. 老城砖石住宅区，function=residential，weight=0.25。以2至6层为主，有街角、小院、成组沿街建筑。architecture={"era":"older renovated","district_character":"human-scale brick residential streets","design_languages":["paired_windows","solid_punched","vertical_piers"],"material_palette":["brick","stone","plaster"]}。不启用新外壳，发挥已有多样建筑原型和立面模块。
+2. 现代宜居住宅区，function=residential，weight=0.25。以6至15层为主，少数更高，组团绿地和多种住宅体量。architecture={"era":"contemporary","district_character":"modern green residential neighborhoods","design_languages":["framed_grid","shaded_bays","horizontal_ribbon","paired_windows"],"material_palette":["plaster","brick","stone","metal"]}。不启用新外壳。注意与老城区共享residential功能，但保留不同街区外观；本轮没有mixed_use功能。
+3. 核心商务区，function=commercial，weight=0.20。18至30层为主，但相邻塔楼不要层数完全相同。architecture={"era":"contemporary","district_character":"glass business core","design_languages":["vertical_piers","framed_grid"],"material_palette":["glass","metal"],"envelope":{"shape":"rectangle","profile":"straight","facade_system":"curtain_wall"}}。
+4. 滨水科创区，function=commercial，weight=0.12。8至20层为主，有弧形轮廓的中高层、滨水步道和交流广场。architecture={"era":"contemporary","district_character":"elliptical waterfront innovation campus","design_languages":["horizontal_ribbon","framed_grid"],"material_palette":["glass","metal"],"envelope":{"shape":"ellipse","segments":32,"profile":"lean","lean_x":0.05,"lean_y":0.02,"facade_system":"curtain_wall"}}。
+5. 市民文化区，function=public_service，weight=0.08。以3至8层为主，广场、花园和切角公共建筑。architecture={"era":"contemporary","district_character":"civic stone buildings with shaded public squares","design_languages":["shaded_bays","solid_punched","vertical_piers"],"material_palette":["stone","plaster"],"envelope":{"shape":"chamfered","profile":"straight","facade_system":"punched"}}。
+6. 城市门户区，function=commercial，weight=0.10。12至30层错落的收分建筑，入口广场和少量地标，不要每栋都拔到30层。architecture={"era":"contemporary","district_character":"tapered hexagonal gateway skyline","design_languages":["framed_grid","vertical_piers"],"material_palette":["glass","metal"],"envelope":{"shape":"hexagon","profile":"taper","top_scale":0.70,"facade_system":"curtain_wall"}}。
+
+全局architecture保留region="fictional temperate river city"、climate="temperate"，不要声称复原某个真实国家的建筑史。所有新外壳明确仅室外，禁止扭转、任意自由曲面或尚不支持的屋顶形式。
+
+资产尽可能在现有库中按用途多样化选择，不要为了增加种类随意混放。主干路使用现代/弯臂路灯，老城使用传统或步行尺度路灯。普通道路树种以Island Tree与Tree Small 02为主，公园/广场/入口使用Jacaranda和Quiver Tree，住宅边缘加Pine Sapling；有条件时轮换多个真实植被模型，不用青色几何树充数。不同街段使用formal、staggered、clustered、organic或sparse节奏，不要全城等距排队。
+
+公共空间使用适度丰富的长椅、花箱、低矮绿篱、成簇花卉、垃圾桶、小型标识、自行车架、少量雕塑/喷泉/儿童设施；建筑入口、公交站、公园口、广场边缘形成小聚簇，留出连续行走空间。车辆类别、颜色和人物模型尽量多样，考虑零售停留、居民散步、通勤、自行车与公交候车场景，避开交叉路口和门前净空。停车位与行车道车辆保持间距。
+
+地面按实际功能混合可平铺草地、混凝土、砖石和碎石纹理，保持从人行道到楼门的步行联系。建筑关键立面沿临街方向，住宅边缘可以小幅变化；通过功能、年代、材料、开窗组织、体量与高低变化营造多样性，不要只改变颜色。安全约束优先于资产数量；资产缺失必须记录，不虚构已经下载或生成。楼层/房间规划从简，把预算用于城市、建筑外观和街景。最终导出OpenUSD、可移植Viewer，并进行有限的多视点VLM外观核对。
+
+输出前逐项核对：zones[2].architecture.envelope={"shape":"rectangle","profile":"straight","facade_system":"curtain_wall"}；zones[3].architecture.envelope={"shape":"ellipse","segments":32,"profile":"lean","lean_x":0.05,"lean_y":0.02,"facade_system":"curtain_wall"}；zones[4].architecture.envelope={"shape":"chamfered","profile":"straight","facade_system":"punched"}；zones[5].architecture.envelope={"shape":"hexagon","profile":"taper","top_scale":0.70,"facade_system":"curtain_wall"}。以上envelope都是响应schema支持的字段，必须在最终JSON中实际出现。open_space_ratio=0.22也必须输出，不能省略后落回默认值。

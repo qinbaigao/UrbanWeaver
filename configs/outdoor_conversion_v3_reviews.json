@@ -1,0 +1,263 @@
+{
+  "schema_version": "cityg.outdoor_visual_acceptance.v1",
+  "assets": {
+    "converted_v3_bus": {
+      "status": "accepted",
+      "sha256": "a0c218d1e5c8f185f67c690a86e5316f71120b6e2dd5937d58bce270f6f345f1",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_suv": {
+      "status": "accepted",
+      "sha256": "434c5b4371b0a77062ab9c575e5da268f3dda1c4ebb45568922c624c5dc1b0cc",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_hatchback": {
+      "status": "accepted",
+      "sha256": "1cda0ebaba0ed0b3e486bb64d9a4d74741877ad4807549b80bf3c46e9927d525",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_pickup": {
+      "status": "accepted",
+      "sha256": "4aae6d597cced26cd4661d74b4148d2b66de71437200b7b07938a0c5983a11f5",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_ambulance": {
+      "status": "accepted",
+      "sha256": "b0796d9c7c9e6ce95db68d42a7e4cdf2f1468fffce6b445bcdb25d1cfe7e6c13",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_fire_truck": {
+      "status": "accepted",
+      "sha256": "afb773d77089f102ce22e4eb1353f370ed0c114081739abcbdf115106f337bd9",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_prius_hybrid": {
+      "status": "accepted",
+      "sha256": "4dcb2e8a84e9b8d3d312aeefd4a16d3a83dc0fc32be71f6acd32e291db5e3bdc",
+      "note": "Four-view checked after source-axis and legacy MTL transmission fixes: complete textured vehicle, +X front, proportional physical fit within category envelope. Mid-distance textured simulation asset, not a photorealistic close-up model.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_fountain": {
+      "status": "accepted",
+      "sha256": "591bd22de103f821689bca2f710f735b136df9427856e8f9d0f8695bf71be733",
+      "note": "Four-view checked: textured stone fountain, complete tiers and base, plausible 2.65 m source height. Static ornament; no fluid simulation.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_playground": {
+      "status": "accepted",
+      "sha256": "da0cfc885478109ad4d8e673f188df3ebf5a154b17aa445f8a395215566d6066",
+      "note": "Four-view checked: complete colorful playground with connected platforms, slides and ladder. Uniform fit into existing playground reservation; source-scale dimensions are estimates, not survey measurements.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_bus_stop": {
+      "status": "accepted",
+      "sha256": "e6d2cf31d826bbec2a3072ffe3e334e3d9d005f05dc3f14b9aa67d18e71d0aa4",
+      "note": "Four-view checked: assembled SDF shelter with roof, bench and transparent panels. +X faces opening; +90 placement offset keeps long side parallel to road. Uniform fit within reserved shelter envelope.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_lamp_post": {
+      "status": "held",
+      "sha256": "bbf5009f119b81fe975f664e46fa9fb37b865d397b49fe1f49768a6a184a2cfc",
+      "note": "Long cantilever needs a dedicated lateral setback and clearance adapter; generic compact-light envelope would shrink its height excessively.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_mailbox": {
+      "status": "held",
+      "sha256": "568ebcc4e512223541f1629f8ae85a7d0d8aa9ef3f7aa280b1abde462aebf0b9",
+      "note": "Needs mailbox-specific public-space category and placement adapter; must not be randomly used as a wayfinding sign.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_dumpster": {
+      "status": "held",
+      "sha256": "90f8349da247aa7443302579cebdcc3c1c0a3b02f2e0df9f2b170113ce3e7a52",
+      "note": "Large service dumpster must not be substituted into the compact sidewalk-bin slot.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_gazebo": {
+      "status": "held",
+      "sha256": "58765df5d50e5a3403afebc6747db3d126b8cc5dfc27a9645de7d6b876a5bc0c",
+      "note": "Large pavilion requires dedicated site footprint reservation; not interchangeable with compact furniture.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_female_adult_01_standing": {
+      "status": "accepted",
+      "sha256": "34f02fcc0b2b9f88033d1bb966c14fa461ff578f48b6cd9d7de5902ec1649f4b",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_female_adult_05_walking": {
+      "status": "accepted",
+      "sha256": "0d7aaf211b4b812779b090dfee70e816ea46b77281db84703f76805f5eb43585",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_male_adult_01_walking": {
+      "status": "accepted",
+      "sha256": "bd07f3573a1625e18a0989c8e3ce8b285a5813df52864e88d7c9416f847699cf",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_male_adult_08_standing": {
+      "status": "accepted",
+      "sha256": "1945e589e7cb99f8a646f284839058be93dd378a4dbd2fe3fbcd880dde7844ce",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_business_female_01_standing": {
+      "status": "accepted",
+      "sha256": "d73e01d2eaba40fbf116769dc8613f3e7a61d8ed37698d209b684db8b706d214",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_business_male_01_walking": {
+      "status": "accepted",
+      "sha256": "82070352f15a50cb8cdddd608f689d64d430c8d0fba4e1de3820104cccc87804",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_construction_male_01_standing": {
+      "status": "accepted",
+      "sha256": "5f60371e389b5837fd0c38d0f0feacec8405748caa3a50b0157a29ad1a21088f",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_delivery_male_01_walking": {
+      "status": "accepted",
+      "sha256": "ed7c53bb7aa9d196f6cdfd7bfce7d2827496d8835a4a6c2062ae1cf03730ddc0",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_gardener_male_01_standing": {
+      "status": "accepted",
+      "sha256": "fdb733e9c7eba78e54522d4348f3550a3d1f40dbf2b24aa3ef57b1247ea59491",
+      "note": "Four-view checked: complete clothed adult, natural static standing/walking pose, textured body, +X visible front, curated adult height. Mid-distance streetscape asset; not animated.",
+      "front_checked": true,
+      "scale_checked": true,
+      "materials_checked": true,
+      "pose_checked": true,
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_sports_female_01_walking": {
+      "status": "held",
+      "sha256": "2ceceb1799ab5876e7a5ca0278c9542c922f5d1ca04f58e59eef0f3d05dcdefe",
+      "note": "Actual clothing is swimwear, not ordinary street sportswear. Keep for a future pool/beach context, not generic sidewalks.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_ford_mustang_2005": {
+      "status": "held",
+      "sha256": "d302860b9141bdfaa76a96b27d51b222b06cd35b38f8964bb53dce4db9ede0c6",
+      "note": "GLB conversion and LOD complete, but white paint shows dark surface artifacts in four views. Needs material/overlapping-surface diagnosis before runtime.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    },
+    "converted_v3_tesla_model3_2018": {
+      "status": "held",
+      "sha256": "9c68dfd40351064e16c206376db83492b634b6ca453185c9861a61a93b1c38f0",
+      "note": "GLB conversion and LOD complete, but white paint has obvious dark artifacts, worsened after simplification. Not accepted.",
+      "reviewed_at": "2026-09-29",
+      "review_method": "assistant_four_view_visual_inspection"
+    }
+  }
+}

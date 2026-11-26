@@ -1,0 +1,14 @@
+{
+  "schema_version": "cityg.exterior_asset_preparation.v1",
+  "description": "Mixed urban planting: medium fir silhouettes, ferns, sorrel and ornamental grass. Explicit component review before promotion.",
+  "provider": "polyhaven",
+  "resolution": "1k",
+  "max_download_mib": 120,
+  "max_runtime_triangles": 700000,
+  "assets": [
+    {"id":"fir_sapling_medium","category":"street_tree","tags":["tree","fir","conifer","evergreen","medium_fir"],"contexts":["building_setback","residential_garden"],"height_m":7.5,"variants":[{"key":"b","nodes":["fir_sapling_medium_b_LOD0"]},{"key":"c","nodes":["fir_sapling_medium_c_LOD0"]}]},
+    {"id":"fern_02","category":"plant","tags":["fern","understory","shade_garden","landscape"],"contexts":["building_setback","garden","tree_understory"],"height_m":0.85,"variants":[{"key":"a","nodes":["fern_02_a"]},{"key":"c","nodes":["fern_02_c"]}]},
+    {"id":"shrub_sorrel_01","category":"plant","tags":["sorrel","flower","flowering","groundcover","landscape"],"contexts":["flower_bed","garden"],"height_m":0.4,"variants":[{"key":"a","nodes":["shrub_sorrel_01_a"]},{"key":"g","nodes":["shrub_sorrel_01_g"]}]},
+    {"id":"grass_medium_01","category":"plant","tags":["grass","ornamental_grass","landscape"],"contexts":["flower_bed","building_setback","garden"],"height_m":0.75,"variants":[{"key":"tall","nodes":["grass_medium_01_tall_a_LOD0"]},{"key":"mid","nodes":["grass_medium_01_mid_a_LOD0"]},{"key":"large","nodes":["grass_medium_01_large_b_LOD0"]}]}
+  ]
+}

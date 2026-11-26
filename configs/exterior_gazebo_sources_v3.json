@@ -1,0 +1,398 @@
+{
+  "schema_version": "cityg.review_source_config.v1",
+  "max_total_mib": 250,
+  "max_file_mib": 64,
+  "providers": [
+    {
+      "repo": "osrf/gazebo_models",
+      "exclude_patterns": ["*.orig", "*.xcf"],
+      "revision": "8163eb4b5e7e21985c6591d1c0bfb56468c0093f",
+      "groups": [
+        {
+          "id": "ambulance",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/ambulance",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "ambulance/model.config"
+          ],
+          "patterns": [
+            "ambulance/*"
+          ]
+        },
+        {
+          "id": "bus",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/bus",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "bus/model.config"
+          ],
+          "patterns": [
+            "bus/*"
+          ]
+        },
+        {
+          "id": "pickup",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/pickup",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "pickup/model.config"
+          ],
+          "patterns": [
+            "pickup/*"
+          ]
+        },
+        {
+          "id": "suv",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/suv",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "suv/model.config"
+          ],
+          "patterns": [
+            "suv/*"
+          ]
+        },
+        {
+          "id": "hatchback",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/hatchback",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "hatchback/model.config"
+          ],
+          "patterns": [
+            "hatchback/*"
+          ]
+        },
+        {
+          "id": "fire_truck",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/fire_truck",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "fire_truck/model.config"
+          ],
+          "patterns": [
+            "fire_truck/*"
+          ]
+        },
+        {
+          "id": "prius_hybrid",
+          "category": "vehicle",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/prius_hybrid",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "prius_hybrid/model.config"
+          ],
+          "patterns": [
+            "prius_hybrid/*"
+          ]
+        },
+        {
+          "id": "bus_stop",
+          "category": "bus_shelter",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/bus_stop",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "bus_stop/model.config"
+          ],
+          "patterns": [
+            "bus_stop/*"
+          ]
+        },
+        {
+          "id": "lamp_post",
+          "category": "street_light",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/lamp_post",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "lamp_post/model.config"
+          ],
+          "patterns": [
+            "lamp_post/*"
+          ]
+        },
+        {
+          "id": "stop_light",
+          "category": "traffic_signal",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/stop_light",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "stop_light/model.config"
+          ],
+          "patterns": [
+            "stop_light/*"
+          ]
+        },
+        {
+          "id": "stop_light_post",
+          "category": "traffic_signal_support",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/stop_light_post",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "stop_light_post/model.config"
+          ],
+          "patterns": [
+            "stop_light_post/*"
+          ]
+        },
+        {
+          "id": "stop_sign",
+          "category": "traffic_sign",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/stop_sign",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "stop_sign/model.config"
+          ],
+          "patterns": [
+            "stop_sign/*"
+          ]
+        },
+        {
+          "id": "speed_limit_sign",
+          "category": "traffic_sign",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/speed_limit_sign",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "speed_limit_sign/model.config"
+          ],
+          "patterns": [
+            "speed_limit_sign/*"
+          ]
+        },
+        {
+          "id": "mailbox",
+          "category": "mailbox",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/mailbox",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "mailbox/model.config"
+          ],
+          "patterns": [
+            "mailbox/*"
+          ]
+        },
+        {
+          "id": "postbox",
+          "category": "mailbox",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/postbox",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "postbox/model.config"
+          ],
+          "patterns": [
+            "postbox/*"
+          ]
+        },
+        {
+          "id": "dumpster",
+          "category": "street_bin",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/dumpster",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "dumpster/model.config"
+          ],
+          "patterns": [
+            "dumpster/*"
+          ]
+        },
+        {
+          "id": "fountain",
+          "category": "fountain",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/fountain",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "fountain/model.config"
+          ],
+          "patterns": [
+            "fountain/*"
+          ]
+        },
+        {
+          "id": "playground",
+          "category": "playground_equipment",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/playground",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "playground/model.config"
+          ],
+          "patterns": [
+            "playground/*"
+          ]
+        },
+        {
+          "id": "gazebo",
+          "category": "pavilion",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/gazebo",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "gazebo/model.config"
+          ],
+          "patterns": [
+            "gazebo/*"
+          ]
+        },
+        {
+          "id": "pier",
+          "category": "waterfront_module",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/pier",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "pier/model.config"
+          ],
+          "patterns": [
+            "pier/*"
+          ]
+        },
+        {
+          "id": "truss_bridge",
+          "category": "bridge_module",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/truss_bridge",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "truss_bridge/model.config"
+          ],
+          "patterns": [
+            "truss_bridge/*"
+          ]
+        },
+        {
+          "id": "water_tower",
+          "category": "utility_structure",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/water_tower",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "water_tower/model.config"
+          ],
+          "patterns": [
+            "water_tower/*"
+          ]
+        },
+        {
+          "id": "cafe_table",
+          "category": "outdoor_table",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/cafe_table",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "cafe_table/model.config"
+          ],
+          "patterns": [
+            "cafe_table/*"
+          ]
+        },
+        {
+          "id": "telephone_pole",
+          "category": "utility_pole",
+          "license_id": "LicenseRef-Gazebo-CC-BY-version-review",
+          "source_url": "https://github.com/osrf/gazebo_models/tree/master/telephone_pole",
+          "style": "textured_simulation_source_pending_visual_review",
+          "review_notes": "Repository LICENSE says CC BY 3.0; database manifest says CC BY 4.0. Preserve both and model author records; resolve version before redistribution. Not claimed photorealistic. SDF placement and referenced model dependencies must be preserved.",
+          "files": [
+            "LICENSE",
+            "manifest.xml.in",
+            "telephone_pole/model.config"
+          ],
+          "patterns": [
+            "telephone_pole/*"
+          ]
+        }
+      ]
+    }
+  ]
+}

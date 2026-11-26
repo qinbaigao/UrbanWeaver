@@ -1,0 +1,29 @@
+{
+  "name": "city60_complete_showcase",
+  "width_m": 950.0,
+  "depth_m": 760.0,
+  "building_count": 60,
+  "min_floors": 2,
+  "max_floors": 26,
+  "rooms_per_floor": 5,
+  "road_width_m": 13.0,
+  "sidewalk_width_m": 2.8,
+  "parcel_setback_m": 4.5,
+  "layout_style": "organic_grid",
+  "open_space_ratio": 0.18,
+  "layout_irregularity": 0.62,
+  "road_pattern": "organic_hierarchy",
+  "buildings_per_block": 2,
+  "branch_road_ratio": 0.85,
+  "height_strategy": "zoned_skyline",
+  "highrise_ratio": 0.22,
+  "landmark_count": 3,
+  "skyline_strength": 0.9,
+  "seed": 20260816,
+  "zones": [
+    {"name": "residential_neighborhoods", "function": "residential", "weight": 0.42},
+    {"name": "commercial_core", "function": "commercial", "weight": 0.28},
+    {"name": "civic_service_belt", "function": "public_service", "weight": 0.16},
+    {"name": "mixed_use_transition", "function": "mixed_use", "weight": 0.14}
+  ]
+}

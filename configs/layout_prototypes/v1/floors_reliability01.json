@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_short_wing_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "短翼办公室与公共核心厅",
+      "intent": "两翼紧凑办公室围绕公共核心厅，入口在西侧；适用于小型办公建筑，不强塞大型会议室。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 18,
+        "depth_m": 17,
+        "height_m": 3.6
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            4.6,
+            18,
+            12.4
+          ],
+          "display_name": "circulation",
+          "room_reference_hints": []
+        },
+        {
+          "id": "south0",
+          "function": "office",
+          "bounds_m": [
+            0,
+            0,
+            4.5,
+            4.6
+          ],
+          "display_name": "south0",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "south1",
+          "function": "office",
+          "bounds_m": [
+            4.5,
+            0,
+            9,
+            4.6
+          ],
+          "display_name": "south1",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "south2",
+          "function": "office",
+          "bounds_m": [
+            9,
+            0,
+            13.5,
+            4.6
+          ],
+          "display_name": "south2",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "south3",
+          "function": "office",
+          "bounds_m": [
+            13.5,
+            0,
+            18,
+            4.6
+          ],
+          "display_name": "south3",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "north0",
+          "function": "office",
+          "bounds_m": [
+            0,
+            12.4,
+            4.5,
+            17
+          ],
+          "display_name": "north0",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "north1",
+          "function": "office",
+          "bounds_m": [
+            4.5,
+            12.4,
+            9,
+            17
+          ],
+          "display_name": "north1",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "north2",
+          "function": "office",
+          "bounds_m": [
+            9,
+            12.4,
+            13.5,
+            17
+          ],
+          "display_name": "north2",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        },
+        {
+          "id": "north3",
+          "function": "office",
+          "bounds_m": [
+            13.5,
+            12.4,
+            18,
+            17
+          ],
+          "display_name": "north3",
+          "room_reference_hints": [
+            "office_focus_compact_v1"
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "a": "circulation",
+          "b": "south0",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "south1",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "south2",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "south3",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "north0",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "north1",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "north2",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "north3",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        }
+      ],
+      "open_boundaries": [],
+      "units": [],
+      "entry": {
+        "space": "circulation",
+        "side": "west",
+        "fraction": 0.25,
+        "width_m": 1.5
+      },
+      "cores": [
+        {
+          "id": "stairs",
+          "kind": "stairs",
+          "bounds_m": [
+            7,
+            6,
+            9.4,
+            10.8
+          ],
+          "public_space": "circulation",
+          "stack_key": "stairs_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift",
+          "kind": "elevator",
+          "bounds_m": [
+            11,
+            6,
+            13.2,
+            8.2
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ]
+    },
+    {
+      "id": "office_linear_studios_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "南向入口双翼线性工作室",
+      "intent": "窄长双人工位工作室沿公共核心厅布置；入口南向，楼梯与电梯错开布置，核心筒不侵入房间或遮挡中段入口。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 14.8,
+        "depth_m": 20.4,
+        "height_m": 3.6
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            4.4,
+            0,
+            10.4,
+            20.4
+          ],
+          "display_name": "circulation",
+          "room_reference_hints": []
+        },
+        {
+          "id": "west0",
+          "function": "office",
+          "bounds_m": [
+            0,
+            0,
+            4.4,
+            6.8
+          ],
+          "display_name": "west0",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        },
+        {
+          "id": "west1",
+          "function": "office",
+          "bounds_m": [
+            0,
+            6.8,
+            4.4,
+            13.6
+          ],
+          "display_name": "west1",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        },
+        {
+          "id": "west2",
+          "function": "office",
+          "bounds_m": [
+            0,
+            13.6,
+            4.4,
+            20.4
+          ],
+          "display_name": "west2",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        },
+        {
+          "id": "east0",
+          "function": "office",
+          "bounds_m": [
+            10.4,
+            0,
+            14.8,
+            6.8
+          ],
+          "display_name": "east0",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        },
+        {
+          "id": "east1",
+          "function": "office",
+          "bounds_m": [
+            10.4,
+            6.8,
+            14.8,
+            13.6
+          ],
+          "display_name": "east1",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        },
+        {
+          "id": "east2",
+          "function": "office",
+          "bounds_m": [
+            10.4,
+            13.6,
+            14.8,
+            20.4
+          ],
+          "display_name": "east2",
+          "room_reference_hints": [
+            "office_pair_linear_v1"
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "a": "circulation",
+          "b": "west0",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "west1",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "west2",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "east0",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "east1",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        },
+        {
+          "a": "circulation",
+          "b": "east2",
+          "fraction": 0.5,
+          "width_m": 1.2,
+          "kind": "door"
+        }
+      ],
+      "open_boundaries": [],
+      "units": [],
+      "entry": {
+        "space": "circulation",
+        "side": "south",
+        "fraction": 0.5,
+        "width_m": 1.5
+      },
+      "cores": [
+        {
+          "id": "stairs",
+          "kind": "stairs",
+          "bounds_m": [
+            5,
+            8,
+            7.4,
+            12.8
+          ],
+          "public_space": "circulation",
+          "stack_key": "stairs_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift",
+          "kind": "elevator",
+          "bounds_m": [
+            5,
+            14,
+            7.2,
+            16.2
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ]
+    }
+  ]
+}

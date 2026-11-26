@@ -1,0 +1,1845 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_open_pair_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "双人共享办公与资料区",
+      "intent": "双人共享办公与资料区；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.8,
+        "depth_m": 5.6,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.2,
+          "depth_m": 6.0,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.8,
+          "depth_m": 5.6,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.2,
+          6
+        ],
+        "depth_m": [
+          4.8,
+          7
+        ],
+        "area_m2": [
+          20.16,
+          42
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "open_display_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "office_open_four_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "四人工位与共享资料柜",
+      "intent": "四人工位与共享资料柜；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.6,
+        "depth_m": 7.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.0,
+          "depth_m": 7.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.6,
+          "depth_m": 7.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5,
+          8
+        ],
+        "depth_m": [
+          5,
+          9
+        ],
+        "area_m2": [
+          25,
+          72
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "工位"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "工位"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "资料收纳"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_workstation",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_workstation",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "open_workstation",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g03",
+          "combination": "open_workstation",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g04",
+          "combination": "compact_storage_cabinet",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "office_open_six_mid_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "六人团队办公与资料架",
+      "intent": "六人团队办公与资料架；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "minimal",
+      "occupants": 6,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.2,
+        "depth_m": 8.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.6,
+          "depth_m": 8.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.2,
+          "depth_m": 8.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.5,
+          9
+        ],
+        "depth_m": [
+          7.5,
+          10
+        ],
+        "area_m2": [
+          48.75,
+          90
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g03",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g04",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g05",
+          "combination": "open_workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g06",
+          "combination": "open_display_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "meeting_four_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "四人讨论室",
+      "intent": "四人讨论室；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "meeting_room",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.8,
+        "depth_m": 4.8,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.2,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.8,
+          "depth_m": 4.8,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.2,
+          6
+        ],
+        "depth_m": [
+          4.2,
+          6
+        ],
+        "area_m2": [
+          17.64,
+          36
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "center",
+          "purpose": "center功能区域",
+          "position": "center"
+        },
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_meeting_4",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_display_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "meeting_six_compact_v1",
+      "level": "room",
+      "revision": 2,
+      "display_name": "六人双长边会议室",
+      "intent": "六人双长边会议室；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "meeting_room",
+      "palette": "minimal",
+      "occupants": 6,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.4,
+        "depth_m": 6,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.8,
+          "depth_m": 6.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.4,
+          "depth_m": 6,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.47,
+          "depth_m": 5.37,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.47,
+          "depth_m": 5.37,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.47,
+          "depth_m": 5.37,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.4,
+          7
+        ],
+        "depth_m": [
+          4.4,
+          7
+        ],
+        "area_m2": [
+          19.36,
+          49
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "center",
+          "purpose": "center功能区域",
+          "position": "center"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_meeting_6",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "reception_wait_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "短时接待等候与资料区",
+      "intent": "短时接待等候与资料区；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.6,
+        "depth_m": 5.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.0,
+          "depth_m": 5.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.6,
+          "depth_m": 5.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4,
+          6
+        ],
+        "depth_m": [
+          4,
+          7
+        ],
+        "area_m2": [
+          16,
+          42
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "purpose": "west功能区域",
+          "position": "west"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        },
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_waiting_bench",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_waiting_bench",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "open_display_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "reception_service_mid_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "服务前台与两侧等候",
+      "intent": "服务前台与两侧等候；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "minimal",
+      "occupants": 5,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.6,
+        "depth_m": 7.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.0,
+          "depth_m": 7.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.6,
+          "depth_m": 7.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5,
+          8.5
+        ],
+        "depth_m": [
+          5,
+          9
+        ],
+        "area_m2": [
+          25,
+          76.5
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "west",
+          "purpose": "west功能区域",
+          "position": "west"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "staff_reception",
+          "zone": "north",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_waiting_bench",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_waiting_bench",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "storage_single_row_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "单排货架与备品柜",
+      "intent": "单排货架与备品柜；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "storage",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 3.4,
+        "depth_m": 4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 3.8,
+          "depth_m": 4.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 3.4,
+          "depth_m": 4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3,
+          6
+        ],
+        "depth_m": [
+          3.4,
+          6
+        ],
+        "area_m2": [
+          10.2,
+          36
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_stock_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "storage_double_row_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "双排货架中央取用通道",
+      "intent": "双排货架中央取用通道；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "storage",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.2,
+        "depth_m": 5.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.6,
+          "depth_m": 5.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.2,
+          "depth_m": 5.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.5,
+          7
+        ],
+        "depth_m": [
+          4.5,
+          7
+        ],
+        "area_m2": [
+          20.25,
+          49
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "purpose": "west功能区域",
+          "position": "west"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        },
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_stock_shelf",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_stock_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_stock_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "living_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "紧凑会客与阅读客厅",
+      "intent": "紧凑会客与阅读客厅；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "living_room",
+      "palette": "warm",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.4,
+        "depth_m": 4.8,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.8,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.4,
+          "depth_m": 4.8,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4,
+          6
+        ],
+        "depth_m": [
+          4.2,
+          6
+        ],
+        "area_m2": [
+          16.8,
+          36
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_lounge_pair",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "open_display_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "living_dining_four_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "会客与四人家庭就餐复合区",
+      "intent": "会客与四人家庭就餐复合区；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "living_room",
+      "palette": "warm",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 6.4,
+        "depth_m": 7,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.8,
+          "depth_m": 7.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.4,
+          "depth_m": 7,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.8,
+          8
+        ],
+        "depth_m": [
+          6,
+          9
+        ],
+        "area_m2": [
+          34.8,
+          72
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "south",
+          "purpose": "south功能区域",
+          "position": "south"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_lounge_pair",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_dining_four",
+          "zone": "south",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bedroom_single_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "单人卧室与衣物收纳",
+      "intent": "单人卧室与衣物收纳；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bedroom",
+      "palette": "warm",
+      "occupants": 1,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 3.8,
+        "depth_m": 4.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.2,
+          "depth_m": 4.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 3.8,
+          "depth_m": 4.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.4,
+          5.5
+        ],
+        "depth_m": [
+          4,
+          6
+        ],
+        "area_m2": [
+          13.6,
+          33.0
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "sleep_single",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_wardrobe",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen_prep_storage_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "备餐台与食材收纳厨房",
+      "intent": "备餐台与食材收纳厨房；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "kitchen",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.2,
+        "depth_m": 4.8,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.6,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.2,
+          "depth_m": 4.8,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.8,
+          6
+        ],
+        "depth_m": [
+          4.2,
+          6
+        ],
+        "area_m2": [
+          15.96,
+          36
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        },
+        {
+          "id": "west",
+          "purpose": "west功能区域",
+          "position": "west"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "kitchen_prep",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "kitchen_wash",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "shop_compact_counter_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "沿墙陈列与独立收银小店",
+      "intent": "沿墙陈列与独立收银小店；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.4,
+        "depth_m": 6.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.8,
+          "depth_m": 6.8,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.4,
+          "depth_m": 6.4,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.8,
+          7
+        ],
+        "depth_m": [
+          5.4,
+          8
+        ],
+        "area_m2": [
+          25.92,
+          56
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        },
+        {
+          "id": "west",
+          "purpose": "west功能区域",
+          "position": "west"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_shop_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_shop_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "retail_checkout",
+          "zone": "west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "break_cafe_four_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "四人简餐与备餐收纳区",
+      "intent": "四人简餐与备餐收纳区；功能组按实际尺寸重新求解，保留入口和操作通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "break_room",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 5.6,
+        "depth_m": 6.6,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.0,
+          "depth_m": 7.0,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.6,
+          "depth_m": 6.6,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5,
+          7.5
+        ],
+        "depth_m": [
+          5.8,
+          8
+        ],
+        "area_m2": [
+          29.0,
+          60.0
+        ],
+        "aspect_ratio": [
+          0.45,
+          2.2
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "center",
+          "purpose": "center功能区域",
+          "position": "center"
+        },
+        {
+          "id": "north",
+          "purpose": "north功能区域",
+          "position": "north"
+        },
+        {
+          "id": "east",
+          "purpose": "east功能区域",
+          "position": "east"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_dining_four",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "pantry_counter",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

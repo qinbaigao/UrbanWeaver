@@ -1,0 +1,12 @@
+{
+  "name": "curved_roads_smoke",
+  "width_m": 320,
+  "depth_m": 280,
+  "building_count": 4,
+  "min_floors": 2,
+  "max_floors": 3,
+  "rooms_per_floor": 2,
+  "seed": 12,
+  "road_pattern": "curved_hierarchy",
+  "branch_road_ratio": 1.0
+}

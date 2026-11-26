@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "urban_center_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "01 · 紧凑城市中心",
+      "intent": "高层商务建筑与中层混合街区，主次道路和公共广场共同组织空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 660,
+        "depth_m": 620,
+        "building_count": 32,
+        "min_floors": 5,
+        "max_floors": 28,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 13,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.16,
+        "road_pattern": "landscape_adaptive",
+        "buildings_per_block": 1,
+        "branch_road_ratio": 0,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0.45,
+        "landmark_count": 3,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "parcel_layout": "polygonal",
+        "morphology": {
+          "road_warp_ratio": 0.02
+        },
+        "seed": 1101,
+        "zones": [
+          {
+            "name": "Business core",
+            "function": "commercial",
+            "weight": 0.65,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "metal"
+              ],
+              "design_languages": [
+                "vertical_piers",
+                "horizontal_ribbon"
+              ]
+            }
+          },
+          {
+            "name": "Mixed frontage",
+            "function": "mixed_use",
+            "weight": 0.25,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid"
+              ]
+            }
+          },
+          {
+            "name": "Civic plaza",
+            "function": "public_service",
+            "weight": 0.1,
+            "architecture": {
+              "material_palette": [
+                "stone"
+              ],
+              "design_languages": [
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_center_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "plaza",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "office_mixed_v1",
+        "retail_gallery_v1",
+        "residential_core_v1"
+      ]
+    },
+    {
+      "id": "urban_residential_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "02 · 住宅生活区",
+      "intent": "多栋住宅组成生活组团，局部服务支路、公共绿地与社区服务配套。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 540,
+        "depth_m": 520,
+        "building_count": 24,
+        "min_floors": 3,
+        "max_floors": 11,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 9,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.3,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 3,
+        "branch_road_ratio": 0.65,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1102,
+        "zones": [
+          {
+            "name": "Residential gardens",
+            "function": "residential",
+            "weight": 0.8,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "plaster"
+              ],
+              "design_languages": [
+                "paired_windows",
+                "shaded_bays"
+              ]
+            }
+          },
+          {
+            "name": "Community services",
+            "function": "public_service",
+            "weight": 0.2,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "plaster"
+              ],
+              "design_languages": [
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_residential_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "park",
+          "garden",
+          "park"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "park",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "residential_spine_v1",
+        "residential_core_v1"
+      ]
+    },
+    {
+      "id": "urban_mixed_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "03 · 商住混合街区",
+      "intent": "商业、混合用途与住宅组团形成连续街区，公共广场与绿地穿插。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 570,
+        "depth_m": 530,
+        "building_count": 28,
+        "min_floors": 3,
+        "max_floors": 14,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 10,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.2,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0.5,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0.15,
+        "landmark_count": 1,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1103,
+        "zones": [
+          {
+            "name": "Mixed street front",
+            "function": "mixed_use",
+            "weight": 0.45,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "glass"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "shaded_bays"
+              ]
+            }
+          },
+          {
+            "name": "Housing groups",
+            "function": "residential",
+            "weight": 0.35,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "paired_windows"
+              ]
+            }
+          },
+          {
+            "name": "Local commerce",
+            "function": "commercial",
+            "weight": 0.2,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "glass"
+              ],
+              "design_languages": [
+                "horizontal_ribbon"
+              ]
+            }
+          }
+        ],
+        "name": "urban_mixed_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "garden",
+          "park"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "office_mixed_v1",
+        "retail_gallery_v1",
+        "residential_core_v1"
+      ]
+    },
+    {
+      "id": "urban_campus_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "04 · 办公园区",
+      "intent": "中低层办公组团、景观留白与局部服务道路；停车复用现有合法街边停车逻辑。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 620,
+        "depth_m": 560,
+        "building_count": 24,
+        "min_floors": 3,
+        "max_floors": 8,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 9,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.22,
+        "open_space_ratio": 0.35,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 3,
+        "branch_road_ratio": 0.8,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1104,
+        "zones": [
+          {
+            "name": "Office groups",
+            "function": "commercial",
+            "weight": 0.8,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "stone"
+              ],
+              "design_languages": [
+                "horizontal_ribbon",
+                "shaded_bays"
+              ]
+            }
+          },
+          {
+            "name": "Shared amenities",
+            "function": "public_service",
+            "weight": 0.2,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid"
+              ]
+            }
+          }
+        ],
+        "name": "urban_campus_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "garden",
+          "park",
+          "plaza"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "garden",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "office_mixed_v1",
+        "office_open_floor_v1"
+      ]
+    },
+    {
+      "id": "urban_waterfront_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "05 · 滨水街区",
+      "intent": "独立蜿蜒河流、少量沿岸曲路、跨河桥梁与普通直线街区；避免整城随河扭曲。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 850,
+        "depth_m": 720,
+        "building_count": 24,
+        "min_floors": 3,
+        "max_floors": 15,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 10,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.22,
+        "road_pattern": "landscape_adaptive",
+        "buildings_per_block": 1,
+        "branch_road_ratio": 0,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0.17,
+        "landmark_count": 2,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "parcel_layout": "polygonal",
+        "river_mode": "meandering",
+        "river_width_m": 24,
+        "river_bank_width_m": 5,
+        "river_setback_m": 8,
+        "morphology": {
+          "river_amplitude_ratio": 0.08,
+          "river_cycles": 1,
+          "road_warp_ratio": 0.03
+        },
+        "seed": 1105,
+        "zones": [
+          {
+            "name": "Waterfront living",
+            "function": "residential",
+            "weight": 0.45,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "paired_windows",
+                "shaded_bays"
+              ]
+            }
+          },
+          {
+            "name": "River business",
+            "function": "commercial",
+            "weight": 0.3,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "metal"
+              ],
+              "design_languages": [
+                "vertical_piers"
+              ]
+            }
+          },
+          {
+            "name": "Public waterfront",
+            "function": "public_service",
+            "weight": 0.25,
+            "architecture": {
+              "material_palette": [
+                "stone"
+              ],
+              "design_languages": [
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_waterfront_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "park",
+          "plaza",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "park",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "office_mixed_v1",
+        "retail_gallery_v1",
+        "residential_core_v1"
+      ]
+    },
+    {
+      "id": "urban_old_quarter_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "06 · 不规则低中层街区",
+      "intent": "短尺度错位街道、T 字路口、非标准地块与低中层建筑；不是历史街巷的精确复原。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 550,
+        "depth_m": 510,
+        "building_count": 28,
+        "min_floors": 2,
+        "max_floors": 6,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 8,
+        "sidewalk_width_m": 1.8,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.18,
+        "road_pattern": "landscape_adaptive",
+        "buildings_per_block": 1,
+        "branch_road_ratio": 0,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "parcel_layout": "polygonal",
+        "morphology": {
+          "road_warp_ratio": 0.06
+        },
+        "seed": 1106,
+        "zones": [
+          {
+            "name": "Older mixed quarter",
+            "function": "mixed_use",
+            "weight": 0.5,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "stone"
+              ],
+              "design_languages": [
+                "solid_punched",
+                "paired_windows"
+              ]
+            }
+          },
+          {
+            "name": "Residential lanes",
+            "function": "residential",
+            "weight": 0.4,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "paired_windows"
+              ]
+            }
+          },
+          {
+            "name": "Neighborhood civic",
+            "function": "public_service",
+            "weight": 0.1,
+            "architecture": {
+              "material_palette": [
+                "stone"
+              ],
+              "design_languages": [
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_old_quarter_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。"
+      ],
+      "floor_reference_hints": [
+        "residential_spine_v1",
+        "residential_core_v1"
+      ]
+    }
+  ]
+}

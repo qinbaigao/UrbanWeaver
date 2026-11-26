@@ -1,0 +1,16 @@
+{
+  "name": "waterfront_smoke",
+  "width_m": 400,
+  "depth_m": 360,
+  "building_count": 4,
+  "min_floors": 2,
+  "max_floors": 3,
+  "rooms_per_floor": 2,
+  "seed": 12,
+  "road_pattern": "curved_hierarchy",
+  "parcel_layout": "polygonal",
+  "river_mode": "meandering",
+  "river_width_m": 24,
+  "river_bank_width_m": 5,
+  "river_setback_m": 8
+}

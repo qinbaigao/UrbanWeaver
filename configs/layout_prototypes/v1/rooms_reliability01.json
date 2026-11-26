@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_focus_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "紧凑单人专注办公室",
+      "intent": "紧凑单人专注办公室；保留真实资产尺寸、完整功能与入口通路，不通过缩放家具强行适配。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "office",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "按实际工位或同时使用人数规划，不以增加物件数量代替功能。",
+      "reference": {
+        "width_m": 3.8,
+        "depth_m": 4.6,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 1
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.2,
+          "depth_m": 5,
+          "height_m": 3.2,
+          "door_fraction": 0.7,
+          "door_width_m": 1
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.6,
+          6.5
+        ],
+        "depth_m": [
+          4.3,
+          5.5
+        ],
+        "area_m2": [
+          15.48,
+          35.75
+        ],
+        "aspect_ratio": [
+          0.4,
+          2.8
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需家具不得删除或缩小",
+        "门区与功能操作面保持连通",
+        "未知资产朝向不得冒充已验证"
+      ],
+      "editable_fields": [
+        "经验证的尺寸适配",
+        "同功能资产替换",
+        "局部家具组调整"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能带"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能带"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "work",
+          "combination": "workstation",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "storage",
+          "combination": "open_bookcase",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "office_pair_linear_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "狭长双人同侧工作室",
+      "intent": "狭长双人同侧工作室；保留真实资产尺寸、完整功能与入口通路，不通过缩放家具强行适配。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "office",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按实际工位或同时使用人数规划，不以增加物件数量代替功能。",
+      "reference": {
+        "width_m": 4.4,
+        "depth_m": 6.8,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 1
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.800000000000001,
+          "depth_m": 7.2,
+          "height_m": 3.2,
+          "door_fraction": 0.7,
+          "door_width_m": 1
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.2,
+          5.5
+        ],
+        "depth_m": [
+          6.5,
+          8
+        ],
+        "area_m2": [
+          27.3,
+          44
+        ],
+        "aspect_ratio": [
+          0.4,
+          2.8
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需家具不得删除或缩小",
+        "门区与功能操作面保持连通",
+        "未知资产朝向不得冒充已验证"
+      ],
+      "editable_fields": [
+        "经验证的尺寸适配",
+        "同功能资产替换",
+        "局部家具组调整"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能带"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能带"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "work_a",
+          "combination": "workstation",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "work_b",
+          "combination": "workstation",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "storage",
+          "combination": "open_bookcase",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen_single_wall_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "单排直线厨房",
+      "intent": "单排直线厨房；保留真实资产尺寸、完整功能与入口通路，不通过缩放家具强行适配。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "kitchen",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按实际工位或同时使用人数规划，不以增加物件数量代替功能。",
+      "reference": {
+        "width_m": 6.8,
+        "depth_m": 3.4,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 1
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.2,
+          "depth_m": 3.8,
+          "height_m": 3.2,
+          "door_fraction": 0.7,
+          "door_width_m": 1
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.6,
+          8
+        ],
+        "depth_m": [
+          3.2,
+          4.2
+        ],
+        "area_m2": [
+          21.12,
+          33.6
+        ],
+        "aspect_ratio": [
+          0.4,
+          2.8
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需家具不得删除或缩小",
+        "门区与功能操作面保持连通",
+        "未知资产朝向不得冒充已验证"
+      ],
+      "editable_fields": [
+        "经验证的尺寸适配",
+        "同功能资产替换",
+        "局部家具组调整"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能带"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "wash",
+          "combination": "kitchen_wash",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "prep",
+          "combination": "kitchen_prep",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "cook",
+          "combination": "kitchen_cook",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "cold",
+          "combination": "kitchen_cold",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "reading_alcove_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "独立安静阅读室",
+      "intent": "独立安静阅读室；保留真实资产尺寸、完整功能与入口通路，不通过缩放家具强行适配。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reading_room",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "按实际工位或同时使用人数规划，不以增加物件数量代替功能。",
+      "reference": {
+        "width_m": 4.2,
+        "depth_m": 4.8,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 1
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 4.6000000000000005,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.7,
+          "door_width_m": 1
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4,
+          5.8
+        ],
+        "depth_m": [
+          4.5,
+          6
+        ],
+        "area_m2": [
+          18,
+          34.8
+        ],
+        "aspect_ratio": [
+          0.4,
+          2.8
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需家具不得删除或缩小",
+        "门区与功能操作面保持连通",
+        "未知资产朝向不得冒充已验证"
+      ],
+      "editable_fields": [
+        "经验证的尺寸适配",
+        "同功能资产替换",
+        "局部家具组调整"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能带"
+        },
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能带"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "reading",
+          "combination": "writing_corner",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "books",
+          "combination": "open_bookcase",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

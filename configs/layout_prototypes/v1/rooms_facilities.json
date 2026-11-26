@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "kitchen_galley_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "10 · 双排家庭厨房",
+      "intent": "两侧分配备餐、水槽、灶具和冰箱，北部开放收纳架补充餐具取用。第一版为独立模块双排，不宣称已实现无缝连续橱柜。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "kitchen",
+      "palette": "warm",
+      "occupants": 2,
+      "capacity_reason": "按实际使用人数规划，不通过复制家具增加容量。",
+      "reference": {
+        "width_m": 4.8,
+        "depth_m": 4.6,
+        "height_m": 3.1,
+        "door_fraction": 0.25,
+        "door_width_m": 0.9
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.2,
+          "depth_m": 5,
+          "height_m": 3.1,
+          "door_fraction": 0.72,
+          "door_width_m": 0.9
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          4.7,
+          5.8
+        ],
+        "depth_m": [
+          4.5,
+          5.6
+        ],
+        "area_m2": [
+          21.150000000000002,
+          32.48
+        ],
+        "aspect_ratio": [
+          0.75,
+          1.4
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需设施全部实现",
+        "所有设施正面使用空间可达",
+        "不占用入口通道"
+      ],
+      "editable_fields": [
+        "尺寸适配",
+        "同功能资产替换需重新校验",
+        "台面和陈列物件"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "wash",
+          "position": "west",
+          "purpose": "清洗与备餐"
+        },
+        {
+          "id": "cook",
+          "position": "east",
+          "purpose": "冷藏与烹饪"
+        },
+        {
+          "id": "storage",
+          "position": "north",
+          "purpose": "餐具收纳"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "wash",
+          "combination": "kitchen_wash",
+          "zone": "wash",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "prep",
+          "combination": "kitchen_prep",
+          "zone": "wash",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "cold",
+          "combination": "kitchen_cold",
+          "zone": "cook",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "cook",
+          "combination": "kitchen_cook",
+          "zone": "cook",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "storage",
+          "combination": "service_shelf",
+          "zone": "storage",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ],
+      "decorations": []
+    },
+    {
+      "id": "bathroom_shower_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "11 · 家庭淋浴卫生间",
+      "intent": "北部完整淋浴间与坐便器、侧墙洗手盆，首先验证湿区、如厕、洗漱三个功能。镜子、毛巾等后续补齐；不模拟给排水或门扇开合。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bathroom",
+      "palette": "warm",
+      "occupants": 1,
+      "capacity_reason": "按实际使用人数规划，不通过复制家具增加容量。",
+      "reference": {
+        "width_m": 3.4,
+        "depth_m": 3.2,
+        "height_m": 3.1,
+        "door_fraction": 0.25,
+        "door_width_m": 0.9
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 3.8,
+          "depth_m": 3.6,
+          "height_m": 3.1,
+          "door_fraction": 0.72,
+          "door_width_m": 0.9
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.3,
+          4.4
+        ],
+        "depth_m": [
+          3.1,
+          4.2
+        ],
+        "area_m2": [
+          10.23,
+          18.480000000000004
+        ],
+        "aspect_ratio": [
+          0.75,
+          1.4
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需设施全部实现",
+        "所有设施正面使用空间可达",
+        "不占用入口通道"
+      ],
+      "editable_fields": [
+        "尺寸适配",
+        "同功能资产替换需重新校验",
+        "台面和陈列物件"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "wet",
+          "position": "north",
+          "purpose": "淋浴湿区"
+        },
+        {
+          "id": "wc",
+          "position": "east",
+          "purpose": "如厕"
+        },
+        {
+          "id": "wash",
+          "position": "west",
+          "purpose": "洗手"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "shower",
+          "combination": "bath_shower",
+          "zone": "wet",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "wc",
+          "combination": "bath_wc",
+          "zone": "wc",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "wash",
+          "combination": "bath_basin",
+          "zone": "wash",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        }
+      ],
+      "decorations": []
+    },
+    {
+      "id": "retail_books_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "12 · 书籍文创小店",
+      "intent": "两侧开放陈列架、中央文创展示岛和入口附近收银区；先用现有书籍文具与花器覆盖具体店型，不宣称覆盖生鲜、服装等不同陈列逻辑。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "warm",
+      "occupants": 4,
+      "capacity_reason": "按实际使用人数规划，不通过复制家具增加容量。",
+      "reference": {
+        "width_m": 6.8,
+        "depth_m": 6.6,
+        "height_m": 3.1,
+        "door_fraction": 0.25,
+        "door_width_m": 0.9
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.2,
+          "depth_m": 7,
+          "height_m": 3.1,
+          "door_fraction": 0.72,
+          "door_width_m": 0.9
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.7,
+          7.8
+        ],
+        "depth_m": [
+          6.5,
+          7.6
+        ],
+        "area_m2": [
+          43.550000000000004,
+          59.279999999999994
+        ],
+        "aspect_ratio": [
+          0.75,
+          1.4
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "必需设施全部实现",
+        "所有设施正面使用空间可达",
+        "不占用入口通道"
+      ],
+      "editable_fields": [
+        "尺寸适配",
+        "同功能资产替换需重新校验",
+        "台面和陈列物件"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "书籍展示"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "文创资料"
+        },
+        {
+          "id": "island",
+          "position": "center",
+          "purpose": "岛台陈列"
+        },
+        {
+          "id": "checkout",
+          "position": "south",
+          "purpose": "收银"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "west",
+          "combination": "open_bookcase",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "north",
+          "combination": "open_bookcase",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "island",
+          "combination": "retail_display_table",
+          "zone": "island",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "checkout",
+          "combination": "retail_checkout",
+          "zone": "checkout",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        }
+      ],
+      "decorations": [
+        {
+          "id": "art",
+          "kind": "wall_asset",
+          "asset_id": "prototype_public_art",
+          "walls": [
+            "east",
+            "north"
+          ]
+        },
+        {
+          "id": "plant",
+          "kind": "floor_asset",
+          "asset_id": "prototype_public_plant",
+          "walls": [
+            "east",
+            "west",
+            "north",
+            "south"
+          ]
+        }
+      ]
+    }
+  ]
+}

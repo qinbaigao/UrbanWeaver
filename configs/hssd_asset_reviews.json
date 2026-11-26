@@ -1,0 +1,96 @@
+{
+  "schema_version": "cityg.hssd_visual_review.v1",
+  "candidate_registry_sha256": "7b484dc2b310ee8366f248efdb04e93d907cfffe5d35fe48c2029491dec9058a",
+  "decisions": [
+    {
+      "asset_id": "interior_hssd_051239c63082d6b0cda8ef2db8be17d840be44bc",
+      "status": "visual_checked",
+      "note": "四视图：完整深色木床及床品，床尾为 +X；深色材质需室内照明验证，未批准运行时摆放。",
+      "preview_sha256": "12700f48d4bfed377b66e91767cb876f059ab26e66a315ba95a47fcae332367d"
+    },
+    {
+      "asset_id": "interior_hssd_0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+      "status": "visual_checked",
+      "note": "四视图：黑色皮革办公椅，扶手/靠背完整，座位功能正面为 +X；静态模型，未验收座面支撑。",
+      "preview_sha256": "77a473839e9c849015c4bddef6b97f63f134681f145c88cd65a25b6d1f76f4d8"
+    },
+    {
+      "asset_id": "interior_hssd_08a658d2eca1d1dae199eeb03e185e46edf75141",
+      "status": "hold",
+      "note": "四视图显示单人扶手椅，不应按多人 sofa 检索；应改为 armchair 后重新标注。",
+      "preview_sha256": "a65b9e1bca57c3d5e160936957c49035e80724a12b59be2024132c0343914563"
+    },
+    {
+      "asset_id": "interior_hssd_02e22ed56270338bef5f8436e82023c36cd29104",
+      "status": "visual_checked",
+      "note": "四视图：白色平台床，含床垫、枕头及搭毯；床尾为 +X，适合作为卧室摆放试验候选。",
+      "preview_sha256": "8c3e743f109e07e84c4975fc967275ee8e6efb2e3139170cac01327de986f200"
+    },
+    {
+      "asset_id": "interior_hssd_73b1c08116757336da9e7384dcb3d770a9803d8a",
+      "status": "visual_checked",
+      "note": "四视图：人体工学办公椅含头枕、扶手和轮脚；功能正面为 +X，黑色网面需在室内灯光下进一步核对。",
+      "preview_sha256": "31fb75147fb67ad9a5583808ecad9d6d04adc17328cd41efc4a0e35e29c669c2"
+    },
+    {
+      "asset_id": "interior_hssd_b2a15fbf1be55416b27bc7ef9a10d2b22af24376",
+      "status": "visual_checked",
+      "note": "四视图：完整写字桌，抽屉与腿部开口朝 +X；尺寸合理，桌面尚待支撑面几何采样。",
+      "preview_sha256": "c48f54b661ff9f7bac744b9d82020f3f4b5e4e5a06e49cee9be03f21ccc418ba"
+    },
+    {
+      "asset_id": "interior_hssd_2029bfb9eca4ab612eb6724916cbff472de47d7b",
+      "status": "visual_checked",
+      "note": "四视图：显示器、底座完整，屏幕朝 +X；屏幕为静态暗面，不代表交互显示或发光已实现。",
+      "preview_sha256": "5ae6e2383f6d6e1bc655ce8f4d3a3a632906d3e0e59a51b697ecb567afb27b72"
+    },
+    {
+      "asset_id": "interior_hssd_726793309f6eb1fbd6b34ea52de023d78b596903",
+      "status": "hold",
+      "note": "四视图只见独立桌面板，缺少桌腿；不能作为完整 coffee_table 放置。",
+      "preview_sha256": "da2df672747294ae03f26eaecfe3f5cb75b30eb71f6ccf1aa1ee75c5227f53c4"
+    },
+    {
+      "asset_id": "interior_hssd_bf3c644c0686ef3f380f199a533d65d5d71e8bf0",
+      "status": "hold",
+      "note": "来源标为 Dining chairs，但四视图是完整餐桌；需改为 dining_table，不能按椅子放置。",
+      "preview_sha256": "6af14c258e995946cda1148f40a6f1658af4319b91fb223d9460a25b8ed6f937"
+    },
+    {
+      "asset_id": "interior_hssd_991bae3b8af2a9a110e32138d6a63ae1f038c0bc",
+      "status": "hold",
+      "note": "来源名称为牙刷架，顶部形状也为浴室容器；不能作为办公室/厨房饮水杯，需改分类与适用房间。",
+      "preview_sha256": "c65735887cbe1e57c5aa361015df8f2b85fedd13328c21c352b6e5f077251d4f"
+    },
+    {
+      "asset_id": "interior_hssd_93107d702eede74e64d4778192f1fce0a8ee2f43",
+      "status": "hold",
+      "note": "绿色深口沙拉碗，不是浅盘；需改为 bowl 并复核底部接触方式。",
+      "preview_sha256": "0eeadda63815bb34d44131cea7389357cedcd4dfec1c9efc4f4180f8412bc2b6"
+    },
+    {
+      "asset_id": "interior_hssd_283eae1c113de1b9b3afbd91132de63f7142d1b3",
+      "status": "visual_checked",
+      "note": "四视图：浅灰三座沙发，坐垫/扶手/腿完整，功能正面为 +X；适合作为现代客厅试验候选。",
+      "preview_sha256": "a5604a3275ed92606462b6b3411351d104b0753336848c33daa7d5812f7c6431"
+    },
+    {
+      "asset_id": "interior_hssd_2d25d56f923ece2bdfb3034f620708ace9e0d579",
+      "status": "hold",
+      "note": "四视图为单盆花卉，可用轮廓但材质较简单；157012 三角面超过预算，先做 LOD/质量筛选。",
+      "preview_sha256": "63e99401d054d13b5d52670fbef0e628c99071e9e8d831f7db258600d82fdd62"
+    },
+    {
+      "asset_id": "interior_hssd_bf7a2fdc9c345ac33db72429f5bad9b30852611f",
+      "status": "hold",
+      "note": "虽名为 6 Plants，四视图为一个盆栽组合；132280 三角面超过预算且材质偏暗，待简化与光照复核。",
+      "preview_sha256": "461acca8a74c7a821ec6f9453c5411ae2e0062542de8bf8390daf7529a912e34"
+    },
+    {
+      "asset_id": "interior_hssd_e2e72c270d6dae987e03d7f2ce4c3e185e51a1fc",
+      "status": "hold",
+      "note": "四视图完整床与床品，木质床头完整，床尾 +X；141344 三角面超过预算，先简化再放置验收。",
+      "preview_sha256": "734a629eba82c7747a70f9d9d55a44a5265f645a089cd13d97f7861e1f6c0b9f"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "sleep_double", "level": "combination", "revision": 2,
+      "display_name": "双人床与双床头柜", "intent": "床头靠墙，两侧床头柜沿床头对齐，保留侧向上下床空间。",
+      "review": {"status": "pending_review"},
+      "anchor": {"id": "bed", "category": "bed"},
+      "members": [
+        {"id": "left", "category": "bedside_table", "side": "left", "slot": 0, "gap_m": 0.2, "face_anchor": false},
+        {"id": "right", "category": "bedside_table", "side": "right", "slot": 0, "gap_m": 0.2, "face_anchor": false}
+      ],
+      "asset_bindings": {"bed": "interior_hssd_051239c63082d6b0cda8ef2db8be17d840be44bc", "bedside_table": "interior_hssd_84815c44d0b7569cd2c023b75d6f11d21bdb7505"},
+      "surface_items": [
+        {"id": "lamp", "support_member_id": "left", "surface": "top", "category": "desk_lamp", "count": 1, "placement": "back"},
+        {"id": "book", "support_member_id": "right", "surface": "top", "category": "book", "count": 1, "placement": "back"},
+        {"id": "cup", "support_member_id": "left", "surface": "top", "category": "cup", "count": 1, "placement": "front"}
+      ]
+    },
+    {
+      "id": "bedroom_storage", "level": "combination", "revision": 1,
+      "display_name": "卧室衣柜", "intent": "门面朝向室内，柜前保留使用空间。", "review": {"status": "pending_review"},
+      "anchor": {"id": "wardrobe", "category": "wardrobe"}, "members": [],
+      "asset_bindings": {"wardrobe": "interior_hssd_19bc84c6aca89995b69259a0ec179eaa5532ba2b"}, "surface_items": []
+    },
+    {
+      "id": "sofa_coffee", "level": "combination", "revision": 1,
+      "display_name": "三人沙发与茶几", "intent": "沙发面向茶几，茶几与沙发保持可用距离。", "review": {"status": "pending_review"},
+      "anchor": {"id": "sofa", "category": "sofa"},
+      "members": [{"id": "table", "category": "coffee_table", "side": "front", "slot": 0, "gap_m": 0.5, "face_anchor": false}],
+      "asset_bindings": {"sofa": "interior_hssd_283eae1c113de1b9b3afbd91132de63f7142d1b3", "coffee_table": "interior_hssd_7f98d7f8b92972a8f65e3584626ac02b2c731931"},
+      "surface_items": [
+        {"id": "books", "support_member_id": "table", "surface": "top", "category": "book", "count": 2, "placement": "left"},
+        {"id": "vase", "support_member_id": "table", "surface": "top", "category": "vase", "count": 1, "placement": "right"}
+      ]
+    },
+    {
+      "id": "media_console", "level": "combination", "revision": 1,
+      "display_name": "电视柜", "intent": "靠墙并朝向观看区域；当前资产精度需人工审核。", "review": {"status": "pending_review"},
+      "anchor": {"id": "console", "category": "tv_console"}, "members": [],
+      "asset_bindings": {"tv_console": "hunyuan_tv_console_f8e0cfb08c9c0f8c"}, "surface_items": []
+    },
+    {
+      "id": "open_bookcase", "level": "combination", "revision": 3,
+      "display_name": "开放书柜与书籍", "intent": "使用已验证层板放书，正面向室内。", "review": {"status": "pending_review"},
+      "anchor": {"id": "shelf", "category": "bookcase"}, "members": [],
+      "asset_bindings": {"bookcase": "interior_hssd_0de5288928717b30ef111c44a6af982247c279b6"},
+      "asset_roles": {"bookcase": {"source_category": "bookcase", "rationale": "办公、卧室和会议空间的资料展示收纳；仅为原型增加适用房间，不改几何和正式标签。"}},
+      "surface_items": [
+        {"id": "books", "support_member_id": "shelf", "surface": "shelves", "category": "book", "count": 3, "placement": "spread"},
+        {"id": "stack", "support_member_id": "shelf", "surface": "shelves", "category": "book_stack", "count": 1, "placement": "spread"},
+        {"id": "plant", "support_member_id": "shelf", "surface": "shelves", "category": "small_plant", "count": 1, "placement": "spread"},
+        {"id": "vase", "support_member_id": "shelf", "surface": "shelves", "category": "vase", "count": 1, "placement": "spread"}
+      ]
+    },
+    {
+      "id": "workstation", "level": "combination", "revision": 2,
+      "display_name": "工作桌椅与桌面用品", "intent": "椅子朝向桌面操作侧，椅后保留拉出空间。", "review": {"status": "pending_review"},
+      "anchor": {"id": "desk", "category": "desk"},
+      "members": [{"id": "chair", "category": "office_chair", "side": "front", "slot": 0, "gap_m": 0.3, "face_anchor": true}],
+      "asset_bindings": {"desk": "interior_hssd_7e54244342d7a8716e723311313adf7d5ba1620e", "office_chair": "interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"},
+      "surface_items": [
+        {"id": "monitor", "support_member_id": "desk", "surface": "top", "category": "monitor", "count": 1, "placement": "back"},
+        {"id": "keyboard", "support_member_id": "desk", "surface": "top", "category": "keyboard", "count": 1, "placement": "front"},
+        {"id": "notebook", "support_member_id": "desk", "surface": "top", "category": "notebook", "count": 1, "placement": "left"},
+        {"id": "cup", "support_member_id": "desk", "surface": "top", "category": "cup", "count": 1, "placement": "right"},
+        {"id": "pencils", "support_member_id": "desk", "surface": "top", "category": "pencil_cup", "count": 1, "placement": "back"}
+      ]
+    },
+    {
+      "id": "meeting_six", "level": "combination", "revision": 3,
+      "display_name": "六人会议桌椅", "intent": "长边各两座、端部各一座；按实际桌椅尺寸保留椅后通路。", "review": {"status": "pending_review"},
+      "anchor": {"id": "table", "category": "meeting_table"},
+      "members": [
+        {"id": "a", "category": "meeting_chair", "side": "front", "slot": -1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "b", "category": "meeting_chair", "side": "front", "slot": 1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "c", "category": "meeting_chair", "side": "back", "slot": -1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "d", "category": "meeting_chair", "side": "back", "slot": 1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "e", "category": "meeting_chair", "side": "left", "slot": 0, "gap_m": 0.3, "face_anchor": true},
+        {"id": "f", "category": "meeting_chair", "side": "right", "slot": 0, "gap_m": 0.3, "face_anchor": true}
+      ],
+      "asset_bindings": {"meeting_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431", "meeting_chair": "hunyuan_meeting_chair_c6b462e16bab1380"},
+      "asset_roles": {"meeting_table": {"source_category": "dining_table", "rationale": "使用无附带椅子的 2.21m 长矩形餐桌作为六人会议桌，保持原尺寸和材质；仅限此原型实验，不修改正式资产标签。"}},
+      "surface_items": [
+        {"id": "notes", "support_member_id": "table", "surface": "top", "category": "notebook", "count": 2, "placement": "spread"},
+        {"id": "cups", "support_member_id": "table", "surface": "top", "category": "cup", "count": 4, "placement": "spread"},
+        {"id": "pens", "support_member_id": "table", "surface": "top", "category": "pen", "count": 2, "placement": "spread"},
+        {"id": "tray", "support_member_id": "table", "surface": "top", "category": "tray", "count": 1, "placement": "back"}
+      ]
+    },
+    {
+      "id": "dining_four", "level": "combination", "revision": 2,
+      "display_name": "四人简餐桌椅", "intent": "长边各两把椅子，避免把座位排在狭窄桌端。", "review": {"status": "pending_review"},
+      "anchor": {"id": "table", "category": "dining_table"},
+      "members": [
+        {"id": "a", "category": "dining_chair", "side": "front", "slot": -1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "b", "category": "dining_chair", "side": "front", "slot": 1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "c", "category": "dining_chair", "side": "back", "slot": -1, "gap_m": 0.3, "face_anchor": true},
+        {"id": "d", "category": "dining_chair", "side": "back", "slot": 1, "gap_m": 0.3, "face_anchor": true}
+      ],
+      "asset_bindings": {"dining_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431", "dining_chair": "interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3"},
+      "surface_items": [
+        {"id": "cups", "support_member_id": "table", "surface": "top", "category": "cup", "count": 4, "placement": "spread"},
+        {"id": "vase", "support_member_id": "table", "surface": "top", "category": "vase", "count": 1, "placement": "back"},
+        {"id": "tray", "support_member_id": "table", "surface": "top", "category": "tray", "count": 1, "placement": "front"}
+      ]
+    },
+    {
+      "id": "pantry_counter", "level": "combination", "revision": 2,
+      "display_name": "简餐备餐台", "intent": "沿墙布置，保留台前操作区域。", "review": {"status": "pending_review"},
+      "anchor": {"id": "counter", "category": "kitchen_counter"}, "members": [],
+      "asset_bindings": {"kitchen_counter": "hunyuan_kitchen_counter_66358c830855551b"},
+      "surface_items": [
+        {"id": "cups", "support_member_id": "counter", "surface": "top", "category": "cup", "count": 2, "placement": "back"},
+        {"id": "vase", "support_member_id": "counter", "surface": "top", "category": "vase", "count": 1, "placement": "front"}
+      ]
+    },
+    {
+      "id": "writing_corner", "level": "combination", "revision": 1,
+      "display_name": "家庭书写角", "intent": "与睡眠或休闲区分开的紧凑书写区，不重复原有主功能。", "review": {"status": "pending_review"},
+      "anchor": {"id": "desk", "category": "desk"},
+      "members": [{"id": "chair", "category": "office_chair", "side": "front", "slot": 0, "gap_m": 0.3, "face_anchor": true}],
+      "asset_bindings": {"desk": "interior_hssd_7e54244342d7a8716e723311313adf7d5ba1620e", "office_chair": "interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"},
+      "asset_roles": {"desk": {"source_category": "desk", "rationale": "卧室或客厅的私人书写桌，保持原尺寸。"}, "office_chair": {"source_category": "office_chair", "rationale": "家庭书写桌配套座椅，保持原尺寸。"}},
+      "surface_items": [
+        {"id": "lamp", "support_member_id": "desk", "surface": "top", "category": "desk_lamp", "count": 1, "placement": "back"},
+        {"id": "notebook", "support_member_id": "desk", "surface": "top", "category": "notebook", "count": 1, "placement": "front"},
+        {"id": "pen", "support_member_id": "desk", "surface": "top", "category": "pen", "count": 1, "placement": "right"},
+        {"id": "vase", "support_member_id": "desk", "surface": "top", "category": "vase", "count": 1, "placement": "left"}
+      ]
+    },
+    {
+      "id": "visitor_corner", "level": "combination", "revision": 1,
+      "display_name": "办公访客洽谈角", "intent": "两人沙发与小茶几，补充工作桌以外的访客用途。", "review": {"status": "pending_review"},
+      "anchor": {"id": "sofa", "category": "sofa"},
+      "members": [{"id": "table", "category": "coffee_table", "side": "front", "slot": 0, "gap_m": 0.45, "face_anchor": false}],
+      "asset_bindings": {"sofa": "interior_hssd_5386924523286fa156d9397a93cd3f2a7140325d", "coffee_table": "interior_hssd_7f98d7f8b92972a8f65e3584626ac02b2c731931"},
+      "asset_roles": {"sofa": {"source_category": "sofa", "rationale": "办公室访客座位，不改变沙发的家具角色。"}, "coffee_table": {"source_category": "coffee_table", "rationale": "办公室访客茶几，不改变家具尺寸。"}},
+      "surface_items": [
+        {"id": "tray", "support_member_id": "table", "surface": "top", "category": "tray", "count": 1, "placement": "left"},
+        {"id": "cups", "support_member_id": "table", "surface": "top", "category": "cup", "count": 2, "placement": "right"},
+        {"id": "plant", "support_member_id": "table", "surface": "top", "category": "small_plant", "count": 1, "placement": "back"}
+      ]
+    },
+    {
+      "id": "service_shelf", "level": "combination", "revision": 1,
+      "display_name": "餐具与公共用品收纳架", "intent": "增加餐具取用和展示功能，不增加餐桌座位。", "review": {"status": "pending_review"},
+      "anchor": {"id": "shelf", "category": "bookcase"}, "members": [],
+      "asset_bindings": {"bookcase": "interior_hssd_0de5288928717b30ef111c44a6af982247c279b6"},
+      "asset_roles": {"bookcase": {"source_category": "bookcase", "rationale": "开放层板用于简餐室餐具收纳，已验证支撑面仍受净高限制。"}},
+      "surface_items": [
+        {"id": "cups", "support_member_id": "shelf", "surface": "shelves", "category": "cup", "count": 4, "placement": "spread"},
+        {"id": "trays", "support_member_id": "shelf", "surface": "shelves", "category": "tray", "count": 2, "placement": "spread"},
+        {"id": "plant", "support_member_id": "shelf", "surface": "shelves", "category": "small_plant", "count": 1, "placement": "spread"},
+        {"id": "vase", "support_member_id": "shelf", "surface": "shelves", "category": "vase", "count": 1, "placement": "spread"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1328 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "office_open_twelve_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "13 · 十二人开放办公室",
+      "intent": "三排工位带，每排左右两组双人工位，共十二人；中间贯穿通道和两条横向通道连接六个组团，北侧共享资料架。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "open_office",
+      "palette": "warm",
+      "occupants": 12,
+      "capacity_reason": "按 12 人使用和不同功能区配置家具；非建筑规范核定容量。",
+      "reference": {
+        "width_m": 14,
+        "depth_m": 12,
+        "height_m": 3.8,
+        "door_fraction": 0.5,
+        "door_width_m": 1.6
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 15,
+          "depth_m": 13,
+          "height_m": 3.8,
+          "door_fraction": 0.52,
+          "door_width_m": 1.6
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          14,
+          16
+        ],
+        "depth_m": [
+          12,
+          14
+        ],
+        "area_m2": [
+          168,
+          224
+        ],
+        "aspect_ratio": [
+          0.8,
+          1.6
+        ],
+        "min_height_m": 3,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保持功能组团边界",
+        "主次通道不得被家具或落地装饰占用",
+        "所有必需家具及使用空间可达"
+      ],
+      "editable_fields": [
+        "区域比例调整须重新校验",
+        "按真实尺寸替换家具",
+        "组团内部布局"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "south_west",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0,
+            0.04,
+            0.44,
+            0.3
+          ]
+        },
+        {
+          "id": "south_east",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0.56,
+            0.04,
+            1,
+            0.3
+          ]
+        },
+        {
+          "id": "middle_west",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0,
+            0.4,
+            0.44,
+            0.63
+          ]
+        },
+        {
+          "id": "middle_east",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0.56,
+            0.4,
+            1,
+            0.63
+          ]
+        },
+        {
+          "id": "north_west",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0,
+            0.73,
+            0.44,
+            1
+          ]
+        },
+        {
+          "id": "north_east",
+          "position": "center",
+          "purpose": "双人工位组团",
+          "bounds_uv": [
+            0.56,
+            0.73,
+            1,
+            1
+          ]
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "south_west_0",
+          "combination": "open_workstation",
+          "zone": "south_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "south_west_1",
+          "combination": "open_workstation",
+          "zone": "south_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "south_east_0",
+          "combination": "open_workstation",
+          "zone": "south_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "south_east_1",
+          "combination": "open_workstation",
+          "zone": "south_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "middle_west_0",
+          "combination": "open_workstation",
+          "zone": "middle_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "middle_west_1",
+          "combination": "open_workstation",
+          "zone": "middle_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "middle_east_0",
+          "combination": "open_workstation",
+          "zone": "middle_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "middle_east_1",
+          "combination": "open_workstation",
+          "zone": "middle_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "north_west_0",
+          "combination": "open_workstation",
+          "zone": "north_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "north_west_1",
+          "combination": "open_workstation",
+          "zone": "north_west",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "north_east_0",
+          "combination": "open_workstation",
+          "zone": "north_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "north_east_1",
+          "combination": "open_workstation",
+          "zone": "north_east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "west_storage",
+          "combination": "open_display_shelf",
+          "zone": "north_west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "east_storage",
+          "combination": "open_display_shelf",
+          "zone": "north_east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        }
+      ],
+      "reserved_areas": [
+        {
+          "id": "main",
+          "bounds_uv": [
+            0.45,
+            0,
+            0.55,
+            1
+          ],
+          "min_width_m": 1.4,
+          "purpose": "入口贯穿主通道"
+        },
+        {
+          "id": "cross_south",
+          "bounds_uv": [
+            0,
+            0.3,
+            1,
+            0.4
+          ],
+          "min_width_m": 1.2,
+          "purpose": "南部横向通道"
+        },
+        {
+          "id": "cross_north",
+          "bounds_uv": [
+            0,
+            0.63,
+            1,
+            0.73
+          ],
+          "min_width_m": 1.2,
+          "purpose": "北部横向通道"
+        }
+      ],
+      "decorations": [
+        {
+          "id": "plant_w",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "west",
+            "north"
+          ]
+        },
+        {
+          "id": "plant_e",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "art",
+          "kind": "wall_asset",
+          "asset_id": "prototype_open_art",
+          "walls": [
+            "north",
+            "west"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coworking_open_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "14 · 共享办公复合开放区",
+      "intent": "六个独立工作位、四人讨论桌、两组休憩座位和共享资料架，以连续通道连接不同使用场景。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "coworking",
+      "palette": "warm",
+      "occupants": 14,
+      "capacity_reason": "6 个工作座席、4 个讨论座席与两组双人沙发；非建筑规范核定容量。",
+      "reference": {
+        "width_m": 16,
+        "depth_m": 14,
+        "height_m": 3.8,
+        "door_fraction": 0.5,
+        "door_width_m": 1.6
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 17,
+          "depth_m": 15,
+          "height_m": 3.8,
+          "door_fraction": 0.52,
+          "door_width_m": 1.6
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          16,
+          18
+        ],
+        "depth_m": [
+          14,
+          16
+        ],
+        "area_m2": [
+          224,
+          288
+        ],
+        "aspect_ratio": [
+          0.8,
+          1.6
+        ],
+        "min_height_m": 3,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保持功能组团边界",
+        "主次通道不得被家具或落地装饰占用",
+        "所有必需家具及使用空间可达"
+      ],
+      "editable_fields": [
+        "区域比例调整须重新校验",
+        "按真实尺寸替换家具",
+        "组团内部布局"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "sw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.06,
+            0.44,
+            0.45
+          ],
+          "purpose": "西南功能组团"
+        },
+        {
+          "id": "se",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.06,
+            1,
+            0.45
+          ],
+          "purpose": "东南功能组团"
+        },
+        {
+          "id": "nw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.57,
+            0.44,
+            1
+          ],
+          "purpose": "西北功能组团"
+        },
+        {
+          "id": "ne",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.57,
+            1,
+            1
+          ],
+          "purpose": "东北功能组团"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "sw_desk_0",
+          "combination": "open_workstation",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "sw_desk_1",
+          "combination": "open_workstation",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "nw_desk_0",
+          "combination": "open_workstation",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "nw_desk_1",
+          "combination": "open_workstation",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "discussion",
+          "combination": "open_collaboration_four",
+          "zone": "ne",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "lounge_a",
+          "combination": "open_lounge_pair",
+          "zone": "se",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "lounge_b",
+          "combination": "open_lounge_pair",
+          "zone": "se",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "storage_w",
+          "combination": "open_display_shelf",
+          "zone": "nw",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "storage_e",
+          "combination": "open_display_shelf",
+          "zone": "ne",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "sw_desk_2",
+          "combination": "open_workstation",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        },
+        {
+          "id": "nw_desk_2",
+          "combination": "open_workstation",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "north"
+          }
+        }
+      ],
+      "reserved_areas": [
+        {
+          "id": "main",
+          "bounds_uv": [
+            0.45,
+            0,
+            0.55,
+            1
+          ],
+          "min_width_m": 1.4,
+          "purpose": "入口贯穿主通道"
+        },
+        {
+          "id": "cross",
+          "bounds_uv": [
+            0,
+            0.46,
+            1,
+            0.56
+          ],
+          "min_width_m": 1.4,
+          "purpose": "连接组团的横向通道"
+        }
+      ],
+      "decorations": [
+        {
+          "id": "plant_w",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "west",
+            "north"
+          ]
+        },
+        {
+          "id": "plant_e",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "art",
+          "kind": "wall_asset",
+          "asset_id": "prototype_open_art",
+          "walls": [
+            "north",
+            "west"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retail_open_hall_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "15 · 开放式书籍文创卖场",
+      "intent": "四个分类陈列区域包含八组沿边书架、六个展示岛，入口服务区独立于陈列，保留贯穿通道；这是大型开放卖场，不是完整的多店铺商场楼层。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "warm",
+      "occupants": 18,
+      "capacity_reason": "按 18 人使用和不同功能区配置家具；非建筑规范核定容量。",
+      "reference": {
+        "width_m": 18,
+        "depth_m": 16,
+        "height_m": 3.8,
+        "door_fraction": 0.5,
+        "door_width_m": 1.6
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 19,
+          "depth_m": 17,
+          "height_m": 3.8,
+          "door_fraction": 0.52,
+          "door_width_m": 1.6
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          18,
+          20
+        ],
+        "depth_m": [
+          16,
+          18
+        ],
+        "area_m2": [
+          288,
+          360
+        ],
+        "aspect_ratio": [
+          0.8,
+          1.6
+        ],
+        "min_height_m": 3,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保持功能组团边界",
+        "主次通道不得被家具或落地装饰占用",
+        "所有必需家具及使用空间可达"
+      ],
+      "editable_fields": [
+        "区域比例调整须重新校验",
+        "按真实尺寸替换家具",
+        "组团内部布局"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "sw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.06,
+            0.44,
+            0.45
+          ],
+          "purpose": "西南功能组团"
+        },
+        {
+          "id": "se",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.28,
+            1,
+            0.45
+          ],
+          "purpose": "东南功能组团"
+        },
+        {
+          "id": "nw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.57,
+            0.44,
+            1
+          ],
+          "purpose": "西北功能组团"
+        },
+        {
+          "id": "ne",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.57,
+            1,
+            1
+          ],
+          "purpose": "东北功能组团"
+        },
+        {
+          "id": "service",
+          "position": "south",
+          "purpose": "入口服务区，员工及顾客侧独立于展示组团",
+          "bounds_uv": [
+            0.56,
+            0.02,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "sw_shelf",
+          "combination": "open_retail_shelf",
+          "zone": "sw",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "sw_island",
+          "combination": "open_retail_island",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "se_shelf",
+          "combination": "open_retail_shelf",
+          "zone": "se",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "se_island",
+          "combination": "open_retail_island",
+          "zone": "se",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "nw_shelf",
+          "combination": "open_retail_shelf",
+          "zone": "nw",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "nw_island",
+          "combination": "open_retail_island",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "ne_shelf",
+          "combination": "open_retail_shelf",
+          "zone": "ne",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "ne_island",
+          "combination": "open_retail_island",
+          "zone": "ne",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "checkout",
+          "combination": "retail_checkout",
+          "zone": "service",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "sw_shelf_b",
+          "combination": "open_retail_shelf",
+          "zone": "sw",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "ne_shelf_c",
+          "combination": "open_retail_shelf",
+          "zone": "ne",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "nw_shelf_b",
+          "combination": "open_retail_shelf",
+          "zone": "nw",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "ne_shelf_b",
+          "combination": "open_retail_shelf",
+          "zone": "ne",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "nw_island_b",
+          "combination": "open_retail_island",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "ne_island_b",
+          "combination": "open_retail_island",
+          "zone": "ne",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        }
+      ],
+      "reserved_areas": [
+        {
+          "id": "main",
+          "bounds_uv": [
+            0.45,
+            0,
+            0.55,
+            1
+          ],
+          "min_width_m": 1.4,
+          "purpose": "入口贯穿主通道"
+        },
+        {
+          "id": "cross",
+          "bounds_uv": [
+            0,
+            0.46,
+            1,
+            0.56
+          ],
+          "min_width_m": 1.4,
+          "purpose": "连接组团的横向通道"
+        }
+      ],
+      "decorations": [
+        {
+          "id": "plant_w",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "west",
+            "north"
+          ]
+        },
+        {
+          "id": "plant_e",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "art",
+          "kind": "wall_asset",
+          "asset_id": "prototype_open_art",
+          "walls": [
+            "north",
+            "west"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mall_open_lounge_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "16 · 商场公共休憩区",
+      "intent": "四角双人沙发休憩组团围绕宽中央通道布置，入口侧服务台、对侧资料展示；这是单层公共空间，不含跨层中庭和扶梯。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "reception",
+      "palette": "warm",
+      "occupants": 16,
+      "capacity_reason": "按 16 人使用和不同功能区配置家具；非建筑规范核定容量。",
+      "reference": {
+        "width_m": 18,
+        "depth_m": 16,
+        "height_m": 3.8,
+        "door_fraction": 0.5,
+        "door_width_m": 1.6
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 19,
+          "depth_m": 17,
+          "height_m": 3.8,
+          "door_fraction": 0.52,
+          "door_width_m": 1.6
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          18,
+          20
+        ],
+        "depth_m": [
+          16,
+          18
+        ],
+        "area_m2": [
+          288,
+          360
+        ],
+        "aspect_ratio": [
+          0.8,
+          1.6
+        ],
+        "min_height_m": 3,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "保持功能组团边界",
+        "主次通道不得被家具或落地装饰占用",
+        "所有必需家具及使用空间可达"
+      ],
+      "editable_fields": [
+        "区域比例调整须重新校验",
+        "按真实尺寸替换家具",
+        "组团内部布局"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "sw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.06,
+            0.44,
+            0.45
+          ],
+          "purpose": "西南功能组团"
+        },
+        {
+          "id": "se",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.28,
+            1,
+            0.45
+          ],
+          "purpose": "东南功能组团"
+        },
+        {
+          "id": "nw",
+          "position": "center",
+          "bounds_uv": [
+            0,
+            0.57,
+            0.44,
+            1
+          ],
+          "purpose": "西北功能组团"
+        },
+        {
+          "id": "ne",
+          "position": "center",
+          "bounds_uv": [
+            0.56,
+            0.57,
+            1,
+            1
+          ],
+          "purpose": "东北功能组团"
+        },
+        {
+          "id": "service",
+          "position": "south",
+          "purpose": "入口服务区，员工及顾客侧独立于展示组团",
+          "bounds_uv": [
+            0.56,
+            0.02,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "sw_a",
+          "combination": "open_lounge_pair",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "sw_b",
+          "combination": "open_lounge_pair",
+          "zone": "sw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "se_a",
+          "combination": "open_lounge_pair",
+          "zone": "se",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "se_b",
+          "combination": "open_lounge_pair",
+          "zone": "se",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "nw_a",
+          "combination": "open_lounge_pair",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "east"
+          }
+        },
+        {
+          "id": "nw_b",
+          "combination": "open_lounge_pair",
+          "zone": "nw",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "ne_a",
+          "combination": "open_lounge_pair",
+          "zone": "ne",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "west"
+          }
+        },
+        {
+          "id": "ne_b",
+          "combination": "open_lounge_pair",
+          "zone": "ne",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "service",
+          "combination": "staff_reception",
+          "zone": "service",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        },
+        {
+          "id": "information",
+          "combination": "open_display_shelf",
+          "zone": "nw",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "back",
+            "max_gap_m": 0.2,
+            "facing": "south"
+          }
+        }
+      ],
+      "reserved_areas": [
+        {
+          "id": "main",
+          "bounds_uv": [
+            0.45,
+            0,
+            0.55,
+            1
+          ],
+          "min_width_m": 1.4,
+          "purpose": "入口贯穿主通道"
+        },
+        {
+          "id": "cross",
+          "bounds_uv": [
+            0,
+            0.46,
+            1,
+            0.56
+          ],
+          "min_width_m": 1.4,
+          "purpose": "连接组团的横向通道"
+        }
+      ],
+      "decorations": [
+        {
+          "id": "plant_w",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "west",
+            "north"
+          ]
+        },
+        {
+          "id": "plant_e",
+          "kind": "floor_asset",
+          "asset_id": "prototype_open_plant",
+          "walls": [
+            "east",
+            "south"
+          ]
+        },
+        {
+          "id": "art",
+          "kind": "wall_asset",
+          "asset_id": "prototype_open_art",
+          "walls": [
+            "north",
+            "west"
+          ]
+        }
+      ]
+    }
+  ]
+}

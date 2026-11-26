@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CityG Asset Review Preview</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #e8eeeb; }
+    #frame { position: relative; width: 100%; height: 100%; background: #e8eeeb; }
+    #preview { width: 100%; height: 100%; display: block; }
+    .view-label { position: absolute; padding: 6px 9px;
+      color: #edf8f4; background: rgba(20, 43, 36, .82); border-radius: 5px;
+      font: 700 12px system-ui, sans-serif; letter-spacing: .03em; }
+    #front-label { top: 12px; left: 12px; }
+    #right-label { top: 12px; left: calc(50% + 12px); }
+    #rear-label { top: calc(50% + 12px); left: 12px; }
+    #left-label { top: calc(50% + 12px); left: calc(50% + 12px); }
+    .divider { position: absolute; pointer-events: none; background: rgba(38, 64, 56, .42); }
+    #divider-v { top: 0; bottom: 0; left: calc(50% - 1px); width: 2px; }
+    #divider-h { left: 0; right: 0; top: calc(50% - 1px); height: 2px; }
+    #meta { position: absolute; left: 12px; right: 12px; bottom: 12px;
+      padding: 8px 10px; color: #18332b; background: rgba(248, 251, 250, .91);
+      border-radius: 6px; font: 600 12px system-ui, sans-serif; line-height: 1.35;
+      overflow-wrap: anywhere; }
+    #error { position: absolute; inset: 0; display: none; place-items: center;
+      padding: 32px; color: #8a1e1e; background: #fff0f0;
+      font: 700 15px system-ui, sans-serif; text-align: center; }
+  </style>
+  <script type="importmap">
+  {"imports":{"three":"/viewer/node_modules/three/build/three.module.js","three/addons/":"/viewer/node_modules/three/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <div id="frame">
+    <canvas id="preview"></canvas>
+    <div id="front-label" class="view-label"></div>
+    <div id="right-label" class="view-label"></div>
+    <div id="rear-label" class="view-label"></div>
+    <div id="left-label" class="view-label"></div>
+    <div id="divider-v" class="divider"></div>
+    <div id="divider-h" class="divider"></div>
+    <div id="meta"></div>
+    <div id="error"></div>
+  </div>
+  <script type="module" src="./preview.js"></script>
+</body>
+</html>

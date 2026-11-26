@@ -1,0 +1,75 @@
+{
+  "schema_version": "cityg.external_asset_search.v1",
+  "query": "photorealistic articulated city bus",
+  "category": "vehicle",
+  "policy": "discovery_only_explicit_download",
+  "sources": [
+    {
+      "source_id": "sketchfab",
+      "name": "Sketchfab downloadable glTF",
+      "homepage": "https://sketchfab.com/features/gltf",
+      "search_url_template": "https://sketchfab.com/search?type=models&features=downloadable&q={query}",
+      "api_url": "https://api.sketchfab.com/v3/search",
+      "formats": [
+        "gltf",
+        "glb",
+        "usdz"
+      ],
+      "license_policy": "Per-model license; prefer CC0/CC-BY and retain attribution. Do not auto-accept NC, ND, Editorial, or Standard assets.",
+      "download_mode": "authenticated_manual_or_api",
+      "strengths": [
+        "vehicles",
+        "people",
+        "rare_objects",
+        "animated",
+        "photogrammetry"
+      ],
+      "notes": "Use when curated packs and Poly Haven do not cover a requested concept.",
+      "search_url": "https://sketchfab.com/search?type=models&features=downloadable&q=photorealistic+articulated+city+bus"
+    },
+    {
+      "source_id": "polyhaven",
+      "name": "Poly Haven",
+      "homepage": "https://polyhaven.com/",
+      "search_url_template": "https://polyhaven.com/models?q={query}",
+      "api_url": "https://api.polyhaven.com/assets",
+      "formats": [
+        "gltf",
+        "blend",
+        "fbx"
+      ],
+      "license_policy": "CC0-1.0 assets; retain source metadata",
+      "download_mode": "manual_or_public_api",
+      "strengths": [
+        "photorealistic",
+        "pbr",
+        "vegetation",
+        "street_props",
+        "architecture"
+      ],
+      "notes": "Preferred first source for close-view photorealistic static assets.",
+      "search_url": "https://polyhaven.com/models?q=photorealistic+articulated+city+bus"
+    },
+    {
+      "source_id": "khronos_gltf_assets",
+      "name": "Khronos glTF Sample Assets",
+      "homepage": "https://github.khronos.org/glTF-Assets/",
+      "search_url_template": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q={query}&type=code",
+      "api_url": "https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models",
+      "formats": [
+        "gltf",
+        "glb"
+      ],
+      "license_policy": "Per-model license recorded in the sample catalog",
+      "download_mode": "manual_or_github_api",
+      "strengths": [
+        "format_validation",
+        "pbr_features",
+        "animation",
+        "viewer_regression"
+      ],
+      "notes": "Compatibility/reference source, not the primary city-content library.",
+      "search_url": "https://github.com/KhronosGroup/glTF-Sample-Assets/search?q=photorealistic+articulated+city+bus&type=code"
+    }
+  ]
+}

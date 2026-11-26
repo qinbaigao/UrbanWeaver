@@ -1,0 +1,13 @@
+Construct exactly 60 buildings in a 950 m by 760 m simulation-ready city. Use an
+organic hierarchical street network with non-uniform blocks, connected branches,
+sidewalks, and about 18 percent landscaped open space. Use about two buildings per
+urban block. Include four coherent functional areas: roughly 42 percent residential
+neighborhoods, 28 percent commercial core, 16 percent civic and public services,
+and 14 percent mixed-use transition areas. Buildings may range from 2 to 26 floors
+with five non-corridor rooms per floor. Plan a legible skyline with about 22 percent
+designated high-rises, three landmarks, and strong but non-uniform height zoning.
+Core and high-rise key facades must align with their frontage streets; only
+peripheral or fragmented living areas may use small contextual rotations. Use seed
+20260816. Include complete indoor hierarchies, furnishings, high-rise cores,
+elevators, navigation, interactions, layered OpenUSD, deterministic validation,
+and a portable Web Viewer.

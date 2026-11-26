@@ -1,0 +1,19 @@
+{
+  "name": "dense_mixed_use",
+  "width_m": 800.0,
+  "depth_m": 700.0,
+  "building_count": 30,
+  "min_floors": 4,
+  "max_floors": 8,
+  "rooms_per_floor": 10,
+  "road_width_m": 16.0,
+  "sidewalk_width_m": 4.0,
+  "parcel_setback_m": 3.0,
+  "seed": 103,
+  "zones": [
+    {"name": "mixed_core", "function": "mixed_use", "weight": 0.5},
+    {"name": "office_band", "function": "commercial", "weight": 0.3},
+    {"name": "apartment_band", "function": "residential", "weight": 0.2}
+  ]
+}
+

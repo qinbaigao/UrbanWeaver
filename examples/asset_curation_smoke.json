@@ -1,0 +1,23 @@
+{
+  "name": "asset_curation_smoke",
+  "width_m": 180.0,
+  "depth_m": 150.0,
+  "building_count": 4,
+  "min_floors": 2,
+  "max_floors": 5,
+  "rooms_per_floor": 4,
+  "road_width_m": 11.0,
+  "sidewalk_width_m": 2.6,
+  "parcel_setback_m": 4.0,
+  "layout_style": "organic_grid",
+  "open_space_ratio": 0.22,
+  "layout_irregularity": 0.4,
+  "road_pattern": "organic_hierarchy",
+  "buildings_per_block": 2,
+  "branch_road_ratio": 0.6,
+  "seed": 20260818,
+  "zones": [
+    {"name": "mixed_neighborhood", "function": "mixed_use", "weight": 0.6},
+    {"name": "residential_edge", "function": "residential", "weight": 0.4}
+  ]
+}

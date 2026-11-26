@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "open_workstation",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "开放工位：桌椅与两类桌面用品",
+      "intent": "椅子朝向桌面操作侧，椅后保留拉出空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "desk",
+        "category": "desk"
+      },
+      "members": [
+        {
+          "id": "chair",
+          "category": "office_chair",
+          "side": "front",
+          "slot": 0,
+          "gap_m": 0.3,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "desk": "interior_hssd_7e54244342d7a8716e723311313adf7d5ba1620e",
+        "office_chair": "interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"
+      },
+      "surface_items": [
+        {
+          "id": "monitor",
+          "support_member_id": "desk",
+          "surface": "top",
+          "category": "monitor",
+          "count": 1,
+          "placement": "back"
+        },
+        {
+          "id": "notebook",
+          "support_member_id": "desk",
+          "surface": "top",
+          "category": "notebook",
+          "count": 1,
+          "placement": "left"
+        }
+      ],
+      "asset_roles": {
+        "desk": {
+          "source_category": "desk",
+          "rationale": "开放办公或共享办公的真实尺寸工位，仅原型适配。"
+        },
+        "office_chair": {
+          "source_category": "office_chair",
+          "rationale": "开放办公或共享办公工位配套座椅，仅原型适配。"
+        }
+      }
+    },
+    {
+      "id": "open_display_shelf",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "开放区资料及商品书架",
+      "intent": "使用已验证层板放书，正面向室内。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "shelf",
+        "category": "bookcase"
+      },
+      "members": [],
+      "asset_bindings": {
+        "bookcase": "interior_hssd_0de5288928717b30ef111c44a6af982247c279b6"
+      },
+      "asset_roles": {
+        "bookcase": {
+          "source_category": "bookcase",
+          "rationale": "办公、卧室和会议空间的资料展示收纳；仅为原型增加适用房间，不改几何和正式标签。"
+        }
+      },
+      "surface_items": [
+        {
+          "id": "books",
+          "support_member_id": "shelf",
+          "surface": "shelves",
+          "category": "book",
+          "count": 4,
+          "placement": "spread"
+        },
+        {
+          "id": "vase",
+          "support_member_id": "shelf",
+          "surface": "shelves",
+          "category": "vase",
+          "count": 1,
+          "placement": "spread"
+        }
+      ]
+    },
+    {
+      "id": "open_collaboration_four",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "四人共享讨论桌",
+      "intent": "长边各两把椅子，避免把座位排在狭窄桌端。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "dining_table"
+      },
+      "members": [
+        {
+          "id": "a",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": -1,
+          "gap_m": 0.3,
+          "face_anchor": true
+        },
+        {
+          "id": "b",
+          "category": "dining_chair",
+          "side": "front",
+          "slot": 1,
+          "gap_m": 0.3,
+          "face_anchor": true
+        },
+        {
+          "id": "c",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": -1,
+          "gap_m": 0.3,
+          "face_anchor": true
+        },
+        {
+          "id": "d",
+          "category": "dining_chair",
+          "side": "back",
+          "slot": 1,
+          "gap_m": 0.3,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "dining_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+        "dining_chair": "interior_hssd_3e6ccc40ee0f11bc3dadecfc6a0b9ae516f872c3"
+      },
+      "surface_items": [
+        {
+          "id": "notes",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "notebook",
+          "count": 3,
+          "placement": "spread"
+        },
+        {
+          "id": "pens",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "pen",
+          "count": 3,
+          "placement": "spread"
+        }
+      ],
+      "asset_roles": {
+        "dining_table": {
+          "source_category": "dining_table",
+          "rationale": "共享桌用于开放讨论，原尺寸保留，仅原型适配。"
+        },
+        "dining_chair": {
+          "source_category": "dining_chair",
+          "rationale": "共享讨论区座椅，仅原型适配。"
+        }
+      }
+    },
+    {
+      "id": "open_lounge_pair",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "开放区双人休憩组团",
+      "intent": "两人沙发与小茶几，补充工作桌以外的访客用途。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "sofa",
+        "category": "sofa"
+      },
+      "members": [
+        {
+          "id": "table",
+          "category": "coffee_table",
+          "side": "front",
+          "slot": 0,
+          "gap_m": 0.45,
+          "face_anchor": false
+        }
+      ],
+      "asset_bindings": {
+        "sofa": "interior_hssd_5386924523286fa156d9397a93cd3f2a7140325d",
+        "coffee_table": "interior_hssd_7f98d7f8b92972a8f65e3584626ac02b2c731931"
+      },
+      "asset_roles": {
+        "sofa": {
+          "source_category": "sofa",
+          "rationale": "办公室访客座位，不改变沙发的家具角色。"
+        },
+        "coffee_table": {
+          "source_category": "coffee_table",
+          "rationale": "办公室访客茶几，不改变家具尺寸。"
+        }
+      },
+      "surface_items": [
+        {
+          "id": "tray",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "tray",
+          "count": 1,
+          "placement": "left"
+        },
+        {
+          "id": "cups",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "cup",
+          "count": 2,
+          "placement": "right"
+        },
+        {
+          "id": "plant",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "small_plant",
+          "count": 1,
+          "placement": "back"
+        }
+      ]
+    },
+    {
+      "id": "open_retail_island",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "开放卖场展示岛",
+      "intent": "长边各两把椅子，避免把座位排在狭窄桌端。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "table",
+        "category": "dining_table"
+      },
+      "members": [],
+      "asset_bindings": {
+        "dining_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431"
+      },
+      "surface_items": [
+        {
+          "id": "books",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "book_stack",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "gifts",
+          "support_member_id": "table",
+          "surface": "top",
+          "category": "vase",
+          "count": 1,
+          "placement": "spread"
+        }
+      ],
+      "asset_roles": {
+        "dining_table": {
+          "source_category": "dining_table",
+          "rationale": "原尺寸桌作为文创卖场展示岛，不作为餐位。"
+        }
+      }
+    },
+    {
+      "id": "open_retail_shelf",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "开放卖场分类陈列架",
+      "intent": "使用已验证层板放书，正面向室内。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "shelf",
+        "category": "bookcase"
+      },
+      "members": [],
+      "asset_bindings": {
+        "bookcase": "interior_hssd_0de5288928717b30ef111c44a6af982247c279b6"
+      },
+      "asset_roles": {
+        "bookcase": {
+          "source_category": "bookcase",
+          "rationale": "办公、卧室和会议空间的资料展示收纳；仅为原型增加适用房间，不改几何和正式标签。"
+        }
+      },
+      "surface_items": [
+        {
+          "id": "books",
+          "support_member_id": "shelf",
+          "surface": "shelves",
+          "category": "book",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "vase",
+          "support_member_id": "shelf",
+          "surface": "shelves",
+          "category": "vase",
+          "count": 1,
+          "placement": "spread"
+        }
+      ]
+    }
+  ]
+}

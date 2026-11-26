@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "max_download_bytes": 40000000,
+  "assets": [
+    {"id":"edd29c09710bf64c66065b6d884f573bc48682f5","category":"sink","room_types":["kitchen"],"placement_kind":"floor"},
+    {"id":"d0d1e39f55d3c03661b9716a6db1532568711f52","category":"shower","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"0491b9ede319cf663bcf2690efb55817be7f2bb6","category":"shower","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"77053008be03b09016371f53787d8488e0ae7d1e","category":"shower","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"1c33bd447d70d4d22116c434d912f1fae78e02b7","category":"refrigerator","room_types":["kitchen"],"placement_kind":"floor"},
+    {"id":"00b0d5e167ae6b42666de010025efad4506563f1","category":"oven","room_types":["kitchen"],"placement_kind":"floor"},
+    {"id":"177465eafc83071ab64d7e48f6cfaaadec90c86b","category":"shower","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"09495c87c9c7c4ad6ab360f67366274aff274f72","category":"sink","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"316d7bc87db3c6ee1fdc26601bcda7d18c5110fb","category":"toilet","room_types":["bathroom"],"placement_kind":"floor"},
+    {"id":"f8b8235c6e241b3ef1922a7560736535d9c9219c","category":"kitchen_counter","room_types":["kitchen"],"placement_kind":"floor"}
+  ]
+}

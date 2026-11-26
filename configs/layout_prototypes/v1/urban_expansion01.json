@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "urban_transit_axis_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "07 · 交通走廊型商住区",
+      "intent": "狭长城区中的道路层级、商住组团与服务支路；交通走廊仅指城市道路，不包含轨道或交通站房。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 800,
+        "depth_m": 340,
+        "building_count": 28,
+        "min_floors": 4,
+        "max_floors": 16,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 14,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.16,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0.65,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0.2,
+        "landmark_count": 2,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1201,
+        "zones": [
+          {
+            "name": "Axis commerce",
+            "function": "commercial",
+            "weight": 0.45,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Mixed neighborhood",
+            "function": "mixed_use",
+            "weight": 0.4,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Housing",
+            "function": "residential",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_transit_axis_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "不把狭长区域等同于已实现轨道交通或 TOD 站城系统。"
+      ],
+      "floor_reference_hints": [
+        "office_mixed_v1",
+        "hotel_guest_v1",
+        "retail_gallery_v1",
+        "food_court_v1"
+      ]
+    },
+    {
+      "id": "urban_park_neighborhood_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "08 · 公园邻里组团",
+      "intent": "多栋住宅与商住配套围绕分布式公园组织，公共绿地比例高于普通生活区。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 680,
+        "depth_m": 620,
+        "building_count": 24,
+        "min_floors": 3,
+        "max_floors": 12,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 9,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.35,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 3,
+        "branch_road_ratio": 0.45,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0.1,
+        "landmark_count": 1,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1202,
+        "zones": [
+          {
+            "name": "Housing",
+            "function": "residential",
+            "weight": 0.55,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "plaster"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Mixed services",
+            "function": "mixed_use",
+            "weight": 0.3,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Community rooms",
+            "function": "public_service",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_park_neighborhood_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "park",
+          "park",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "park",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "公园由可用合法空地组成，不承诺连续中央公园。"
+      ],
+      "floor_reference_hints": [
+        "residential_studio_v1",
+        "residential_spine_v1",
+        "community_library_v1"
+      ]
+    },
+    {
+      "id": "urban_civic_quarter_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "09 · 公共服务片区",
+      "intent": "中低层公共服务建筑、公共广场与少量办公住宅配套，强调公共空间而非高层天际线。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 600,
+        "depth_m": 540,
+        "building_count": 24,
+        "min_floors": 2,
+        "max_floors": 9,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 12,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.3,
+        "road_pattern": "landscape_adaptive",
+        "buildings_per_block": 1,
+        "branch_road_ratio": 0,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 2,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "parcel_layout": "polygonal",
+        "morphology": {
+          "road_warp_ratio": 0.02
+        },
+        "seed": 1203,
+        "zones": [
+          {
+            "name": "Public services",
+            "function": "public_service",
+            "weight": 0.65,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Business support",
+            "function": "commercial",
+            "weight": 0.2,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Housing",
+            "function": "residential",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_civic_quarter_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "garden",
+          "plaza"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "公共服务类型是概念性功能分配，不代表专用医院或应急设施已实现。"
+      ],
+      "floor_reference_hints": [
+        "community_library_v1",
+        "training_center_v1",
+        "office_mixed_v1"
+      ]
+    },
+    {
+      "id": "urban_education_campus_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "10 · 教育研习园区",
+      "intent": "教学研习、宿舍及服务办公组成低中层组团，公共庭园与局部支路提供不同尺度的空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 650,
+        "depth_m": 570,
+        "building_count": 24,
+        "min_floors": 3,
+        "max_floors": 7,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 10,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.22,
+        "open_space_ratio": 0.32,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 3,
+        "branch_road_ratio": 0.75,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1204,
+        "zones": [
+          {
+            "name": "Learning facilities",
+            "function": "public_service",
+            "weight": 0.6,
+            "architecture": {
+              "material_palette": [
+                "brick",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Residence",
+            "function": "residential",
+            "weight": 0.25,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Administration",
+            "function": "commercial",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "stone"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_education_campus_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "garden",
+          "park",
+          "plaza"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "garden",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "使用公共服务语义表达教学设施，尚不含专用操场、体育馆及校园运营设计。"
+      ],
+      "floor_reference_hints": [
+        "training_center_v1",
+        "community_library_v1",
+        "residential_studio_v1",
+        "coworking_cluster_v1"
+      ]
+    },
+    {
+      "id": "urban_lowrise_suburb_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "11 · 低密度郊区",
+      "intent": "较大用地中的低层住宅小组团、社区服务和分散绿地；与紧凑中心形成明确密度及高度对照。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 820,
+        "depth_m": 700,
+        "building_count": 20,
+        "min_floors": 2,
+        "max_floors": 4,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 8,
+        "sidewalk_width_m": 1.8,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.35,
+        "open_space_ratio": 0.35,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0.7,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1205,
+        "zones": [
+          {
+            "name": "Lowrise housing",
+            "function": "residential",
+            "weight": 0.85,
+            "architecture": {
+              "material_palette": [
+                "plaster",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Neighborhood services",
+            "function": "public_service",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_lowrise_suburb_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "garden",
+          "park"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "garden",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "这是低密度多户住宅组团，不等同于独立别墅及私家花园生成器。"
+      ],
+      "floor_reference_hints": [
+        "residential_studio_v1",
+        "residential_core_v1",
+        "community_library_v1"
+      ]
+    },
+    {
+      "id": "urban_industry_office_v1",
+      "level": "urban",
+      "revision": 1,
+      "display_name": "12 · 产业办公混合片区",
+      "intent": "低层产业功能建筑与办公服务组团混合，较宽道路及硬质公共场地形成区别于住宅区的外观。",
+      "review": {
+        "status": "pending_review"
+      },
+      "spec": {
+        "width_m": 760,
+        "depth_m": 560,
+        "building_count": 24,
+        "min_floors": 2,
+        "max_floors": 6,
+        "rooms_per_floor": 2,
+        "room_count_strategy": "fixed",
+        "road_width_m": 14,
+        "sidewalk_width_m": 2.2,
+        "parcel_setback_m": 3,
+        "layout_style": "organic_grid",
+        "layout_irregularity": 0.22,
+        "open_space_ratio": 0.22,
+        "road_pattern": "organic_hierarchy",
+        "buildings_per_block": 2,
+        "branch_road_ratio": 0.6,
+        "height_strategy": "zoned_skyline",
+        "highrise_ratio": 0,
+        "landmark_count": 0,
+        "skyline_strength": 0.75,
+        "architecture": {
+          "expressive_ratio": 0.2,
+          "climate": "temperate"
+        },
+        "seed": 1206,
+        "zones": [
+          {
+            "name": "Light industry",
+            "function": "industrial",
+            "weight": 0.45,
+            "architecture": {
+              "material_palette": [
+                "metal",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Office",
+            "function": "commercial",
+            "weight": 0.4,
+            "architecture": {
+              "material_palette": [
+                "glass",
+                "metal"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          },
+          {
+            "name": "Service",
+            "function": "public_service",
+            "weight": 0.15,
+            "architecture": {
+              "material_palette": [
+                "stone",
+                "brick"
+              ],
+              "design_languages": [
+                "framed_grid",
+                "solid_punched"
+              ]
+            }
+          }
+        ],
+        "name": "urban_industry_office_v1"
+      },
+      "public_space_policy": {
+        "style_cycle": [
+          "plaza",
+          "garden"
+        ],
+        "anchor_selection": "nearest_available_to_center",
+        "anchor_style": "plaza",
+        "density_tier": "standard"
+      },
+      "adjustable_parameters": {
+        "building_count": [
+          20,
+          40
+        ],
+        "seed": [
+          0,
+          2147483647
+        ]
+      },
+      "invariants": [
+        "exact_building_count",
+        "connected_road_graph",
+        "legal_building_access",
+        "straight_roads_dominate",
+        "expressive_quota_about_twenty_percent",
+        "no_interior_geometry"
+      ],
+      "limits": [
+        "道路为现有有界语法，不是任意路网。",
+        "公共空间使用可用空地，中心锚点不保证位于几何中心。",
+        "楼层原型只作为下一阶段接口提示，未自动接入。",
+        "未实现工业生产线、重型物流、货运消防或危险品合规设计；工业楼层不强行套办公原型。"
+      ],
+      "floor_reference_hints": [
+        "office_open_floor_v1",
+        "coworking_cluster_v1",
+        "food_court_v1"
+      ]
+    }
+  ]
+}

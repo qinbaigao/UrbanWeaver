@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081110" />
+    <title>CityG Viewer</title>
+    <script type="module" crossorigin src="/assets/index-fjpsP8ko.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CN0TGhMi.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="mark">CG</div>
+          <div><strong>CityG</strong><span>Simulation-ready city inspector</span></div>
+        </div>
+        <div id="scene-title" class="scene-title">Loading scene…</div>
+        <div class="top-actions">
+          <label class="button ghost file-button">Open folder<input id="folder-input" type="file" webkitdirectory multiple /></label>
+          <button id="reload-button" class="button ghost">Reload</button>
+          <button id="screenshot-button" class="button accent">Screenshot</button>
+          <button id="hq-screenshot-button" class="button accent" title="Save a textured PNG, 2560px long edge, at the current camera and scope. Keeps distant city LOD; restores render quality afterwards.">Save HQ PNG</button>
+          <button id="export-render-view-button" class="button ghost" title="Download camera, framing, scene identity and visibility settings as JSON for offline rendering. No image rendering required.">Export render view</button>
+        </div>
+      </header>
+
+      <aside class="left-panel panel">
+        <section>
+          <div class="section-label">Scene mode</div>
+          <div class="segmented" id="mode-buttons">
+            <button data-mode="overview">Overview</button>
+            <button data-mode="building">Building</button>
+            <button data-mode="floor">Floor</button>
+            <button data-mode="room">Room</button>
+            <button data-mode="full" class="active">Full</button>
+          </div>
+          <p id="mode-hint" class="mode-hint">Full scene: all compiled geometry is visible.</p>
+        </section>
+
+        <section>
+          <label class="field-label" for="district-select">District</label>
+          <select id="district-select"></select>
+          <label class="field-label" for="building-select">Building</label>
+          <select id="building-select"></select>
+          <label class="field-label" for="floor-select">Floor</label>
+          <select id="floor-select"></select>
+          <label class="field-label" for="room-select">Room</label>
+          <select id="room-select"></select>
+          <label class="switch-row"><span>Hero rooms only</span><input id="hero-room-toggle" type="checkbox" checked /><i></i></label>
+          <button id="focus-button" class="button wide">Focus selection</button>
+          <button id="floor-plan-button" class="button wide">Floor plan</button>
+          <button id="room-view-button" class="button wide">Room view</button>
+        </section>
+
+        <section id="room-camera-presets" hidden>
+          <div class="section-label">Room camera presets</div>
+          <div id="room-camera-buttons" class="segmented">
+            <button data-room-camera="top">Audit top</button>
+            <button data-room-camera="cutaway">Cutaway 3D</button>
+            <button data-room-camera="eye">Inside</button>
+          </div>
+          <label class="field-label" for="room-lighting">Room lighting</label>
+          <select id="room-lighting"><option value="soft">Soft studio</option><option value="daylight">Scene daylight</option></select>
+        </section>
+        <section id="floor-camera-presets" hidden>
+          <div class="section-label">Floor camera presets</div>
+          <div id="floor-camera-buttons" class="segmented">
+            <button data-floor-camera="perspective">Floor 3D</button>
+            <button data-floor-camera="top">Floor top</button>
+            <button data-floor-camera="corridor">Corridor</button>
+            <button data-floor-camera="core">Stair / lift</button>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-label">Display</div>
+          <label class="field-label" for="appearance-select">Appearance</label>
+          <select id="appearance-select">
+            <option value="presentation" selected>Presentation materials</option>
+            <option value="semantic">Semantic debug</option>
+            <option value="clay">Clay massing</option>
+          </select>
+          <label class="field-label" for="quality-select">Render quality</label>
+          <select id="quality-select">
+            <option value="interactive" selected>Interactive</option>
+            <option value="navigation">Navigation preview</option>
+            <option value="review">Fast review</option>
+            <option value="presentation">Presentation</option>
+            <option value="high_fidelity" hidden>Legacy high-fidelity assets</option>
+          </select>
+          <label class="field-label" for="sky-select">Sky</label>
+          <select id="sky-select">
+            <option value="clear">Clear sky</option>
+            <option value="cloudy">Soft clouds</option>
+            <option value="sunset">Warm sunset</option>
+            <option value="none">Plain background</option>
+          </select>
+          <label class="field-label" for="sky-rotation">Sky / sun rotation</label>
+          <input id="sky-rotation" type="range" min="-180" max="180" step="5" value="0" aria-label="Sky and sun rotation in degrees" />
+          <small id="sky-status">Sky appears in outdoor high-quality views.</small>
+          <label class="switch-row"><span>Daylight</span><input id="daylight-toggle" type="checkbox" checked /><i></i></label>
+          <label class="switch-row"><span>Auto cutaway</span><input id="cutaway-toggle" type="checkbox" checked /><i></i></label>
+          <label class="switch-row"><span>Building outlines</span><input id="outline-toggle" type="checkbox" /><i></i></label>
+          <label class="switch-row"><span>Building labels</span><input id="labels-toggle" type="checkbox" /><i></i></label>
+          <label class="switch-row"><span>Road markings</span><input id="markings-toggle" type="checkbox" /><i></i></label>
+          <label class="switch-row" hidden><span>Legacy high-fidelity overview</span><input id="high-fidelity-toggle" type="checkbox" /><i></i></label>
+          <label class="switch-row"><span>X-ray shells</span><input id="xray-toggle" type="checkbox" /><i></i></label>
+          <button id="hierarchy-display-button" type="button">Hierarchy: selected floor in city</button>
+          <select id="paper-view-select" aria-label="Saved hierarchy views" hidden></select>
+          <label class="switch-row"><span>Navigation graph</span><input id="navigation-toggle" type="checkbox" /><i></i></label>
+          <label class="switch-row"><span>Validation overlay</span><input id="validation-toggle" type="checkbox" checked /><i></i></label>
+          <label class="switch-row"><span>Grid</span><input id="grid-toggle" type="checkbox" checked /><i></i></label>
+        </section>
+
+        <section>
+          <div class="section-label">Semantic layers</div>
+          <div id="semantic-filters" class="check-list"></div>
+        </section>
+      </aside>
+
+      <main id="viewport">
+        <canvas id="scene-canvas"></canvas>
+        <div class="viewport-actions">
+          <button id="camera-iso" title="Isometric view">ISO</button>
+          <button id="camera-high-fidelity" hidden title="Legacy high-fidelity overview">HI-FI</button>
+          <button id="camera-top" title="Top view">TOP</button>
+          <button id="camera-street" title="Road-level first-person view">STREET</button>
+          <button id="camera-reset" title="Fit whole city while preserving current direction">FIT</button>
+        </div>
+        <div id="loading" class="loading-card"><div class="spinner"></div><span>Preparing city geometry</span></div>
+        <div id="toast" class="toast"></div>
+        <div class="legend" id="legend"></div>
+        <div class="status-strip">
+          <span><kbd>LMB</kbd> orbit/select</span>
+          <span><kbd>RMB</kbd> pan</span>
+          <span><kbd>Wheel</kbd> zoom</span>
+          <span><kbd>WASD</kbd> move <kbd>QE</kbd> height <kbd>Arrows</kbd> orbit</span>
+          <span id="render-status">—</span>
+        </div>
+      </main>
+
+      <aside class="right-panel panel">
+        <section class="metrics">
+          <div><strong id="metric-buildings">—</strong><span>Buildings</span></div>
+          <div><strong id="metric-floors">—</strong><span>Floors</span></div>
+          <div><strong id="metric-rooms">—</strong><span>Rooms</span></div>
+          <div><strong id="metric-primitives">—</strong><span>Visible</span></div>
+        </section>
+
+        <section class="inspector-section">
+          <div class="section-label">Inspector</div>
+          <div id="empty-inspector" class="empty-state">Click any road, wall, room, door, or stair to inspect it.</div>
+          <div id="inspector" hidden>
+            <div class="entity-heading"><span id="entity-type">ENTITY</span><strong id="entity-id"></strong></div>
+            <dl id="entity-properties"></dl>
+            <div class="inspector-actions">
+              <button id="door-button" class="button accent wide" hidden>Open door</button>
+              <button id="route-button" class="button wide" hidden>Route from outdoors</button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-label">Validation</div>
+          <div id="validation-summary" class="validation-summary"></div>
+          <div id="validation-list" class="issue-list"></div>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>

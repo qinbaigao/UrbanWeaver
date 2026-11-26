@@ -1,0 +1,19 @@
+{
+  "name": "balanced_three_zone",
+  "width_m": 850.0,
+  "depth_m": 720.0,
+  "building_count": 28,
+  "min_floors": 2,
+  "max_floors": 6,
+  "rooms_per_floor": 7,
+  "road_width_m": 13.0,
+  "sidewalk_width_m": 3.0,
+  "parcel_setback_m": 5.0,
+  "seed": 109,
+  "zones": [
+    {"name": "homes", "function": "residential", "weight": 0.34},
+    {"name": "business", "function": "commercial", "weight": 0.33},
+    {"name": "services", "function": "public_service", "weight": 0.33}
+  ]
+}
+

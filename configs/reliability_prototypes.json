@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "library_root": "layout_prototypes/v1",
+  "selection_attempts": 2,
+  "room_selection": {"enabled": true, "max_calls": 2},
+  "capacity_search": {"enabled": true, "max_candidates_per_building": 36},
+  "adaptation": {
+    "max_buildings": 2,
+    "max_floors_per_building": 2,
+    "max_rooms": 4,
+    "max_attempts": 20,
+    "variation_limit": 0.2,
+    "floor_repartition": {
+      "enabled": true,
+      "joint_room_planning": true,
+      "max_floors": 4,
+      "max_splits_per_floor": 2,
+      "max_children_per_room": 6,
+      "allow_secondary_corridor": true,
+      "secondary_corridor_width_m": 1.8,
+      "levels": [0, 1]
+    }
+  }
+}

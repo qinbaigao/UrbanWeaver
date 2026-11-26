@@ -1,0 +1,19 @@
+{
+  "name": "compact_vertical_core",
+  "width_m": 920.0,
+  "depth_m": 760.0,
+  "building_count": 40,
+  "min_floors": 5,
+  "max_floors": 8,
+  "rooms_per_floor": 10,
+  "road_width_m": 15.0,
+  "sidewalk_width_m": 3.5,
+  "parcel_setback_m": 3.0,
+  "seed": 107,
+  "zones": [
+    {"name": "vertical_mixed_use", "function": "mixed_use", "weight": 0.55},
+    {"name": "commercial_towers", "function": "commercial", "weight": 0.25},
+    {"name": "residential_towers", "function": "residential", "weight": 0.2}
+  ]
+}
+

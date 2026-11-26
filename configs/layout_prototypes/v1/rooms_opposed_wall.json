@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "restroom_opposed_wall_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "横向卫生间与对置洗手区",
+      "intent": "把马桶与洗手盆分别靠两端短墙布置，保留中部门前的使用通路。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "restroom",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.5,
+        "depth_m": 3.0,
+        "height_m": 3.0,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 6.5,
+          "depth_m": 3.4,
+          "height_m": 3.0,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.5,
+          "depth_m": 3.4,
+          "height_m": 3.0,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.5,
+          "depth_m": 3.4,
+          "height_m": 3.0,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.55,
+          "depth_m": 2.96,
+          "height_m": 3.0,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.55,
+          "depth_m": 2.96,
+          "height_m": 3.0,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.55,
+          "depth_m": 2.96,
+          "height_m": 3.0,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.4,
+          7.7
+        ],
+        "depth_m": [
+          2.9,
+          3.6
+        ],
+        "area_m2": [
+          18.5,
+          28
+        ],
+        "aspect_ratio": [
+          1.75,
+          2.7
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "马桶与使用空间"
+        },
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "洗手区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "prototype_restroom_toilet_group",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "prototype_restroom_basin_group",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

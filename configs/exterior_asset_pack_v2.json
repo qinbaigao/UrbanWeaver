@@ -1,0 +1,28 @@
+{
+  "schema_version": "cityg.exterior_asset_preparation.v1",
+  "description": "Non-botanical exterior props; reuse existing kits without copying source payloads. Candidates require four-view review.",
+  "provider": "polyhaven_and_local_cc0",
+  "resolution": "1k",
+  "max_download_mib": 200,
+  "max_runtime_triangles": 200000,
+  "assets": [
+    {"id": "concrete_road_barrier", "category": "road_barrier", "tags": ["concrete", "barrier", "traffic", "construction"], "contexts": ["construction_boundary", "service_area"], "height_m": 0.8, "manual_only": true, "review_note": "Requires boundary placement; never scatter in live traffic lanes."},
+    {"id": "concrete_road_barrier_02", "category": "road_barrier", "tags": ["concrete", "barrier", "traffic", "weathered"], "contexts": ["construction_boundary", "service_area"], "height_m": 0.8, "manual_only": true},
+    {"id": "standing_chalkboard_01", "category": "shop_sign", "tags": ["chalkboard", "sign", "cafe", "shop", "freestanding"], "contexts": ["shop_entrance", "cafe_terrace"], "height_m": 1.05, "manual_only": true, "review_note": "Commercial chalkboard, not a traffic or public wayfinding sign."},
+    {"id": "plastic_monobloc_chair_01", "category": "outdoor_chair", "tags": ["plastic", "chair", "seating", "cafe"], "contexts": ["cafe_terrace", "courtyard"], "height_m": 0.88, "manual_only": true},
+    {"id": "korean_public_payphone_01", "category": "wall_payphone", "tags": ["public", "payphone", "korean", "wall_mounted"], "contexts": ["korean_streetscape"], "height_m": 0.7, "manual_only": true, "review_note": "Four views show a wall-mounted telephone only, not a complete freestanding kiosk. Requires mounting adapter."},
+    {"id": "water_manhole_cover", "category": "manhole_cover", "tags": ["water", "manhole", "cover", "metal", "ground_inset"], "contexts": ["sidewalk", "service_area"], "height_m": 0.06, "manual_only": true, "review_note": "Needs near-flush ground insertion; not a raised obstacle."},
+    {"id": "modular_street_seating", "local_source": "assets/prepared/exterior_v1/sources/modular_street_seating/modular_street_seating_1k.gltf", "provider": "polyhaven", "license_id": "CC0-1.0", "source_url": "https://polyhaven.com/a/modular_street_seating", "category": "street_bench", "tags": ["public", "street", "bench", "wood", "metal", "seating", "modern"], "contexts": ["sidewalk", "park", "plaza"], "height_m": 0.87, "placement_yaw_offset_deg": 90, "variants": [
+      {"key": "assembled", "nodes": ["crossbar", "legs_double", "legs_single", "back_support_r", "back_support_l", "arm_rest_01", "arm_rest_02", "seat", "seat_back"], "root_translations": {
+        "legs_double": [-0.3, 0, 0], "legs_single": [-2.02, 0, 0],
+        "back_support_r": [-2.02, 0.45, 0], "back_support_l": [-0.3, 0.45, 0],
+        "arm_rest_01": [-2.02, 0.45, 0], "arm_rest_02": [-0.3, 0.45, 0]
+      }}
+    ]},
+    {"id": "lamp_bench_trashcan", "local_source": "assets/incoming/opengameart_lamp_bench_trashcan/GLTF/LampPostTrachCanBench.gltf", "provider": "opengameart", "license_id": "CC0-1.0", "source_url": "https://opengameart.org/content/lamp-post-bench-trashcan", "style": "textured_low_poly", "quality_score": 0.86, "category": "streetscape_bundle", "tags": ["public", "street"], "contexts": ["sidewalk", "park", "plaza"], "height_m": 1, "variants": [
+      {"key": "bench", "nodes": ["Bench"], "category": "street_bench", "tags": ["public", "street", "bench", "wood", "metal", "seating"], "height_m": 0.86, "placement_yaw_offset_deg": 90},
+      {"key": "bin", "nodes": ["TrashCan"], "category": "street_bin", "tags": ["public", "street", "covered", "waste", "bin", "metal"], "height_m": 0.9},
+      {"key": "lamp", "nodes": ["LampPost_1", "LampPostLight"], "root_translations": {"LampPostLight": [0, 10, 0]}, "category": "street_light", "tags": ["street", "lamp", "lighting", "pole"], "height_m": 6.0}
+    ]}
+  ]
+}

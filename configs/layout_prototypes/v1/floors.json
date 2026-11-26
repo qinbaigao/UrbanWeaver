@@ -1,0 +1,2778 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "residential_spine_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "01 · 双侧走廊住宅层",
+      "intent": "六个独立两居单元；公共走廊只连接各户客餐厅，卧室通过户内走道连接。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 24,
+        "depth_m": 26,
+        "height_m": 3.4
+      },
+      "function": "residential",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            9,
+            24,
+            17
+          ],
+          "display_name": "公共走廊 / 电梯厅",
+          "room_reference_hints": []
+        },
+        {
+          "id": "s1_living",
+          "function": "living_room",
+          "bounds_m": [
+            0,
+            4.8,
+            5,
+            9
+          ],
+          "display_name": "S1 客餐厅",
+          "unit_id": "s1",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "s1_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            5,
+            6.6,
+            8,
+            9
+          ],
+          "display_name": "S1 厨房",
+          "unit_id": "s1",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "s1_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            5,
+            4.8,
+            8,
+            6.6
+          ],
+          "display_name": "S1 卫浴",
+          "unit_id": "s1",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "s1_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            0,
+            5,
+            3.5
+          ],
+          "display_name": "S1 主卧",
+          "unit_id": "s1",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s1_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            5,
+            0,
+            8,
+            3.5
+          ],
+          "display_name": "S1 次卧",
+          "unit_id": "s1",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s1_hall",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            3.5,
+            8,
+            4.8
+          ],
+          "display_name": "S1 户内走道",
+          "unit_id": "s1",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "n1_living",
+          "function": "living_room",
+          "bounds_m": [
+            0,
+            17,
+            5,
+            21.2
+          ],
+          "display_name": "N1 客餐厅",
+          "unit_id": "n1",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "n1_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            5,
+            17,
+            8,
+            19.4
+          ],
+          "display_name": "N1 厨房",
+          "unit_id": "n1",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "n1_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            5,
+            19.4,
+            8,
+            21.2
+          ],
+          "display_name": "N1 卫浴",
+          "unit_id": "n1",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "n1_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            22.5,
+            5,
+            26
+          ],
+          "display_name": "N1 主卧",
+          "unit_id": "n1",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n1_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            5,
+            22.5,
+            8,
+            26
+          ],
+          "display_name": "N1 次卧",
+          "unit_id": "n1",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n1_hall",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            21.2,
+            8,
+            22.5
+          ],
+          "display_name": "N1 户内走道",
+          "unit_id": "n1",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "s2_living",
+          "function": "living_room",
+          "bounds_m": [
+            8,
+            4.8,
+            13,
+            9
+          ],
+          "display_name": "S2 客餐厅",
+          "unit_id": "s2",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "s2_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            13,
+            6.6,
+            16,
+            9
+          ],
+          "display_name": "S2 厨房",
+          "unit_id": "s2",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "s2_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            13,
+            4.8,
+            16,
+            6.6
+          ],
+          "display_name": "S2 卫浴",
+          "unit_id": "s2",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "s2_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            8,
+            0,
+            13,
+            3.5
+          ],
+          "display_name": "S2 主卧",
+          "unit_id": "s2",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s2_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            13,
+            0,
+            16,
+            3.5
+          ],
+          "display_name": "S2 次卧",
+          "unit_id": "s2",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s2_hall",
+          "function": "corridor",
+          "bounds_m": [
+            8,
+            3.5,
+            16,
+            4.8
+          ],
+          "display_name": "S2 户内走道",
+          "unit_id": "s2",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "n2_living",
+          "function": "living_room",
+          "bounds_m": [
+            8,
+            17,
+            13,
+            21.2
+          ],
+          "display_name": "N2 客餐厅",
+          "unit_id": "n2",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "n2_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            13,
+            17,
+            16,
+            19.4
+          ],
+          "display_name": "N2 厨房",
+          "unit_id": "n2",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "n2_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            13,
+            19.4,
+            16,
+            21.2
+          ],
+          "display_name": "N2 卫浴",
+          "unit_id": "n2",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "n2_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            8,
+            22.5,
+            13,
+            26
+          ],
+          "display_name": "N2 主卧",
+          "unit_id": "n2",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n2_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            13,
+            22.5,
+            16,
+            26
+          ],
+          "display_name": "N2 次卧",
+          "unit_id": "n2",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n2_hall",
+          "function": "corridor",
+          "bounds_m": [
+            8,
+            21.2,
+            16,
+            22.5
+          ],
+          "display_name": "N2 户内走道",
+          "unit_id": "n2",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "s3_living",
+          "function": "living_room",
+          "bounds_m": [
+            16,
+            4.8,
+            21,
+            9
+          ],
+          "display_name": "S3 客餐厅",
+          "unit_id": "s3",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "s3_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            21,
+            6.6,
+            24,
+            9
+          ],
+          "display_name": "S3 厨房",
+          "unit_id": "s3",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "s3_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            21,
+            4.8,
+            24,
+            6.6
+          ],
+          "display_name": "S3 卫浴",
+          "unit_id": "s3",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "s3_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            16,
+            0,
+            21,
+            3.5
+          ],
+          "display_name": "S3 主卧",
+          "unit_id": "s3",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s3_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            21,
+            0,
+            24,
+            3.5
+          ],
+          "display_name": "S3 次卧",
+          "unit_id": "s3",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "s3_hall",
+          "function": "corridor",
+          "bounds_m": [
+            16,
+            3.5,
+            24,
+            4.8
+          ],
+          "display_name": "S3 户内走道",
+          "unit_id": "s3",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "n3_living",
+          "function": "living_room",
+          "bounds_m": [
+            16,
+            17,
+            21,
+            21.2
+          ],
+          "display_name": "N3 客餐厅",
+          "unit_id": "n3",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "n3_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            21,
+            17,
+            24,
+            19.4
+          ],
+          "display_name": "N3 厨房",
+          "unit_id": "n3",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "n3_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            21,
+            19.4,
+            24,
+            21.2
+          ],
+          "display_name": "N3 卫浴",
+          "unit_id": "n3",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "n3_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            16,
+            22.5,
+            21,
+            26
+          ],
+          "display_name": "N3 主卧",
+          "unit_id": "n3",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n3_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            21,
+            22.5,
+            24,
+            26
+          ],
+          "display_name": "N3 次卧",
+          "unit_id": "n3",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "n3_hall",
+          "function": "corridor",
+          "bounds_m": [
+            16,
+            21.2,
+            24,
+            22.5
+          ],
+          "display_name": "N3 户内走道",
+          "unit_id": "n3",
+          "private": true,
+          "room_reference_hints": []
+        }
+      ],
+      "units": [
+        {
+          "id": "s1",
+          "display_name": "S1 住宅单元",
+          "bounds_m": [
+            0,
+            0,
+            8,
+            9
+          ],
+          "entry_space": "s1_living",
+          "room_ids": [
+            "s1_living",
+            "s1_kitchen",
+            "s1_bath",
+            "s1_bed_a",
+            "s1_bed_b",
+            "s1_hall"
+          ]
+        },
+        {
+          "id": "n1",
+          "display_name": "N1 住宅单元",
+          "bounds_m": [
+            0,
+            17,
+            8,
+            26
+          ],
+          "entry_space": "n1_living",
+          "room_ids": [
+            "n1_living",
+            "n1_kitchen",
+            "n1_bath",
+            "n1_bed_a",
+            "n1_bed_b",
+            "n1_hall"
+          ]
+        },
+        {
+          "id": "s2",
+          "display_name": "S2 住宅单元",
+          "bounds_m": [
+            8,
+            0,
+            16,
+            9
+          ],
+          "entry_space": "s2_living",
+          "room_ids": [
+            "s2_living",
+            "s2_kitchen",
+            "s2_bath",
+            "s2_bed_a",
+            "s2_bed_b",
+            "s2_hall"
+          ]
+        },
+        {
+          "id": "n2",
+          "display_name": "N2 住宅单元",
+          "bounds_m": [
+            8,
+            17,
+            16,
+            26
+          ],
+          "entry_space": "n2_living",
+          "room_ids": [
+            "n2_living",
+            "n2_kitchen",
+            "n2_bath",
+            "n2_bed_a",
+            "n2_bed_b",
+            "n2_hall"
+          ]
+        },
+        {
+          "id": "s3",
+          "display_name": "S3 住宅单元",
+          "bounds_m": [
+            16,
+            0,
+            24,
+            9
+          ],
+          "entry_space": "s3_living",
+          "room_ids": [
+            "s3_living",
+            "s3_kitchen",
+            "s3_bath",
+            "s3_bed_a",
+            "s3_bed_b",
+            "s3_hall"
+          ]
+        },
+        {
+          "id": "n3",
+          "display_name": "N3 住宅单元",
+          "bounds_m": [
+            16,
+            17,
+            24,
+            26
+          ],
+          "entry_space": "n3_living",
+          "room_ids": [
+            "n3_living",
+            "n3_kitchen",
+            "n3_bath",
+            "n3_bed_a",
+            "n3_bed_b",
+            "n3_hall"
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "a": "s1_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s1_kitchen",
+          "b": "s1_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s1_bath",
+          "b": "s1_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s1_hall",
+          "b": "s1_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s1_bed_a",
+          "b": "s1_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s1_bed_b",
+          "b": "s1_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_kitchen",
+          "b": "n1_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_bath",
+          "b": "n1_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_hall",
+          "b": "n1_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_bed_a",
+          "b": "n1_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n1_bed_b",
+          "b": "n1_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_kitchen",
+          "b": "s2_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_bath",
+          "b": "s2_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_hall",
+          "b": "s2_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_bed_a",
+          "b": "s2_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s2_bed_b",
+          "b": "s2_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_kitchen",
+          "b": "n2_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_bath",
+          "b": "n2_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_hall",
+          "b": "n2_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_bed_a",
+          "b": "n2_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n2_bed_b",
+          "b": "n2_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_kitchen",
+          "b": "s3_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_bath",
+          "b": "s3_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_hall",
+          "b": "s3_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_bed_a",
+          "b": "s3_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "s3_bed_b",
+          "b": "s3_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_kitchen",
+          "b": "n3_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_bath",
+          "b": "n3_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_hall",
+          "b": "n3_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_bed_a",
+          "b": "n3_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "n3_bed_b",
+          "b": "n3_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            9,
+            10.5,
+            12,
+            15.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            13,
+            12,
+            15.5,
+            15.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [],
+      "entry": {
+        "space": "circulation",
+        "side": "west",
+        "fraction": 0.25,
+        "width_m": 1.6
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    },
+    {
+      "id": "residential_core_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "02 · 核心筒公寓层",
+      "intent": "五个不同朝向住宅单元围绕交通核心；南侧公共入口通廊与户内走道分离。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 32,
+        "depth_m": 28,
+        "height_m": 3.4
+      },
+      "function": "residential",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            11,
+            9,
+            21,
+            19
+          ],
+          "display_name": "集中交通厅",
+          "room_reference_hints": []
+        },
+        {
+          "id": "entry_hall",
+          "function": "corridor",
+          "bounds_m": [
+            11,
+            0,
+            21,
+            9
+          ],
+          "display_name": "公共入口通廊",
+          "room_reference_hints": []
+        },
+        {
+          "id": "sw_living",
+          "function": "living_room",
+          "bounds_m": [
+            5.866667,
+            5.25,
+            11,
+            14
+          ],
+          "display_name": "SW 客餐厅",
+          "unit_id": "sw",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "sw_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            8.066667,
+            0,
+            11,
+            5.25
+          ],
+          "display_name": "SW 厨房",
+          "unit_id": "sw",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "sw_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            5.866667,
+            0,
+            8.066667,
+            5.25
+          ],
+          "display_name": "SW 卫浴",
+          "unit_id": "sw",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "sw_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            5.25,
+            4.277778,
+            14
+          ],
+          "display_name": "SW 主卧",
+          "unit_id": "sw",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "sw_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            0,
+            4.277778,
+            5.25
+          ],
+          "display_name": "SW 次卧",
+          "unit_id": "sw",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "sw_hall",
+          "function": "corridor",
+          "bounds_m": [
+            4.277778,
+            0,
+            5.866667,
+            14
+          ],
+          "display_name": "SW 户内走道",
+          "unit_id": "sw",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "nw_living",
+          "function": "living_room",
+          "bounds_m": [
+            5.866667,
+            14,
+            11,
+            22.75
+          ],
+          "display_name": "NW 客餐厅",
+          "unit_id": "nw",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "nw_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            8.066667,
+            22.75,
+            11,
+            28
+          ],
+          "display_name": "NW 厨房",
+          "unit_id": "nw",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "nw_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            5.866667,
+            22.75,
+            8.066667,
+            28
+          ],
+          "display_name": "NW 卫浴",
+          "unit_id": "nw",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "nw_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            14,
+            4.277778,
+            22.75
+          ],
+          "display_name": "NW 主卧",
+          "unit_id": "nw",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "nw_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            0,
+            22.75,
+            4.277778,
+            28
+          ],
+          "display_name": "NW 次卧",
+          "unit_id": "nw",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "nw_hall",
+          "function": "corridor",
+          "bounds_m": [
+            4.277778,
+            14,
+            5.866667,
+            28
+          ],
+          "display_name": "NW 户内走道",
+          "unit_id": "nw",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "se_living",
+          "function": "living_room",
+          "bounds_m": [
+            21,
+            5.25,
+            26.133333,
+            14
+          ],
+          "display_name": "SE 客餐厅",
+          "unit_id": "se",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "se_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            21,
+            0,
+            23.933333,
+            5.25
+          ],
+          "display_name": "SE 厨房",
+          "unit_id": "se",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "se_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            23.933333,
+            0,
+            26.133333,
+            5.25
+          ],
+          "display_name": "SE 卫浴",
+          "unit_id": "se",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "se_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            27.722222,
+            5.25,
+            32,
+            14
+          ],
+          "display_name": "SE 主卧",
+          "unit_id": "se",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "se_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            27.722222,
+            0,
+            32,
+            5.25
+          ],
+          "display_name": "SE 次卧",
+          "unit_id": "se",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "se_hall",
+          "function": "corridor",
+          "bounds_m": [
+            26.133333,
+            0,
+            27.722222,
+            14
+          ],
+          "display_name": "SE 户内走道",
+          "unit_id": "se",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "ne_living",
+          "function": "living_room",
+          "bounds_m": [
+            21,
+            14,
+            26.133333,
+            22.75
+          ],
+          "display_name": "NE 客餐厅",
+          "unit_id": "ne",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "ne_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            21,
+            22.75,
+            23.933333,
+            28
+          ],
+          "display_name": "NE 厨房",
+          "unit_id": "ne",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "ne_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            23.933333,
+            22.75,
+            26.133333,
+            28
+          ],
+          "display_name": "NE 卫浴",
+          "unit_id": "ne",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "ne_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            27.722222,
+            14,
+            32,
+            22.75
+          ],
+          "display_name": "NE 主卧",
+          "unit_id": "ne",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "ne_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            27.722222,
+            22.75,
+            32,
+            28
+          ],
+          "display_name": "NE 次卧",
+          "unit_id": "ne",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "ne_hall",
+          "function": "corridor",
+          "bounds_m": [
+            26.133333,
+            14,
+            27.722222,
+            28
+          ],
+          "display_name": "NE 户内走道",
+          "unit_id": "ne",
+          "private": true,
+          "room_reference_hints": []
+        },
+        {
+          "id": "north_living",
+          "function": "living_room",
+          "bounds_m": [
+            11,
+            19,
+            17.25,
+            23.2
+          ],
+          "display_name": "NORTH 客餐厅",
+          "unit_id": "north",
+          "room_reference_hints": [
+            "living_media_v1"
+          ]
+        },
+        {
+          "id": "north_kitchen",
+          "function": "kitchen",
+          "bounds_m": [
+            17.25,
+            19,
+            21,
+            21.4
+          ],
+          "display_name": "NORTH 厨房",
+          "unit_id": "north",
+          "room_reference_hints": [
+            "kitchen_galley_v1"
+          ]
+        },
+        {
+          "id": "north_bath",
+          "function": "bathroom",
+          "bounds_m": [
+            17.25,
+            21.4,
+            21,
+            23.2
+          ],
+          "display_name": "NORTH 卫浴",
+          "unit_id": "north",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "north_bed_a",
+          "function": "bedroom",
+          "bounds_m": [
+            11,
+            24.5,
+            17.25,
+            28
+          ],
+          "display_name": "NORTH 主卧",
+          "unit_id": "north",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "north_bed_b",
+          "function": "bedroom",
+          "bounds_m": [
+            17.25,
+            24.5,
+            21,
+            28
+          ],
+          "display_name": "NORTH 次卧",
+          "unit_id": "north",
+          "room_reference_hints": [
+            "bedroom_double_v1",
+            "bedroom_single_v1"
+          ]
+        },
+        {
+          "id": "north_hall",
+          "function": "corridor",
+          "bounds_m": [
+            11,
+            23.2,
+            21,
+            24.5
+          ],
+          "display_name": "NORTH 户内走道",
+          "unit_id": "north",
+          "private": true,
+          "room_reference_hints": []
+        }
+      ],
+      "units": [
+        {
+          "id": "sw",
+          "display_name": "SW 住宅单元",
+          "bounds_m": [
+            0,
+            0,
+            11,
+            14
+          ],
+          "entry_space": "sw_living",
+          "room_ids": [
+            "sw_living",
+            "sw_kitchen",
+            "sw_bath",
+            "sw_bed_a",
+            "sw_bed_b",
+            "sw_hall"
+          ]
+        },
+        {
+          "id": "nw",
+          "display_name": "NW 住宅单元",
+          "bounds_m": [
+            0,
+            14,
+            11,
+            28
+          ],
+          "entry_space": "nw_living",
+          "room_ids": [
+            "nw_living",
+            "nw_kitchen",
+            "nw_bath",
+            "nw_bed_a",
+            "nw_bed_b",
+            "nw_hall"
+          ]
+        },
+        {
+          "id": "se",
+          "display_name": "SE 住宅单元",
+          "bounds_m": [
+            21,
+            0,
+            32,
+            14
+          ],
+          "entry_space": "se_living",
+          "room_ids": [
+            "se_living",
+            "se_kitchen",
+            "se_bath",
+            "se_bed_a",
+            "se_bed_b",
+            "se_hall"
+          ]
+        },
+        {
+          "id": "ne",
+          "display_name": "NE 住宅单元",
+          "bounds_m": [
+            21,
+            14,
+            32,
+            28
+          ],
+          "entry_space": "ne_living",
+          "room_ids": [
+            "ne_living",
+            "ne_kitchen",
+            "ne_bath",
+            "ne_bed_a",
+            "ne_bed_b",
+            "ne_hall"
+          ]
+        },
+        {
+          "id": "north",
+          "display_name": "NORTH 住宅单元",
+          "bounds_m": [
+            11,
+            19,
+            21,
+            28
+          ],
+          "entry_space": "north_living",
+          "room_ids": [
+            "north_living",
+            "north_kitchen",
+            "north_bath",
+            "north_bed_a",
+            "north_bed_b",
+            "north_hall"
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "a": "circulation",
+          "b": "entry_hall",
+          "width_m": 3,
+          "kind": "open",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_kitchen",
+          "b": "sw_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_bath",
+          "b": "sw_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_hall",
+          "b": "sw_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_bed_a",
+          "b": "sw_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "sw_bed_b",
+          "b": "sw_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_kitchen",
+          "b": "nw_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_bath",
+          "b": "nw_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_hall",
+          "b": "nw_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_bed_a",
+          "b": "nw_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "nw_bed_b",
+          "b": "nw_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_kitchen",
+          "b": "se_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_bath",
+          "b": "se_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_hall",
+          "b": "se_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_bed_a",
+          "b": "se_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "se_bed_b",
+          "b": "se_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_kitchen",
+          "b": "ne_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_bath",
+          "b": "ne_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_hall",
+          "b": "ne_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_bed_a",
+          "b": "ne_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "ne_bed_b",
+          "b": "ne_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_living",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_kitchen",
+          "b": "north_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_bath",
+          "b": "north_living",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_hall",
+          "b": "north_living",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_bed_a",
+          "b": "north_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "north_bed_b",
+          "b": "north_hall",
+          "width_m": 0.9,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            13,
+            12,
+            16,
+            17
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            17,
+            14,
+            19.5,
+            17
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [
+        [
+          "circulation",
+          "entry_hall"
+        ]
+      ],
+      "entry": {
+        "space": "entry_hall",
+        "side": "south",
+        "fraction": 0.5,
+        "width_m": 1.8
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    },
+    {
+      "id": "office_mixed_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "03 · 混合办公层",
+      "intent": "两组开放工作区与独立办公、会议、茶水和卫浴围绕公共交通带组织。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 36,
+        "depth_m": 24,
+        "height_m": 3.4
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            8,
+            36,
+            16
+          ],
+          "display_name": "公共交通 / 接待厅",
+          "room_reference_hints": []
+        },
+        {
+          "id": "team_a",
+          "function": "open_office",
+          "bounds_m": [
+            0,
+            16,
+            22,
+            24
+          ],
+          "display_name": "开放办公 A",
+          "room_reference_hints": [
+            "office_open_twelve_v1",
+            "office_four_v1"
+          ]
+        },
+        {
+          "id": "team_b",
+          "function": "open_office",
+          "bounds_m": [
+            22,
+            16,
+            36,
+            24
+          ],
+          "display_name": "开放办公 B",
+          "room_reference_hints": [
+            "office_open_twelve_v1",
+            "office_four_v1"
+          ]
+        },
+        {
+          "id": "meeting",
+          "function": "meeting_room",
+          "bounds_m": [
+            0,
+            0,
+            12,
+            8
+          ],
+          "display_name": "会议室",
+          "room_reference_hints": [
+            "meeting_six_v1"
+          ]
+        },
+        {
+          "id": "office",
+          "function": "office",
+          "bounds_m": [
+            12,
+            0,
+            20,
+            8
+          ],
+          "display_name": "独立办公室",
+          "room_reference_hints": [
+            "office_private_v1"
+          ]
+        },
+        {
+          "id": "pantry",
+          "function": "break_room",
+          "bounds_m": [
+            20,
+            0,
+            28,
+            8
+          ],
+          "display_name": "茶水休憩",
+          "room_reference_hints": [
+            "break_pantry_v1"
+          ]
+        },
+        {
+          "id": "wc",
+          "function": "bathroom",
+          "bounds_m": [
+            28,
+            0,
+            36,
+            8
+          ],
+          "display_name": "公共卫浴",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        }
+      ],
+      "units": [],
+      "connections": [
+        {
+          "a": "team_a",
+          "b": "circulation",
+          "width_m": 1.8,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "team_b",
+          "b": "circulation",
+          "width_m": 1.8,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "meeting",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "office",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "pantry",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "wc",
+          "b": "circulation",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            16,
+            9.5,
+            19,
+            14.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            20,
+            11.5,
+            22.5,
+            14.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [],
+      "entry": {
+        "space": "circulation",
+        "side": "west",
+        "fraction": 0.25,
+        "width_m": 1.8
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    },
+    {
+      "id": "office_open_floor_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "04 · 大面积开放办公层",
+      "intent": "连续开放办公大厅包含工作、讨论和休憩功能区，北侧仅设置必要的封闭配套房间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 40,
+        "depth_m": 30,
+        "height_m": 3.4
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            0,
+            40,
+            8
+          ],
+          "display_name": "入口 / 垂直交通厅",
+          "room_reference_hints": []
+        },
+        {
+          "id": "work_hall",
+          "function": "open_office",
+          "bounds_m": [
+            0,
+            8,
+            40,
+            25
+          ],
+          "display_name": "开放办公大厅",
+          "functional_zones": [
+            {
+              "name": "团队工位",
+              "bounds_uv": [
+                0.04,
+                0.08,
+                0.43,
+                0.9
+              ]
+            },
+            {
+              "name": "协作讨论",
+              "bounds_uv": [
+                0.57,
+                0.08,
+                0.78,
+                0.9
+              ]
+            },
+            {
+              "name": "休憩交流",
+              "bounds_uv": [
+                0.82,
+                0.08,
+                0.97,
+                0.9
+              ]
+            }
+          ],
+          "clear_aisles_uv": [
+            [
+              0.46,
+              0,
+              0.54,
+              1
+            ],
+            [
+              0,
+              0.46,
+              1,
+              0.54
+            ]
+          ],
+          "room_reference_hints": [
+            "office_open_twelve_v1",
+            "office_four_v1"
+          ]
+        },
+        {
+          "id": "quiet",
+          "function": "office",
+          "bounds_m": [
+            0,
+            25,
+            8,
+            30
+          ],
+          "display_name": "安静办公室",
+          "room_reference_hints": [
+            "office_private_v1"
+          ]
+        },
+        {
+          "id": "meeting",
+          "function": "meeting_room",
+          "bounds_m": [
+            8,
+            25,
+            20,
+            30
+          ],
+          "display_name": "会议室",
+          "room_reference_hints": [
+            "meeting_six_v1"
+          ]
+        },
+        {
+          "id": "wc",
+          "function": "bathroom",
+          "bounds_m": [
+            20,
+            25,
+            26,
+            30
+          ],
+          "display_name": "卫浴",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "pantry",
+          "function": "break_room",
+          "bounds_m": [
+            26,
+            25,
+            34,
+            30
+          ],
+          "display_name": "茶水间",
+          "room_reference_hints": [
+            "break_pantry_v1"
+          ]
+        },
+        {
+          "id": "store",
+          "function": "storage",
+          "bounds_m": [
+            34,
+            25,
+            40,
+            30
+          ],
+          "display_name": "储物间",
+          "room_reference_hints": []
+        }
+      ],
+      "units": [],
+      "connections": [
+        {
+          "a": "work_hall",
+          "b": "circulation",
+          "width_m": 3,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "quiet",
+          "b": "work_hall",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "meeting",
+          "b": "work_hall",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "wc",
+          "b": "work_hall",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "pantry",
+          "b": "work_hall",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "store",
+          "b": "work_hall",
+          "width_m": 1.1,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            16,
+            1.5,
+            19,
+            6.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            20,
+            3,
+            22.5,
+            6
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [],
+      "entry": {
+        "space": "circulation",
+        "side": "south",
+        "fraction": 0.15,
+        "width_m": 1.8
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    },
+    {
+      "id": "retail_gallery_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "05 · 商业零售层",
+      "intent": "独立店铺沿公共商业廊道布置，设置休憩空间、服务走廊和独立配套用房；不模拟中庭。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 44,
+        "depth_m": 32,
+        "height_m": 3.4
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            16,
+            0,
+            28,
+            32
+          ],
+          "display_name": "商业公共廊道",
+          "room_reference_hints": []
+        },
+        {
+          "id": "shop_a",
+          "function": "shop",
+          "bounds_m": [
+            0,
+            0,
+            16,
+            12
+          ],
+          "display_name": "店铺 A",
+          "room_reference_hints": [
+            "retail_books_v1",
+            "retail_open_hall_v1"
+          ]
+        },
+        {
+          "id": "lounge",
+          "function": "waiting_room",
+          "bounds_m": [
+            0,
+            12,
+            16,
+            22
+          ],
+          "display_name": "公共休憩",
+          "room_reference_hints": [
+            "reception_waiting_v1",
+            "mall_open_lounge_v1"
+          ]
+        },
+        {
+          "id": "shop_b",
+          "function": "shop",
+          "bounds_m": [
+            0,
+            22,
+            16,
+            32
+          ],
+          "display_name": "店铺 B",
+          "room_reference_hints": [
+            "retail_books_v1",
+            "retail_open_hall_v1"
+          ]
+        },
+        {
+          "id": "shop_c",
+          "function": "shop",
+          "bounds_m": [
+            28,
+            0,
+            44,
+            11
+          ],
+          "display_name": "店铺 C",
+          "room_reference_hints": [
+            "retail_books_v1",
+            "retail_open_hall_v1"
+          ]
+        },
+        {
+          "id": "shop_d",
+          "function": "shop",
+          "bounds_m": [
+            28,
+            11,
+            44,
+            22
+          ],
+          "display_name": "店铺 D",
+          "room_reference_hints": [
+            "retail_books_v1",
+            "retail_open_hall_v1"
+          ]
+        },
+        {
+          "id": "service_hall",
+          "function": "corridor",
+          "bounds_m": [
+            28,
+            22,
+            44,
+            26
+          ],
+          "display_name": "配套服务走廊",
+          "room_reference_hints": []
+        },
+        {
+          "id": "wc",
+          "function": "bathroom",
+          "bounds_m": [
+            28,
+            26,
+            36,
+            32
+          ],
+          "display_name": "公共卫浴",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        },
+        {
+          "id": "service",
+          "function": "office",
+          "bounds_m": [
+            36,
+            26,
+            44,
+            32
+          ],
+          "display_name": "管理服务",
+          "room_reference_hints": [
+            "office_private_v1"
+          ]
+        }
+      ],
+      "units": [],
+      "connections": [
+        {
+          "a": "shop_a",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "lounge",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "shop_b",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "shop_c",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "shop_d",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "service_hall",
+          "b": "circulation",
+          "width_m": 2.4,
+          "kind": "open",
+          "fraction": 0.5
+        },
+        {
+          "a": "wc",
+          "b": "service_hall",
+          "width_m": 1.2,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "service",
+          "b": "service_hall",
+          "width_m": 1.2,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            20,
+            12,
+            23,
+            17
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            24,
+            14,
+            26.5,
+            17
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [
+        [
+          "service_hall",
+          "circulation"
+        ]
+      ],
+      "entry": {
+        "space": "circulation",
+        "side": "south",
+        "fraction": 0.25,
+        "width_m": 2.4
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    },
+    {
+      "id": "retail_open_floor_v1",
+      "level": "floor",
+      "revision": 1,
+      "display_name": "06 · 开放卖场层",
+      "intent": "一个连续大卖场，以展示岛、分类货架与纵横通道划分功能；储物和员工配套位于侧边。",
+      "review": {
+        "status": "pending_review"
+      },
+      "reference": {
+        "width_m": 44,
+        "depth_m": 32,
+        "height_m": 3.4
+      },
+      "function": "commercial",
+      "spaces": [
+        {
+          "id": "circulation",
+          "function": "corridor",
+          "bounds_m": [
+            0,
+            0,
+            44,
+            8
+          ],
+          "display_name": "入口 / 交通厅",
+          "room_reference_hints": []
+        },
+        {
+          "id": "sales_hall",
+          "function": "shop",
+          "bounds_m": [
+            0,
+            8,
+            36,
+            32
+          ],
+          "display_name": "开放卖场",
+          "functional_zones": [
+            {
+              "name": "书籍展示",
+              "bounds_uv": [
+                0.04,
+                0.04,
+                0.43,
+                0.43
+              ]
+            },
+            {
+              "name": "文创展示",
+              "bounds_uv": [
+                0.57,
+                0.04,
+                0.96,
+                0.43
+              ]
+            },
+            {
+              "name": "家居展示",
+              "bounds_uv": [
+                0.04,
+                0.57,
+                0.43,
+                0.96
+              ]
+            },
+            {
+              "name": "季节陈列",
+              "bounds_uv": [
+                0.57,
+                0.57,
+                0.96,
+                0.96
+              ]
+            }
+          ],
+          "clear_aisles_uv": [
+            [
+              0.46,
+              0,
+              0.54,
+              1
+            ],
+            [
+              0,
+              0.46,
+              1,
+              0.54
+            ]
+          ],
+          "room_reference_hints": [
+            "retail_books_v1",
+            "retail_open_hall_v1"
+          ]
+        },
+        {
+          "id": "store",
+          "function": "storage",
+          "bounds_m": [
+            36,
+            8,
+            44,
+            17
+          ],
+          "display_name": "后勤储物",
+          "room_reference_hints": []
+        },
+        {
+          "id": "pantry",
+          "function": "break_room",
+          "bounds_m": [
+            36,
+            17,
+            44,
+            24
+          ],
+          "display_name": "员工茶水",
+          "room_reference_hints": [
+            "break_pantry_v1"
+          ]
+        },
+        {
+          "id": "wc",
+          "function": "bathroom",
+          "bounds_m": [
+            36,
+            24,
+            44,
+            32
+          ],
+          "display_name": "卫浴",
+          "room_reference_hints": [
+            "bathroom_shower_v1"
+          ]
+        }
+      ],
+      "units": [],
+      "connections": [
+        {
+          "a": "sales_hall",
+          "b": "circulation",
+          "width_m": 3,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "store",
+          "b": "sales_hall",
+          "width_m": 1.2,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "pantry",
+          "b": "sales_hall",
+          "width_m": 1.2,
+          "kind": "door",
+          "fraction": 0.5
+        },
+        {
+          "a": "wc",
+          "b": "sales_hall",
+          "width_m": 1.2,
+          "kind": "door",
+          "fraction": 0.5
+        }
+      ],
+      "cores": [
+        {
+          "id": "stair_a",
+          "kind": "stairs",
+          "bounds_m": [
+            17,
+            1.5,
+            20,
+            6.5
+          ],
+          "public_space": "circulation",
+          "stack_key": "stair_a",
+          "min_landing_m": 1.2
+        },
+        {
+          "id": "lift_a",
+          "kind": "elevator",
+          "bounds_m": [
+            21,
+            3,
+            23.5,
+            6
+          ],
+          "public_space": "circulation",
+          "stack_key": "lift_a",
+          "min_landing_m": 1.2
+        }
+      ],
+      "open_boundaries": [],
+      "entry": {
+        "space": "circulation",
+        "side": "south",
+        "fraction": 0.2,
+        "width_m": 2.4
+      },
+      "adjustment_policy": {
+        "status": "reference_only",
+        "preserve": [
+          "unit_privacy",
+          "door_adjacency",
+          "core_stack_alignment",
+          "circulation_clearance"
+        ],
+        "note": "尺寸与轮廓变化需要重新求解及校验；不是任意比例缩放。"
+      }
+    }
+  ]
+}

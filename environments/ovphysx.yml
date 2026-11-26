@@ -1,0 +1,10 @@
+name: cityg-ovphysx
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - numpy==2.2.6
+      - ovstage==0.1.0.346039
+      - ovphysx==0.5.9

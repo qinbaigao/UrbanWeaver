@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "seeds": [202],
+  "fine_rooms": 4,
+  "common_instruction": "只在最多两栋建筑、每栋最多两层中选择共4个房间精细陈设，其余区域保持外壳或粗布局。采用规则矩形建筑，楼高2至3层。保留入口、核心筒和通行，不允许缩小家具或删除必要陈设。新场景未陈设的同层房间可以在上述约束下有限调整共享边界。",
+  "cases": [{
+    "id": "collaborative_office", "buildings": 4, "width_m": 180, "depth_m": 160,
+    "instruction": "生成严格4栋建筑的办公商业小街区，含办公和零售，不需要住宅。偏好温暖的办公氛围和协作办公，保留会客与资料收纳功能。可在空间允许时增加一组工作桌椅，或适当调整原型功能区位置、选择同功能家具，以响应这些偏好。入口面向连通街道。"
+  }],
+  "edit_checks": ["rename", "material", "ambiguous", "infeasible_floor"],
+  "claims": {"paper_benchmark": false, "arbitrary_geometry": false, "all_visual_issues_resolved": false}
+}

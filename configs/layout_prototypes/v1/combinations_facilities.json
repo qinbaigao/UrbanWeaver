@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "kitchen_prep",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "厨房备餐台",
+      "intent": "完整台面用于备餐和餐具，操作面朝通道，不与水槽或灶台重叠。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "kitchen_counter"
+      },
+      "members": [],
+      "asset_bindings": {
+        "kitchen_counter": "prototype_prep_counter"
+      },
+      "surface_items": [
+        {
+          "id": "cups",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "cup",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "tray",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "tray",
+          "count": 1,
+          "placement": "spread"
+        },
+        {
+          "id": "vase",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "vase",
+          "count": 1,
+          "placement": "spread"
+        }
+      ]
+    },
+    {
+      "id": "kitchen_wash",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "厨房水槽地柜",
+      "intent": "完整双槽与龙头，地柜落地，操作面朝通道。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "sink"
+      },
+      "members": [],
+      "asset_bindings": {
+        "sink": "prototype_kitchen_sink"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "kitchen_cold",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "冷藏单元",
+      "intent": "冰箱背靠墙，前方保留取用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "refrigerator"
+      },
+      "members": [],
+      "asset_bindings": {
+        "refrigerator": "prototype_fridge"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "kitchen_cook",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "烹饪单元",
+      "intent": "包含烤箱和四眼电灶，保留前方使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "oven"
+      },
+      "members": [],
+      "asset_bindings": {
+        "oven": "prototype_oven"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "bath_shower",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "完整淋浴间",
+      "intent": "选用含围挡、底座和花洒的完整资产，不以单独玻璃隔板冒充。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "shower"
+      },
+      "members": [],
+      "asset_bindings": {
+        "shower": "prototype_shower_complete"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "bath_basin",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "柱式洗手盆",
+      "intent": "陶瓷柱盆落地，水龙头位于靠墙侧；不把凹槽当支撑面。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "sink"
+      },
+      "members": [],
+      "asset_bindings": {
+        "sink": "prototype_pedestal_sink"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "bath_wc",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "坐便器",
+      "intent": "水箱侧靠墙，前方使用空间可达。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "toilet"
+      },
+      "members": [],
+      "asset_bindings": {
+        "toilet": "prototype_toilet"
+      },
+      "surface_items": []
+    },
+    {
+      "id": "retail_display_table",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "文创展示岛台",
+      "intent": "原尺寸桌作为岛台，陈列书籍、笔记本和花器；不是用餐区域。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "dining_table"
+      },
+      "members": [],
+      "asset_bindings": {
+        "dining_table": "interior_hssd_fd8e82f013bf0b3cbeac233a43db84f119e5e431"
+      },
+      "surface_items": [
+        {
+          "id": "books",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "book_stack",
+          "count": 3,
+          "placement": "spread"
+        },
+        {
+          "id": "notes",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "notebook",
+          "count": 2,
+          "placement": "spread"
+        },
+        {
+          "id": "vases",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "vase",
+          "count": 2,
+          "placement": "spread"
+        }
+      ],
+      "asset_roles": {
+        "dining_table": {
+          "source_category": "dining_table",
+          "rationale": "原尺寸长桌用于书籍文创岛台陈列，仅原型角色适配。"
+        }
+      }
+    },
+    {
+      "id": "retail_checkout",
+      "level": "combination",
+      "revision": 1,
+      "display_name": "收银台与员工椅",
+      "intent": "收银台朝向客人，员工在背面，保留员工离开与客户排队空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "anchor": {
+        "id": "unit",
+        "category": "checkout_counter"
+      },
+      "members": [
+        {
+          "id": "chair",
+          "category": "office_chair",
+          "side": "back",
+          "slot": 0,
+          "gap_m": 0.35,
+          "face_anchor": true
+        }
+      ],
+      "asset_bindings": {
+        "checkout_counter": "prototype_checkout_counter",
+        "office_chair": "interior_hssd_364b7af5280ba6e93fb3e09061e7639d6a8ba410"
+      },
+      "surface_items": [
+        {
+          "id": "pen",
+          "support_member_id": "unit",
+          "surface": "top",
+          "category": "pen",
+          "count": 1,
+          "placement": "spread"
+        }
+      ],
+      "asset_roles": {
+        "office_chair": {
+          "source_category": "office_chair",
+          "rationale": "收银员工座位，保持原尺寸与拉椅空间。"
+        }
+      }
+    }
+  ]
+}

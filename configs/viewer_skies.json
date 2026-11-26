@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "resolution": "2k",
+  "presets": {
+    "clear": {"label": "Clear sky", "asset": "kloofendal_43d_clear_puresky", "sun_intensity": 2.8, "sun_color": "#fff3d6", "environment_intensity": 0.65, "background_intensity": 0.65, "exposure": 0.95},
+    "cloudy": {"label": "Soft clouds", "asset": "kloppenheim_03_puresky", "sun_intensity": 1.6, "sun_color": "#fff6e8", "environment_intensity": 0.7, "background_intensity": 0.55, "exposure": 1.05},
+    "sunset": {"label": "Warm sunset", "asset": "kloppenheim_06_puresky", "sun_intensity": 1.5, "sun_color": "#ffd0a0", "environment_intensity": 0.65, "background_intensity": 0.45, "exposure": 1.1}
+  }
+}

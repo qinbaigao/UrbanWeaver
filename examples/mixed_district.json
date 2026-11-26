@@ -1,0 +1,24 @@
+{
+  "name": "mixed_function_demo",
+  "width_m": 720.0,
+  "depth_m": 600.0,
+  "building_count": 40,
+  "min_floors": 2,
+  "max_floors": 5,
+  "rooms_per_floor": 6,
+  "road_width_m": 12.0,
+  "sidewalk_width_m": 2.5,
+  "parcel_setback_m": 4.0,
+  "layout_style": "organic_grid",
+  "open_space_ratio": 0.16,
+  "layout_irregularity": 0.55,
+  "road_pattern": "organic_hierarchy",
+  "buildings_per_block": 2,
+  "branch_road_ratio": 0.8,
+  "seed": 7,
+  "zones": [
+    {"name": "residential_zone", "function": "residential", "weight": 0.5},
+    {"name": "commercial_zone", "function": "commercial", "weight": 0.3},
+    {"name": "public_service_zone", "function": "public_service", "weight": 0.2}
+  ]
+}

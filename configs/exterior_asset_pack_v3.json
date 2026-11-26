@@ -1,0 +1,334 @@
+{
+  "schema_version": "cityg.exterior_asset_preparation.v1",
+  "description": "Broad acquisition across commerce, service equipment, recreation, boundary and roof equipment. No automatic promotion.",
+  "provider": "polyhaven_and_local_cc0",
+  "resolution": "1k",
+  "max_download_mib": 600,
+  "max_runtime_triangles": 200000,
+  "assets": [
+    {
+      "id": "covered_car",
+      "category": "parked_vehicle",
+      "contexts": [
+        "parking_lot"
+      ],
+      "height_m": 1.5,
+      "tags": [
+        "car",
+        "covered",
+        "parked"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "portable_generator",
+      "category": "generator",
+      "contexts": [
+        "service_area"
+      ],
+      "height_m": 0.85,
+      "tags": [
+        "generator",
+        "portable",
+        "maintenance"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "hand_truck",
+      "category": "hand_truck",
+      "contexts": [
+        "loading_area"
+      ],
+      "height_m": 1.2,
+      "tags": [
+        "trolley",
+        "delivery",
+        "hand_truck"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "industrial_storage_cart",
+      "category": "storage_cart",
+      "contexts": [
+        "loading_area"
+      ],
+      "height_m": 1.1,
+      "tags": [
+        "cart",
+        "storage",
+        "industrial"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "barrel_03",
+      "category": "barrel",
+      "contexts": [
+        "service_area"
+      ],
+      "height_m": 0.9,
+      "tags": [
+        "barrel",
+        "industrial"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "industrial_pastic_container",
+      "category": "industrial_container",
+      "contexts": [
+        "service_area"
+      ],
+      "height_m": 1.1,
+      "tags": [
+        "container",
+        "industrial"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "large_iron_gate",
+      "category": "gate_module",
+      "contexts": [
+        "park_entrance"
+      ],
+      "height_m": 2.2,
+      "tags": [
+        "gate",
+        "iron",
+        "boundary"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "modular_airduct_rectangular_01",
+      "category": "hvac_duct",
+      "contexts": [
+        "roof_service_area"
+      ],
+      "height_m": 0.6,
+      "tags": [
+        "duct",
+        "hvac",
+        "modular"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "concrete_cat_statue",
+      "category": "sculpture",
+      "contexts": [
+        "garden"
+      ],
+      "height_m": 0.55,
+      "tags": [
+        "sculpture",
+        "cat",
+        "concrete"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "horse_statue_01",
+      "category": "sculpture",
+      "contexts": [
+        "heritage_plaza"
+      ],
+      "height_m": 1.8,
+      "tags": [
+        "sculpture",
+        "horse",
+        "heritage"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "stone_fire_pit",
+      "category": "fire_pit",
+      "contexts": [
+        "designated_recreation_area"
+      ],
+      "height_m": 0.5,
+      "tags": [
+        "fire_pit",
+        "stone",
+        "recreation"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "gallinera_chair",
+      "category": "outdoor_chair",
+      "contexts": [
+        "cafe_terrace"
+      ],
+      "height_m": 0.9,
+      "tags": [
+        "chair",
+        "cafe",
+        "seating"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "gallinera_table",
+      "category": "outdoor_table",
+      "contexts": [
+        "cafe_terrace"
+      ],
+      "height_m": 0.75,
+      "tags": [
+        "table",
+        "cafe"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "painted_wooden_table",
+      "category": "outdoor_table",
+      "contexts": [
+        "sheltered_terrace"
+      ],
+      "height_m": 0.75,
+      "tags": [
+        "table",
+        "wood",
+        "painted"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "painted_wooden_chair_01",
+      "category": "outdoor_chair",
+      "contexts": [
+        "sheltered_terrace"
+      ],
+      "height_m": 0.9,
+      "tags": [
+        "chair",
+        "wood",
+        "painted"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "wine_barrel_01",
+      "category": "barrel_decor",
+      "contexts": [
+        "cafe_terrace"
+      ],
+      "height_m": 0.9,
+      "tags": [
+        "barrel",
+        "wood",
+        "wine"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "portable_searchlight",
+      "category": "work_light",
+      "contexts": [
+        "maintenance_area"
+      ],
+      "height_m": 0.5,
+      "tags": [
+        "light",
+        "portable",
+        "maintenance"
+      ],
+      "manual_only": true,
+      "review_note": "Acquisition-first batch; exact scale, front axis, mounting, LOD and placement require review."
+    },
+    {
+      "id": "exterior_aircon_unit",
+      "category": "exterior_hvac_unit",
+      "contexts": [
+        "exterior_wall"
+      ],
+      "height_m": 0.65,
+      "tags": [
+        "exterior_aircon_unit",
+        "exterior_hvac_unit",
+        "equipment"
+      ],
+      "manual_only": true,
+      "local_source": "assets/incoming/facade_models_polyhaven/exterior_aircon_unit/exterior_aircon_unit_2k.gltf",
+      "provider": "polyhaven",
+      "license_id": "CC0-1.0",
+      "source_url": "https://polyhaven.com/a/exterior_aircon_unit"
+    },
+    {
+      "id": "utility_box_01",
+      "category": "utility_box",
+      "contexts": [
+        "service_area"
+      ],
+      "height_m": 1.2,
+      "tags": [
+        "utility_box_01",
+        "utility_box",
+        "equipment"
+      ],
+      "manual_only": true,
+      "local_source": "assets/incoming/facade_models_polyhaven/utility_box_01/utility_box_01_2k.gltf",
+      "provider": "polyhaven",
+      "license_id": "CC0-1.0",
+      "source_url": "https://polyhaven.com/a/utility_box_01"
+    },
+    {
+      "id": "utility_box_02",
+      "category": "utility_box",
+      "contexts": [
+        "service_area"
+      ],
+      "height_m": 1.2,
+      "tags": [
+        "utility_box_02",
+        "utility_box",
+        "equipment"
+      ],
+      "manual_only": true,
+      "local_source": "assets/incoming/facade_models_polyhaven/utility_box_02/utility_box_02_2k.gltf",
+      "provider": "polyhaven",
+      "license_id": "CC0-1.0",
+      "source_url": "https://polyhaven.com/a/utility_box_02"
+    },
+    {
+      "id": "modular_airduct_circular_01",
+      "category": "hvac_duct",
+      "contexts": [
+        "roof_service_area"
+      ],
+      "height_m": 0.6,
+      "tags": [
+        "modular_airduct_circular_01",
+        "hvac_duct",
+        "equipment"
+      ],
+      "manual_only": true,
+      "local_source": "assets/incoming/facade_models_polyhaven/modular_airduct_circular_01/modular_airduct_circular_01_2k.gltf",
+      "provider": "polyhaven",
+      "license_id": "CC0-1.0",
+      "source_url": "https://polyhaven.com/a/modular_airduct_circular_01"
+    }
+  ]
+}

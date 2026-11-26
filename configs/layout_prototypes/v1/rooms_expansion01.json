@@ -1,0 +1,63 @@
+{
+  "schema_version":1,
+  "prototypes":[
+    {
+      "id":"bedroom_single_v1","level":"room","revision":1,"display_name":"07 · 紧凑单人卧室",
+      "intent":"以一张约 1.3 m 宽床、单侧床头柜、衣柜和独立书写角满足单人睡眠与学习；不压缩资产比例。",
+      "review":{"status":"pending_review"},"room_type":"bedroom","palette":"warm","occupants":1,
+      "capacity_reason":"一张原尺寸窄床供一人使用，保留一套书写桌椅。",
+      "reference":{"width_m":4.2,"depth_m":4.1,"height_m":3.0,"door_fraction":0.7,"door_width_m":0.9},
+      "adaptation_cases":[{"width_m":4.6,"depth_m":4.4,"height_m":3.0,"door_fraction":0.72,"door_width_m":0.9}],
+      "applicability":{"width_m":[4.0,4.8],"depth_m":[3.9,4.8],"area_m2":[16,23],"aspect_ratio":[0.85,1.2],"min_height_m":2.8,"door_walls":["south"]},
+      "hard_constraints":["床头贴墙且至少一侧可达","保留睡眠、衣物收纳、学习功能","柜前与椅后可达"],
+      "editable_fields":["尺寸适配","沿墙平移","台面小物件"],
+      "finishes":{"floor":"room_pbr_wood_floor","wall":"room_pbr_beige_wall_001"},
+      "decorations":[{"id":"art","kind":"wall_asset","asset_id":"prototype_art_classic","walls":["east","north"]}],
+      "zones":[{"id":"sleep","purpose":"睡眠","position":"north"},{"id":"storage","purpose":"衣物收纳","position":"north"},{"id":"writing","purpose":"学习书写","position":"south"}],
+      "group_instances":[
+        {"id":"sleep","combination":"sleep_single","zone":"sleep","placement":{"mode":"wall","wall":"north","contact":"head","max_gap_m":0.2}},
+        {"id":"storage","combination":"compact_wardrobe","zone":"storage","placement":{"mode":"wall","wall":"north","contact":"back","max_gap_m":0.2}},
+        {"id":"writing","combination":"compact_writing","zone":"writing","placement":{"mode":"wall","wall":"south","contact":"back","max_gap_m":0.2}}
+      ]
+    },
+    {
+      "id":"reading_shared_v1","level":"room","revision":1,"display_name":"08 · 共享阅览室",
+      "intent":"四人共享阅读桌、两侧资料书架和靠墙休闲阅读角形成集中阅读与短时交流两类空间。",
+      "review":{"status":"pending_review"},"room_type":"reading_room","palette":"warm","occupants":6,
+      "capacity_reason":"四个桌边阅读座位和两人沙发；原型专属 reading_room 类型，不挤占办公工位容量。",
+      "reference":{"width_m":7.6,"depth_m":6.8,"height_m":3.2,"door_fraction":0.75,"door_width_m":1.0},
+      "adaptation_cases":[{"width_m":8,"depth_m":7.2,"height_m":3.2,"door_fraction":0.25,"door_width_m":1.0}],
+      "applicability":{"width_m":[7.4,8.6],"depth_m":[6.6,8],"area_m2":[48,69],"aspect_ratio":[0.9,1.3],"min_height_m":2.8,"door_walls":["south"]},
+      "hard_constraints":["四个桌边座位及椅后可达","书柜使用面朝室内","阅读角与桌边通道互不阻塞"],
+      "editable_fields":["尺寸适配","同功能家具替换需重新校验","阅读资料组合"],
+      "finishes":{"floor":"room_pbr_wood_floor","wall":"room_pbr_beige_wall_001"},
+      "decorations":[{"id":"art","kind":"wall_asset","asset_id":"prototype_public_art","walls":["west","south"]},{"id":"plant","kind":"floor_asset","asset_id":"prototype_public_plant","walls":["north","east","south"]},{"id":"rug","kind":"rug","asset_id":"prototype_public_rug","anchor_member_id":"lounge_table"},{"id":"lamp","kind":"floor_asset","asset_id":"prototype_public_lamp","walls":["west","south","north"]}],
+      "zones":[{"id":"reading","purpose":"共享阅览","position":"center"},{"id":"north","purpose":"资料书架","position":"north"},{"id":"east","purpose":"分类书架","position":"east"},{"id":"lounge","purpose":"轻松阅读","position":"west"}],
+      "group_instances":[
+        {"id":"reading","combination":"reading_four","zone":"reading","placement":{"mode":"free","wall":"auto","contact":"auto","max_gap_m":0.2}},
+        {"id":"north","combination":"open_bookcase","zone":"north","placement":{"mode":"wall","wall":"north","contact":"back","max_gap_m":0.2}},
+        {"id":"east","combination":"open_bookcase","zone":"east","placement":{"mode":"wall","wall":"east","contact":"back","max_gap_m":0.2}},
+        {"id":"lounge","combination":"visitor_corner","zone":"lounge","placement":{"mode":"wall","wall":"west","contact":"back","max_gap_m":0.2}}
+      ]
+    },
+    {
+      "id":"reception_waiting_v1","level":"room","revision":1,"display_name":"09 · 接待等候室",
+      "intent":"北部独立前台与员工座位，西侧沙发等候区和东侧资料架；保持入口至前台及员工后方通路。",
+      "review":{"status":"pending_review"},"room_type":"reception","palette":"minimal","occupants":3,
+      "capacity_reason":"一位接待人员与两位等候访客，沙发不计为办公工位。",
+      "reference":{"width_m":6.8,"depth_m":6.4,"height_m":3.2,"door_fraction":0.65,"door_width_m":1.1},
+      "adaptation_cases":[{"width_m":7.2,"depth_m":6.8,"height_m":3.2,"door_fraction":0.35,"door_width_m":1.1}],
+      "applicability":{"width_m":[6.6,8],"depth_m":[6.2,7.5],"area_m2":[40,60],"aspect_ratio":[0.85,1.3],"min_height_m":2.8,"door_walls":["south"]},
+      "hard_constraints":["前台朝访客而非贴住后墙","员工工作椅位于柜台内侧","入口至柜台与等候区连通"],
+      "editable_fields":["尺寸适配","等候区平移","展示物件"],
+      "finishes":{"floor":"room_pbr_floor_tiles_02","wall":"room_pbr_beige_wall_001"},
+      "decorations":[{"id":"art","kind":"wall_asset","asset_id":"prototype_public_art","walls":["north","west"]},{"id":"plant","kind":"floor_asset","asset_id":"prototype_public_plant","walls":["west","east","south","north"]},{"id":"rug","kind":"rug","asset_id":"prototype_public_rug","anchor_member_id":"waiting_table"}],
+      "zones":[{"id":"staff","purpose":"访客接待","position":"north"},{"id":"waiting","purpose":"等候","position":"west"},{"id":"information","purpose":"资料与介绍","position":"east"}],
+      "group_instances":[
+        {"id":"staff","combination":"staff_reception","zone":"staff","placement":{"mode":"free","wall":"auto","contact":"auto","max_gap_m":0.2,"facing":"south"}},
+        {"id":"waiting","combination":"visitor_corner","zone":"waiting","placement":{"mode":"wall","wall":"west","contact":"back","max_gap_m":0.2}},
+        {"id":"information","combination":"open_bookcase","zone":"information","placement":{"mode":"wall","wall":"east","contact":"back","max_gap_m":0.2}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "prototypes": [
+    {
+      "id": "living_dining_shallow_v1",
+      "level": "room",
+      "revision": 2,
+      "display_name": "浅进深客餐厅：会客与四人餐位",
+      "intent": "浅进深客餐厅：会客与四人餐位；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "living_room",
+      "palette": "warm",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.8,
+        "depth_m": 3.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 8.2,
+          "depth_m": 3.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.8,
+          "depth_m": 3.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.74,
+          "depth_m": 4.28,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.74,
+          "depth_m": 4.28,
+          "height_m": 3.2,
+          "door_fraction": 0.5,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 5.74,
+          "depth_m": 4.28,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.7,
+          9.3
+        ],
+        "depth_m": [
+          2.9,
+          4.5
+        ],
+        "area_m2": [
+          20,
+          41.85
+        ],
+        "aspect_ratio": [
+          1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "open_lounge_pair",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "shallow_dining_four",
+          "zone": "east",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bedroom_study_shallow_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "浅进深单人卧室与独立书写端",
+      "intent": "浅进深单人卧室与独立书写端；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "bedroom",
+      "palette": "warm",
+      "occupants": 1,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.8,
+        "depth_m": 3.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 8.2,
+          "depth_m": 3.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.8,
+          "depth_m": 3.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.8,
+          9.3
+        ],
+        "depth_m": [
+          2.9,
+          3.9
+        ],
+        "area_m2": [
+          19.72,
+          36.27
+        ],
+        "aspect_ratio": [
+          1.1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_wood_floor",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "sleep_single",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_wardrobe",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_writing",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen_linear_shallow_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "单墙长操作面与食材柜",
+      "intent": "单墙长操作面与食材柜；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "kitchen",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7,
+        "depth_m": 3.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.4,
+          "depth_m": 3.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7,
+          "depth_m": 3.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6,
+          8.5
+        ],
+        "depth_m": [
+          2.9,
+          3.9
+        ],
+        "area_m2": [
+          17.4,
+          33.15
+        ],
+        "aspect_ratio": [
+          1.1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        },
+        {
+          "id": "center",
+          "position": "center",
+          "purpose": "center功能区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "kitchen_prep",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "kitchen_wash",
+          "zone": "center",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "storage_linear_shallow_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "长边三组货架与连续取用通道",
+      "intent": "长边三组货架与连续取用通道；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "storage",
+      "palette": "minimal",
+      "occupants": 2,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 6.8,
+        "depth_m": 3.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.2,
+          "depth_m": 3.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 6.8,
+          "depth_m": 3.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          5.8,
+          8.3
+        ],
+        "depth_m": [
+          2.9,
+          3.9
+        ],
+        "area_m2": [
+          16.82,
+          32.37
+        ],
+        "aspect_ratio": [
+          1.1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_stock_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_stock_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_stock_shelf",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "shop_linear_frontage_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "宽面小店：两端陈列与侧边收银",
+      "intent": "宽面小店：两端陈列与侧边收银；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "shop",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.6,
+        "depth_m": 5.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 8.0,
+          "depth_m": 5.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.6,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.6,
+          9.1
+        ],
+        "depth_m": [
+          4.9,
+          5.9
+        ],
+        "area_m2": [
+          32.34,
+          53.69
+        ],
+        "aspect_ratio": [
+          1.1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能区"
+        },
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "compact_shop_shelf",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_shop_shelf",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "east",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "retail_checkout",
+          "zone": "north",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "break_cafe_linear_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "宽面员工简餐：北侧备餐与侧边四人餐位",
+      "intent": "宽面员工简餐：北侧备餐与侧边四人餐位；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "break_room",
+      "palette": "minimal",
+      "occupants": 4,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 7.2,
+        "depth_m": 5.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 7.6,
+          "depth_m": 5.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 7.2,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          6.2,
+          8.7
+        ],
+        "depth_m": [
+          4.9,
+          5.9
+        ],
+        "area_m2": [
+          30.38,
+          51.33
+        ],
+        "aspect_ratio": [
+          1.1,
+          3.5
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        },
+        {
+          "id": "east",
+          "position": "east",
+          "purpose": "east功能区"
+        },
+        {
+          "id": "center",
+          "position": "center",
+          "purpose": "center功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "pantry_counter",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "compact_storage_cabinet",
+          "zone": "east",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g02",
+          "combination": "compact_dining_four",
+          "zone": "center",
+          "placement": {
+            "mode": "free",
+            "wall": "auto",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "id": "restroom_compact_v1",
+      "level": "room",
+      "revision": 1,
+      "display_name": "独立无淋浴卫生间与洗手区",
+      "intent": "独立无淋浴卫生间与洗手区；沿长边分配功能，保留浅进深入口及中央使用空间。",
+      "review": {
+        "status": "pending_review"
+      },
+      "room_type": "restroom",
+      "palette": "minimal",
+      "occupants": 1,
+      "capacity_reason": "按功能组实际座位或同时使用人数确定，存储空间人数为同时取用人数。",
+      "reference": {
+        "width_m": 4.6,
+        "depth_m": 5.2,
+        "height_m": 3.2,
+        "door_fraction": 0.5,
+        "door_width_m": 0.95
+      },
+      "adaptation_cases": [
+        {
+          "width_m": 5.0,
+          "depth_m": 5.4,
+          "height_m": 3.2,
+          "door_fraction": 0.25,
+          "door_width_m": 0.95
+        },
+        {
+          "width_m": 4.6,
+          "depth_m": 5.2,
+          "height_m": 3.2,
+          "door_fraction": 0.75,
+          "door_width_m": 0.95
+        }
+      ],
+      "applicability": {
+        "width_m": [
+          3.6,
+          6.1
+        ],
+        "depth_m": [
+          4.9,
+          5.9
+        ],
+        "area_m2": [
+          17.64,
+          35.99
+        ],
+        "aspect_ratio": [
+          0.6,
+          1.8
+        ],
+        "min_height_m": 2.8,
+        "door_walls": [
+          "south"
+        ]
+      },
+      "hard_constraints": [
+        "家具保持真实尺寸",
+        "保留全部主要功能组",
+        "门区及家具操作区可达"
+      ],
+      "editable_fields": [
+        "经校验的尺寸适配",
+        "组合平移及有限增减",
+        "同功能资产替换须重新校验"
+      ],
+      "finishes": {
+        "floor": "room_pbr_floor_tiles_02",
+        "wall": "room_pbr_beige_wall_001"
+      },
+      "zones": [
+        {
+          "id": "north",
+          "position": "north",
+          "purpose": "north功能区"
+        },
+        {
+          "id": "west",
+          "position": "west",
+          "purpose": "west功能区"
+        }
+      ],
+      "group_instances": [
+        {
+          "id": "g00",
+          "combination": "prototype_restroom_toilet_group",
+          "zone": "north",
+          "placement": {
+            "mode": "wall",
+            "wall": "north",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        },
+        {
+          "id": "g01",
+          "combination": "prototype_restroom_basin_group",
+          "zone": "west",
+          "placement": {
+            "mode": "wall",
+            "wall": "west",
+            "contact": "auto",
+            "max_gap_m": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}
