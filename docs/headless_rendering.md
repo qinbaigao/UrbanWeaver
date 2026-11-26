@@ -1,5 +1,7 @@
 # Headless Viewer rendering
 
+**English** | [简体中文](headless_rendering.zh-CN.md)
+
 CityG uses the Web Viewer itself as a lightweight render frontend. Playwright
 launches Chromium without a desktop session; `headless_capture.py` asks it to
 use SwiftShader, so this step does not require an RTX GPU or an Isaac Sim
@@ -36,7 +38,7 @@ python -m pip install playwright
 python -m playwright install chromium
 ```
 
-The first command installs the Python API; the second downloads the matching
+The two Python commands install the Playwright API and download the matching
 browser binary. Playwright keeps browser binaries in its cache and the versions
 should be reinstalled after upgrading Playwright. This follows the official
 Playwright browser installation procedure ([browser docs](https://playwright.dev/python/docs/browsers)).
@@ -64,7 +66,7 @@ Terminal A:
 ```bash
 conda activate cityG
 # Run from the UrbanWeaver repository root.
-PYTHONPATH=src python -m cityg view outputs/<run>/final/openusd \
+PYTHONPATH=src python -m cityg view outputs/mixed_district/final/openusd \
   --host 127.0.0.1 --port 5187 --no-browser
 ```
 
@@ -75,7 +77,7 @@ conda activate cityG
 # Run from the UrbanWeaver repository root.
 python scripts/headless_capture.py \
   --url http://127.0.0.1:5187 \
-  --output outputs/<run>/visual_review/view.png \
+  --output outputs/mixed_district/visual_review/view.png \
   --width 1600 --height 1000 --wait-ms 5000 \
   --quality-profile review --mode overview
 ```
@@ -87,15 +89,15 @@ Then submit the image to the optional VLM gate:
 
 ```bash
 PYTHONPATH=src python -m cityg visual-review \
-  outputs/<run>/visual_review/view.png \
-  --output outputs/<run>/visual_review/report.json
+  outputs/mixed_district/visual_review/view.png \
+  --output outputs/mixed_district/visual_review/report.json
 ```
 
 ## Complete adaptive review
 
 ```bash
 PYTHONPATH=src python -m cityg adaptive-review \
-  outputs/phase4_small_adaptive_v7/final/openusd \
+  outputs/mixed_district/final/openusd \
   --output outputs/adaptive_review_run \
   --base-url http://127.0.0.1:8000/v1 \
   --model cityg-llm --max-tokens 1536 \

@@ -1,5 +1,7 @@
 # UrbanWeaver
 
+**English** | [简体中文](README.zh-CN.md)
+
 **From Streets to Rooms: Building Fine-Grained Urban Simulation Environments**
 
 UrbanWeaver turns a text brief into a city with connected streets, buildings, floors, rooms and furniture. Its agents exchange spatial constraints across scales, check candidate layouts against the compiled geometry, and can revise a bounded part of a scene. You can export the result to OpenUSD, explore it in the bundled Web Viewer, or edit an existing city. The Python package and CLI are named `cityg`.

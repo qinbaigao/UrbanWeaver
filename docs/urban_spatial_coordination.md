@@ -1,68 +1,52 @@
-# 城市空间约束、地貌容量恢复与建筑占地适配
+# Urban spatial constraints and building footprint adaptation
 
+## From a brief to a measurable requirement
 
-## 需求如何落到实际场景
-
-Requirement Agent 把方位、邻近/远离、设施服务距离和最低建筑占地要求写入 `CitySpec.urban_requirements`。Urban Agent 能读取这些要求；布局阶段据此分配地块，最终验收重新测量实际建筑几何，不能以规划意图或缓存的通过状态替代结果。
-
-一条规则例如：
+The Requirement Agent records directional constraints, proximity and separation, facility service distances, and minimum building footprints in `CitySpec.urban_requirements`. The Urban Agent reads these rules during parcel allocation. The final check measures the realized buildings again.
 
 ```json
 {
   "id": "homes_school_access",
-  "source_quote": "每栋住宅距至少一栋学校不超过160米",
-  "subject": "zone:住宅区",
+  "source_quote": "Every home must be within 160 metres of at least one school.",
+  "subject": "zone:residential",
   "relation": "served_by",
-  "target": "zone:学校",
+  "target": "zone:schools",
   "threshold": 160,
   "strength": "hard",
-  "reason": "按每栋住宅中心到最近学校建筑中心的平面距离检查"
+  "reason": "Measure the plan distance from each residential building centre to the nearest school building centre."
 }
 ```
 
-- 主体使用 `zone:<精确分区名>`、`function:<功能>` 或 `building:<ID>`。学校等细功能应单设具名分区，不能用所有 `public_service` 建筑替代学校。
-- 支持 `north_half/south_half/east_half/west_half`、`near/far/served_by`、`min_footprint_area`。
-- 方位按建筑中心相对城市中心检查。近/远和服务距离按每个主体到最近目标的平面距离检查；河流/道路目标按建筑中心到水边/道路含人行道边界测量。**不是步行路线距离或真实服务可达性**。
-- 面积单位为平方米、距离为米。方位规则的 target 和 threshold 为 null；占地规则的 target 为 null。
-- 本轮占地面积特指规范模型 `Building.footprint` 的规划矩形包络面积，不是异形建筑实际投影面积、室内净面积或总建筑面积；后几类不能凭此宣称满足。实际塔楼/异形可用面积仍需对应的楼层与编译验收。
-- 模糊的“靠近”由 Agent 给出有解释的软阈值，不能冒充用户明确指定的硬条件。缺失主体、缺失目标和只有自身可作为目标的规则不会空通过。
-- 每条规则保留原文引用、解释、实体检查结果。硬规则参与需求台账和 CityValidator，进入 CCWP 的 `urban_spatial` 契约；软规则生成警告与满足度记录。
+Use an exact zone name (`zone:<name>`), function (`function:<function>`) or building ID (`building:<ID>`). In this example the scene needs zones named `residential` and `schools`. Give specialized facilities their own named zone when a broader function such as `public_service` also includes unrelated buildings.
 
-模型提取仍可能遗漏或误解自然语言。记录引用不等于已经证明语义完整，真实测试还应独立检查需求覆盖。
+| Relation | Measurement |
+|---|---|
+| `north_half`, `south_half`, `east_half`, `west_half` | Building centre relative to the city centre. Both `target` and `threshold` are null. |
+| `near`, `far`, `served_by` | Plan distance in metres from each subject to its nearest target. For a river or road, measure to the water's edge or the road boundary including sidewalks. Walking distance requires a separate route check. |
+| `min_footprint_area` | Area of the planned rectangular envelope in `Building.footprint`, in m². Set `target` to null. Actual tower plates, irregular projections, usable interiors and gross floor area require their own measurements. |
 
-## 地块分配与地貌恢复
+For a vague request such as “near the park,” the agent proposes an explained soft threshold. Missing subjects or targets, and a subject with only itself as a target, cannot satisfy a rule. Each rule retains the source text, interpretation and entity-level results. Hard rules enter the requirements ledger, the city validator and the CCWP `urban_spatial` contract. Soft rules produce warnings and satisfaction records. Reviewing the extracted rules against the original brief can reveal omissions or misinterpretations.
 
-地块分配保持建筑数量、功能分配和地块唯一性，通过有界交换搜索改善空间关系。优先减少硬关系违例，再改善软偏好；最多 2048 次候选评估、4 轮扫描。地块中心与可建面积用于候选筛选，建筑生成后再次独立验收。
+## Parcel allocation and terrain conflicts
 
-地貌容量失败时依次尝试原有道路与分块、已有合法地块内细分、较紧凑的自适应内部道路间距与重新分块。子地块仍须具备可建矩形和道路临接。最多三个配置候选；道路骨架已因干燥陆地不足失败时，跳过无效的单纯分块重试。地块细分也有独立次数上限。
+The planner swaps parcel assignments within a bounded search (up to 2,048 candidate evaluations and four scans). It first reduces hard violations, then improves soft preferences while preserving building count, functional allocation and unique parcel assignments. Parcel centres and buildable areas screen candidates. The validator repeats the checks after building generation.
 
-不缩小用户指定河宽、河岸或退让，不减少建筑数，不扩大场地。仍无解时输出 `UrbanPlanningConflict`，主闭环保存 `failures/urban_planning.json` 并返回 `replan_required`；这个失败只代表当前搜索未找到解，不证明物理上无解。
+If the terrain leaves too few buildable parcels, the planner tries the original road and block configuration, subdivision of legal parcels, then a more compact internal road spacing and new blocks. Each new parcel needs a buildable rectangle and road frontage. The search has at most three configuration candidates and a separate subdivision limit. If the road skeleton already failed for lack of dry land, it skips the subdivision-only retry. The site extent, requested building count, river width, banks and setbacks stay fixed throughout recovery.
 
-成功场景在 metadata 中保存 `geography_recovery` 和 `urban_spatial_assignment`。主闭环另外保存 `programs/urban_spatial.json`，方便审阅候选与恢复动作。
+When the search exhausts its candidates, the main loop records an `UrbanPlanningConflict` in `failures/urban_planning.json` and returns `replan_required`. This describes the outcome of the bounded search. Successful runs retain `geography_recovery` and `urban_spatial_assignment` in scene metadata and write `programs/urban_spatial.json` for inspection.
 
-## 建筑空间适配
+## Building placement and resizing
 
-**生成时**：最低占地规则参与地块分配；若初始建筑偏小，在地块退让范围内扩大长宽并保持所选临街侧，随后从新占地构建入口、楼层、房间与核心筒。地块可建面积仍不足则明确失败。
+During generation, minimum footprint area participates in parcel allocation. If a building starts too small, the planner enlarges it inside the setbacks, preserves the street-facing side, then lays out its entrance, floors, rooms and core. An undersized parcel can still cause an explicit failure.
 
-**编辑时**：新增 `building_site` 事务，可提交 `area_m2`、`aspect_ratio`（宽/深）、`offset_x_m`、`offset_y_m`。例如 `{"area_m2":500,"aspect_ratio":1.5,"offset_x_m":2}`。
+In edit mode, a `building_site` transaction accepts `area_m2`, `aspect_ratio` (width/depth), `offset_x_m` and `offset_y_m`. For example, `{"area_m2":500,"aspect_ratio":1.5,"offset_x_m":2}` requests a 500 m² footprint, a width/depth ratio of 1.5 and a two-metre shift along X. Translating a building carries its entrances, floors, core and furniture together, including for tall, rotated and irregular buildings. Metric placement records are validated before rebinding their dimensions and positions.
 
-**2026-11-18 更新**。在原有地块内平移时，入口、楼层、核心筒和家具一起移动。对有米制摆放记录的家具，先验证旧记录，再将真实尺寸与位置绑定到新房间。高层、旋转和异形建筑也可平移。
+The interior scope and the source compilation settings determine whether a building is shell-only. For a furnished rectangular low-rise, the planner adjusts its existing partitions and tries translating furniture groups inside the revised rooms while preserving instances, assets and dimensions. It checks door clearances, functional zones, group relations and circulation in detailed rooms. Furnished towers also require checks against actual tower plates, room capacity and compiled furnishings. A failed check identifies the relevant room or constraint. Only validated edits are committed.
 
-纯外壳编辑按室内启用范围和源场景编译配置识别。带家具的高层占地编辑还会检查实际塔楼楼板、房间容量及编译后的家具。
+## Feedback across scales
 
-轴对齐的矩形低层建筑可带家具调整占地。系统沿新边界调整现有分区，保留家具实例、资产和尺寸，在对应房间内尝试整体移动家具组合。门口净空、已有功能区域、必要的组间关系和精装房间通路参与校验。通过规范校验及编译检查后才提交。空间不足时返回涉及的房间或约束，保留原场景。
+The new footprint determines the available floor plate, rooms and doors. If a room cannot accommodate its original-size furniture, the Room Agent can request space from the Floor Agent using the entity, function, measured dimensions and inventory. The Floor Agent can transfer space between rooms sharing a full partition or report the limits of the current partitioning. Every trial rechecks both rooms, their doors and furniture. Checks in an accepted furnished room cover the route from the door to furniture use areas.
 
-## 证据与后续边界
+When the user explicitly permits changing the aspect ratio at the target area, set `allow_aspect_adjustment: true`. The Building Agent can select a new ratio in response to floor feedback and pass the revised plate down for another trial. Candidates ruled out by dimensional conflicts are excluded from subsequent rounds. The search allows up to two alternative ratios, three floors needing wall moves per round and three partition candidates per floor. Agents decide when to escalate and which candidate to try. Geometry planners instantiate and check those candidates in metres. Final acceptance checks CCWP contracts, whole-scene geometry, circulation on furnished floors and preservation of compiled furniture.
 
-开发验收保存在 `analysis_results/urban_coordination_20261117/`，原审查结果保持原样。本轮不改论文展示场景，不生成新的大型 Viewer，也不把开发探针通过率当作论文端到端成功率。
-
-
-后续仍需推进：沿路网的设施服务关系、任意空间锚点、多中心/组团级关系，以及候选全部失败后由 Agent 发起更大范围的道路—地块联合重规划。分组建筑数量/高层比例仍需单独评估。
-
-## 高层占地编辑中的跨层反馈
-
-建筑占地调整先向下传递楼板、房间与门的位置。房间的可用面积或原尺寸家具组合放不下时，Room Agent 读取实体、功能、实际尺寸及家具清单，可以向 Floor Agent 请求空间。Floor Agent 在共用完整隔墙的相邻房间之间选择面积转移方案，也可以向上报告当前分区的限制。每次试放都重新检查供方和受方、已有门以及家具。对于已接受的精装房间，通行检查覆盖门口和家具使用区。
-
-当用户明确允许在目标面积下改变宽深比，可设置 `allow_aspect_adjustment: true`。Building Agent 此时可以根据楼层反馈选择新比例，并将新的楼板范围下发重试。尺寸冲突已经排除的候选不会在后续轮次重新进入搜索。最多提出两个替代建筑比例，每轮最多处理三个需要移墙的楼层，每层最多试放三种隔墙方案。模型负责决定是否上报、选择候选，几何规划器负责按米制生成和检查候选。最终提交仍需经过 CCWP、全场几何、精装楼层可达性及已编译家具保留检查。
-
-目前验收覆盖轴对齐、有实际楼板记录的偏置塔楼；复杂体量的精装楼层须能解析为可验证的矩形房间和连通走廊。倾斜外壳、需要凹多边形室内分区或需要移动核心筒的情况仍需扩展。
+Validation covers axis-aligned setback towers with recorded plates and interiors representable as verifiable rectangular rooms and connected corridors. Slanted shells, concave interior partitions and movable cores remain outside this edit scope. Other open cases include service distance along a road network, arbitrary spatial anchors, relations between clusters or centres, and broader road–parcel replanning after all bounded candidates fail. Group-level building counts and high-rise proportions also need separate evaluation.
