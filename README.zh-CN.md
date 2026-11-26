@@ -51,12 +51,6 @@ CITYG_CONFIG=configs/pipeline.local.env bash scripts/run_cityg_pipeline.sh \
 
 如需生成缺失资产，可设置 `ASSET_GENERATION_ENABLED=true` 并用 `ASSET_URL` 指向已有的 Hunyuan worker。如需在本机自动启动 worker，请先准备模型环境和 CUDA 扩展，设置 `ASSET_WORKER_AUTO_START=true`，并导出 `CITYG_ASSET_PYTHON`、`CITYG_HUNYUAN_REPO`、`CITYG_HUNYUAN_MODEL_ROOT` 和 `CITYG_HUNYUAN_T2I_MODEL`。通过流程配置中的 `ASSET_WORKER_GPU` 选择显卡。
 
-## 二次开发入口
-
-- 调整智能体可以提出的方案，从[智能体实现](src/cityg/agents)入手；[生成闭环](src/cityg/closed_loop.py)负责协调规划、校验和修复。
-- 添加布局时，可以参考已有的[城市、楼层或房间原型](configs/layout_prototypes/v1)。[生成配置](configs/generation_prototypes.json)控制原型的选择与适配。
-- 扩展空间约束时，可以从[世界程序](src/cityg/ccwp.py)追踪到[校验器](src/cityg/validation)。[城市空间协同指南（英文）](docs/urban_spatial_coordination.md)以建筑占地为例，说明如何将文字要求落实到最终几何。
-
 ## 使用生成结果
 
 - 编辑指令和受保护的场景状态见[场景编辑指南](docs/editing.zh-CN.md)。

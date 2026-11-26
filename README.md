@@ -51,12 +51,6 @@ To install the optional PBR textures for grass, paving and other ground surfaces
 
 To enable missing-asset generation, configure an existing Hunyuan worker with `ASSET_GENERATION_ENABLED=true` and `ASSET_URL`. To start a worker locally, prepare its model environment and CUDA extensions, set `ASSET_WORKER_AUTO_START=true`, and export `CITYG_ASSET_PYTHON`, `CITYG_HUNYUAN_REPO`, `CITYG_HUNYUAN_MODEL_ROOT` and `CITYG_HUNYUAN_T2I_MODEL`. The worker GPU is selected by `ASSET_WORKER_GPU` in the pipeline configuration.
 
-## Extend UrbanWeaver
-
-- To change what an agent can propose, start with [the agent implementations](src/cityg/agents). [The closed loop](src/cityg/closed_loop.py) coordinates planning, validation and repair.
-- To add a layout, follow an existing [city, floor or room prototype](configs/layout_prototypes/v1). [The generation configuration](configs/generation_prototypes.json) controls how these prototypes are selected and adapted.
-- For a new spatial constraint, trace it from [the world program](src/cityg/ccwp.py) to [the validators](src/cityg/validation). The [urban spatial coordination guide](docs/urban_spatial_coordination.md) follows one such path from the brief to the realized footprint.
-
 ## Working with the result
 
 - For supported edit instructions and protected scene state, see [scene editing](docs/editing.md).
