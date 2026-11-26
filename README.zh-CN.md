@@ -14,8 +14,6 @@ Fetch 机器人从 A 栋 403 房间取走杯子，乘电梯下楼，沿人行道
 
 https://github.com/user-attachments/assets/828aa053-e425-4e9c-9de8-03fb6ca75c56
 
-[图像和视频的资产来源](docs/media/credits.md)
-
 ## 离线生成第一个城市
 
 在仓库根目录下，使用 Python 3.10 或 3.11 运行：
