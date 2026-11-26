@@ -45,9 +45,16 @@ Set `LLM_BASE_URL`, `VLM_BASE_URL`, `LLM_MODEL` and `VLM_MODEL` for your service
 
 ## Assets and optional services
 
-The repository includes procedural geometry, asset metadata and preparation scripts. To reproduce textured scenes, obtain the corresponding meshes, textures and model weights from their upstream sources. The asset registries describe both procedural and downloadable items. For available sources see [the source catalog](assets/external_sources.json) and [third-party notices](THIRD_PARTY_NOTICES.md).
+The [UrbanWeaver asset pack](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets) includes meshes and textures for buildings, streets and vegetation. On Linux or macOS, run these commands from the repository root using the Hugging Face CLI (`hf`).
 
-To install the optional PBR textures for grass, paving and other ground surfaces, run `python scripts/download_polyhaven_ground_materials.py`.
+```bash
+hf download qinbaigaogao/UrbanWeaver-Assets --repo-type dataset --local-dir ../UrbanWeaver-Assets
+python ../UrbanWeaver-Assets/install_assets.py --project .
+```
+
+The installer registers the assets for the default generation pipeline. For additional furniture, accept the CC BY-NC 4.0 license on the [HSSD pack page](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets-HSSD), run `hf auth login`, and follow the two installation commands on that page.
+
+If you only need ground textures for grass and paving, run `python scripts/download_polyhaven_ground_materials.py`.
 
 To enable missing-asset generation, configure an existing Hunyuan worker with `ASSET_GENERATION_ENABLED=true` and `ASSET_URL`. To start a worker locally, prepare its model environment and CUDA extensions, set `ASSET_WORKER_AUTO_START=true`, and export `CITYG_ASSET_PYTHON`, `CITYG_HUNYUAN_REPO`, `CITYG_HUNYUAN_MODEL_ROOT` and `CITYG_HUNYUAN_T2I_MODEL`. The worker GPU is selected by `ASSET_WORKER_GPU` in the pipeline configuration.
 
@@ -56,4 +63,4 @@ To enable missing-asset generation, configure an existing Hunyuan worker with `A
 - For supported edit instructions and protected scene state, see [scene editing](docs/editing.md).
 - For reproducible screenshots and visual review, see [headless rendering](docs/headless_rendering.md).
 - For CPU physics validation, use the separate environment in [ovphysx.yml](environments/ovphysx.yml).
-- The project code is licensed under [Apache 2.0](LICENSE). Third-party components and assets retain their upstream terms.
+- The project code is licensed under [Apache 2.0](LICENSE). See the [third-party notices](THIRD_PARTY_NOTICES.md) for upstream terms.

@@ -45,9 +45,16 @@ CITYG_CONFIG=configs/pipeline.local.env bash scripts/run_cityg_pipeline.sh \
 
 ## 资产与可选服务
 
-仓库包含程序化几何、资产元数据和准备脚本。复现带纹理的场景时，请从各上游来源获取相应的网格、纹理和模型权重。注册表记录了程序化资产与可下载资产。详见[资产来源目录](assets/external_sources.json)和[第三方声明](THIRD_PARTY_NOTICES.md)。
+[UrbanWeaver 主资产包](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets)包含建筑、街道设施和植被的模型与纹理。在 Linux 或 macOS 上，从仓库根目录使用 Hugging Face 命令行工具（`hf`）运行以下两条命令即可安装。
 
-草地、铺装等地表的可选 PBR 纹理可通过 `python scripts/download_polyhaven_ground_materials.py` 下载。
+```bash
+hf download qinbaigaogao/UrbanWeaver-Assets --repo-type dataset --local-dir ../UrbanWeaver-Assets
+python ../UrbanWeaver-Assets/install_assets.py --project .
+```
+
+安装后，默认生成流程即可使用这些资产。如需更多室内家具，请在 [HSSD 资产包页面](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets-HSSD)接受 CC BY-NC 4.0 许可，运行 `hf auth login`，再执行该页面的两条安装命令。
+
+如果只需要草地、铺装等地表的 PBR 纹理，可通过 `python scripts/download_polyhaven_ground_materials.py` 下载。
 
 如需生成缺失资产，可设置 `ASSET_GENERATION_ENABLED=true` 并用 `ASSET_URL` 指向已有的 Hunyuan worker。如需在本机自动启动 worker，请先准备模型环境和 CUDA 扩展，设置 `ASSET_WORKER_AUTO_START=true`，并导出 `CITYG_ASSET_PYTHON`、`CITYG_HUNYUAN_REPO`、`CITYG_HUNYUAN_MODEL_ROOT` 和 `CITYG_HUNYUAN_T2I_MODEL`。通过流程配置中的 `ASSET_WORKER_GPU` 选择显卡。
 
@@ -56,4 +63,4 @@ CITYG_CONFIG=configs/pipeline.local.env bash scripts/run_cityg_pipeline.sh \
 - 编辑指令和受保护的场景状态见[场景编辑指南](docs/editing.zh-CN.md)。
 - 可复现截图和视觉复查见[无头渲染指南](docs/headless_rendering.zh-CN.md)。
 - CPU 物理验证使用独立的 [ovphysx 环境](environments/ovphysx.yml)。
-- 项目代码采用 [Apache 2.0](LICENSE) 许可。第三方组件与资产遵循各自的上游条款。
+- 项目代码采用 [Apache 2.0](LICENSE) 许可。第三方组件与资产的许可见[第三方声明](THIRD_PARTY_NOTICES.md)。
