@@ -45,14 +45,15 @@ Set `LLM_BASE_URL`, `VLM_BASE_URL`, `LLM_MODEL` and `VLM_MODEL` for your service
 
 ## Assets and optional services
 
-The [UrbanWeaver asset pack](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets) includes meshes and textures for buildings, streets and vegetation. On Linux or macOS, run these commands from the repository root using the Hugging Face CLI (`hf`).
+The [UrbanWeaver asset pack](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets) includes city assets, textures and HSSD furniture. Accept the asset licenses once on the dataset page. On Linux or macOS, run the following from the repository root. If you are already logged in, skip the first command.
 
 ```bash
+hf auth login
 hf download qinbaigaogao/UrbanWeaver-Assets --repo-type dataset --local-dir ../UrbanWeaver-Assets
 python ../UrbanWeaver-Assets/install_assets.py --project .
 ```
 
-The installer registers the assets for the default generation pipeline. For additional furniture, accept the CC BY-NC 4.0 license on the [HSSD pack page](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets-HSSD), run `hf auth login`, and follow the two installation commands on that page.
+The installer registers all assets for the default generation pipeline.
 
 If you only need ground textures for grass and paving, run `python scripts/download_polyhaven_ground_materials.py`.
 

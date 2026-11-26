@@ -45,14 +45,15 @@ CITYG_CONFIG=configs/pipeline.local.env bash scripts/run_cityg_pipeline.sh \
 
 ## 资产与可选服务
 
-[UrbanWeaver 主资产包](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets)包含建筑、街道设施和植被的模型与纹理。在 Linux 或 macOS 上，从仓库根目录使用 Hugging Face 命令行工具（`hf`）运行以下两条命令即可安装。
+[UrbanWeaver 统一资产包](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets)包含城市模型、纹理和 HSSD 室内家具。在数据集页面确认一次许可后，从仓库根目录执行以下命令（适用于 Linux 和 macOS，已登录可跳过第一行）。
 
 ```bash
+hf auth login
 hf download qinbaigaogao/UrbanWeaver-Assets --repo-type dataset --local-dir ../UrbanWeaver-Assets
 python ../UrbanWeaver-Assets/install_assets.py --project .
 ```
 
-安装后，默认生成流程即可使用这些资产。如需更多室内家具，请在 [HSSD 资产包页面](https://huggingface.co/datasets/qinbaigaogao/UrbanWeaver-Assets-HSSD)接受 CC BY-NC 4.0 许可，运行 `hf auth login`，再执行该页面的两条安装命令。
+安装后，默认生成流程即可使用整个资产包。
 
 如果只需要草地、铺装等地表的 PBR 纹理，可通过 `python scripts/download_polyhaven_ground_materials.py` 下载。
 
